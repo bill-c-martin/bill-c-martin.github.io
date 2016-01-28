@@ -1,4 +1,4 @@
-header > div.container > div > img {
-	width: 100px;
-	border-radius: 20px;
+header > div.container > div > div > img {
+    width: 260px;
+    border-radius: 38px;
 }
