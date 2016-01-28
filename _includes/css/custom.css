@@ -2,3 +2,7 @@ header > div.container > div > div > img {
     width: 260px;
     border-radius: 38px;
 }
+
+section#about div#left p {
+  text-align: right;
+}
