@@ -71,3 +71,34 @@ section#blog div.blog-item:hover h5{
 section#blog div.blog-item:hover a{
   text-decoration: none;
 }
+
+section#contact {
+    color: #fff;
+    background: #{{ site.color.primary }};
+}
+
+section#contact hr.star-primary {
+  border-color: #fff;
+}
+
+section#contact hr.star-primary::after {
+  color: #fff;
+  background-color: #{{ site.color.primary }};
+}
+
+
+section#contact form div.controls{
+    background: #fff;
+    margin: 10px;
+}
+
+section#contact button{
+    color: #fff;
+    background: #{{ site.color.secondary }};
+}
+
+section#contact button:hover{
+    color: #fff;
+    border-color: #{{ site.color.secondary }};
+    background: #{{ site.color.secondary-dark }};
+}
