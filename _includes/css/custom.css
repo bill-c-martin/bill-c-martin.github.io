@@ -1,3 +1,25 @@
+header hr.star-light:after,
+header hr.star-primary:after {
+    content: "\f121";
+}
+
+section#about hr.star-light:after,
+section#about hr.star-primary:after {
+    content: "\f11a";
+}
+
+section#about div#learning hr.star-light:after,
+section#about div#learning hr.star-primary:after {
+    content: "\f0eb";
+}
+
+section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
+    content: "\f0b1";
+}
+section#contact hr.star-light:after, section#contact hr.star-primary:after {
+    content: "\f095";
+}
+
 header > div.container > div > div > img {
     width: 300px;
     border-radius: 150px;
