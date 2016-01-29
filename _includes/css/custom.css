@@ -2,7 +2,23 @@ header > div.container > div > div > img {
     width: 300px;
     border-radius: 150px;
 }
+section#about div.row {
+margin: 10px 0;
+}
 
 section#about div#left p {
   text-align: right;
+}
+
+section#about p a {
+  color: #{{ site.color.secondary }};
+}
+
+section#about ul  {
+  padding: 0 12px;
+  margin-bottom: 15px;
+}
+
+section#about ul li {
+  font-size: 20px;
 }
