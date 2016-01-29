@@ -16,8 +16,13 @@ section#about div#learning hr.star-primary:after {
 section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
     content: "\f0b1";
 }
+
 section#contact hr.star-light:after, section#contact hr.star-primary:after {
     content: "\f095";
+}
+
+div.portfolio-modal hr.star-primary:after {
+  content: "\f0b1";
 }
 
 header > div.container > div > div > img {
