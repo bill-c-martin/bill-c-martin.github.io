@@ -50,3 +50,24 @@ section#about ul  {
 section#about ul li {
   font-size: 20px;
 }
+
+section#blog div.blog-item:hover{
+  background: #{{ site.color.secondary }}; /* make this whatever you want */
+}
+
+section#blog div.blog-item h5{
+  padding: 30px 0 0 0;
+  margin: 0;
+}
+
+section#blog div.blog-item p{
+  font-size: 14px;
+}
+
+section#blog div.blog-item:hover h5{
+  color: #fff;
+}
+
+section#blog div.blog-item:hover a{
+  text-decoration: none;
+}

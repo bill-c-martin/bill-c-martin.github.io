@@ -1,13 +1,14 @@
 ---
-layout: post
+layout: default
 title: Install Arch Linux on VirtualBox
+category: blog
 ---
 
 Ah, legendary Arch Linux, the ultimate OS for Level 110 Necromancers, or so they say. They say this OS is best prodded first from afar, before taking the plunge. They say a lot of things.
 
-It could be my past six years of LAMP development experience in a corporate environment, but I don't think Arch lives up to its hyped difficulty. 
+It could be my past six years of LAMP development experience in a corporate environment, but I don't think Arch lives up to its hyped difficulty.
 
-I initially took the plunge and installed Arch right on my hard drive next to Windows, using their [beginner's guide](https://wiki.archlinux.org/index.php/beginners'_guide). Most of the installation time is spent learning its glorious innards. 
+I initially took the plunge and installed Arch right on my hard drive next to Windows, using their [beginner's guide](https://wiki.archlinux.org/index.php/beginners'_guide). Most of the installation time is spent learning its glorious innards.
 
 However, I recently had to install Arch Linux on VirtualBox to help reproduce and debug an [issue I reported](https://github.com/gnumdk/lollypop/issues/409) for the [Lollypop](https://github.com/gnumdk/lollypop) music player. I have compiled the meat of its actual installation process just to prove it's not the monster people think it is:
 
@@ -34,7 +35,7 @@ Within five seconds, a root shell is born. Beware: When you gaze long into the r
 
 #### Package Installation (5 min of waiting)
 1. Install Base Packages: ```# pacstrap -i /mnt base base-devel```
-  1. Hit enter, enter, Y 
+  1. Hit enter, enter, Y
 
 #### Configuration (5 min)
 1. Generate fstab: ```# genfstab -U /mnt > /mnt/etc/fstab```

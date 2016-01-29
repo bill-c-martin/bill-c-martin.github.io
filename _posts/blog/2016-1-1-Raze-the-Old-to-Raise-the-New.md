@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: default
 title: Raze the Old to Raise the New
+category: blog
 ---
 
-This is not a New Year's post. No, really. 
+This is not a New Year's post. No, really.
 
-It's entirely not my fault the destined birth of my programming blog coincides with some imaginary lap mark that Western populations at large place bets of self-development on. 
+It's entirely not my fault the destined birth of my programming blog coincides with some imaginary lap mark that Western populations at large place bets of self-development on.
 
 > "According to some arbitrary calandar scratchings of us squabbling humans, it appears the Earth has begrudgingly fallen around the Sun yet again.. Who keeps allowing this! Well, since we're still here, I have decided to change something about my life!" - Human
 

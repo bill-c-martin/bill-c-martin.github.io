@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: default
 title: Install YNAB on Arch Linux
+category: blog
 ---
 
-Installing You Need A Budget (YNAB) on the average Linux distro through wine is probably a no-brainer. Arch Linux requires a few extra strokes to get purring. 
+Installing You Need A Budget (YNAB) on the average Linux distro through wine is probably a no-brainer. Arch Linux requires a few extra strokes to get purring.
 
 This is primarily due to Arch's minimalist foundation, as well as YNAB being reluctant about running in 64 bit.
 
@@ -54,14 +55,14 @@ $ sudo pacman -Sy
 
 ```sh
 $ sudo pacman -S wine
-$ sudo pacman -S lib32-lcms lib32-lcms2 
+$ sudo pacman -S lib32-lcms lib32-lcms2
 $ sudo pacman -S samba wine-mono wine_gecko lib32-gnutls lib32-mpg123 lib32-ncurses
 ```
 
 <a name="install-open-gl"></a>
 ### Install 32-bit Open GL
 
-This had to be done because I got an error: *"X Error of failed request:  BadValue (integer parameter out of range for operation)"* while trying to launch YNAB. 
+This had to be done because I got an error: *"X Error of failed request:  BadValue (integer parameter out of range for operation)"* while trying to launch YNAB.
 
 Installation of 32-bit Open GL is not only optional when setting up your video card drivers in Arch for the first time, but the 32-bit repos were also disabled by default.
 
@@ -95,7 +96,7 @@ $ WINEPREFIX=~/.wine-YNAB WINEARCH=win32 winetricks corefonts
 Download the YNAB trial from their site (link pending). Then go to the folder you downloaded it in and:
 
 ```sh
-$ WINEARCH=win32 WINEPREFIX=~/.wine-YNAB wine YNAB\ 4_4.3.352_Setup.exe 
+$ WINEARCH=win32 WINEPREFIX=~/.wine-YNAB wine YNAB\ 4_4.3.352_Setup.exe
 ```
 <a name="inspiration"></a>
 # Inspiration
