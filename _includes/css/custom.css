@@ -27,9 +27,9 @@ section#about hr.star-primary:after {
     content: "\f11a";
 }
 
-section#about div#learning hr.star-light:after,
-section#about div#learning hr.star-primary:after {
-    content: "\f0eb";
+section#about div#interests hr.star-light:after,
+section#about div#interests hr.star-primary:after {
+    content: "\f085";
 }
 
 section#about div.row {
