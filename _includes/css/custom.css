@@ -25,6 +25,10 @@ div.portfolio-modal hr.star-primary:after {
   content: "\f0b1";
 }
 
+section#blog hr.star-primary:after, div.blog-modal hr.star-primary:after {
+  content: "\f0eb";
+}
+
 header > div.container > div > div > img {
     width: 300px;
     border-radius: 150px;
