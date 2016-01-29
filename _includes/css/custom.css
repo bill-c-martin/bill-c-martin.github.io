@@ -60,6 +60,10 @@ section#blog hr.star-primary:after, div.blog-modal hr.star-primary:after {
   content: "\f0eb";
 }
 
+section#blog div.blog-item{
+  min-height: 150px;
+}
+
 section#blog div.blog-item:hover{
   background: #{{ site.color.secondary }};
 }
