@@ -2,12 +2,17 @@
 layout: default
 category: portfolio
 modal-id: 1
-date: 2014-07-18
 img: cabin.png
 alt: image-alt
-project-date: April 2014
 client: Start Bootstrap
 application: Web Development
+project-date: April 2014
 description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-
+my-contribution: Stuff about what I contributed to the project
+challenges-overcome: What challenges I overcame, use bullet lists
+languages: html, css, sql, php (show up as rounded rectangular tags)
+concepts: SOAP XML, WCF web services (show up as rounded rectangular tags)
+tools: vagrant
+stack: Linux, Zend Server, Php, MySQL, Ping Federate (show up as rounded rectangular tags)
+lines-of-code-contributed: 200
 ---
