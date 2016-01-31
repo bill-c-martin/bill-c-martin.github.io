@@ -20,6 +20,30 @@ div.portfolio-modal hr.star-primary:after {
   content: "\f0b1";
 }
 
+div.portfolio-modal div.tags {
+  margin: 20px 0;
+}
+
+div.portfolio-modal div.tags ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+div.portfolio-modal div.tags ul li {
+  font-size: 14px;
+  margin: 7px 0;
+}
+
+div.portfolio-modal div.tags span {
+  font-size: 12px;
+  color: #fff;
+  background: #{{ site.color.secondary-dark }};
+  text-decoration: none;
+  margin: 0px 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
 /* About */
 
 section#about hr.star-light:after,
