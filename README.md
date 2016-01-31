@@ -3,12 +3,14 @@ This is the source code for my [Jekyll](https://jekyllrb.com/)-based portfolio a
 ## My Additions
 ### Resume Linking
 The "Download Resume" button was added on the about page to allow resume downloading after reading about how awesome you are.
+
 ![Screenshot of "Download Resume" Button on About Page](/img/readme/resume_button.png)
 
 ### Allow Blog Posts
 In addition to the default portfolio posts, I added the ability to also make blog posts.
 
 The new folder structure is:
+
 ![Screenshot of posts folder structure for blog and portfolio posts](/img/readme/posts_folder_structure.png)
 
 ![Screenshot of example blog grid view](/img/readme/blog_screenshot.png)
