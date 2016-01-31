@@ -28,6 +28,11 @@ color:
   secondary: 5a5c51 #FD6E8A
   secondary-dark: 363730 #A2122F
 
+# Blog settings
+blog:
+  labels:
+    modal-close: Close
+
 # Portfolio settings
 portfolio:
   labels:
