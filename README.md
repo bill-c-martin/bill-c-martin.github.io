@@ -1,4 +1,4 @@
-Based on [Freelancer Theme](https://jeromelachaud.github.io/freelancer-theme) for [Jekyll](https://jekyllrb.com/), with my own additions.
+This is the source code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmartin.io](http://billmartin.io), which uses the [Freelancer Jekyll Theme](https://jeromelachaud.github.io/freelancer-theme) with my own additions.
 
 ## My Additions
 ### Resume Linking
