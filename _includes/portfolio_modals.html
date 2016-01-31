@@ -15,9 +15,9 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <ul class="list-inline item-details">
-                                <li><strong>{{ site.portfolio.headers.client }}:</strong> {{ post.client }}</li>
-                                <li><strong>{{ site.portfolio.headers.client }}:</strong> {{ post.project-date }}</li>
-                                <li><strong>{{ site.portfolio.headers.client }}:</strong> {{ post.application }}</li>
+                                <li><strong>{{ site.portfolio.labels.client }}:</strong> {{ post.client }}</li>
+                                <li><strong>{{ site.portfolio.labels.project-date }}:</strong> {{ post.project-date }}</li>
+                                <li><strong>{{ site.portfolio.labels.application }}:</strong> {{ post.application }}</li>
                             </ul>
                             <div class="entry text-left">
                                 {{ post.content }}
@@ -25,20 +25,20 @@
                             <div class="row tags text-left">
                                 <ul>
                                     <li>
-                                        <strong>{{ site.portfolio.headers.client }}</strong>: <span>{{ post.languages | join: '</span><span>'}}</span>
+                                        <strong>{{ site.portfolio.labels.languages }}</strong>: <span>{{ post.languages | join: '</span><span>'}}</span>
                                     </li>
                                     <li>
-                                        <strong>{{ site.portfolio.headers.client }}</strong>: <span>{{ post.concepts | join: '</span><span>'}}</span>
+                                        <strong>{{ site.portfolio.labels.concepts }}</strong>: <span>{{ post.concepts | join: '</span><span>'}}</span>
                                     </li>
                                     <li>
-                                        <strong>{{ site.portfolio.headers.client }}</strong>: <span>{{ post.tools | join: '</span><span>'}}</span>
+                                        <strong>{{ site.portfolio.labels.tools }}</strong>: <span>{{ post.tools | join: '</span><span>'}}</span>
                                     </li>
                                     <li>
-                                        <strong>{{ site.portfolio.headers.client }}</strong>: <span>{{ post.stack | join: '</span><span>'}}</span>
+                                        <strong>{{ site.portfolio.labels.stack }}</strong>: <span>{{ post.stack | join: '</span><span>'}}</span>
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ site.portfolio.labels.modal-close }}</button>
                         </div>
                     </div>
                 </div>

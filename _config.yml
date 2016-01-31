@@ -28,6 +28,18 @@ color:
   secondary: 5a5c51 #FD6E8A
   secondary-dark: 363730 #A2122F
 
+# Portfolio settings
+portfolio:
+  labels:
+    client: Client
+    project-date: Date
+    application: Application
+    languages: Languages
+    concepts: Concepts
+    tools: Tools
+    stack: Stack
+    modal-close: Close
+
 # Footer settings
 footer:
   location-header: Location
