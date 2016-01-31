@@ -25,7 +25,7 @@ Relevant [Font Awesome](https://fortawesome.github.io/Font-Awesome/) were added 
 ![Screenshot of added header icons](/img/readme/icons.png)
 
 #### How to use
- - Fork or clone this repo to your own repo name ```your-github-username.github.io```
+ - Fork or clone this repo to your own with name: ```your-github-username.github.io```
  - Overwrite profile picture in `/img/profile.jpg`
  - Replace `you@email.com` in `_includes/contact_static.html` with your email address. Refer to [formspree](http://formspree.io/) for more information.
  - Create new posts to display your projects & blog posts. See existing examples in ```_posts/blog/``` and ```_posts/portfolio/```
