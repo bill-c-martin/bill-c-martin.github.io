@@ -3,24 +3,25 @@ This is the source code for my [Jekyll](https://jekyllrb.com/)-based portfolio a
 ## My Additions
 ### Resume Linking
 The "Download Resume" button was added on the about page to allow resume downloading after reading about how awesome you are.
-[screenshot] 
+![Screenshot of "Download Resume" Button on About Page](/img/readme/resume_button.png)
 
 ### Allow Blog Posts
-In addition to the default portfolio posts, I added the ability to also make blog posts. The new folder structure is:
+In addition to the default portfolio posts, I added the ability to also make blog posts.
 
-[screenshot of structure]
-[screenshot of blogs]
+The new folder structure is:
+![Screenshot of posts folder structure for blog and portfolio posts](/img/readme/posts_folder_structure.png)
+
+![Screenshot of example blog grid view](/img/readme/blog_screenshot.png)
 
 ### Support Tags on Portfolio Projects
-The default Freelancer theme only supports client, date, application, and description fields for portfolio projects. I added a footer section to allow languages, tools, concepts, & stack used. They show up as tags.
+The default Freelancer theme only supports client, date, application, and description fields for portfolio projects. I added a section to show languages, tools, concepts, & stack used for each project. They show up as tags.
 
-[screenshot of config]
-[screenshot of tags feature]
+![Screenshot of tags feature and markdown](/img/readme/tags.png)
 
 ### Cute Icons
 Relevant [Font Awesome](https://fortawesome.github.io/Font-Awesome/) were added to each header, overriding the default "star" icons used everywhere.
 
-[screenshot]
+![Screenshot of added header icons](/img/readme/icons.png)
 
 ## How to use
  - Overwrite profile picture in `/img/profile.jpg`
