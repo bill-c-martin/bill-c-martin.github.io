@@ -2,7 +2,7 @@ This is the source code for my [Jekyll](https://jekyllrb.com/)-based portfolio a
 
 ## My Additions
 ### Resume Linking
-The "Download Resume" button was added on the about page to allow resume downloading after reading about how awesome you are.
+The "Download Resume" button was added on the about page, which links to ```/resume/your-name-resume.pdf```
 
 ![Screenshot of "Download Resume" Button on About Page](/img/readme/resume_button.png)
 
