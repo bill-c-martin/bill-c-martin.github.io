@@ -154,3 +154,11 @@ section#contact button:hover{
 footer .footer-col {
     margin-bottom: 30px;
 }
+
+footer p {
+  font-size: 15px;
+}
+
+footer p a {
+  color: #{{ site.color.primary }};
+}

@@ -25,7 +25,7 @@ disqus_shortname: myshortname
 color:
   primary: 101010 #80B3FF
   primary-rgb: "255,0,0" #"128,179,255"
-  secondary: 5a5c51 #FD6E8A
+  secondary: 6a6c61 #FD6E8A
   secondary-dark: 363730 #A2122F
 
 # Blog settings
@@ -50,10 +50,10 @@ footer:
   location-header: Location
   location: Manchester, NH
   copyright: Bill Martin. All Rights Reserved.
-  social: Other Whereabouts
+  social: My Other Whereabouts
   new-thoughts: New Thoughts
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc. search them in main.css)
 social:
   - title: github
     url: https://github.com/bill-c-martin
@@ -65,7 +65,7 @@ social:
     url: /feed.xml
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Fork my portfolio on github</a>'
 
 # Build settings
 markdown: kramdown
