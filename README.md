@@ -24,7 +24,7 @@ Relevant [Font Awesome](https://fortawesome.github.io/Font-Awesome/) were added 
 
 ![Screenshot of added header icons](/img/readme/icons.png)
 
-#### How to use
+## How to use
  - Fork or clone this repo to your own with name: ```your-github-username.github.io```
  - Overwrite profile picture in `/img/profile.jpg`
  - Replace `you@email.com` in `_includes/contact_static.html` with your email address. Refer to [formspree](http://formspree.io/) for more information.
