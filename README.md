@@ -1,4 +1,4 @@
-Source code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmartin.io](http://billmartin.io), which uses the [Freelancer Jekyll Theme](https://jeromelachaud.github.io/freelancer-theme) with my own additions:
+Source code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmartin.io](http://billmartin.io), which uses the [Freelancer Jekyll Theme](https://github.com/jeromelachaud/freelancer-theme) with my own additions:
 
 #### Resume Linking
 The "Download Resume" button was added on the about page, which links to ```/resume/your-name-resume.pdf```
