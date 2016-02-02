@@ -4,7 +4,7 @@ title: Install Arch Linux on VirtualBox
 category: blog
 ---
 
-Ah, legendary Arch Linux, the ultimate OS for Level 110 Necromancers, or so they say. They say this OS is best prodded first from afar, before taking the plunge. They say a lot of things.
+Ah, the ultimate OS for Level 110 Necromancers, or so they say. They say it's best prodded from afar before taking the plunge. They say a lot of things.
 
 It could be my past six years of LAMP development experience in a corporate environment, but I don't think Arch lives up to its hyped difficulty.
 

@@ -4,7 +4,7 @@ title: Install YNAB on Arch Linux
 category: blog
 ---
 
-Installing You Need A Budget (YNAB) on the average Linux distro through wine is probably a no-brainer. Arch Linux requires a few extra strokes to get purring.
+Installing You Need A Budget (YNAB) on the average Linux distro is a no-brainer, but Arch Linux requires a few extra strokes to get purring.
 
 This is primarily due to Arch's minimalist foundation, as well as YNAB being reluctant about running in 64 bit.
 
