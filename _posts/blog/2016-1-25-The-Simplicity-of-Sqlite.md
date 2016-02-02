@@ -12,7 +12,7 @@ Then along came the need to actually see some data. I downloaded [sqliteman](htt
 
 It was then that I discovered something was already available from the command line for me from the start. That something was ```sqlite3``` itself. After using it for an hour the other night, I am happy to say that it is part of my Rails workflow now.
 
-##Rails Example
+###Rails Example
 
 From inside a Rails project, open the sqlite database inside the db/ folder:
 
@@ -23,7 +23,7 @@ sqlite3 development.sqlite3
 
 This results in a ```sqlite>``` prompt.
 
-## Pretty Output
+### Pretty Output
 
 By default, ```SELECT``` queries will show a jumbled mess of data, which especially sucks for ```select *``` queries that are pulling back a lot of columns. Enable a prettier, more readable display with:
 
@@ -39,7 +39,7 @@ Current options can be verified with:
 sqlite>.show
 ```
 
-## Meat and Potatoes Commands
+### Meat and Potatoes Commands
 
 The essential commands for me are:
 
