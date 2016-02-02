@@ -1,3 +1,7 @@
+body {
+  font-family: "PT Sans", "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 /* Home */
 
 header hr.star-light:after,
@@ -98,7 +102,7 @@ section#blog div.blog-item h5{
 }
 
 section#blog div.blog-item p{
-  font-size: 14px;
+  font-size: 17px;
 }
 
 section#blog div.blog-item:hover h5{
@@ -107,6 +111,14 @@ section#blog div.blog-item:hover h5{
 
 section#blog div.blog-item:hover a{
   text-decoration: none;
+}
+
+div.blog-modal article {
+  text-align: left;
+}
+
+div.blog-modal article p {
+  margin: 1em 0;
 }
 
 /* Contact */
