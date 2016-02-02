@@ -88,17 +88,12 @@ section#blog hr.star-primary:after, div.blog-modal hr.star-primary:after {
   content: "\f0eb";
 }
 
-section#blog div.blog-item{
-  min-height: 150px;
+section#blog div.blog-item {
+  padding: 10px 15px;
 }
 
 section#blog div.blog-item:hover{
   background: #{{ site.color.secondary }};
-}
-
-section#blog div.blog-item h5{
-  padding: 30px 0 0 0;
-  margin: 0;
 }
 
 section#blog div.blog-item p{
@@ -119,6 +114,16 @@ div.blog-modal article {
 
 div.blog-modal article p {
   margin: 1em 0;
+}
+
+@media(min-width:768px) {
+  section#blog div.blog-item {
+    min-height: 163px;
+  }
+
+  section#blog div.blog-item h5{
+    margin: 0;
+  }
 }
 
 /* Contact */
