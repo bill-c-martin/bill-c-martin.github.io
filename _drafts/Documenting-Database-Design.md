@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: default
 title: Documenting Database Design
+category: blog
 ---
 
 Documenting database design just seems to be one of those things that web developers tend to suck at.
