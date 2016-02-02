@@ -24,24 +24,26 @@ Enable 32-bit package repositories (multilib) for pacman so it finds wine:
 ```sh
 $ sudo vi /etc/pacman.conf
 ```
+
 Change:
 
 ```aconf
 \#[multilib-testing]
 Include = /etc/pacman.d/mirrorlist
-
 \#[multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
+
 to:
+
 
 ```aconf
 [multilib-testing]
 Include = /etc/pacman.d/mirrorlist
-
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
+
 <a name="sync-pacman"></a>
 ### Sync Pacman
 Sync pacman with the newly added multilib repositories:

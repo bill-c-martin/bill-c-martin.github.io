@@ -21,7 +21,8 @@ Within five seconds, a root shell is born. Beware: When you gaze long into the r
 
 ###Installation
 #### Initial Preparation (5 min)
-1. <p>Verify Internet Connection: ```# ping google.com ```
+
+1. Verify Internet Connection: ```# ping google.com ```
 2. Update System Clock: ```# timedatectl set-ntp true```
 3. Identify the "hard drive": ```# lsblk```
 4. Open "hard drive" in Parted: ```# parted /dev/sda```
@@ -34,10 +35,12 @@ Within five seconds, a root shell is born. Beware: When you gaze long into the r
 11. Mount Partition: ```# mount /dev/sda1 /mnt```
 
 #### Package Installation (5 min of waiting)
+
 1. Install Base Packages: ```# pacstrap -i /mnt base base-devel```
   1. Hit enter, enter, Y
 
 #### Configuration (5 min)
+
 1. Generate fstab: ```# genfstab -U /mnt > /mnt/etc/fstab```
 2. Change to Root in New System: ```# arch-chroot /mnt /bin/bash```
 3. Set Locale: ```# echo "LANG=en_US.UTF-8" > /etc/local.conf```
