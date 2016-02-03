@@ -18,49 +18,36 @@ On top of these reasons why the odds are stacked against web developers, convent
 
 All the focus goes into the relationships, modeling, and queries.
 
-### Normalization
+### Garbage In, Garbage Out
 
-It seems to me that the first step to having good documentation is to have a good database design in the first place.
+It seems to me that the first step to having good documentation is having good database design in the first place.
 
 If you have a convoluted design, expect convoluted documentation. In fact, expect convoluted data models and business logic in the application itself, too.
 
 I try to be ruthless about:
 
  - modeling of business domain in a non-technical manner
-   - ie so easy a ~~caveman~~ business person can read it
+   - ie. so easy a ~~caveman~~ business person can read it
  - well-defined tables with a clear, single purpose
  - foreign key relationships enforced on every table
  - consistent table/column naming
  - normalization
 
+### Where the Pristine Runs Afoul
 
+The design always seems to start off solid, but as development progresses, corners get cut, and before you know it, those pristine tables are full of little hacks that were thrown in last minute.
 
-To start off with
-I think database tables should mostly be self-explanatory, and try to follow Ruby on Rails ActiveRecord conventions:
-(list conventions)
+Sometimes it's the removal of no-longer-needed columns, rendering a once-useful table into something no longer needed itself. 
 
-- Focus on the business domain
-- Rails conventions
-- named after a plural noun (logs, books, quotes, persons, users, etc. )
-- Enforce relationships properly with foreign keys
+So you have this leftover.. thing, that keeps getting populated by the application. It's even worse if it holds up foreign key constraints between other tables.
 
-Reading up on normalization.
+Other times, ultra-specific, awkwardly-named columns get added to an existing table due to convenience, and it's always added late in the development to serve some hacked-together functionality.
 
-### When the Pristine Runs Afoul
-
-It seems the design always starts off solid, but as development progresses, corners get cut, and before you know it, those pristine tables are full of little hacks that were thrown in last minute.
-
-Sometimes tables go unused because they're no longer needed, but they continue getting populated just to hold up some foreign key constraints, rather than being removed.
-
-Other times, ultra-specific columns get added to an existing table due to convenience, and it's always added late in the development to serve some hacked-together functionality.
-
-In worst cases, flag or enum-type columns get added to allow rows to existing in different states, effectively denormalizing the table.
+In worst cases, flag or enum-type columns get added to allow rows to have their own state, effectively denormalizing the table.
 
 And somewhere in the spacetime continuum, or perhaps outside of it, the gods weep.
 
-In summary, don't do last minute, weird, stupid things. Don't be afraid to grab the bull by the horns and refactor.
-
-
+It's these sort of last minute, weird, stupid things that fouls up pristine database design, and makes documentation that more difficult and verbose. To this, I say: always refactor, no matter the risk. 
 
 ### Documenting Tables
 Most important is to explain at the conceptual-level, only providing descriptions in areas that are not self-evident, and providing example data everywhere.
