@@ -1,5 +1,11 @@
+/* Site Level */
 body {
   font-family: "PT Sans", "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+code {
+  background-color: #eee;
+  color: #393318;
 }
 
 /* Home */
