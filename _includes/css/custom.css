@@ -84,10 +84,6 @@ section#about ul  {
   margin-bottom: 15px;
 }
 
-section#about ul li {
-  font-size: 20px;
-}
-
 /* Blog */
 
 section#blog hr.star-primary:after, div.blog-modal hr.star-primary:after {
@@ -132,6 +128,10 @@ div.blog-modal article {
 
 div.blog-modal article p {
   margin: 1em 0;
+}
+
+div.blog-modal article li {
+  font-size: 20px;
 }
 
 /* Contact */
