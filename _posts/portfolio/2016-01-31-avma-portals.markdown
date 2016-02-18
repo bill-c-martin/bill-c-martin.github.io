@@ -41,23 +41,23 @@ AVMA has three web applications with Healthplan Services:
 The majority of my work with AVMA's portals occurred in 2012 when a series of features were requested. However, I continue maintaining their portals to this day. My contributions include:
 
 - Integrating Google Analytics across the portals, including a conversion funnel for the quoting process
-- 
-
+- Streamlining the quoting process to reduce the time it takes to run a quote
+- Adding new products for quoting, which print to a PDF proposal after retrieving premium rates
 
 ###Challenges Overcame
 This period marked a lot of growth for me as a junior web developer coming from a startup company, with my first experience in enterprise-level web applications. The biggest challenges I faced were mostly enterprise firsts:
 
-- Absorbing the vast business domain of health and related insurance
-- Learning an in-house MVC framework
-- Implementing advanced DB2 features, such as cursors, to facilitate pagination in result sets
-- Integrating into in-house policy management software
-- Writing design and test documents
-- Collaborating on teams consisting of business analysts, project managers, and quality assurance testers
-- Mapping values to PDFs proposals using complex XMLs
-- Working with AJAX using Prototype
-- Interacting with servers using tools such as vim, grep, and tail, through putty
+- Working with billing systems for the first time, and all the concepts and terminology that comes with it
+- Implementing Google Analystics and funneling for the first time
+- Working with new rating, plan, and benefit systems previously unexposed to
 
 ###Accomplishments
-Other than surpassing the huge learning curve of domain knowledge and enterprise exposure as a junior developer, one of my biggest contributions of this time period was successfully supporting one of the biggest clients, as well as raising the bar on design and test document writing and standards.
 
-This bulk premium rating tool previously mentioned is still in use today and continues to save countless hours for an entire team of rate analysts.
+The AVMA portals were the first modular applications I ever worked with. It uses component modules that are used on other sites and platforms, such as:
+
+- Quoting process
+- Rating process
+- Billing
+- Case Listing
+
+This opened my eyes for application development in terms of scalability and reusability.
