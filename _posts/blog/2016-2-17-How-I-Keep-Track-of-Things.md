@@ -33,7 +33,7 @@ Being a highly organized person, I tend to keep lists of things I want to get ar
 
 * **movies.txt** - movies, by genre, I want to see eventually
 * **bands.txt** - bands, by genre, to check out
-* **buy.txt** - groceries, office chairs, guitars, etc.
+* **buy.txt** - groceries, kayak stuff, shoes, office chairs, etc.
 * **games.txt** - games I want to get around to playing eventually
 * **programming.txt** - ever growing list of technologies to check out
 
@@ -61,8 +61,8 @@ Todo.txt uses letters to set priorities. I don't use all 26 letters in the alpha
 
 ### When I Don't Use Text Files
 
-There's two files I have not managed to replace with text files. I strongly suspect it's because both use autocalculations.
+There's two files I have not managed to replace with text files, because they use the calculation feature in spreadsheet programs.
 
-One is a spreadsheet for autorepair tracking, with a list of repairs on the Y axis, and 3k mile intervals on the x axis. The mlie intervals is what calculates automatically.
+One is a spreadsheet for auto repair tracking, with a list of repairs on the Y axis, and 3k mile intervals on the x axis. The mile intervals is what calculates automatically.
 
 The other is a camping spreadsheet, which contains every camping item I own, with its weight, to make it easy to calculate base/pack/food weight when deciding what to bring camping/backpacking.
