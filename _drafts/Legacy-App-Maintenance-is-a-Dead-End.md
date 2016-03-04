@@ -4,65 +4,66 @@ title: Legacy App Maintenance Is A Dead End
 category: blog
 ---
 
-All programmers should post a sign at the precipice of their old code: "Abandon all hope, ye who enter here"
+All programmers should post a sign at the precipice descending into their old code: "Abandon all hope, ye who enter here".
 
-There's so many reasons to want to avoid legacy app maintenance; the Bane of the Pragmatic Programmer; the Path to Code Janitor, the Nine Circles of Hell.
+Legacy app maintenance is the Bane of the Pragmatic Programmer; the Path to Code Janitor; where the code's developers are usually long gone and there is no Virgil to guide you through their Nine Circles of Hell.
 
-(run with the Nine Circles of Hell/Inferno concept):
+Spending your days patching and maintaining your fellow developers' code of yesteryear is akin to doing their old, dirty laundry, with stains and skid marks on full display.
 
-(Add something about no Virgil to guide you [ no devs around anymore] Good luck, friend!)
+###Stunted Development Skills
 
-##Stunted Development Skills
-   
-Legacy code reprograms ones precious neuron connections to support bad habits, especially to a budding developer dropped into an enterprise environment that doesn't know any better.
+Legacy code reprograms one's precious neural connections to support bad habits, at least to budding developers that don't know any better.
 
 It is where the wicked gather:
 
-* God Classes
-* Poltergeist Classes
-* LongFunctionNamesThatDescribeAllTheStuffThatTheyDo()
-* WET code
-* Flag-infested method parameters 
-* Rigid coupling
-* Broken Windows of all kinds
+* **God Classes** - That are so big, their nesting even goes off screen
+* **[Poltergeist Classes](http://stackoverflow.com/questions/12801965/poltergeist-antipattern-example)** - I've always hated these and only recently discovered they  had a name
+* **LongFunctionNamesThatDescribeAllTheStuffThatTheyDo** - There really needs to be a catchy name for this as well as other types of [naming daftness](https://www.quora.com/What-are-the-most-ridiculous-Java-class-names-from-real-code). I propose: Linguistic Depravity.
+* **[WET](http://www.artima.com/intv/dry.html) code**
+* **Flag-infested method parameters** - a violation of the [Single Responsibility Principle](http://www.informit.com/articles/article.aspx?p=1392524))
+* **Rigid Coupling**
+* **Coding By Exception** - aka Ad hoc bandaid fixes and features
+* **Reinventing the Wheel** - aka "Not Invented Here" Syndrome
+* **[Broken Windows](http://www.informit.com/articles/article.aspx?p=1235624&seqNum=3)** - aka I'll just take a crap here in the open because nobody else cares about this place
 
-It's like doing your fellow developers' dirty laundry of yesteryear, some of whom are long gone. You get to see all of their stains and skid marks in their full glory.
+However, experienced developers may find themselves picking *up* on all these code smells and anti-patterns, and actually learning how *not* to design an application. But they will likely walk away grimacing at their coworkers' past selves.
 
-Spending your days patching and maintaining 5 to 10 year old cold (or older in the case of )
+But still, a few years stuck maintaining code with these sorts of problems will find you hopelessly out dated whilst the world has sailed onto bigger, better seas.
 
-   Outdates developers
-   Working on 5 - 10 year old code
-   especially with a language like PHP, who lived in the wild-wild west ten years ago.
+###The Code Janitor
 
-##The Code Janitor
-Traps You in an endless cycle of fixing things others break
+Here's a different sort of metaphor: All the other developers have moved on to construct bigger, better buildings, while you stick around in the old ones sweeping the hallways and locking the doors every night.
 
-Dead end path
+Being stuck in a cycle of maintaining dinosaur apps ends up largely being an exercise on how to apply duct tape and zip ties. The lack of creativity is mind numbing to me.
 
-Lacks creativity
-Mind numbing
+As you trade growth and development for application-specific skills, you become an expert in putting out fires and cleaning up other people's messes.
 
-##Company Coupling
-value is measured in how well you know the business domain of the apps
-Little recognition and visibility, or the wrong kind of recognition and visibility.
-Become known as the guy that xxx.
+###Company Coupling
 
-##Somebody Has To Do It
+This decline in new industry skills combined with ever-increasing business domain knowledge specific to the legacy app may find you coupled to the company.
 
-Not inherently a bad thing. 
-Want safe careers at a single company
+Your value becomes measured in how well you know the business domain of the app. 
 
-ROI chart, where a legacy app maintainer is, and where you want to be:
-https://www.mendix.com/think-tank/killing-your-companys-legacy-applications-the-right-way/
+At some point, there was a gradual shift from Software Engineer; somebody who builds things to solve problems, to a Software Mechanic; somebody who keeps those things running.
 
-Counter arguments:
+While the builders on the frontier are getting all of the credit, you stick around in the support lines with little recognition and visibility.
 
-legacy code has use, if it ain't broke, don't fix it.
+###But.. Somebody Has To Do It
 
-learn from other's mistakes: how NOT to design an application, if you're self-aware
+Maintaining legacy code isn't inherently a bad thing though. 
 
-see how far your fellow developers have come
+After all, legacy applications linger around still because the company can [still ride its ROI curve](https://www.mendix.com/think-tank/killing-your-companys-legacy-applications-the-right-way/). If it ain't broke, don't fix it.
 
-I'm no Master Programmer, I have a lot to learn, which is part of the reason I'm converting my thoughts into ASCII characters by wiggling my fingers really fast into a keyboard right now. 
+Besides, there is enjoyment to be had in legacy app maintenance for the right kind of programmer.
 
-my old code, from even a year ago, makes me cringe. To future developers that have to read it: I profusely apologize :)
+There are those who enjoy being the uncredited backbone that keeps the company going. There are those who enjoy being the loyal soldier fighting day by day problems as they arise. There are those who strive for safe, stable careers at a single company until retirement.
+
+Me? I would rather innovate, than maintain. 
+
+Everything I enjoy in programming is stolen away when I get stuck in legacy app maintenance roles.
+
+I'm no Master Programmer either. I have a lot to learn, which is part of the reason I'm even bothering to convert my thoughts into ASCII characters right now by wiggling my fingers really fast into a keyboard. 
+
+My old code, from even two years ago, makes me cringe.
+
+To future developers that will one day maintain my current code: Forgive me, for I know not what I do, despite all I learn!
