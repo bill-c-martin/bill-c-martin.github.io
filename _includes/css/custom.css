@@ -75,7 +75,7 @@ section#about div#left p {
 }
 
 section#about p a {
-  color: #{{ site.color.secondary }};
+  color: #{{ site.color.secondary-light }};
 }
 
 section#about ul  {
@@ -184,6 +184,6 @@ footer p {
   font-size: 15px;
 }
 
-footer p a {
-  color: #{{ site.color.primary }};
+footer p a, footer p a:hover{
+  color: #{{ site.color.secondary-light }};
 }
