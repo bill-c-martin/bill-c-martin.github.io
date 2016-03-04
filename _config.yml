@@ -68,5 +68,5 @@ social:
 credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Fork my portfolio on github</a>'
 
 # Build settings
-highlighter: pygments
+highlighter: rouge
 permalink: /:categories/:title
