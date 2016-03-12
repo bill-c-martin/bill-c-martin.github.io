@@ -176,6 +176,11 @@ section#contact button:hover{
   font-size: 25px;
 }
 
+.btn-codeschool i{
+  position: relative;
+  top: 2px;
+}
+
 footer .footer-col {
     margin-bottom: 30px;
 }
