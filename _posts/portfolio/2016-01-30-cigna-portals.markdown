@@ -1,7 +1,7 @@
 ---
 layout: default
 category: portfolio
-modal-id: 1
+modal-id: 2
 img: cigna.png
 alt: Cigna home page
 client: Cigna
