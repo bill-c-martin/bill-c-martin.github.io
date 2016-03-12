@@ -58,12 +58,15 @@ footer:
 social:
   - title: github
     url: https://github.com/bill-c-martin
-  - title: stack-overflow
-    url: http://stackoverflow.com/users/5743565/bill-martin
   - title: linkedin
     url: https://www.linkedin.com/in/billmartin9
+  - title: codeschool
+    url: https://www.codeschool.com/users/90602
+  - title: stack-overflow
+    url: http://stackoverflow.com/users/5743565/bill-martin
   - title: rss
     url: /feed.xml
+
 
 # Credits content
 credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Fork my portfolio on github</a>'
