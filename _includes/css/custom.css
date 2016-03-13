@@ -8,6 +8,14 @@ code {
   color: #393318;
 }
 
+.btn-default {
+  background: #{{ site.color.secondary-dark }};
+  padding: 15px 45px;
+}
+.btn-default:hover {
+  background: #{{ site.color.secondary }};
+}
+
 /* Home */
 
 header hr.star-light:after,
@@ -47,11 +55,27 @@ div.portfolio-modal div.tags ul li {
 div.portfolio-modal div.tags span {
   font-size: 12px;
   color: #fff;
-  background: #{{ site.color.secondary-dark }};
+  background: #{{ site.color.secondary-light }};
   text-decoration: none;
   margin: 0px 4px;
   padding: 4px 8px;
   border-radius: 6px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  border: 1px solid #{{ site.color.secondary }};
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: #{{ site.color.secondary-dark }};
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: .8;
+}
+
+.portfolio-modal .close-modal .lr, .portfolio-modal .close-modal .lr .rl {
+  background-color: #{{ site.color.primary }};
 }
 
 /* About */
