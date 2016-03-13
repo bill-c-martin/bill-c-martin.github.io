@@ -13,7 +13,7 @@
                     <div class="col-md-4 blog-item">
                         <a href="#blogModal-{{ forloop.index }}" class="blog-link" data-toggle="modal">
                             <h5>{{ post.title }}</h5>
-                            <p>{{ post.excerpt }}</p>
+                            <p>{{ post.excerpt | strip_html}}</p>
                         </a>
                     </div>
                 {% endfor %}
