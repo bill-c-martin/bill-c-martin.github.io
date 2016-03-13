@@ -58,6 +58,18 @@ div.portfolio-modal div.tags span {
   border: 1px solid #{{ site.color.secondary }};
 }
 
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: #{{ site.color.secondary-dark }};
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: .8;
+}
+
+.portfolio-modal .close-modal .lr, .portfolio-modal .close-modal .lr .rl {
+  background-color: #{{ site.color.primary }};
+}
+
 /* About */
 
 section#about hr.star-light:after,
