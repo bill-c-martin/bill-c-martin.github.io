@@ -54,6 +54,10 @@ div.portfolio-modal div.tags span {
   border-radius: 6px;
 }
 
+#portfolio .portfolio-item .portfolio-link {
+  border: 1px solid #{{ site.color.secondary }};
+}
+
 /* About */
 
 section#about hr.star-light:after,
