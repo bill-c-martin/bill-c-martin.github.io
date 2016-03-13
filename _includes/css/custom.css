@@ -12,6 +12,10 @@ code {
   color: #393318;
 }
 
+div.blog-modal article blockquote p {
+  margin: 0;
+}
+
 .btn-default {
   background: #{{ site.color.secondary-dark }};
   padding: 15px 45px;
