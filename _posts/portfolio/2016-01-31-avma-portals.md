@@ -13,7 +13,6 @@ languages:
 - HTML
 - CSS
 - JavaScript
-- Prototype
 - XML
 concepts:
 - MVC
@@ -22,11 +21,16 @@ concepts:
 - Web Services
 tools:
 - Google Analytics
+- notepad++
+frameworks:
+- W1 (in house)
+- Prototype
+- PdfLib
 stack:
 - Linux
 - Apache
-- PHP
 - MySQL
+- PHP
 - DB2
 ---
 

@@ -13,21 +13,28 @@ languages:
 - HTML
 - CSS
 - JavaScript
-- Prototype
 - XML
 concepts:
 - MVC
 - AJAX
 - OOP
+- Web Services
 tools:
-- PdfLib
 - putty
 - vim
+- WinSCP
+- SQLYog
+- notepad++
+- PhpED
+frameworks:
+- W1 (in house)
+- Prototype
+- PdfLib
 stack:
 - Linux
 - Apache
-- PHP
 - MySQL
+- PHP
 - DB2
 ---
 

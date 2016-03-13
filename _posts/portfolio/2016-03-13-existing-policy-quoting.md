@@ -18,13 +18,23 @@ concepts:
 - MVC
 - AJAX
 - OOP
+- Caching
+- Persistence
 - Web Services
 - Design Patterns
 tools:
 - Dimensions (VCS)
+- PhpStorm
+- notepad++
+- putty
+- vim
+- WinSCP
+- SQLYog
+- Postman
 frameworks:
-- W1
+- W1 (in house)
 - jQuery
+- UI Controls (in house)
 stack:
 - Linux
 - Apache
