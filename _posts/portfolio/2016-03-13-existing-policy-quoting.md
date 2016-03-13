@@ -43,7 +43,7 @@ stack:
 - DB2
 ---
 
-###Project Description
+### Project Description
 Existing Policy Quoting, which was internally called "In-force Quoting", is a quoting web application used internally by salesreps in Healthplan Services' call center. 
 
 They use it to calculate new premiums for changes against existing policies, such as:
@@ -52,7 +52,7 @@ They use it to calculate new premiums for changes against existing policies, suc
 - moving to new addresses
 - adding or changing coverages 
 
-###Contributions
+### Contributions
 I started off spearheading this project alone, working with the business unit and policy rating teams to gather requirements and brainstorm how to overcome issues in the existing in-force quoting applications used by Cigna and Coventry at the time.
 
 I lead most of the design efforts as well, towards the end of which, two other developers joined the project.
@@ -78,7 +78,7 @@ My contributions during the development phase consisted of writing or co-writing
   - Billing & premium data
 - Module-specific views, controllers, and service controllers
 
-###Challenges Overcame
+### Challenges Overcame
 The biggest challenge I faced was writing my first enterprise-level web application at Healthplan Services, which I designed and built from the ground up with two other developers.
 
 The sheer amount of design choices to be made had to be weighed against long-term performance, maintainability, scalability, and return-on-investment.
@@ -95,7 +95,7 @@ This meant that the application had to allow the following features to be config
     + Spreadsheet-based calculator
 - Business rules
 
-###Accomplishments
+### Accomplishments
 The in-force quoting application is still in use today and continues to be a great asset to Healthplan Services. It currently provides policy change quoting for the following health insurance carriers:
 
 - Coventry

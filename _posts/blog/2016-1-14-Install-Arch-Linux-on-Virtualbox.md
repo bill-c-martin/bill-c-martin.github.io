@@ -12,14 +12,15 @@ I initially took the plunge and installed Arch right on my hard drive next to Wi
 
 However, I recently had to install Arch Linux on VirtualBox to help reproduce and debug an [issue I reported](https://github.com/gnumdk/lollypop/issues/409) for the [Lollypop](https://github.com/gnumdk/lollypop) music player. I have compiled the meat of its actual installation process just to prove it's not the monster people think it is:
 
-###Pregaming
+### Pregaming
 
 1. Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads), and get the [Arch ISO](https://www.archlinux.org/download/)
 2. Create a new VDI in VirtualBox, boot it, select the Arch .iso as the startup disk
 
 Within five seconds, a root shell is born. Beware: When you gaze long into the root shell, the root shell also gazes also into you!
 
-###Installation
+### Installation
+
 #### Initial Preparation (5 min)
 
 1. Verify Internet Connection: ```# ping google.com ```

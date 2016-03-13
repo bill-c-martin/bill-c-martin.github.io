@@ -10,7 +10,7 @@ Legacy app maintenance is the Bane of the Pragmatic Programmer; the Path to Code
 
 Spending your days patching and maintaining your fellow developers' code of yesteryear is akin to doing their old, dirty laundry, with stains and skid marks on full display.
 
-###Stunted Development Skills
+### Stunted Development Skills
 
 Legacy code reprograms one's precious neural connections to support bad habits, at least to budding developers that don't know any better.
 
@@ -30,7 +30,7 @@ However, experienced developers may find themselves picking *up* on all these co
 
 But still, a few years stuck maintaining code with these sorts of problems will find you hopelessly out dated whilst the world has sailed onto bigger, better seas.
 
-###The Code Janitor
+### The Code Janitor
 
 Here's a different sort of metaphor: All the other developers have moved on to construct bigger, better buildings, while you stick around in the old ones sweeping the hallways and locking the doors every night.
 
@@ -38,7 +38,7 @@ Being stuck in a cycle of maintaining dinosaur apps ends up largely being an exe
 
 As you trade growth and development for application-specific skills, you become an expert in putting out fires and cleaning up other people's messes.
 
-###Company Coupling
+### Company Coupling
 
 This decline in new industry skills combined with ever-increasing business domain knowledge specific to the legacy app may find you coupled to the company.
 
@@ -48,7 +48,7 @@ At some point, there was a gradual shift from Software Engineer; somebody who bu
 
 While the builders on the frontier are getting all of the credit, you stick around in the support lines with little recognition and visibility.
 
-###But.. Somebody Has To Do It
+### But.. Somebody Has To Do It
 
 Maintaining legacy code isn't inherently a bad thing though. 
 
