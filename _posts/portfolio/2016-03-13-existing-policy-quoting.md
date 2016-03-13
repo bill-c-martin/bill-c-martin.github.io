@@ -44,38 +44,68 @@ stack:
 ---
 
 ###Project Description
-Cigna had four web applications with Healthplan Services:
+Existing Policy Quoting, which was internally called "In-force Quoting", is a quoting web application used internally by salesreps in Healthplan Services' call center. 
 
-- **Broker Portal** - Appointed brokers sell policies, run quotes, and view commissions data
-- **Quoting Portal** - Individuals get quotes for health & dental plans for themselves or family
-- **Enrollment Portal** - Individual and Appointed brokers enroll health & dental policies
-- **Member Portal** - Members view benefits, make payments, and track reported claims
+They use it to calculate new premiums for changes against existing policies, such as:
+
+- adding new dependents
+- moving to new addresses
+- adding or changing coverages 
 
 ###Contributions
-My work with Cigna's various portals spanned three years, driven largely by new feature requests, including:
+I started off spearheading this project alone, working with the business unit and policy rating teams to gather requirements and brainstorm how to overcome issues in the existing in-force quoting applications used by Cigna and Coventry at the time.
 
-- Supporting for quoting dental products across ten states
-- Adding and terminating health products across ten states for both quoting and enrollment
-- Overhauling the billing details calculations and layout for members
-- Adding dynamic sorting and pagination for brokers' case listing & management
-- Modifying PDF proposal mapping.
+I lead most of the design efforts as well, towards the end of which, two other developers joined the project.
 
-I also created a bulk premium rating tool that allows internal rate analysts to run large data sets of quotes through uploadable spreadsheets to test their own rating engines.
+The design phase concluded with a 20-page high level design document which outlined:
+
+- Problems with existing in-force quoting applications
+- Business solutions to those problems
+- System changes
+  - Hierarchy of system controllers and views
+  - Navigation
+  - Error handling
+- Design of each step in quoting process, including flow diagrams
+- Overview of business features in each step in quoting process
+
+My contributions during the development phase consisted of writing or co-writing the following with a team of two other developers:
+
+- System-level models and controllers
+- Preprocessor that gathers:
+  - Policy-level & tier information
+  - Employee & dependent information
+  - Benefits & plans
+  - Billing & premium data
+- Module-specific views, controllers, and service controllers
 
 ###Challenges Overcame
-This period marked a lot of growth for me as a junior web developer coming from a startup company, with my first experience in enterprise-level web applications. The biggest challenges I faced were mostly enterprise firsts:
+The biggest challenge I faced was writing my first enterprise-level web application at Healthplan Services, which I designed and built from the ground up with two other developers.
 
-- Absorbing the vast business domain of health and related insurance
-- Learning an in-house MVC framework
-- Implementing advanced DB2 features, such as cursors, to facilitate pagination in result sets
-- Integrating into in-house policy management software
-- Writing design and test documents
-- Collaborating on teams consisting of business analysts, project managers, and quality assurance testers
-- Mapping values to PDFs proposals using complex XMLs
-- Working with AJAX using Prototype
-- Interacting with servers using tools such as vim, grep, and tail, through putty
+The sheer amount of design choices to be made had to be weighed against long-term performance, maintainability, scalability, and return-on-investment.
+
+Scalability was a tough challenge to overcome. This application effectively consolidated all other in-force quoting applications before it, and in their place, provided a single, scalable solution. 
+
+This meant that the application had to allow the following features to be configurable for any number of health insurance carriers:
+
+- Policy setups
+- Coverage setups
+- Policy Rating engines:
+    + Mainframe-based rating engine
+    + DB2-based rating engine
+    + Spreadsheet-based calculator
+- Business rules
 
 ###Accomplishments
-Other than surpassing the huge learning curve of domain knowledge and enterprise exposure as a junior developer, one of my biggest contributions of this time period was successfully supporting one of the biggest clients, as well as raising the bar on design and test document writing and standards.
+The in-force quoting application is still in use today and continues to be a great asset to Healthplan Services. It currently provides policy change quoting for the following health insurance carriers:
 
-This bulk premium rating tool previously mentioned is still in use today and continues to save countless hours for an entire team of rate analysts.
+- Coventry
+- Cigna
+- Florida Blue
+- Blue Shield
+- Aetna
+
+The following statistics show how large the application has grown to today:
+
+- 500,000 quotes run per year 
+- 40,000 policies quoted against per year
+
