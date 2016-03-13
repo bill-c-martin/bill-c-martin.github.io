@@ -42,6 +42,7 @@ portfolio:
     application: Application
     languages: Languages
     concepts: Concepts
+    frameworks: Frameworks
     tools: Tools
     stack: Stack
     modal-close: Close
