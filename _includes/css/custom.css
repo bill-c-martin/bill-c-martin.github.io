@@ -8,6 +8,14 @@ code {
   color: #393318;
 }
 
+.btn-default {
+  background: #{{ site.color.secondary-dark }};
+  padding: 15px 45px;
+}
+.btn-default:hover {
+  background: #{{ site.color.secondary }};
+}
+
 /* Home */
 
 header hr.star-light:after,
@@ -47,7 +55,7 @@ div.portfolio-modal div.tags ul li {
 div.portfolio-modal div.tags span {
   font-size: 12px;
   color: #fff;
-  background: #{{ site.color.secondary-dark }};
+  background: #{{ site.color.secondary-light }};
   text-decoration: none;
   margin: 0px 4px;
   padding: 4px 8px;
