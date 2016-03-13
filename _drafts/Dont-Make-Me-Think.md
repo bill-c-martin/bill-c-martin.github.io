@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Don't Make Me Think
+title: Usability in Three Minutes
 category: blog
 ---
 
-"Don't Make Me Think" is a classic book on web usability. This is what I learned from the book, reduced down to a two minute read. 
+"Don't Make Me Think" is a classic book on web usability. This is what I learned from the book, reduced down to a three minute read. 
 
-> Usability is how well a person of average ability and experience can figure out how to use a website to accomplish something without it being more trouble than it's worth.
+>Usability is how well a person of average ability and experience can figure out how to use a website to accomplish something without it being more trouble than it's worth.
 
 ### Don't Make Me Think
 
-When a user looks at a web page, they should be able to get what it is, and how to use it, without expending any effort thinking about it. 
+When a user looks at a web page, they should be able to get what it is, and how to use it, without expending any effort into thinking about it. 
 
 ### Design for Scanning, not Reading 
 
-People don't read web pages, they scan them. Wording should be concise, and wisely chosen. 
+People don't read web pages, they scan them. 
 
 - Separate content into grid chunks
 - Make clickable things ***look*** clickable
@@ -22,27 +22,31 @@ People don't read web pages, they scan them. Wording should be concise, and wise
 
 ### Users Like Mindless Choices
 
-> "It doesn't matter how many times I have to click, as long as each click is a mindless, unambiguous choice."
+>"It doesn't matter how many times I have to click, as long as each click is a mindless, unambiguous choice."
 
-### (Omit Needless Words)
+### Omit Needless Words
 
-"Get rid of half the words on each page, then get rid of half of what's left." (3rd law)
+>"Get rid of half the words on each page, then get rid of half of what's left."
 
-Remove needless words.
+Wording should be concise, and wisely chosen. 
 
 - reduces noise level 
-- makes useful content more prominent
+- makes useful content more prominent & concise
 - allows pages to be scanned better
 
-Remove happy talk, aka small talk, introductory text, welcome text, etc. Instructions must die.
+Kill happy talk, introductory text, welcome text, and instructions.
 
 ### Design Navigation Properly
 
-Good navigation tells the user what is on the site, and how to use it. Always include a home link. Always include a search box to allow the user to bypass the navigation. Include breadcrumbs so the user knows where in the hierarchy they are, and make it obvious what page they are on in the navigation. Have prominent page names.
+Good navigation tells the user what's on the site, and how to use it. 
+
+- Always include a home link.
+- Include breadcrumbs
+- Highlight the navigation for the current page
 
 ### The Home Page Should Spell out the Big Picture
 
-The home page needs to answer these four questions as quickly and clearly as possible:
+The home page should clearly and quickly answer:
 
 - What is this?
 - What do they have here?
@@ -51,54 +55,44 @@ The home page needs to answer these four questions as quickly and clearly as pos
 
 ### Arguments About Usability Are a Waste of Time
 
-CEOs, programmers, designers, and business people are all are biased to how they would like a page to look, based on their role in the company. Their opinions quickly turn into "religious debates". Debates on how the average user would use the site is pointless because the average user is not like us.
+CEOs, programmers, designers, and business people are all are biased as to how they think a page should look. Debates on how the average user would use the site are pointless because the average user is not like us.
 
 The only solution is usability testing.
 
 ### Keep Usability Testing Simple
 
-A usability test is watching one person try to use something or doing typical tasks so you can detect and fix the things that confuse and frustrate them.
-
-Sitting with a group at a table discussing the site (focus group testing) is not usability testing.
-
-Testing one user is 100 percent better than testing none.
-
-DIY testing can be done one morning per month, with three users.
+>A usability test is watching one person try to use something or doing typical tasks so you can detect and fix the things that confuse and frustrate them.
 
 A test session consists of:
 
-- Welcome (4 min)
-- Questions about user to put them at ease (2 min)
-- Home page tour with user saying what they think it is (3 min)
-- Tasks (35 min)
-- Probing Questions (5 min)
-- Wrapping Up (5 min)
+- **Welcome** (4 min)
+- **Questions** about user to put them at ease (2 min)
+- **Home page tour** with user saying what they think the site does (3 min)
+- **Various tasks** with user verbally thinking out loud (35 min)
+- **Probing questions** to user as to why they did what they did (5 min)
+- **Wrapping Up** (5 min)
 
-Most common problems
+Most common problems are:
+
 - Users are unclear on the concept of the page or site
 - The words they're looking for aren't there
 - There's too much going on
 
-Focus ruthless on fixing the most serious problems first.
+>Focus ruthlessly on fixing the most serious problems first.
 
-### MOBILE??
+### Mobile Design
 
 Responsive design is hard to do well. 
 
 - Allow zooming
-- Keep every feature available that the full site has
+- Keep every feature available that full site has
 - Or if not, make it easy to switch to the full site 
 
-### Usability as a Common Courtesy?
+### User's Goodwill Reservoir
 
 The user's reservoir of goodwill lasts only so long before they leave. 
 
-Don't do things to piss them off, and if you do piss them off, do these things:
-
-- Make the main things that people want to do on your site obvious and easy
-- Be up front about fees, outages etc.
-- Make it easy to recover from errors
-- Save the user steps whenever you can
+Make the main things that people want to do on your site obvious and easy, lest you piss them off and deplete their reservoir.
 
 ### Accessibility
 
