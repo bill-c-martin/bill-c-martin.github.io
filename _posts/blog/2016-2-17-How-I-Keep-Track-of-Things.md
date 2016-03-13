@@ -53,11 +53,11 @@ When marking a task as completed, it auto-archives it to  a done.txt file.
 
 Todo.txt uses letters to set priorities. I don't use all 26 letters in the alphabet, just the first five with the following meanings:
 
-* (A) - tasks I want to get to today
-* (B) - tasks I will do tomorrow
-* (C) - tasks I want to get to this week
-* (D) - tasks in the near future for next week
-* (E) - all other tasks
+* **A** - tasks I want to get to today
+* **B** - tasks I will do tomorrow
+* **C** - tasks I want to get to this week
+* **D** - tasks in the near future for next week
+* **E** - all other tasks
 
 ### When I Don't Use Text Files
 

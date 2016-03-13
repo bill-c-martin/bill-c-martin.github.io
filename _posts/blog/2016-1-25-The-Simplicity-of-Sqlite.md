@@ -16,7 +16,7 @@ Several months later, I had the distinct feeling that a GUI was too much for som
 
 It was then that I discovered something was already available from the command line for me from the start. That something was ```sqlite3``` itself. After using it for an hour the other night, I am happy to say that it is part of my Rails workflow now.
 
-###Rails Example
+### Rails Example
 
 From inside a Rails project, open the sqlite database inside the db/ folder:
 
