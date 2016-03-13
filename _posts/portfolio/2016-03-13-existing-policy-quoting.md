@@ -11,7 +11,6 @@ languages:
 - PHP
 - SQL
 - HTML
-- jQuery
 - CSS
 - JavaScript
 - XML
@@ -20,13 +19,17 @@ concepts:
 - AJAX
 - OOP
 - Web Services
+- Design Patterns
 tools:
-- phpStorm
+- Dimensions (VCS)
+frameworks:
+- W1
+- jQuery
 stack:
 - Linux
 - Apache
-- PHP
 - MySQL
+- PHP
 - DB2
 ---
 
