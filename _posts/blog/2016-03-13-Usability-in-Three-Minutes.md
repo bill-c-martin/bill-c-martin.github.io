@@ -57,6 +57,8 @@ The home page should clearly and quickly answer:
 
 CEOs, programmers, designers, and business people are all are biased as to how they think a page should look. Debates on how the average user would use the site are pointless because the average user is not like us.
 
+Thus, focus groups are ill-suited for optimizing the user's experience.
+
 The only solution is usability testing.
 
 ### Keep Usability Testing Simple
