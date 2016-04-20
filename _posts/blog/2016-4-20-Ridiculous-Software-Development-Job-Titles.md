@@ -10,9 +10,9 @@ One thing that has irked me for years now about the profession of software devel
 
 Job Titles are what a company gives to people to make them happy and feel important.
 
-Without further ado..
+Without further ado.. the titles:
 
-== Software Engineer ==
+### Software Engineer
 
 I still have mixed feelings on this one. However, I have mostly concluded that it's a ridiculous title, and possibly insulting to real engineers.
 
@@ -34,7 +34,7 @@ Compared to other forms of engineering which are well defined, tested, and regul
 
 At the end of the day, software development has much more in common with craftsmanship, than it does with engineering. So do away with this ridiculous title.
 
-== Architect == 
+### Architect
 
 I won't even go into this one in great detail, as it suffers from exactly the same issues as "Software Engineer".
 
@@ -48,7 +48,7 @@ A team with a quality mix of senior developers already have the business domain 
 
 They've always just left a bad taste in my mouth. Like consultants.
 
-== Senior Developer ==
+### Senior Developer
 
 I know what you're thinking. How could I possibly have beef with this title?
 
@@ -70,7 +70,7 @@ What's worse is when a brilliant 22-year-old gets hired as just a mere "web deve
 
 For all of these reasons, to me, a senior developer is somebody who can be left unattended, who leads others, and are looked up to by others for advice and guidance.
 
-== Chief Field Engineer ==
+### Chief Field Engineer
 
 I had to save the best for last.
 
