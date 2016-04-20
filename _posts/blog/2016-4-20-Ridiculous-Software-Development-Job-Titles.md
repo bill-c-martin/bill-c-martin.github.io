@@ -4,49 +4,77 @@ title: Ridiculous Software Development Job Titles
 category: blog
 ---
 
-I never intended to use this medium for complaining, but here goes!
+Job Titles are what companies give to people to make them feel happy and important.
 
-One thing that has irked me for years now about the profession of software development is its ridiculous job titles.
+Sometimes, I even suspect job titles are what managers give to their employees to make the managers feel happy and important. 
 
-Job Titles are what a company gives to people to make them happy and feel important.
+"I manage a team of software engineers and architects" sounds a lot more important than "I manage a team of coders", doesn't it?
 
-Without further ado.. the titles:
+Well, I never intended to use this medium for complaining, but here goes!
+
+### [Insert Non-Engineering Field] Engineer
+
+* Audio Engineer
+* Sales Engineer
+* Project Engineer
+* Studio Engineer
+* Sanitation Engineer
+
+What do all these job titles have in common? They are not actually engineers!
+
+If one has not taken courses on mathematical, physical, and engineering sciences as well as studied principles & methods of analysis and design, they are not an engineer.
+
+If one has not received an engineering degree from an accredited university or institute of some kind, they are not an engineer.
+
+If one does not use a combination of mathematics, science, and ingenuity to solve problems that people have, they are not an engineer.
 
 ### Software Engineer
 
-I still have mixed feelings on this one. However, I have mostly concluded that it's a ridiculous title, and possibly insulting to real engineers.
+I still have mixed feelings on this title, which at least usually has a foundation in engineering education.
+
+However, what most software engineers do day-to-day is not engineering.
 
 A real engineer:
 
 * is licensed or certified
 * has public accountability
-* uses mathematics & science, along with their ingenuity, to solve problems
+* uses mathematics & science, along with ingenuity, to solve problems
 
 Software developers largely just use ingenuity and stackoverflow to solve their problems. There really is very little mathematics or science to it.
 
-Real engineers use standard tools, metrics, and methods to produce systems with predictable outcomes.
+Real engineers use standard tools, metrics, and methods to produce systems with predictable outcomes that follow safety regulations.
 
-We use buggy tools, arbitrary metrics, and manual testing. And what it produces is systems with unpredictable outcomes.
+Software developers use ever-changing tools, inconsistent metrics, and automated/manual testing to produce systems with ***unpredictable*** outcomes that do ***not*** follow any kind of safety regulations.
 
-Real engineers plan robust, complete designs from the beginning and execute them to completion, whereas software/web development is almost never robust, complete, or even stable.
+Real engineers plan robust, complete designs from the beginning and execute them to completion.
 
-Compared to other forms of engineering which are well defined, tested, and regulated, software engineering lacks all of this stuff.
+Software developers produce fragile, but flexible designs throughout the development process. And the product is never complete.
 
-At the end of the day, software development has much more in common with craftsmanship, than it does with engineering. So do away with this ridiculous title.
+Compared to other forms of engineering which are well defined, tested, and regulated, software development is anything but those.
+
+At the end of the day, software development has much more in common with craftsmanship, than it does with engineering. 
+
+We build things with existing tool sets, not engineer them.
 
 ### Architect
 
-I won't even go into this one in great detail, as it suffers from exactly the same issues as "Software Engineer".
+This one suffers from exactly the same issues as "Software Engineer".
 
-So let's talk about what they even do.
+A real architect:
+
+* makes decisions that affect public safety
+* are licensed to practice architecture
+* meets education, experience, and examination requirements
+
+A software architect does none of these.
 
 In my experience, a software architect is basically a senior software developer who no longer writes code, leaving them with just the strategic, high-level thinking & design focus.
 
-Except, this position is only needed if the development team consists of juniors or perhaps low quality developers in general. How else could one justify such a position?
+However, a team with a quality mix of senior developers already have the business domain knowledge, and aptitude for strategic thinking and higher level architectural decision making.
 
-A team with a quality mix of senior developers already have the business domain knowledge, and aptitude for strategic thinking and higher level architectural decision making.
+Still, there can be value in having somebody in this type of role, particularly in large enterprise teams, so that there is somebody looking after performance, security, and scalability across the entire team.
 
-They've always just left a bad taste in my mouth. Like consultants.
+They are just not architects, that's all I'm saying.
 
 ### Senior Developer
 
@@ -76,6 +104,6 @@ I had to save the best for last.
 
 To take someone who streams live bands with a camera on an in-house-developed website, which itself uses a 3rd party library & vendor, and calling them a "Chief Field Engineer" takes the cake.
 
-If this seems like an odd ball job title from my past, it's because it is. If you think it was mine, it wasn't. I had some other ridiculous title I've long forgotten about.
+If this seems like an odd ball job title from my past, it's because it is. If you think it was mine, it wasn't. I had some other ridiculous title I've long since forgotten about.
 
 Ah.. startups.
