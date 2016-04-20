@@ -16,6 +16,6 @@ As I said though, this post is not about revolutions or resolutions.
 
 It's about me coming out of the woodwork to funnel my thoughts, opinions, solutions, and general musings of all things programming into a steady stream of posts.
 
-It's about me collecting my past soceries and putting them on display in a portfolio. It's about publishing conversations I am having with myself.. right now. Because.. I'm essentially talking to myself right now. Interesting. But, surely you must be reading this.
+It's about me collecting my past sorceries and putting them on display in a portfolio. It's about publishing conversations I am having with myself.. right now. Because.. I'm essentially talking to myself right now. Interesting. But, surely you must be reading this.
 
 Let the introspection begin!
