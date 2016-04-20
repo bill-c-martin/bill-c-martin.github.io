@@ -56,25 +56,27 @@ At the end of the day, software development has much more in common with craftsm
 
 We build things with existing tool sets, not engineer them.
 
-### Architect
+### Software Architect
 
 This one suffers from exactly the same issues as "Software Engineer".
 
 A real architect:
 
-* makes decisions that affect public safety
-* are licensed to practice architecture
-* meets education, experience, and examination requirements
+* Makes decisions that affect public safety
+* Are licensed to practice architecture
+* Meets education, experience, and examination requirements
 
 A software architect does none of these.
 
 In my experience, a software architect is basically a senior software developer who no longer writes code, leaving them with just the strategic, high-level thinking & design focus.
 
+They act more as a technical manager. 
+
 However, a team with a quality mix of senior developers already have the business domain knowledge, and aptitude for strategic thinking and higher level architectural decision making.
 
-Still, there can be value in having somebody in this type of role, particularly in large enterprise teams, so that there is somebody looking after performance, security, and scalability across the entire team.
+Still, there can be value in having somebody dedicated to this type of role, particularly in large enterprise teams, so that there is somebody held accountable for performance, security, and scalability across the entire team and applications.
 
-They are just not architects, that's all I'm saying.
+They are just not architects, that's all I'm saying. They are more like city planners. Why not just call them Technical Managers, or Technical Leads.
 
 ### Senior Developer
 
