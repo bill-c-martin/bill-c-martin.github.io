@@ -36,9 +36,9 @@ However, what most software engineers do day-to-day is not engineering.
 
 A real engineer:
 
-* is licensed or certified
-* has public accountability
-* uses mathematics & science, along with ingenuity, to solve problems
+* Is licensed or certified
+* Has public accountability
+* Uses mathematics & science, along with ingenuity, to solve problems
 
 Software developers largely just use ingenuity and stackoverflow to solve their problems. There really is very little mathematics or science to it.
 
@@ -82,15 +82,15 @@ They are just not architects, that's all I'm saying. They are more like city pla
 
 I know what you're thinking. How could I possibly have beef with this title?
 
-Think about it. This title is usually either company-specific or tenure-based.
+It's not so much the title itself, but what the title generally means, which is usually company-specific or tenure-based.
 
-Regarding tenure, they say one must spend [10,000 hours](http://www.wisdomgroup.com/blog/10000-hours-of-practice/) coding in order to perfect their craft. 
+In the case of being tenure-based, they say one must spend [10,000 hours](http://www.wisdomgroup.com/blog/10000-hours-of-practice/) coding in order to perfect their craft. 
 
 Some "junior" developers hit this mark in only a few years. Other "senior" developers who have been at it for over a decade will never even hit this mark.
 
 Such is the futility in determining qualification based on tenure.
 
-Regarding company-specific definitions, these are probably the worst. 
+Company-specific definitions for "Senior Developer" are even worse. 
 
 Imagine [lazy, dumb, but successful](http://blog.codinghorror.com/how-to-be-lazy-dumb-and-successful/) developers who have sat at the same company for years, doing the same unchallenging routine work.
 
@@ -98,7 +98,11 @@ That sort of setup allows them to ascend to "Senior Developer" because they have
 
 What's worse is when a brilliant 22-year-old gets hired as just a mere "web developer" and blows all the senior developers out of the water.
 
-For all of these reasons, to me, a senior developer is somebody who can be left unattended, who leads others, and are looked up to by others for advice and guidance.
+For all of these reasons, a senior developer should be considered as somebody who:
+
+* Can be left unattended, handling their own
+* Leads or inspires others
+* Are looked up to by others for advice and guidance
 
 ### Chief Field Engineer
 
