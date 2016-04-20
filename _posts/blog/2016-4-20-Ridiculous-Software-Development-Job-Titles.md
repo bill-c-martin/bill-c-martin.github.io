@@ -76,7 +76,9 @@ However, a team with a quality mix of senior developers already have the busines
 
 Still, there can be value in having somebody dedicated to this type of role, particularly in large enterprise teams, so that there is somebody held accountable for performance, security, and scalability across the entire team and applications.
 
-They are just not architects, that's all I'm saying. They are more like city planners. Why not just call them Technical Managers, or Technical Leads.
+They are just not architects, that's all I'm saying. They are more like city planners. 
+
+Why not just call them Technical Managers, or Technical Leads?
 
 ### Senior Developer
 
