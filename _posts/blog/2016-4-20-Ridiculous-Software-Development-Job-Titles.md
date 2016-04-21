@@ -32,7 +32,7 @@ If one does not use a combination of mathematics, science, and ingenuity to solv
 
 I still have mixed feelings on this title, which at least usually has a foundation in engineering education.
 
-However, what most software engineers do day-to-day is not engineering.
+However, what software developers do day-to-day is [not engineering](http://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/).
 
 A real engineer:
 
