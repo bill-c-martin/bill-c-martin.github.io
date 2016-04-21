@@ -58,7 +58,7 @@ We build things with existing tool sets, not engineer them.
 
 ### Software Architect
 
-This one suffers from exactly the same issues as "Software Engineer".
+This one suffers from the same sort of issues as "Software Engineer".
 
 A real architect:
 
