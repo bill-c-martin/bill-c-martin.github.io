@@ -154,6 +154,8 @@ section#blog div.blog-item:hover a{
   text-decoration: none;
 }
 
+/* Blog Posts */
+
 div.blog-modal article {
   text-align: left;
 }
@@ -164,6 +166,14 @@ div.blog-modal article p {
 
 div.blog-modal article li {
   font-size: 20px;
+}
+
+div.blog-modal article p {
+  color: #101010
+}
+
+div.blog-modal article a {
+  color: #{{ site.color.link }}
 }
 
 /* Contact */
