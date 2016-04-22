@@ -82,40 +82,63 @@ section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
 
 /* Portfolio Posts */
 
-div.portfolio-modal hr.star-primary:after {
+.portfolio-modal hr.star-primary:after {
   content: "\f0b1";
-}
-
-div.portfolio-modal div.tags {
-  margin: 20px 0;
-}
-
-div.portfolio-modal div.tags ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-div.portfolio-modal div.tags ul li {
-  font-size: 14px;
-  margin: 7px 0;
-}
-
-div.portfolio-modal div.tags span {
-  font-size: 12px;
-  color: #fff;
-  background: #{{ site.color.secondary-light }};
-  text-decoration: none;
-  margin: 0px 4px;
-  padding: 4px 8px;
-  border-radius: 6px;
 }
 
 .portfolio-modal .close-modal .lr, .portfolio-modal .close-modal .lr .rl {
   background-color: #{{ site.color.primary }};
 }
 
-div.portfolio-modal p, div.portfolio-modal li, div.portfolio-modal h3, div.portfolio-modal h4, div.portfolio-modal h5 {
+.portfolio-modal img {
+  border: 1px solid #{{ site.color.secondary-light }};
+}
+
+.portfolio-modal p, .portfolio-modal li, .portfolio-modal h3, .portfolio-modal h4, .portfolio-modal h5 {
   color: #{{ site.color.blog-text }}
+}
+
+.portfolio-modal h3, .portfolio-modal h4, .portfolio-modal h5 {
+  text-align: center;
+  margin: 35px 0 22px 0;
+}
+
+.portfolio-modal p, .portfolio-modal ul{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.portfolio-modal .skills {
+  margin-bottom: 50px;
+}
+
+.portfolio-modal .skills h5 {
+  margin: 0 0 13px 0;
+  text-align: left;
+}
+
+.portfolio-modal .skills ul {
+  padding: 0px;
+  margin: 0 0 0 18px;
+}
+
+.portfolio-modal .skills ul li {
+  text-align: left;
+  padding: 3px 0;
+}
+
+.portfolio-modal .skills .skill {
+  width: 20%;
+}
+
+.portfolio-modal .skills hr.star-light {
+    border-color: #{{ site.color.primary }};
+}
+
+.portfolio-modal .skills hr.star-light:after {
+    content: "\f085";
+    color: #{{ site.color.primary }};
+    background-color: white
 }
 
 /* Blog Grid */

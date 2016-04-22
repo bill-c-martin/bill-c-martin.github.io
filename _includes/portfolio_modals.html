@@ -22,24 +22,43 @@
                             <div class="entry text-left">
                                 {{ post.content }}
                             </div>
-                            <div class="row tags text-left">
-                                <ul>
-                                    <li>
-                                        <strong>{{ site.portfolio.labels.languages }}</strong>: <span>{{ post.languages | join: '</span><span>'}}</span>
-                                    </li>
-                                    <li>
-                                        <strong>{{ site.portfolio.labels.concepts }}</strong>: <span>{{ post.concepts | join: '</span><span>'}}</span>
-                                    </li>
-                                    <li>
-                                        <strong>{{ site.portfolio.labels.frameworks }}</strong>: <span>{{ post.frameworks | join: '</span><span>'}}</span>
-                                    </li>
-                                    <li>
-                                        <strong>{{ site.portfolio.labels.tools }}</strong>: <span>{{ post.tools | join: '</span><span>'}}</span>
-                                    </li>
-                                    <li>
-                                        <strong>{{ site.portfolio.labels.stack }}</strong>: <span>{{ post.stack | join: '</span><span>'}}</span>
-                                    </li>
-                                </ul>
+                            <div class="skills container-fluid">
+                                <div class="col-lg-12 text-center">
+                                    <h3>Skills Used</h3>
+                                    <hr class="star-light">
+                                </div>
+                                <div class="row-fluid">
+                                    <div class="skill pull-left">
+                                        <h5>{{ site.portfolio.labels.languages }}</h5>
+                                        <ul>
+                                            <li>{{ post.languages | join: '</li><li>'}}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill pull-left">
+                                        <h5>{{ site.portfolio.labels.concepts }}</h5>
+                                        <ul>
+                                            <li>{{ post.concepts | join: '</li><li>'}}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill pull-left">
+                                        <h5>{{ site.portfolio.labels.frameworks }}</h5>
+                                        <ul>
+                                            <li>{{ post.frameworks | join: '</li><li>'}}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill pull-left">
+                                        <h5>{{ site.portfolio.labels.tools }}</h5>
+                                        <ul>
+                                            <li>{{ post.tools | join: '</li><li>'}}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill pull-left">
+                                        <h5>{{ site.portfolio.labels.stack }}</h5>
+                                        <ul>
+                                            <li>{{ post.stack | join: '</li><li>'}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ site.portfolio.labels.modal-close }}</button>
                         </div>
