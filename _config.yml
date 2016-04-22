@@ -75,5 +75,12 @@ social:
 credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Fork my portfolio on github</a>'
 
 # Build settings
-highlighter: rouge
 permalink: pretty
+
+# Markdown/syntax highlighter settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
