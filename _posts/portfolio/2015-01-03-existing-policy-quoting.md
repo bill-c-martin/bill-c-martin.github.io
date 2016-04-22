@@ -10,31 +10,24 @@ project-date: 2013 - 2016
 languages:
 - PHP
 - SQL
-- HTML
-- CSS
+- HTML/CSS
 - JavaScript
 - XML
 concepts:
 - MVC
 - AJAX
-- OOP
 - Caching
 - Persistence
 - Web Services
 - Design Patterns
 tools:
-- Dimensions (VCS)
+- Dimensions
 - PhpStorm
-- notepad++
-- putty
-- vim
-- WinSCP
 - SQLYog
 - Postman
 frameworks:
-- W1 (in house)
+- W1
 - jQuery
-- UI Controls (in house)
 stack:
 - Linux
 - Apache

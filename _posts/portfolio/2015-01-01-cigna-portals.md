@@ -10,8 +10,7 @@ project-date: 2010 - 2012
 languages:
 - PHP
 - SQL
-- HTML
-- CSS
+- HTML/CSS
 - JavaScript
 - XML
 concepts:
@@ -20,14 +19,13 @@ concepts:
 - OOP
 - Web Services
 tools:
-- putty
-- vim
+- PuTTY
 - WinSCP
 - SQLYog
 - notepad++
 - PhpED
 frameworks:
-- W1 (in house)
+- W1
 - Prototype
 - PdfLib
 stack:
