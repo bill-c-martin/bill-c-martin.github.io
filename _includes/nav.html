@@ -1,3 +1,4 @@
+
    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -19,16 +20,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#blog">Thoughts</a>
+                        <a href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#blog">Thoughts</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#contact">Contact</a>
                     </li>
                 </ul>
             </div>
