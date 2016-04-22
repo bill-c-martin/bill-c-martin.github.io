@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: Documenting Database Design
 category: blog
 ---

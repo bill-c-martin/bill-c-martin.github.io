@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: Ridiculous Software Development Job Titles
 category: blog
 ---

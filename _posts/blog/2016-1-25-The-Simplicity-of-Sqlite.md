@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: The Simplicity of SQLite
 category: blog
 ---
