@@ -10,8 +10,7 @@ project-date: 2012
 languages:
 - PHP
 - SQL
-- HTML
-- CSS
+- HTML/CSS
 - JavaScript
 - XML
 concepts:
@@ -23,7 +22,7 @@ tools:
 - Google Analytics
 - notepad++
 frameworks:
-- W1 (in house)
+- W1
 - Prototype
 - PdfLib
 stack:
