@@ -23,7 +23,7 @@ I had to do six simple steps:
 
 Enable 32-bit package repositories (multilib) for pacman so it finds wine:
 
-```sh
+```shell
 $ sudo vi /etc/pacman.conf
 ```
 
@@ -51,7 +51,7 @@ Include = /etc/pacman.d/mirrorlist
 
 Sync pacman with the newly added multilib repositories:
 
-```sh
+```shell
 $ sudo pacman -Sy
 ```
 
@@ -60,7 +60,7 @@ $ sudo pacman -Sy
 ### Install Wine & Friends
 
 
-```sh
+```shell
 $ sudo pacman -S wine
 $ sudo pacman -S lib32-lcms lib32-lcms2
 $ sudo pacman -S samba wine-mono wine_gecko lib32-gnutls lib32-mpg123 lib32-ncurses
@@ -76,7 +76,7 @@ Installation of 32-bit Open GL is not only optional when setting up your video c
 
 I have an Nvidia card, so I had to install the 32-bit Open GL library (which is also from the multilib repositories) in addition the nvidia drivers already installed.
 
-```sh
+``` shell
 $ sudo pacman -S lib32-nvidia-libgl
 ```
 <a name="install-corefonts"></a>
@@ -85,8 +85,8 @@ $ sudo pacman -S lib32-nvidia-libgl
 
 This step is required because the tooltips in YNAB will show strange characters. In order to install the corefonts, you have to install winetricks. Winetricks has to be installed from the [AUR](https://aur.archlinux.org/packages/winetricks-git/). I use a preexisting ~/builds folder for building AUR packages in:
 
-```sh
-$ mkdir ~/builds
+``` sh
+$mkdir ~/builds
 $ cd ~/builds/
 $ curl -LO https://aur.archlinux.org/cgit/aur.git/snapshot/winetricks-git.tar.gz
 $ tar -xvf winetricks-git.tar.gz
@@ -96,7 +96,7 @@ $ makepkg -sri
 
 And then install the Corefonts using Winetricks:
 
-```sh
+```shell
 $ WINEPREFIX=~/.wine-YNAB WINEARCH=win32 winetricks corefonts
 ```
 <a name="install-ynab"></a>
@@ -105,7 +105,7 @@ $ WINEPREFIX=~/.wine-YNAB WINEARCH=win32 winetricks corefonts
 
 Download the YNAB trial from their site (link pending). Then go to the folder you downloaded it in and:
 
-```sh
+```shell
 $ WINEARCH=win32 WINEPREFIX=~/.wine-YNAB wine YNAB\ 4_4.3.352_Setup.exe
 ```
 <a name="inspiration"></a>

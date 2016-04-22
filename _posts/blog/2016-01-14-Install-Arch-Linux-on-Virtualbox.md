@@ -23,38 +23,38 @@ Within five seconds, a root shell is born. Beware: When you gaze long into the r
 
 #### Initial Preparation (5 min)
 
-1. Verify Internet Connection: ```# ping google.com ```
-2. Update System Clock: ```# timedatectl set-ntp true```
-3. Identify the "hard drive": ```# lsblk```
-4. Open "hard drive" in Parted: ```# parted /dev/sda```
-5. Assign a Label: ```# (parted) mklabel msdos```
-6. Create Partition: ```# (parted) mkpart primary ext4 1M 100%```
-7. Set Boot Flag: ```# (parted) set 1 boot on```
-8. Verify Partition: ```# (parted) print```
-9. Exit Parted: ```# ctrl+C```
-10. Format Partition: ```# mkfs.ext4 /dev/sda1```
-11. Mount Partition: ```# mount /dev/sda1 /mnt```
+1. Verify Internet Connection: ``` $ ping google.com ```
+2. Update System Clock: ``` $ timedatectl set-ntp true```
+3. Identify the "hard drive": ``` $ lsblk```
+4. Open "hard drive" in Parted: ``` $ parted /dev/sda```
+5. Assign a Label: ``` $ (parted) mklabel msdos```
+6. Create Partition: ``` $ (parted) mkpart primary ext4 1M 100%```
+7. Set Boot Flag: ``` $ (parted) set 1 boot on```
+8. Verify Partition: ``` $ (parted) print```
+9. Exit Parted: ``` $ ctrl+C```
+10. Format Partition: ``` $ mkfs.ext4 /dev/sda1```
+11. Mount Partition: ``` $ mount /dev/sda1 /mnt```
 
 #### Package Installation (5 min of waiting)
 
-1. Install Base Packages: ```# pacstrap -i /mnt base base-devel```
+1. Install Base Packages: ``` $ pacstrap -i /mnt base base-devel```
   1. Hit enter, enter, Y
 
 #### Configuration (5 min)
 
-1. Generate fstab: ```# genfstab -U /mnt > /mnt/etc/fstab```
-2. Change to Root in New System: ```# arch-chroot /mnt /bin/bash```
-3. Set Locale: ```# echo "LANG=en_US.UTF-8" > /etc/local.conf```
-4. Download Boot Loader: ```# pacman -S grub os-prober```
-5. Install Boot Loader: ```# grub-install --target=i386-pc --recheck /dev/sda```
-6. Generate Boot Config: ```# grub-mkconfig -o /boot/grub/grub.cfg```
-7. Set Some Hostname: ```# echo "myhostname" > /etc/hostname```
-8. Get NIC Name: ```# ip link```
-9. Autostart Internet Connectivity: ```# systemctl enable dhcpcd@xxx.service```
- 1. where *xxx* is the NIC name from ```# ip link```
-10. Set Root Password: ```# passwd```
-11. Exit New System: ```# exit```
-12. Reboot: ```# reboot```
+1. Generate fstab: ``` $ genfstab -U /mnt > /mnt/etc/fstab```
+2. Change to Root in New System: ``` $ arch-chroot /mnt /bin/bash```
+3. Set Locale: ``` $ echo "LANG=en_US.UTF-8" > /etc/local.conf```
+4. Download Boot Loader: ``` $ pacman -S grub os-prober```
+5. Install Boot Loader: ``` $ grub-install --target=i386-pc --recheck /dev/sda```
+6. Generate Boot Config: ``` $ grub-mkconfig -o /boot/grub/grub.cfg```
+7. Set Some Hostname: ``` $ echo "myhostname" > /etc/hostname```
+8. Get NIC Name: ``` $ ip link```
+9. Autostart Internet Connectivity: ``` $ systemctl enable dhcpcd@xxx.service```
+ 1. where *xxx* is the NIC name from ``` $ ip link```
+10. Set Root Password: ``` $ passwd```
+11. Exit New System: ``` $ exit```
+12. Reboot: ``` $ reboot```
  1. Select option 3 "Boot existing OS" to boot into Arch
  2. Login as root
 
