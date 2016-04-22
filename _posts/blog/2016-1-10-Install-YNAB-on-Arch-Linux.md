@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: Install YNAB on Arch Linux
 category: blog
 ---

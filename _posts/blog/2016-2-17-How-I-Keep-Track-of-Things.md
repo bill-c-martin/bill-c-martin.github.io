@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: How I Keep Track of Things
 category: blog
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: Install Arch Linux on VirtualBox
 category: blog
 ---

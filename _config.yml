@@ -76,4 +76,4 @@ credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">For
 
 # Build settings
 highlighter: rouge
-permalink: /:categories/:title
+permalink: pretty
