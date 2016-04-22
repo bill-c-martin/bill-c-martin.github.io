@@ -16,12 +16,17 @@
   </div>
   <div class="page_navigation">
     <div class="container">
-      {% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-      {% endif %}
-      {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-      {% endif %}
-    </div>
+        <a class="prev" href="{{page.previous.url}}">
+          {% if page.previous.url and page.previous.categories contains "blog" %}
+            &laquo; {{page.previous.title}}
+          {% endif %}
+        </a>
+      
+        <a class="next" href="{{page.next.url}}">
+          {% if page.next.url and page.next.categories contains "blog" %}
+            {{page.next.title}} &raquo;
+          {% endif %}
+        </a>
+      </div>
   </div>
 </article>
