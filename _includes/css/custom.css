@@ -190,7 +190,7 @@ article.blog-post p {
   margin: 1em 0;
 }
 
-article.blog-post ul {
+article.blog-post ul, article.blog-post ol {
   margin: 20px 0 20px 10px;
 }
 
