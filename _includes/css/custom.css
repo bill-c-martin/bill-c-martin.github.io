@@ -12,10 +12,6 @@ code {
   color: #393318;
 }
 
-div.blog-modal article blockquote p {
-  margin: 0;
-}
-
 .btn-default {
   background: #{{ site.color.secondary-dark }};
   padding: 15px 45px;
@@ -124,7 +120,7 @@ div.portfolio-modal p, div.portfolio-modal li, div.portfolio-modal h3, div.portf
 
 /* Blog */
 
-section#blog hr.star-primary:after, div.blog-modal hr.star-primary:after {
+section#blog hr.star-primary:after {
   content: "\f0eb";
 }
 
@@ -162,23 +158,55 @@ section#blog div.blog-item:hover a{
 
 /* Blog Posts */
 
-div.blog-modal article {
+article.blog-post header {
+  padding: 140px 0 30px 0
+}
+
+article.blog-post div.content {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+article.blog-post hr.star-primary {
+  border-color: white;
+}
+
+article.blog-post hr.star-primary:after {
+  content: "\f0eb";
+  color: white;
+  background-color: #{{ site.color.primary }};
+}
+
+article.blog-post blockquote p {
+  margin: 0;
+}
+
+article.blog-post {
   text-align: left;
 }
 
-div.blog-modal article p {
+article.blog-post p {
   margin: 1em 0;
 }
 
-div.blog-modal article li {
+article.blog-post li {
   font-size: 20px;
 }
 
-div.blog-modal p, div.blog-modal li, div.blog-modal h3, div.blog-modal h4, div.blog-modal h5 {
+article.blog-post h, article.blog-post time {
+  color: white;
+}
+
+article.blog-post h3, article.blog-post h4, article.blog-post h5 {
+  margin-top: 40px;
+}
+
+article.blog-post p, article.blog-post li, article.blog-post h3, article.blog-post h4, article.blog-post h5 {
   color: #{{ site.color.blog-text }}
 }
 
-div.blog-modal a {
+article.blog-post a {
   color: #{{ site.color.link }}
 }
 
