@@ -62,7 +62,7 @@ section#about ul  {
   margin-bottom: 15px;
 }
 
-/* Portfolio */
+/* Portfolio Grid */
 
 section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
     content: "\f0b1";
@@ -118,7 +118,7 @@ div.portfolio-modal p, div.portfolio-modal li, div.portfolio-modal h3, div.portf
   color: #{{ site.color.blog-text }}
 }
 
-/* Blog */
+/* Blog Grid */
 
 section#blog hr.star-primary:after {
   content: "\f0eb";
@@ -190,8 +190,13 @@ article.blog-post p {
   margin: 1em 0;
 }
 
+article.blog-post ul {
+  margin: 20px 0 20px 10px;
+}
+
 article.blog-post li {
   font-size: 20px;
+  margin: 5px 0;
 }
 
 article.blog-post h, article.blog-post time {
