@@ -39,7 +39,7 @@ Cigna had four web applications with Healthplan Services:
 - **Member Portal** - Members view benefits, make payments, and track claims
 
 ### Contributions
-My work with Cigna's various portals spanned three years, driven largely by new feature requests:
+My work with Cigna's portals spanned three years, driven largely by new feature requests:
 
 - Support for quoting dental products across ten states
 - Add and terminate health products across ten states for quoting & enrollment
