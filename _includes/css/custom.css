@@ -96,6 +96,10 @@ section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
   border: 1px solid #{{ site.color.secondary-light }};
 }
 
+.portfolio-modal li {
+  font-size: 20px;
+}
+
 .portfolio-modal p, .portfolio-modal li, .portfolio-modal h3, .portfolio-modal h4, .portfolio-modal h5 {
   color: #{{ site.color.blog-text }}
 }
