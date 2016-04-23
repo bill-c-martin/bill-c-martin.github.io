@@ -6,7 +6,7 @@ img: beazley.png
 alt: Screenshot of application that allows bulk employee enrollment and managements for groups
 client: Beazley
 application: Beazley Group Portal
-project-date: 2015
+project-date: Nov 2014 - May 2015
 languages:
 - PHP
 - SQL
@@ -35,74 +35,47 @@ stack:
 
 ### Project Description
 
-Policy Change Quoting, known internally as "In-force Quoting", is a web application used internally by sales representatives in Healthplan Services' call center to calculate new premiums for changes against members' existing policies, such as:
+The companies covered through Beazley group insurance had ongoing performance & overhead issues on their Employee Portal when adding and updating coverage for their employees during their open enrollment period every year.
 
-- Add new dependents
-- Move to new addresses
-- Add or change coverages 
+The problem was that their enrollment platform could only process one employee at a time, which itself consisted of a series of slow-running, step-by-step pages.
+
+This introduced a large amount of time and overhead for Beazley's groups.
+
+We were tasked to: 
+
+- Build a new enrollment platform that allowed bulk, asynchronous: 
+  - Changes to existing employee coverages
+  - Enrollments of new employees & coverages
+- Integrate it into the existing Beazley Employer Portal that their groups use
+- Ensure fast performance and real-time enrollment processing
 
 ### Contributions
 
-I worked on a team of three developers that worked directly with the business unit and policy rating teams to gather requirements and brainstorm how to overcome issues in the existing policy quoting applications used by Cigna and Coventry at the time.
+I worked on a team of four developers that worked directly with the business unit as well as the Java/WMB & COBOL mainframe teams who provided the real-time enrollment processing web services.
 
-The design phase concluded with a 20-page high level design document outlining:
+Some of the tasks we split up amongst ourselves were:
 
-- Problems with existing in-force quoting applications
-- Business solutions to those problems
-- System changes
-  - Hierarchy of system controllers and views
-  - Navigation
-  - Error handling
-- Design of each step in quoting process, including flow diagrams
-- Overview of business features in each step in quoting process
+- Design interactive jQuery UI allowing adds/changes to be done on one screen
+- Submit enrollments to a backend Java/WMB XML web service using AJAX
+- Add real-time status tracking of new enrollments and changes
 
-My contributions during the development phase consisted of writing or co-writing:
-
-- System-level models and controllers
-- Preprocessor that gathers:
-  - Policy-level & tier information
-  - Employee & dependent information
-  - Benefits & plans
-  - Billing & premium data
-- Module-specific views, controllers, and service controllers
-- Error Handling
+On top of these design & development tasks, I took on the job of predicting, organizing, and estimating every task we all had to do to ship the product.
 
 ### Challenges Overcame
 
-The biggest challenge I faced was building my first enterprise-level web application at Healthplan Services from the ground up, as well as working with a team of developers simultaneously.
+Time and deadlines were the biggest challenge on this project. We had a lot of tasks to divide amongst four developers who were added to the project last minute. 
 
-One huge challenge was weighing:
+We pulled through and make the deadline though!
 
-- long-term performance
-- maintainability
-- scalability
-- return-on-investment.
+This project was also the biggest undertaking I had to date in terms of cross-team coordination. 
 
-Scalability was the toughest challenge to overcome. This application effectively consolidated all other in-force quoting applications before it, and in their place, provided a single, scalable solution. 
+On top of my team of four PHP web developers, we have the following teams to coordinate with, all building our pieces in parallel:
 
-It had to allow the following features to be configurable for any number of health insurance carriers:
-
-- Policy setups
-- Coverage setups
-- Benefit structures
-- Policy Rating engines:
-    + Mainframe-based rating engine
-    + DB2-based rating engine
-    + Spreadsheet-based calculator engine
-- Business rules
+- **WMB** - Manage queues and inter-application communications/mapping
+- **Business Rules Team** - Validate business rule on XML request from us
+- **Java Team** - Transform validated XML request into 834 flat file for Admin
+- **Admin/COBOL** - Issue policies & changes on the mainframe
 
 ### Accomplishments
 
-This quoting application is still in use today and continues to be a great asset to Healthplan Services. It has grown to provide policy change quoting for the following health insurance carriers:
-
-- Coventry
-- Cigna
-- Florida Blue
-- Blue Shield
-- Aetna
-
-The following statistics show how large the application has grown to today:
-
-- 500,000 quotes run per year 
-- 40,000 policies quoted against per year
-
+The greatest accomplishment of this project was that our system saves the insured companies/groups dozens of hours every enrollment period, reducing their frustration and increasing their satisfaction as Beazley customers.
