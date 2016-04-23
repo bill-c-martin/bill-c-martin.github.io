@@ -18,13 +18,13 @@ concepts:
 - AJAX
 - OOP
 - Web Services
+- Reusability
+- Dimensions (VCS)
 tools:
-- Google Analytics
-- notepad++
-frameworks:
-- W1
+- W1 Framework
 - Prototype
 - PdfLib
+- Google Analytics
 stack:
 - Linux
 - Apache
@@ -36,31 +36,32 @@ stack:
 ### Project Description
 AVMA has three web applications with Healthplan Services:
 
-- **Agent Portal** - Agents run quotes, manage policy sales, and access benefit forms
-- **Quoting Portal** - Individuals get quotes for insurance plans for themselves or family
-- **Member Portal** - Members view benefits & coverage, make payments, and get quotes for policy changes and new coverage
+- **Agent Portal** - AAgents sell policies, run quotes, and manage sales
+- **Quoting Portal** - Individuals get quotes for numerous types of coverage
+- **Member Portal** - Members view coverage, make payments, and get quotes  
 
 ### Contributions
-The majority of my work with AVMA's portals occurred in 2012 when a series of features were requested. However, I continue maintaining their portals to this day. My contributions include:
 
-- Integrating Google Analytics across the portals, including a conversion funnel for the quoting process
-- Streamlining the quoting process to reduce the time it takes to run a quote
-- Adding new products for quoting, which print to a PDF proposal after retrieving premium rates
+My work with AVMA's portals in 2012 were driven largely by new feature requests:
+
+- Integrate Google Analytics' conversion funnels for the quoting process
+- Streamline the quoting process to increase usability
+- Add new products for quoting, PDF proposal rendering, and premium rating
 
 ### Challenges Overcame
-This period marked a lot of growth for me as a junior web developer coming from a startup company, with my first experience in enterprise-level web applications. The biggest challenges I faced were mostly enterprise firsts:
 
-- Working with billing systems for the first time, and all the concepts and terminology that comes with it
-- Implementing Google Analystics and funneling for the first time
-- Working with new rating, plan, and benefit systems previously unexposed to
+The biggest challenges I faced were with Google Analytics and AVMA's complex product offering:
+
+- Implement Google Analystics and funneling for the first time
+- Working with complex rating, plan, and benefit structures previously unexposed to
 
 ### Accomplishments
 
-The AVMA portals were the first modular applications I ever worked with. It uses component modules that are used on other sites and platforms, such as:
+The AVMA portals were the first modular applications I've ever worked with. It uses components and modules that are shared across other web applications and rating platforms, such as:
 
 - Quoting process
 - Rating process
 - Billing
 - Case Listing
 
-This opened my eyes for application development in terms of scalability and reusability.
+This opened my eyes for application development in terms of scalability and reusability, not to mention the far-reaching risks of making changes.

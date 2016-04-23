@@ -19,15 +19,10 @@ concepts:
 - OOP
 - Web Services
 tools:
-- PuTTY
-- WinSCP
-- SQLYog
-- notepad++
-- PhpED
-frameworks:
-- W1
+- W1 Framework
 - Prototype
 - PdfLib
+- Dimensions (VCS)
 stack:
 - Linux
 - Apache
@@ -39,36 +34,43 @@ stack:
 ### Project Description
 Cigna had four web applications with Healthplan Services:
 
-- **Broker Portal** - Appointed brokers sell policies, run quotes, and view commissions data
-- **Quoting Portal** - Individuals get quotes for health & dental plans for themselves or family
-- **Enrollment Portal** - Individual and Appointed brokers enroll health & dental policies
-- **Member Portal** - Members view benefits, make payments, and track reported claims
+- **Broker Portal** - Agents sell policies, run quotes, and view commissions data
+- **Quoting Portal** - Individuals get quotes for health & dental coverage
+- **Enrollment Portal** - Individuals enroll in health & dental policies
+- **Member Portal** - Members view benefits, make payments, and track claims
 
 ### Contributions
-My work with Cigna's various portals spanned three years, driven largely by new feature requests, including:
+My work with Cigna's portals spanned three years, driven largely by new feature requests:
 
-- Supporting for quoting dental products across ten states
-- Adding and terminating health products across ten states for both quoting and enrollment
-- Overhauling the billing details calculations and layout for members
-- Adding dynamic sorting and pagination for brokers' case listing & management
-- Modifying PDF proposal mapping.
+- Support for quoting dental products across ten states
+- Add and terminate health products across ten states for quoting & enrollment
+- Overhaul the billing calculations and layout for members
+- Add dynamic sorting and pagination for brokers' case listing & management
+- Modify PDF proposal mapping
 
-I also created a bulk premium rating tool that allows internal rate analysts to run large data sets of quotes through uploadable spreadsheets to test their own rating engines.
+I also created a bulk premium rating tool that allows internal rate analysts to run large data sets through uploadable spreadsheets to test their own quote rating engines.
 
 ### Challenges Overcame
-This period marked a lot of growth for me as a junior web developer coming from a startup company, with my first experience in enterprise-level web applications. The biggest challenges I faced were mostly enterprise firsts:
 
-- Absorbing the vast business domain of health and related insurance
-- Learning an in-house MVC framework
-- Implementing advanced DB2 features, such as cursors, to facilitate pagination in result sets
-- Integrating into in-house policy management software
-- Writing design and test documents
-- Collaborating on teams consisting of business analysts, project managers, and quality assurance testers
-- Mapping values to PDFs proposals using complex XMLs
-- Working with AJAX using Prototype
-- Interacting with servers using tools such as vim, grep, and tail, through putty
+This period marked a lot of growth for me as a junior web developer coming from a startup company, getting my feet wet with enterprise-level web applications. 
+
+The biggest challenges I faced were mostly enterprise firsts:
+
+- Absorb the vast business domain of health & related insurance
+- Implement DB2 cursors to facilitate server-side pagination in result sets
+- Write design and test documents
+- Collaborate on teams of business analysts, project managers, and QA
+
+There were also technical challenges where I was in over my head:
+
+- Learn an in-house-built MVC framework, also my first MVC framework
+- Map values to PDFs proposals using complex XMLs
+- Work with AJAX using Prototype to call premium rating web services
 
 ### Accomplishments
-Other than surpassing the huge learning curve of domain knowledge and enterprise exposure as a junior developer, one of my biggest contributions of this time period was successfully supporting one of the biggest clients, as well as raising the bar on design and test document writing and standards.
 
-This bulk premium rating tool previously mentioned is still in use today and continues to save countless hours for an entire team of rate analysts.
+My biggest personal accomplishment was conquering the huge learning curve of domain knowledge and enterprise exposure as a junior developer.
+
+My biggest accomplishment for the company of this time period was successfully supporting one of the biggest clients, CIGNA, as well as raising the bar on design and test document writing and standards.
+
+My longest lasting accomplishment is the previously-mentioned bulk premium rating tool, which is still in use today and continues to save countless hours for an entire team of rate analysts.
