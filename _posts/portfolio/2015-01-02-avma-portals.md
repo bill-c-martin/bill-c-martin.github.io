@@ -19,6 +19,7 @@ concepts:
 - OOP
 - Web Services
 - Reusability
+- Dimensions (VCS)
 tools:
 - W1 Framework
 - Prototype

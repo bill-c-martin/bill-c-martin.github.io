@@ -22,6 +22,7 @@ tools:
 - W1 Framework
 - Prototype
 - PdfLib
+- Dimensions (VCS)
 stack:
 - Linux
 - Apache
