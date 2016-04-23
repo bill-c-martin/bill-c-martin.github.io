@@ -12,6 +12,8 @@ code {
   color: #393318;
 }
 
+.top-buffer { margin-top:20px; }
+
 .btn-default {
   background: #{{ site.color.secondary-dark }};
   padding: 15px 45px;
@@ -125,10 +127,6 @@ section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
 .portfolio-modal .skills ul li {
   text-align: left;
   padding: 3px 0;
-}
-
-.portfolio-modal .skills .skill {
-  width: 25%;
 }
 
 .portfolio-modal .skills hr.star-light {
