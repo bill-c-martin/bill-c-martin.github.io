@@ -19,12 +19,10 @@ concepts:
 - OOP
 - Web Services
 tools:
-- Google Analytics
-- notepad++
-frameworks:
-- W1
+- W1 Framework
 - Prototype
 - PdfLib
+- Google Analytics
 stack:
 - Linux
 - Apache

@@ -19,13 +19,7 @@ concepts:
 - OOP
 - Web Services
 tools:
-- PuTTY
-- WinSCP
-- SQLYog
-- notepad++
-- PhpED
-frameworks:
-- W1
+- W1 Framework
 - Prototype
 - PdfLib
 stack:

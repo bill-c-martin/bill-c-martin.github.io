@@ -21,13 +21,10 @@ concepts:
 - Web Services
 - Design Patterns
 tools:
-- Dimensions
-- PhpStorm
-- SQLYog
-- Postman
-frameworks:
-- W1
+- W1 Framework
 - jQuery
+- Dimensions (VCS)
+- Postman
 stack:
 - Linux
 - Apache
