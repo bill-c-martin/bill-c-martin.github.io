@@ -190,7 +190,11 @@ article.blog-post header {
 article.blog-post div.content {
   width: 800px;
   margin: 0 auto;
-  padding: 20px 0 50px 0;
+  padding: 20px 0 0 0;
+}
+
+article.blog-post #disqus_thread {
+  padding: 0 0 50px 0;
 }
 
 article.blog-post hr.star-primary {
@@ -243,19 +247,20 @@ article.blog-post a {
   color: #{{ site.color.link }}
 }
 
-article.blog-post .page_navigation {
+article.blog-post footer {
+  margin: 60px 0;
   display: block;
   width: auto;
   overflow: hidden;
   background: #{{ site.color.primary }};
 }
 
-article.blog-post .page_navigation div.container {
+article.blog-post footer div.container {
   width: 800px;
   padding: 30px 0;
 } 
 
-article.blog-post .page_navigation a {
+article.blog-post footer a {
   display: block;
   width: 50%;
   float: left;
@@ -263,7 +268,7 @@ article.blog-post .page_navigation a {
   color: white;
 }
 
-article.blog-post .page_navigation .next {
+article.blog-post footer .next {
   text-align: right;
 }
 
