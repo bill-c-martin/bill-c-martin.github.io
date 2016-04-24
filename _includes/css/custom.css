@@ -190,7 +190,14 @@ article.blog-post header {
 article.blog-post div.content {
   width: 800px;
   margin: 0 auto;
-  padding: 20px 0 50px 0;
+  padding: 20px 0 0 0;
+}
+article.blog-post div.page_navigation {
+  margin: 60px 0;
+}
+
+article.blog-post #disqus_thread {
+  padding: 0 0 50px 0;
 }
 
 article.blog-post hr.star-primary {

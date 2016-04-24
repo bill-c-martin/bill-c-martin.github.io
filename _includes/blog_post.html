@@ -16,17 +16,18 @@
   </div>
   <div class="page_navigation">
     <div class="container">
-        <a class="prev" href="{{page.previous.url}}">
-          {% if page.previous.url and page.previous.categories contains "blog" %}
-            &laquo; {{page.previous.title}}
-          {% endif %}
-        </a>
-      
-        <a class="next" href="{{page.next.url}}">
-          {% if page.next.url and page.next.categories contains "blog" %}
-            {{page.next.title}} &raquo;
-          {% endif %}
-        </a>
-      </div>
+      <a class="prev" href="{{page.previous.url}}">
+        {% if page.previous.url and page.previous.categories contains "blog" %}
+          &laquo; {{page.previous.title}}
+        {% endif %}
+      </a>
+    
+      <a class="next" href="{{page.next.url}}">
+        {% if page.next.url and page.next.categories contains "blog" %}
+          {{page.next.title}} &raquo;
+        {% endif %}
+      </a>
+    </div>
   </div>
+  <div id="disqus_thread" class="content"></div>
 </article>
