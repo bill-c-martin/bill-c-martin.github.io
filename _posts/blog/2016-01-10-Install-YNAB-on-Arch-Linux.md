@@ -110,6 +110,6 @@ $ WINEARCH=win32 WINEPREFIX=~/.wine-YNAB wine YNAB\ 4_4.3.352_Setup.exe
 ```
 <a name="inspiration"></a>
 
-# Inspiration
+## Inspiration
 
 This is a reduced demi-glace of [push.cx](https://push.cx/2015/installing-you-need-a-budget-ynab-on-arch-linux), seasoned with my own detailed commands for every step of the way, and a touch of Open GL info gleaned from [Arch's NVIDIA wiki](https://wiki.archlinux.org/index.php/NVIDIA#Installing).
