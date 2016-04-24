@@ -14,7 +14,7 @@
   <div class="content" itemprop="articleBody">
     {{ content }}
   </div>
-  <div class="page_navigation">
+  <footer>
     <div class="container">
       <a class="prev" href="{{page.previous.url}}">
         {% if page.previous.url and page.previous.categories contains "blog" %}
@@ -28,6 +28,6 @@
         {% endif %}
       </a>
     </div>
-  </div>
+  </footer>
   <div id="disqus_thread" class="content"></div>
 </article>
