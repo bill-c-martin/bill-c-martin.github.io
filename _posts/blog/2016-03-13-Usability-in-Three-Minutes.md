@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: Usability in Three Minutes
 category: blog
 ---

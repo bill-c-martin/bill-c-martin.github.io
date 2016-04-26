@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: Legacy App Maintenance Is A Dead End
 category: blog
 ---

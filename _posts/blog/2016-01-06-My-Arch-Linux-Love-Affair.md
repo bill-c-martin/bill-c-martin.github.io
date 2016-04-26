@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: My Arch Linux Love Affair
 category: blog
 ---

@@ -1,0 +1,33 @@
+<article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    <hr class="star-primary">
+    <p>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      {% if page.author %}
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ page.author }}</span>
+        </span>
+      {% endif %}
+    </p>
+  </header>
+  <div class="content" itemprop="articleBody">
+    {{ content }}
+  </div>
+  <footer>
+    <div class="container">
+      <a class="prev" href="{{page.previous.url}}">
+        {% if page.previous.url and page.previous.categories contains "blog" %}
+          &laquo; {{page.previous.title}}
+        {% endif %}
+      </a>
+    
+      <a class="next" href="{{page.next.url}}">
+        {% if page.next.url and page.next.categories contains "blog" %}
+          {{page.next.title}} &raquo;
+        {% endif %}
+      </a>
+    </div>
+  </footer>
+  <div id="disqus_thread" class="content"></div>
+</article>

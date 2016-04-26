@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: Raze the Old to Raise the New
 category: blog
 ---

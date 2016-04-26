@@ -12,9 +12,7 @@ code {
   color: #393318;
 }
 
-div.blog-modal article blockquote p {
-  margin: 0;
-}
+.top-buffer { margin-top:20px; }
 
 .btn-default {
   background: #{{ site.color.secondary-dark }};
@@ -66,7 +64,7 @@ section#about ul  {
   margin-bottom: 15px;
 }
 
-/* Portfolio */
+/* Portfolio Grid */
 
 section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
     content: "\f0b1";
@@ -86,45 +84,68 @@ section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
 
 /* Portfolio Posts */
 
-div.portfolio-modal hr.star-primary:after {
+.portfolio-modal hr.star-primary:after {
   content: "\f0b1";
-}
-
-div.portfolio-modal div.tags {
-  margin: 20px 0;
-}
-
-div.portfolio-modal div.tags ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-div.portfolio-modal div.tags ul li {
-  font-size: 14px;
-  margin: 7px 0;
-}
-
-div.portfolio-modal div.tags span {
-  font-size: 12px;
-  color: #fff;
-  background: #{{ site.color.secondary-light }};
-  text-decoration: none;
-  margin: 0px 4px;
-  padding: 4px 8px;
-  border-radius: 6px;
 }
 
 .portfolio-modal .close-modal .lr, .portfolio-modal .close-modal .lr .rl {
   background-color: #{{ site.color.primary }};
 }
 
-div.portfolio-modal p, div.portfolio-modal li, div.portfolio-modal h3, div.portfolio-modal h4, div.portfolio-modal h5 {
+.portfolio-modal img {
+  border: 1px solid #{{ site.color.secondary-light }};
+}
+
+.portfolio-modal li {
+  font-size: 20px;
+}
+
+.portfolio-modal p, .portfolio-modal li, .portfolio-modal h3, .portfolio-modal h4, .portfolio-modal h5 {
   color: #{{ site.color.blog-text }}
 }
 
-/* Blog */
+.portfolio-modal h3, .portfolio-modal h4, .portfolio-modal h5 {
+  text-align: center;
+  margin: 35px 0 22px 0;
+}
 
-section#blog hr.star-primary:after, div.blog-modal hr.star-primary:after {
+.portfolio-modal p, .portfolio-modal ul{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.portfolio-modal .skills {
+  margin-bottom: 50px;
+}
+
+.portfolio-modal .skills h5 {
+  margin: 0 0 13px 0;
+  text-align: left;
+}
+
+.portfolio-modal .skills ul {
+  padding: 0px;
+  margin: 0 0 0 18px;
+}
+
+.portfolio-modal .skills ul li {
+  text-align: left;
+  padding: 3px 0;
+}
+
+.portfolio-modal .skills hr.star-light {
+    border-color: #{{ site.color.primary }};
+}
+
+.portfolio-modal .skills hr.star-light:after {
+    content: "\f085";
+    color: #{{ site.color.primary }};
+    background-color: white
+}
+
+/* Blog Grid */
+
+section#blog hr.star-primary:after {
   content: "\f0eb";
 }
 
@@ -162,24 +183,93 @@ section#blog div.blog-item:hover a{
 
 /* Blog Posts */
 
-div.blog-modal article {
+article.blog-post header {
+  padding: 140px 0 30px 0
+}
+
+article.blog-post div.content {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
+article.blog-post #disqus_thread {
+  padding: 0 0 50px 0;
+}
+
+article.blog-post hr.star-primary {
+  border-color: white;
+}
+
+article.blog-post hr.star-primary:after {
+  content: "\f0eb";
+  color: white;
+  background-color: #{{ site.color.primary }};
+}
+
+article.blog-post blockquote p {
+  margin: 0;
+}
+
+article.blog-post {
   text-align: left;
 }
 
-div.blog-modal article p {
+article.blog-post p {
   margin: 1em 0;
 }
 
-div.blog-modal article li {
+article.blog-post ul, article.blog-post ol {
+  margin: 20px 0 20px 10px;
+}
+
+article.blog-post p, article.blog-post li, article.blog-post a {
   font-size: 20px;
 }
 
-div.blog-modal p, div.blog-modal li, div.blog-modal h3, div.blog-modal h4, div.blog-modal h5 {
+article.blog-post li {
+  margin: 5px 0;
+}
+
+article.blog-post h, article.blog-post time {
+  color: white;
+}
+
+article.blog-post h3, article.blog-post h4, article.blog-post h5 {
+  margin-top: 40px;
+}
+
+article.blog-post p, article.blog-post li, article.blog-post h3, article.blog-post h4, article.blog-post h5 {
   color: #{{ site.color.blog-text }}
 }
 
-div.blog-modal a {
+article.blog-post a {
   color: #{{ site.color.link }}
+}
+
+article.blog-post footer {
+  margin: 60px 0;
+  display: block;
+  width: auto;
+  overflow: hidden;
+  background: #{{ site.color.primary }};
+}
+
+article.blog-post footer div.container {
+  width: 800px;
+  padding: 30px 0;
+} 
+
+article.blog-post footer a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+  color: white;
+}
+
+article.blog-post footer .next {
+  text-align: right;
 }
 
 /* Contact */
