@@ -6,12 +6,12 @@ category: blog
 
 Upon reading [The Arch Way](https://wiki.archlinux.org/index.php/Arch_Linux), it was love at first sight.
 
-Arch is fantastic. Of all the distros I've tried over the years: Red Hat, SUSE, Ubuntu/Debian, CentOS, Elementary OS, and Mint, none of them ever stuck around. I have finally put a ring on Arch's finger. She is *The One*.
+Arch is fantastic. Of all the distros I've tried over the years: Red Hat, SUSE, Ubuntu/Debian, CentOS, Elementary OS, and Mint, none of them ever stuck. I have finally put a ring on Arch's finger. She is *The One*.
 
-I'm sure our initial honeymoon phase was heightened by my first trip to Gnome 3. Seriously. I have never tried Gnome 3 before, due to all of the controversial slandering about it.
+I'm sure our initial honeymoon phase was heightened by my first trip to Gnome Shell. Seriously. I have never tried Gnome 3/Shell before, due to all of the controversial slandering about it.
 
 I've tried everything else under the sun: Gnome 2, old KDE, KDE plasma, Unity, Cinnamon, Xfce, Pantheon, and LXDE.
-Gnome 3 completely blows them all out of the water. It feels like an extension of my thoughts. It's lovely.
+Gnome Shell completely blows them all out of the water. It feels like an extension of my thoughts. It's lovely.
 
 ### Arch Has the Beauty
 
