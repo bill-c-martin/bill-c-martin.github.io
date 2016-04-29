@@ -5,7 +5,7 @@ modal-id: 1
 img: ifq.png
 alt: Screenshot of application that quotes changes to existing policies
 client: Cigna, Florida Blue, Blue Shield, Coventry, Aetna
-application: Policy Change Quoting
+application: Existing Policy Quoting
 project-date: 2013 - 2016
 languages:
 - PHP
@@ -37,7 +37,7 @@ stack:
 
 ### Project Description
 
-Policy Change Quoting, known internally as "In-force Quoting", is a web application used internally by sales representatives in Healthplan Services' call center to calculate new premiums for changes against members' existing policies, such as:
+Existing Policy Quoting, known internally as "In-force Quoting", is a web application used internally by sales representatives in Healthplan Services' call center to calculate new premiums for changes against members' existing policies, such as:
 
 - Add new dependents
 - Move to new addresses
