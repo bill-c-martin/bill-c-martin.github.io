@@ -182,12 +182,6 @@ section#blog div.blog-item:hover h5{
   color: #fff;
 }
 
-@media(min-width:768px) {
-  section#blog div.blog-item h5{
-    margin: 0;
-  }
-}
-
 section#blog div.blog-item:hover a{
   text-decoration: none;
 }
