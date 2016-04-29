@@ -178,6 +178,7 @@ section#blog div.blog-item p{
 }
 
 section#blog div.blog-item:hover h5{
+  margin: 0 0 10px 0px;
   color: #fff;
 }
 
