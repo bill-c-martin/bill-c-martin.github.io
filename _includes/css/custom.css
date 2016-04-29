@@ -177,8 +177,11 @@ section#blog div.blog-item p{
   font-size: 17px;
 }
 
-section#blog div.blog-item:hover h5{
+section#blog div.blog-item h5{
   margin: 0 0 10px 0px;
+}
+
+section#blog div.blog-item:hover h5{
   color: #fff;
 }
 
