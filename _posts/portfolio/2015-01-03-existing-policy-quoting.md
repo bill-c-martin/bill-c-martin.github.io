@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Existing Policy Quoting
 category: portfolio
 modal-id: 1
 img: ifq.png
