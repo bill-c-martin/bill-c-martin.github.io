@@ -66,8 +66,12 @@ section#about ul  {
 
 /* Portfolio Grid */
 
-section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
+#portfolio hr.star-light:after, #portfolio hr.star-primary:after {
     content: "\f0b1";
+}
+
+#portfolio .portfolio-item {
+  text-align: center;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -80,6 +84,12 @@ section#portfolio hr.star-light:after, section#portfolio hr.star-primary:after {
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity: .8;
+}
+
+#portfolio .portfolio-item p a {
+  display: inline-block; 
+  width: 100%;
+  padding: 10px 0 0 0; 
 }
 
 /* Portfolio Posts */
