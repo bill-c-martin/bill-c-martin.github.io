@@ -5,7 +5,7 @@ modal-id: 2
 img: cigna.png
 alt: Cigna home page
 client: Cigna
-application: Broker, Enrollment, and Quoting Portals
+application: Cigna Quoting & Enrollment Portals
 project-date: 2010 - 2012
 languages:
 - PHP

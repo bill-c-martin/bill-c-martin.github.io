@@ -5,7 +5,7 @@ modal-id: 3
 img: avma.png
 alt: AVMA home page
 client: AVMA
-application: Agent, Quoting & Member Portals
+application: AVMA Agent & Member Portals
 project-date: 2012
 languages:
 - PHP
@@ -36,7 +36,7 @@ stack:
 ### Project Description
 AVMA has three web applications with Healthplan Services:
 
-- **Agent Portal** - AAgents sell policies, run quotes, and manage sales
+- **Agent Portal** - Agents sell policies, run quotes, and manage sales
 - **Quoting Portal** - Individuals get quotes for numerous types of coverage
 - **Member Portal** - Members view coverage, make payments, and get quotes  
 
