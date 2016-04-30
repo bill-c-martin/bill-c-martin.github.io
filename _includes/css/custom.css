@@ -124,6 +124,10 @@ section#about ul  {
   padding-bottom: 5px;
 }
 
+.portfolio-modal .skills .skill {
+  padding: 0;
+}
+
 .portfolio-modal .skills {
   margin-bottom: 50px;
 }
