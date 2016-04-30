@@ -70,7 +70,7 @@ We pulled through and make the deadline though!
 
 This project was also the biggest undertaking I had to date in terms of cross-team coordination. 
 
-On top of my team of four PHP web developers, we have the following teams to coordinate with, all building our pieces in parallel:
+On top of my team of four PHP web developers, we had the following teams to coordinate with, all building our pieces in parallel:
 
 - **WMB** - Manage queues and inter-application communications/mapping
 - **Business Rules Team** - Validate business rule on XML request from us
