@@ -13,17 +13,17 @@ languages:
 - SQL
 - SAML XML
 concepts:
-- SSO
+- Single Sign-On
+- Asymmetric Cryptography
 - Encryption
 - Web Services
-- Scalability
 - Design Patterns
-- MVC
 tools:
 - Ping Federate
 - W1 Framework
 - Git
 - Postman
+- Custom Scripts
 stack:
 - Linux
 - Apache
