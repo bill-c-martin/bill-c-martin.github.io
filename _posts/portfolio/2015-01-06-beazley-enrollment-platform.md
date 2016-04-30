@@ -1,27 +1,29 @@
 ---
 layout: default
-title: Covered California Marketplace
+title: Beazley Enrollment Platform
 category: portfolio
-modal-id: 5
-img: california-marketplace.png
-alt: Screenshot of Covered California Marketplace
-client: Blue Shield of California
-application: Paysafe
-project-date: July 2014 - October 2015
+modal-id: 6
+img: beazley.png
+alt: Screenshot of application that allows bulk employee enrollment and managements for groups
+client: Beazley
+application: Beazley Group Portal
+project-date: Nov 2014 - May 2015
 languages:
 - PHP
 - SQL
-- SAML XML
+- HTML/CSS
+- JavaScript
+- XML
 concepts:
-- SSO
-- Encryption
-- Web Services
-- Scalability
-- Design Patterns
 - MVC
+- AJAX
+- Web Services
+- UI/UX
+- Scalability
 tools:
-- Ping Federate
 - W1 Framework
+- jQuery
+- Dimensions (VCS)
 - Git
 - Postman
 stack:
@@ -29,6 +31,7 @@ stack:
 - Apache
 - MySQL
 - PHP
+- DB2
 ---
 
 ### Project Description

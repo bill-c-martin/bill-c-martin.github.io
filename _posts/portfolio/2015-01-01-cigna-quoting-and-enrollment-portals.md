@@ -2,7 +2,7 @@
 layout: default
 title: Cigna Quoting and Enrollment Portals
 category: portfolio
-modal-id: 2
+modal-id: 1
 img: cigna.png
 alt: Cigna home page
 client: Cigna
