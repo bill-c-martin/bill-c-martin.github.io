@@ -33,19 +33,18 @@ stack:
 
 ### Project Description
 
-The companies covered through Beazley group insurance had ongoing performance & overhead issues on their Employee Portal when adding and updating coverage for their employees during their open enrollment period every year.
+Healthplan Services has a web application called Paysafe that tokenizes and processes payments for various health insurance companies on the Heathcare.gov Federal Marketplace.
 
-The problem was that their enrollment platform could only process one employee at a time, which itself consisted of a series of slow-running, step-by-step pages.
+Some states have elected to run their own [state-based exchanges](http://kff.org/health-reform/state-indicator/state-health-insurance-marketplace-types/) that are not part of Healthcare.gov. Paysafe was initially designed around the strict standards of the Federal Marketplace, which state-based exchanges do not have to follow.
 
-This introduced a large amount of time and overhead for Beazley's groups.
+The goal of this project was to setup and process payments for Blue Shield of California from the Covered California state-based marketplace. In order to support this, Paysafe had to be upgraded for greater overall flexibility:
 
-We were tasked to: 
-
-- Build a new enrollment platform that allowed bulk, asynchronous: 
-  - Changes to existing employee coverages
-  - Enrollments of new employees & coverages
-- Integrate it into the existing Beazley Employer Portal that their groups use
-- Ensure fast performance and real-time enrollment processing
+- Accept varying requests, not just Healthcare.gov-formatted SAML XML
+- Allow configurable client-specific business processes, such as:
+  - Pay Later Feature
+  - Duplicate payment checking that runs inside of Paysafe
+  - Custom confirmation page data and formatting
+- Send varying responses, not just Healthcare.gov-formatted POST response
 
 ### Contributions
 
