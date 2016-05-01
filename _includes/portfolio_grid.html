@@ -20,6 +20,12 @@
                     </a>
                     <p><a href="#portfolioModal-{{ post.modal-id }}" >{{ post.title }}</a></p>
                 </div>
+
+                {% assign loopindex = forloop.index | modulo: 3 %}
+                {% if loopindex == 0 %}
+        </div>
+        <div class="row">
+                {% endif%}
             {% endfor %}
         </div>
     </div>
