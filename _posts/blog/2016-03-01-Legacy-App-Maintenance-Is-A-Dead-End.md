@@ -57,6 +57,7 @@ After all, legacy applications linger around still because the company can [stil
 Besides, there is enjoyment to be had in legacy app maintenance for the right kind of programmer..
 
 There are those who 
+
 * Enjoy being the uncredited backbone that keeps the company going 
 * Thrive as the loyal soldier fighting day-by-day problems as they arise 
 * Strive for safe, stable careers at a single company until retirement
