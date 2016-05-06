@@ -54,16 +54,19 @@ Maintaining legacy code isn't inherently a bad thing though.
 
 After all, legacy applications linger around still because the company can [still ride its ROI curve](https://www.mendix.com/think-tank/killing-your-companys-legacy-applications-the-right-way/). If it ain't broke, don't fix it.
 
-Besides, there is enjoyment to be had in legacy app maintenance for the right kind of programmer.
+Besides, there is enjoyment to be had in legacy app maintenance for the right kind of programmer..
 
-There are those who enjoy being the uncredited backbone that keeps the company going. There are those who enjoy being the loyal soldier fighting day by day problems as they arise. There are those who strive for safe, stable careers at a single company until retirement.
+There are those who 
+* Enjoy being the uncredited backbone that keeps the company going 
+* Thrive as the loyal soldier fighting day-by-day problems as they arise 
+* Strive for safe, stable careers at a single company until retirement
 
 Me? I would rather innovate, than maintain. 
 
 Everything I enjoy in programming is stolen away when I get stuck in legacy app maintenance roles.
 
-I'm no Master Programmer either. I have a lot to learn, which is part of the reason I'm even bothering to convert my thoughts into ASCII characters right now by wiggling my fingers really fast into a keyboard. 
+I'm no Master Programmer either. I have a lot to learn, which is part of the reason I'm bothering to convert my thoughts into ASCII characters right now by wiggling my fingers really fast into a keyboard. 
 
 My old code, from even two years ago, makes me cringe.
 
-To future developers that will one day maintain my current code: Forgive me, for I know not what I do, despite all I learn!
+To future developers that will one day maintain my current code: Forgive me, for I know not what I do, despite all that I learn!
