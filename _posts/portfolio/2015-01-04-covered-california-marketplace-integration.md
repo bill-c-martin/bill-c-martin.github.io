@@ -16,14 +16,16 @@ concepts:
 - Single Sign-On
 - Asymmetric Cryptography
 - Encryption
-- Web Services
+- SOAP Services
+- REST APIs
 - Design Patterns
 tools:
 - Ping Federate
-- W1 Framework
 - Git
 - Postman
-- Custom Scripts
+- SoapUI
+- CyberArk
+- CyberSource
 stack:
 - Linux
 - Apache
