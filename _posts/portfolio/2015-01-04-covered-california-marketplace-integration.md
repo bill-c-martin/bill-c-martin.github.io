@@ -35,9 +35,9 @@ stack:
 
 ### Project Description
 
-Healthplan Services has a web application called Paysafe that tokenizes and processes payments for various health insurance companies on the Heathcare.gov Federal Marketplace.
+Through an in-house-built web application called PaySafe, Healthplan Services tokenizes and processes payments for various health insurance companies on the Heathcare.gov Federal Marketplace.
 
-Some states have elected to run their own [state-based exchanges](http://kff.org/health-reform/state-indicator/state-health-insurance-marketplace-types/) that are not part of Healthcare.gov. Paysafe was initially designed around the strict standards of the Federal Marketplace, which state-based exchanges do not have to follow.
+Some states have elected to run their own [state-based marketplaces](http://kff.org/health-reform/state-indicator/state-health-insurance-marketplace-types/) that are not part of Healthcare.gov. Paysafe was initially designed around the strict standards of the Federal Marketplace, which state-based marketplaces do not have to follow.
 
 The goal of this project was to setup and process payments for Blue Shield of California from the Covered California state-based marketplace. In order to support this, Paysafe had to be upgraded for greater overall flexibility:
 
@@ -50,6 +50,16 @@ The goal of this project was to setup and process payments for Blue Shield of Ca
 
 ### Contributions
 
+
+
+
+
+
+
+
+I worked on a small team with one other talented senior web developer. 
+
+
 I worked on a team of four developers that worked directly with the business unit as well as the Java/WMB & COBOL mainframe teams who provided the real-time enrollment processing web services.
 
 Some of the tasks we split up amongst ourselves were:
@@ -61,6 +71,14 @@ Some of the tasks we split up amongst ourselves were:
 On top of these design & development tasks, I took on the job of predicting, organizing, and estimating every task we all had to do to ship the product.
 
 ### Challenges Overcame
+
+
+
+
+
+
+
+
 
 Time and deadlines were the biggest challenge on this project. We had a lot of tasks to divide amongst four developers who were added to the project last minute. 
 
@@ -76,5 +94,12 @@ On top of my team of four PHP web developers, we have the following teams to coo
 - **Admin/COBOL** - Issue policies & changes on the mainframe
 
 ### Accomplishments
+
+
+
+
+
+
+
 
 The greatest accomplishment of this project was that our system saves the insured companies/groups dozens of hours every enrollment period, reducing their frustration and increasing their satisfaction as Beazley customers.
