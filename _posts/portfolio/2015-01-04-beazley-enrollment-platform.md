@@ -21,7 +21,7 @@ concepts:
 - UI/UX
 - Scalability
 tools:
-- W1 Framework
+- MVC Framework
 - jQuery
 - Dimensions (VCS)
 - Git

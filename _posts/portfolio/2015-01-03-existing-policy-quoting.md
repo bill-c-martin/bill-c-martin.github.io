@@ -24,7 +24,7 @@ concepts:
 - Reusability
 - Scalability
 tools:
-- W1 Framework
+- MVC Framework
 - jQuery
 - Dimensions (VCS)
 - Postman

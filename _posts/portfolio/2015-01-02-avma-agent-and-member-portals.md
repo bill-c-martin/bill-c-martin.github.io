@@ -22,7 +22,7 @@ concepts:
 - Reusability
 - Dimensions (VCS)
 tools:
-- W1 Framework
+- MVC Framework
 - Prototype
 - PdfLib
 - Google Analytics

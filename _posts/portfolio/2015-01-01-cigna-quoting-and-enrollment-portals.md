@@ -20,7 +20,7 @@ concepts:
 - OOP
 - Web Services
 tools:
-- W1 Framework
+- MVC Framework
 - Prototype
 - PdfLib
 - Dimensions (VCS)
