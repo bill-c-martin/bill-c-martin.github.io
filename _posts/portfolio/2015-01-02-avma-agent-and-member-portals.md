@@ -35,11 +35,11 @@ stack:
 ---
 
 ### Project Description
-AVMA has three web applications with Healthplan Services:
+AVMA has a multi-user site for agents, students, and members that allows all three to run insurance quotes:
 
-- **Agent Portal** - AAgents sell policies, run quotes, and manage sales
-- **Quoting Portal** - Individuals get quotes for numerous types of coverage
-- **Member Portal** - Members view coverage, make payments, and get quotes  
+- **Agent Portal** - Agents sell policies, run quotes, and manage sales
+- **Student Portal** - Students view coverage, make payments, and get quotes
+- **Member Portal** - Members view coverage, make payments, and get quotes
 
 ### Contributions
 
@@ -58,11 +58,4 @@ The biggest challenges I faced were with Google Analytics and AVMA's complex pro
 
 ### Accomplishments
 
-The AVMA portals were the first modular applications I've ever worked with. It uses components and modules that are shared across other web applications and rating platforms, such as:
-
-- Quoting process
-- Rating process
-- Billing
-- Case Listing
-
-This opened my eyes for application development in terms of scalability and reusability, not to mention the far-reaching risks of making changes.
+The AVMA portals were the first modular applications I've ever worked with and really opened by eyes for application development in terms of scalability and reusability.

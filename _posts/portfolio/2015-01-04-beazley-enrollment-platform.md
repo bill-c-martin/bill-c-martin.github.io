@@ -36,23 +36,17 @@ stack:
 
 ### Project Description
 
-The companies covered through Beazley group insurance had ongoing performance & overhead issues on their Employee Portal when adding and updating coverage for their employees during their open enrollment period every year.
+Beazley had a group enrollment platform where the companies could only enroll one employee at a time using a wizard-based flow.
 
-The problem was that their enrollment platform could only process one employee at a time, which itself consisted of a series of slow-running, step-by-step pages.
+The task on this project was to overhaul it to facilitate real-time mass-employee enrolling. We were tasked to: 
 
-This introduced a large amount of time and overhead for Beazley's groups.
-
-We were tasked to: 
-
-- Build a new enrollment platform that allowed bulk, asynchronous: 
-  - Changes to existing employee coverages
-  - Enrollments of new employees & coverages
-- Integrate it into the existing Beazley Employer Portal that their groups use
+- Allowed bulk, asynchronous adds/changes of employees and coverages
+- Integrate into the existing Beazley Employer Portal that their groups use
 - Ensure fast performance and real-time enrollment processing
 
 ### Contributions
 
-I worked on a team of four developers that worked directly with the business unit as well as the Java/WMB & COBOL mainframe teams who provided the real-time enrollment processing web services.
+I worked on a team of developers that worked directly with the business unit as well as the middleware teams who provided the real-time enrollment processing web services.
 
 Some of the tasks we split up amongst ourselves were:
 
@@ -64,13 +58,7 @@ On top of these design & development tasks, I took on the job of predicting, org
 
 ### Challenges Overcame
 
-Time and deadlines were the biggest challenge on this project. We had a lot of tasks to divide amongst four developers who were added to the project last minute. 
-
-We pulled through and make the deadline though!
-
-This project was also the biggest undertaking I had to date in terms of cross-team coordination. 
-
-On top of my team of four PHP web developers, we have the following teams to coordinate with, all building our pieces in parallel:
+This project was the biggest undertaking I had to date in terms of cross-team coordination due to all the Java technology being leveraged:
 
 - **WMB** - Manage queues and inter-application communications/mapping
 - **Business Rules Team** - Validate business rule on XML request from us

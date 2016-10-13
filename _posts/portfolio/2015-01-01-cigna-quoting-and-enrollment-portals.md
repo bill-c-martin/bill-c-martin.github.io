@@ -22,7 +22,7 @@ concepts:
 tools:
 - MVC Framework
 - Prototype
-- PdfLib
+- Pdflib
 - Dimensions (VCS)
 stack:
 - Linux
@@ -33,7 +33,8 @@ stack:
 ---
 
 ### Project Description
-Cigna had four web applications with Healthplan Services:
+
+Cigna had four web applications to facilitate sales of health and dental insurance
 
 - **Broker Portal** - Agents sell policies, run quotes, and view commissions data
 - **Quoting Portal** - Individuals get quotes for health & dental coverage
@@ -46,8 +47,7 @@ My work with Cigna's portals spanned three years, driven largely by new feature 
 - Support for quoting dental products across ten states
 - Add and terminate health products across ten states for quoting & enrollment
 - Overhaul the billing calculations and layout for members
-- Add dynamic sorting and pagination for brokers' case listing & management
-- Modify PDF proposal mapping
+- Modify PDF proposals generated with PDFlib
 
 I also created a bulk premium rating tool that allows internal rate analysts to run large data sets through uploadable spreadsheets to test their own quote rating engines.
 
@@ -71,7 +71,5 @@ There were also technical challenges where I was in over my head:
 ### Accomplishments
 
 My biggest personal accomplishment was conquering the huge learning curve of domain knowledge and enterprise exposure as a junior developer.
-
-My biggest accomplishment for the company of this time period was successfully supporting one of the biggest clients, CIGNA, as well as raising the bar on design and test document writing and standards.
 
 My longest lasting accomplishment is the previously-mentioned bulk premium rating tool, which is still in use today and continues to save countless hours for an entire team of rate analysts.
