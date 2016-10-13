@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Existing Policy Quoting
+title: Policy Change Quoting
 category: portfolio
 modal-id: 2
 img: ifq.png
@@ -24,7 +24,7 @@ concepts:
 - Reusability
 - Scalability
 tools:
-- W1 Framework
+- MVC Framework
 - jQuery
 - Dimensions (VCS)
 - Postman
@@ -38,11 +38,11 @@ stack:
 
 ### Project Description
 
-Policy Change Quoting, known internally as "In-force Quoting", is a web application used internally by sales representatives in Healthplan Services' call center to calculate new premiums for changes against members' existing policies, such as:
+A quoting web application was needed by sales representatives to calculate new premiums for changes against the existing policies of members calling in, such as:
 
 - Add new dependents
-- Move to new addresses
-- Add or change coverages 
+- Move to new address
+- Add or change plans 
 
 ### Contributions
 
@@ -72,31 +72,21 @@ My contributions during the development phase consisted of writing or co-writing
 
 ### Challenges Overcame
 
-The biggest challenge I faced was building my first enterprise-level web application at Healthplan Services from the ground up, as well as working with a team of developers simultaneously.
+This was my first enterprise-level web application built from the ground up.
 
-One huge challenge was weighing:
-
-- long-term performance
-- maintainability
-- scalability
-- return-on-investment.
-
-Scalability was the toughest challenge to overcome. This application effectively consolidated all other in-force quoting applications before it, and in their place, provided a single, scalable solution. 
+Scalability was the toughest challenge to overcome. This application effectively consolidated all other policy-change quoting applications before it, and in their place, provided a single, scalable solution. 
 
 It had to allow the following features to be configurable for any number of health insurance carriers:
 
 - Policy setups
 - Coverage setups
 - Benefit structures
-- Policy Rating engines:
-    + Mainframe-based rating engine
-    + DB2-based rating engine
-    + Spreadsheet-based calculator engine
+- Policy Rating engines and algorithms
 - Business rules
 
 ### Accomplishments
 
-This quoting application is still in use today and continues to be a great asset to Healthplan Services. It has grown to provide policy change quoting for the following health insurance carriers:
+This quoting application is still in use today and continues to be a great asset. It has grown to provide policy change quoting for the following health insurance carriers:
 
 - Coventry
 - Cigna
@@ -104,8 +94,5 @@ This quoting application is still in use today and continues to be a great asset
 - Blue Shield
 - Aetna
 
-The following statistics show how large the application has grown to today:
-
-- 500,000 quotes run per year 
-- 40,000 policies quoted against per year
+It has grown to quote 500,000 premiums on 40,000 policies per year currently.
 
