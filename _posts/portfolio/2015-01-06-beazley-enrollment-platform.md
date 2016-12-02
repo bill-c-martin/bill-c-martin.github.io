@@ -2,7 +2,7 @@
 layout: default
 title: Beazley Enrollment Platform
 category: portfolio
-modal-id: 1
+modal-id: 5
 img: beazley.png
 alt: Screenshot of application that allows bulk employee enrollment and managements for groups
 client: Beazley
