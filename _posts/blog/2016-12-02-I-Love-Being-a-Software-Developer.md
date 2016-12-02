@@ -4,7 +4,7 @@ title: I Love Being a Software Developer
 category: blog
 ---
 
-Software development is logical and efficient, yet creative and artistic. That is basically the story of my life.
+Software development is logical and efficient, yet creative and artistic. That is the story of my life!
 
 Even as a young lad, I was this mathy science boy that.. drew a lot. I'd go to school and just absolutely crush the life out of math. 
 
