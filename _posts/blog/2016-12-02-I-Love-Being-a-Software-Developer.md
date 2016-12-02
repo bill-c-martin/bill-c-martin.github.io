@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: I Love Being a Software Developer
 category: blog
 ---
