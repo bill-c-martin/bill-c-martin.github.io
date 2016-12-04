@@ -18,7 +18,17 @@
                                 <li><strong>{{ site.portfolio.labels.client }}:</strong> {{ post.client }}</li>
                                 <li><strong>{{ site.portfolio.labels.project-date }}:</strong> {{ post.project-date }}</li>
                                 <br/>
-                                <li><strong>{{ site.portfolio.labels.application }}:</strong> {{ post.application }}</li>
+                				<li>
+                                    <strong>
+                                        {% assign is_multiple_apps = post.application | split: "," | size %}
+                						{% if is_multiple_apps > 1  %}
+                                            {{ site.portfolio.labels.application }}s:
+                                        {% else %} 
+                                            {{ site.portfolio.labels.application }}:
+                                        {% endif  %}
+                                    </strong>
+                                     {{ post.application }}
+                                </li>
                             </ul>
                             <div class="entry text-left">
                                 {{ post.content }}
