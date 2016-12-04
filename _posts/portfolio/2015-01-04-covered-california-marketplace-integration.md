@@ -35,9 +35,9 @@ stack:
 
 ### Project Description
 
-Healthplan Services has a payment portal that tokenizes and processes payments for the Heathcare.gov Federal Marketplace.
+An in-house-built, pre-existing payment portal tokenizes and processes payments for various healh insurance carriers selling coverage on the Heathcare.gov "Federal Marketplace".
 
-A good half of the states have elected to run their own [state-based marketplaces](http://kff.org/health-reform/state-indicator/state-health-insurance-marketplace-types/) instead. 
+A good half of the states under the Affordable Healthcare Act have elected to run their own [state-based marketplaces](http://kff.org/health-reform/state-indicator/state-health-insurance-marketplace-types/) instead. 
 
 The payment portal was initially designed around the strict standards of that Federal Marketplace, which state-based marketplaces do not have to follow.
 
