@@ -4,21 +4,19 @@ title: I Love Being a Software Developer
 category: blog
 ---
 
-Software development is logical and efficient, yet creative and artistic. That is the story of my life!
+Software development is a unique combination of creativity, craftsmanship, and technical problem solving. It's always evolving and there is always something new to learn!
 
-Even as a young lad, I was this mathy science boy that.. drew a lot. I'd go to school and just absolutely crush the life out of math. 
-
-Then I would come home and draw these tedious, super-detailed drawings of comic book characters.
+Even as a young lad, I was this mathy science boy that.. also drew a lot. I'd go to school and just absolutely crush the life out of math. Then I would come home and draw these tedious, super-detailed drawings of comic book characters and dinosaurs.
 
 In later years, these base personality traits would manifest in the form of computers and music.
 
-Computers were the perfect machines; they could just do anything. And they were a real hoot to take apart and put back together.
+Computers were the perfect machines; they could just do anything and everything. And they were a real hoot to take apart and put back together.
 
 Music was the perfect artistic expression. It was something detailed and tedious I could try to master.
 
-Moving forward in time, the two eventually merged in the form of coding. Here, we finally have something logically crafted, yet artistically creative.
+Moving forward in time, the two eventually merged in the form of software development. Here, we finally have something logically crafted, yet artistically creative.
 
-I happen to be typed as an [INTJ](http://www.personalitypage.com/high-level.html), so I strongly suspect me and software development were destined for each other.
+I happen to be typed as an [INTJ](http://www.personalitypage.com/high-level.html), so I strongly suspect that myself and software development were destined for each other all along.
 
 Fast-forward to now: I have been immersed in a software development career for ten years now. It is a challenging, endless puzzle to be solved. But, also an abstract art form. And yet, a disciplined craft. It's on the frontier, cutting edge, always evolving, never growing stale.
 
