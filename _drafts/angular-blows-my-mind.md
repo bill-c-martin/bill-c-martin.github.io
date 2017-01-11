@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: blog_post
 title: Angular Blows My Mind
 category: blog
 ---
@@ -13,3 +13,5 @@ category: blog
 // The whole directives thing
 	// It's like looking at some weird HTML syntax version of Ruby, but all the controllers are controllers of the front end
 // Form validations
+
+// routing, etc
