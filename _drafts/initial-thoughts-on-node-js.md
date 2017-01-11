@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: Initial Thoughts on Node.js
 category: blog
 ---
