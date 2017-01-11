@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Some Post Title
+layout: blog_post
+title: Jack of all Trades, Master of None
 category: blog
 ---
 
