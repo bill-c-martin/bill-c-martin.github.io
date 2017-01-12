@@ -22,7 +22,7 @@ Fast-forward to now: I have been immersed in a software development career for t
 
 It also happens to pay well, of course.
 
-And the only real tool required.. is a computer. The [evolution of the desk](https://www.youtube.com/watch?v=uGI00HV7Cfw) has allowed me to construct my technical creations on a mere laptop, using concepts that I learned using a laptop, while listening to music on that laptop, which I previously created.. on that laptop.
+And the only real tool required.. is a computer. The [evolution of the desk](http://bestreviews.com/electronics#evolution-of-the-desk) has allowed me to construct my technical creations on a mere laptop, using concepts that I learned using a laptop, while listening to music on that laptop, which I previously created.. on that laptop.
 
 I mean, it boggles my mind that I spend my working time thinking up solutions to problems, and then implementing them by hitting keys into a keyboard with my fingers. That's what I do for a living!
 
