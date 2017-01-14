@@ -11,21 +11,25 @@ project-date: July 2015 - January 2016
 languages:
 - PHP
 - SQL
-- SAML XML
+- XML
+- SOAP XML
+- JavaScript
+- JSON
+- ASP.NET
 concepts:
-- Single Sign-On
 - Asymmetric Cryptography
 - Encryption
 - SOAP Services
 - REST APIs
-- Design Patterns
+- Payment Tokenization
+- Scalability
 tools:
-- Ping Federate
 - Git
 - Postman
 - SoapUI
 - CyberArk
-- CyberSource
+- PDFLib
+- Visual Studio
 stack:
 - Linux
 - Apache
@@ -35,40 +39,42 @@ stack:
 
 ### Project Description
 
-Healthplan Services has a payment portal that tokenizes and processes payments for the Heathcare.gov Federal Marketplace.
+MyPlanLink is a marketplace platform for health insurance providers (aka *providers* for short) that offers their customers a branded experience to shop, quote, compare, and enroll in a variety of health, dental, and vision products.
 
-A good half of the states have elected to run their own [state-based marketplaces](http://kff.org/health-reform/state-indicator/state-health-insurance-marketplace-types/) instead. 
+The goal was to build a set of web services that this platform could flexibly and safely pass customer enrollment and payment information to which could then submit it to the health insurance providers. This included:
 
-The payment portal was initially designed around the strict standards of that Federal Marketplace, which state-based marketplaces do not have to follow.
-
-To scale the payment portal to any number of state-based marketplaces, it had to:
-
-- Accept any request type, not just Healthcare.gov-formatted SAML XML
-- Configure client-specific features and customizations
-- Send any response type, not just Healthcare.gov-formatted POST response
-- Support any type of request-level security, eg:
-   - Restful POST request tokens
-   - Signed SAML
-   - SOAP encryption
+* Tokenization of payment information
+* Reception of enrollment from the platform
+* Transformation from received enrollment into providers' formats
+* Submission of enrollments and payment information to providers' 
 
 ### Contributions
 
-This project consisted of two senior developers: myself, and another who was in charge of a different state marketplace. 
+Out of a team of developers, my primary contributions were:
 
-Together, we crafted the solutions that allowed this payment portal to scale to any number of state marketplaces.
-
-We wrapped the application with configurable pre and post processors, which were in charge of the request/response handling, security, and application-level configurations.
-
-Test harnesses were also created to simulate the state marketplaces where the users would be coming from to submit payments.
+* Payment tokenization and ecryption
+* Test harness for tokenization
+* Submission of enrollments to providers
 
 ### Challenges Overcame
 
-This project was a tidal wave of advanced concepts and technologies that I have only been previously exposed to minimally. 
+This was my first experience building something that tokenized and encrypted actual payment information which was a high-security, business-critical task. This involved a variety of encryption techniques and software to accomplish.
 
-I have to seriously step my game up in the areas of cryptography, SOAP web services, and SAML processing, and learned a lot of new tools in the process.
+The biggest challenge was scalability. For n number of health insurance providers, there can be n number of enrollment submission methods that they themselves require to receive the enrollment, such as:
+
+ * E-fax of PDF enrollments
+ * Token-protected web APIs with enrollment as custom-formatted in JSON
+ * .NET SOAP web services protected with encryption and public keys
+ * PDFs sent via FTP for manual processing
 
 ### Accomplishments
 
-The payment portal was already highly successful, processing payments in the federal marketplace, which is roughly half of the states in the U.S.
+This was a brand new business venture and a new concept in the development of the federal and state-run marketplaces for the Affordable Healthcare Act.
 
-By upgrading this application to flexibly scale to any number of state-based marketplaces, Healthplan Services is able to tap into the markets of the other half of the U.S, which all have state-based marketplaces of some kind.
+The skills I developed most were:
+
+* Web service security techniques and standards
+* Scalability
+* Service-oriented architecture focus
+* Encryption and tokenization
+* Working with clients' technical teams directly
