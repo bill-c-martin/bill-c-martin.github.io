@@ -23,6 +23,7 @@ concepts:
 tools:
 - MVC Framework
 - jQuery
+- jQuery UI
 - Dimensions (VCS)
 - Git
 - Postman
