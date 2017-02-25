@@ -6,19 +6,19 @@ category: blog
 
 I have the hardest time with creative writing.
 
-Even now, I'm tempted to spin that previous sentence in my head over and over, thinking how it could be worded better, or how I could make the point better. 
+Even now, I'm tempted to spin that previous sentence around in my head over and over, thinking about how I could word it better, or how I could make the point more creatively. 
 
-But you know what? I won't. Because it's exactly the point I am trying to make here.
+But you know what? I won't! Because it states exactly my point, and it's fine the way it is.
 
-I feel like I have tons of ideas, bouncing from one thought to another, making intuitive leaps, and it is just a challenge to get it written down. By the time I'm half way through a sentence, I've always made several parallel branches in my head of where I want to go.
+I feel like I have tons of ideas, bouncing from one thought to another, making intuitive leaps, and it is just a challenge to get it written down. By the time I'm half way through a sentence, I've already made several parallel branches in my head of new possibilities I want to go to.
 
-And by the time I get something together, I run it through the ol' meat grinder over and over again,
-
-Thinking. I love thinking. But putting those thoughts into concise sentences in writing is always a challenge. For some reason, it's much easier to do it in real time whilst babbling out words to a person directly with my mouth.
-
-Perhaps the reason is that I am used to technical writing, where specificity and clarity is key. Creative writing is much more challenging. And to a logic-worshiping creature such as myself that always sees the world through a lens of rationality, it is fairly easy to visualize what I am trying to accomplish with technical writing. This is not so with creative writing. 
+And by the time I finally get something together, I run it through the ol' meat grinder over and over again, before scrapping it. What a chore!
 
 It almost feels like being lost in the woods, constantly backtracking, doubting where I am going.
+
+Thinking. Now, I love thinking. And putting those thoughts into concise sentences in writing is always a challenge of course. But doing it creatively is another level entirely. For some reason, it's much easier to do this in real time whilst babbling out words directly to a person with my mouth. Perhaps it's a matter of practice, and I have much more experience speaking to people than writing my thoughts out.
+
+The only writing I am used to is technical writing, where specificity and clarity is key. Creative writing is much more challenging. And to a logic-worshiping creature such as myself that always sees the world through a lens of rationality, it is fairly easy to visualize what I am trying to accomplish with technical writing. This is not so with creative writing. 
 
 With technical writing, the outline, structure, and details sort of just materialize on their own. I guess this is because is all makes perfectly logic sense up front in the first place, and my job at that point is to communicate it clearly. 
 
@@ -32,7 +32,7 @@ So instead of applying my tried-and-true technical writing approach to creative 
 
 I'm currently reading the diary of Anne Frank. For a young teenager scribbling away in a diary that she probably thought nobody would ever read, she sure is an excellent writer. And a creative one at that. 
 
-In fact, she writes better than most blog posts I've ever seen. I'm not sure if it's because she wasn't trying to hard, of if she just had a unique combination of maturity, individuality, and intelligence for her age, or if she was a natural-born writer who would've blossomed into a successful writing career had she survived into adulthood..
+In fact, she writes better than most blog I've seen. I'm not sure if it's because she wasn't overthinking it, of if she just had a unique combination of maturity, individuality, and intelligence for her age, or if she was a natural-born writer who would've blossomed into a successful writing career had she survived into adulthood..
 
 [...]
 
@@ -40,7 +40,7 @@ In fact, she writes better than most blog posts I've ever seen. I'm not sure if 
 
 Moving along though, I have a great interest in writing. Not my writing, gods no. But in the writing of others. Introspective perception is what it's all about for me.
 
-I love reading and appreciate all the little nuances authors go through in their writing, the way they spin words and play with them, the sort of imagery they invoke, and the chain reaction of thought they're able to trigger with the shortest of sentences.
+Reading is one of my favorite pastimes, and one thing I really appreciate is all the little nuances authors go through in their writing; the way they spin words and play with them, the sort of imagery they invoke, and the chain reaction of thought they're able to trigger with the shortest of sentences.
 
 Underground and 90's gangster rappers excel in this regard, exceptionally so. 
 
@@ -48,4 +48,4 @@ So let's see here. I've managed to jump topics from writing perfectionism, to te
 
 And I'm ok with that. Perhaps it's better this way.
 
-And hey, that was actually pretty fun. 
+And hey, that was actually pretty fun that time.
