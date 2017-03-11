@@ -109,6 +109,8 @@ social:
     url: https://laracasts.com/@wcmarti2
   - title: stack-overflow
     url: http://stackoverflow.com/users/5743565/bill-martin
+  - title: goodreads
+    url: http://www.goodreads.com/billmartin
   - title: rss
     url: /feed.xml
 

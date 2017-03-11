@@ -332,6 +332,14 @@ section#contact button:hover{
   top: 2px;
 }
 
+.btn-laracasts:hover, .btn-goodreads:hover{
+  text-decoration: none;
+}
+
+.btn-laracasts, .btn-goodreads{
+  font-weight: 900;
+}
+
 footer .footer-col {
     margin-bottom: 30px;
 }
