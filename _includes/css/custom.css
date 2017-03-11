@@ -340,6 +340,15 @@ section#contact button:hover{
   font-weight: 900;
 }
 
+/* Footer tooltips */
+footer .tooltip .tooltip-arrow{
+  border-bottom-color: #{{ site.color.primary  }} !important;
+}
+
+footer .tooltip .tooltip-inner{
+  background-color: #{{ site.color.primary  }};
+}
+
 footer .footer-col {
     margin-bottom: 30px;
 }

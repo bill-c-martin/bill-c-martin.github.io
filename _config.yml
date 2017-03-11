@@ -100,18 +100,25 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc. search them in main.css)
 social:
   - title: github
+    tooltip: "Github: Code I am writing"
     url: https://github.com/bill-c-martin
   - title: linkedin
+    tooltip: "Linkedin: Places I've worked"
     url: https://www.linkedin.com/in/billmartin9
   - title: codeschool
+    tooltip: "Codeschool: Skills I am learning"
     url: https://www.codeschool.com/users/90602
   - title: laracasts
+    tooltip: "Laracasts: Skills I am learning"
     url: https://laracasts.com/@wcmarti2
   - title: stack-overflow
+    tooltip: "Stack Overflow: Solutions I've been exchanging"
     url: http://stackoverflow.com/users/5743565/bill-martin
   - title: goodreads
+    tooltip: "Goodreads: Books I've been reading"
     url: http://www.goodreads.com/billmartin
   - title: rss
+    tooltip: Subscribe to RSS feed
     url: /feed.xml
 
 # Credits content
