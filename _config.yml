@@ -5,6 +5,37 @@ url: http://billmartin.io
 description: "Full-Stack Web Developer, Musician, and Great Outdoors Enthusiast."
 meta_author: Bill Martin
 
+about:
+  header: About
+  content:
+      left: By day, I code payment, enrollment, and quoting web applications for some of the industry's top health insurance companies, whilst striving for <a href="http://blog.codinghorror.com/a-pragmatic-quick-reference/" target="_new">Pragmatic Programmer</a> perfection.
+      right: By night, I play guitar in three bands, camp, kayak, hike, play video games, read fantasy, sci-fi, & programming books, and ponder Life, The Universe, and Everything.
+      bottom: I live in Manchester, NH.
+  interests:
+    header: Interests as of Late
+    content:
+      left:
+        header: Now
+        list:
+          - item: React
+          - item: MEAN Stack
+          - item: User Experience
+      center:
+        header: Soon
+        list:
+          - item: JS Best Practices
+          - item: Advanced JavaScript
+          - item: SOLID Principles
+      right:
+        header: Later
+        list:
+          - item: HTML5/CSS3/SASS
+          - item: Design Patterns
+          - item: Laravel
+  button:
+    text: Download My Resume
+    href: /resume/bill-martin-resume.pdf
+
 # Google webmaster tools
 google_verify:
 
@@ -17,8 +48,7 @@ bing_verify:
 # - comment the line below if you want to stick with the default PHP contact form
 contact: static
 
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
+# If you use disqus you need disqus shortname: https://help.disqus.com/customer/portal/articles/466208
 disqus_shortname: billmartin
 
 # If you have Google Analytics account setup, enter your tracker ID, eg. A-12312312-1
@@ -38,6 +68,14 @@ color:
 blog:
   labels:
     modal-close: Close
+
+# Markdown/syntax highlighter settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 # Portfolio settings
 portfolio:
@@ -74,17 +112,8 @@ social:
   - title: rss
     url: /feed.xml
 
-
 # Credits content
 credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Fork my portfolio on github</a>'
 
 # Build settings
 permalink: pretty
-
-# Markdown/syntax highlighter settings
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
