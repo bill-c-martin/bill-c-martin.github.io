@@ -4,7 +4,7 @@ title: Writing is Hard
 category: blog
 ---
 
-I have the hardest time with creative writing.
+I have the hardest time with creative writing. Producing a continuous flow of words should be easier than this.
 
 Even now, I'm tempted to spin that previous sentence around in my head over and over, thinking about how I could word it better, or how I could make the point more creatively. 
 
@@ -16,7 +16,11 @@ And by the time I finally get something together, I run it through the ol' meat 
 
 It almost feels like being lost in the woods, constantly backtracking, doubting where I am going.
 
-Thinking. Now, I love thinking. And putting those thoughts into concise sentences in writing is always a challenge of course. But doing it creatively is another level entirely. For some reason, it's much easier to do this in real time whilst babbling out words directly to a person with my mouth. Perhaps it's a matter of practice, and I have much more experience speaking to people than writing my thoughts out.
+> There is nothing to writing. All you do is sit down at a typewriter and bleed.
+>
+> <span>— Ernest Hemmingway</span>
+
+Thinking, on the other hand, comes naturally. I can get lost in thought for great gulfs of time. But putting those thoughts into concise sentences in writing is always a challenge. For some reason, it's much easier to do it in real time whilst babbling out words to a person directly with my mouth.
 
 The only writing I am used to is technical writing, where specificity and clarity is key. Creative writing is much more challenging. And to a logic-worshiping creature such as myself that always sees the world through a lens of rationality, it is fairly easy to visualize what I am trying to accomplish with technical writing. This is not so with creative writing. 
 
