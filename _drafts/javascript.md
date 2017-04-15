@@ -37,4 +37,4 @@ What will come out of all the competition?
 
 Have there been examples like JavaScript in the past where it goes through a contant cycle of self reevaluation?
 
-
+Mention web-specific pattern of releasing new versions of frameworks that break previous and are not backwards compatible: vagrant, Ruby on Rails, Angular, ZF3? And why is this acceptable in the web development world? Why is it that web development is so loose sometimes, whereas virtual all other engineering disciplines and even other areas of the software development discplines are more strict?
