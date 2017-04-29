@@ -17,20 +17,20 @@ about:
       left:
         header: Now
         list:
-          - item: React
-          - item: MEAN Stack
-          - item: User Experience
+          - item: SOLID Principles
+          - item: Design Patterns
+          - item: PhpStorm Mastery
       center:
         header: Soon
         list:
-          - item: JS Best Practices
-          - item: Advanced JavaScript
-          - item: SOLID Principles
+          - item: Sublime Mastery
+          - item: ES2015
+          - item: React
       right:
         header: Later
         list:
+          - item: JS Best Practices
           - item: HTML5/CSS3/SASS
-          - item: Design Patterns
           - item: Laravel
   button:
     text: Download My Resume
