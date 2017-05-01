@@ -4,6 +4,10 @@ title: Some Post Title
 category: blog
 ---
 
+SOLID is all about decoupling code, and designing better applications.
+
+Essentially all about coding to an interface, which is interlaced through all five principles.
+
 // Come up with structure, such as each principle defined, example, and list of dead giveaways of when they're being  violated
 
 ## Single Responsibility Principle
@@ -84,3 +88,11 @@ Dead giveaways:
 
 
 ## Depenedency Inversion
+	"Depend on abstrations, not on concretions"
+
+	Higher level modules should not depend upon low level modules.
+	Ask if higher level module needs knowledge of the details of how a lower level module implements something.
+
+Goal is to have both high and low level modules all depending on an interface. 
+
+	Great example is a data model method requiring a MySQL connection be passed in. This forces higher level modules to "know" about the DM's innter MySQL connection. It should instead require an interface.
