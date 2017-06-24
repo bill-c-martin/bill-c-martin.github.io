@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: Laravel: Where Have You Been All My Life?
+title: Laravel, Where Have You Been All My Life?
 category: blog
 ---
 
