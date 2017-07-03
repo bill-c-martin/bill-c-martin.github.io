@@ -256,10 +256,10 @@ The richest resources I've come across for learning about SOLID Principles are:
 - ["The SOLID Principles"](https://code.tutsplus.com/series/the-solid-principles--cms-634) learning guide on tutsplus
 - The ["SOLID Principles in PHP"](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjau6r2jezUAhVHcj4KHXXvAeAQFggoMAA&url=https%3A%2F%2Flaracasts.com%2Fseries%2Fsolid-principles-in-php&usg=AFQjCNHU05djL8alb4DvBcQdpiSp4tdq3g) course on Laracasts
 
-### Books
+### Free Books
 
 - [Pablo's SOLID Software Development](http://lostechies.com/wp-content/uploads/2011/03/pablos_solid_ebook.pdf) PDF
-- Taylor Otwell's [Laravel: From Apprentice To Artisan](https://leanpub.com/laravel) book
+- Taylor Otwell's [Laravel: From Apprentice To Artisan](http://fliphtml5.com/wuxi/iemd) book
 
 ### Code Examples
 
