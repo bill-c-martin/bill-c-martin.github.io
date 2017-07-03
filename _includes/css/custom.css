@@ -223,6 +223,14 @@ article.blog-post hr.star-primary:after {
   background-color: #{{ site.color.primary }};
 }
 
+/* Account for header space that overlays articles and can cover up anchor links */
+article.blog-post a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 article.blog-post blockquote {
   background: #f1f1f1;
   border-left: 10px solid #ccc;
