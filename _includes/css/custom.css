@@ -281,7 +281,7 @@ article.blog-post h, article.blog-post time {
   color: white;
 }
 
-article.blog-post h3, article.blog-post h4, article.blog-post h5 {
+article.blog-post h2, article.blog-post h3, article.blog-post h4, article.blog-post h5 {
   margin-top: 40px;
 }
 
