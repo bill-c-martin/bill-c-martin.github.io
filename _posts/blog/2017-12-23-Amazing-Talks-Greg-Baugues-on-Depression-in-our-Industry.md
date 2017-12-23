@@ -15,11 +15,13 @@ During his talk, he discusses mental illnesses in the software development indus
 
 Now, this isn't something that would usually catch my attention. As a matter of fact, I can't even remember why I started watching it. However, he immediately starts by telling his own story. And stories are engaging.
 
-He goes on to tell about all his struggles in school, and then later in his career. He describes a form of Bipolar Disorder that I was not even aware existed: Type II. He descries it as a more slow burning Type 1, plagued by long periods of depression and "laziness" with brief stints of explosive productivity.
+He goes on to tell about all his struggles in school, and then later in his career. He describes a form of Bipolar Disorder that I was not even aware existed: Type II. He describes it as a more slow burning type, plagued by long periods of depression and "laziness" with brief stints of explosive productivity.
 
-What is intriguing about his talk is how many software developers are suffering from these disorders, and how they can be written off by coworkers as lazy.
+What is intriguing about his talk is how many software developers are suffering from these disorders and coming to him about it.
 
-It is well known that the software industry attracts a high number of intelligent introverts. I never really thought any of these types being prone to anxiety, ADHD, or depression though. In fact, I have only ever met a single software developer who had ADHD, who took medicine for it.
+It is well known that the software industry attracts a high number of intelligent introverts. I never really thought about our "type" as being prone to anxiety, ADHD, or depression though. After all, we stereotyped as mathy mad scientists that change the world at a young age. But he makes a good point that in an industry where introversion, late nights, crazy schedules, and productivity bursts are the norm, people with these disorders will sort of be able to blend in better and make it by.
+
+In fact, I have only ever met a single software developer who had ADHD, who took medicine for it.
 
 But I guess that is the problem though isn't it? We all have family, friends, and acquaintances who battle these mental illnesses, some treated, some not. But we really don't hear about this affecting software developers.
 
