@@ -4,7 +4,9 @@ title: Depression in Software Development
 category: blog
 ---
 
-It appears I am 4 years late to this, but I watched a fantastic [video of Greg Baugues speaking on depression at the Business of Software Conference](http://baugues.com/depression). During his talk, he discusses depression, anxiety, and mental illnesses in the software development industry. Namely: Bipolar Disorder, ADHD, anxiety, and depression.
+It appears I am 4 years late to this, but I watched a fantastic [video of Greg Baugues speaking on depression at the Business of Software Conference](http://baugues.com/depression).
+
+During his talk, he discusses depression, anxiety, and mental illnesses in the software development industry. Namely: Bipolar Disorder, ADHD, anxiety, and depression.
 
 Now, this isn't something that would usually catch my attention. As a matter of fact, I can't even remember why I started watching it. However, he immediately starts by telling his own story. And stories are engaging.
 
