@@ -19,7 +19,7 @@ He goes on to tell about all his struggles in school, and then later in his care
 
 What is intriguing about his talk is how many software developers are suffering from these disorders and coming to him about it.
 
-It is well known that the software industry attracts a high number of intelligent introverts. I never really thought about our "type" as being prone to anxiety, ADHD, or depression though. After all, we stereotyped as mathy mad scientists that change the world at a young age. But he makes a good point that in an industry where introversion, late nights, crazy schedules, and productivity bursts are the norm, people with these disorders will sort of be able to blend in better and make it by.
+It is well known that the software industry attracts a high number of intelligent introverts. I never really thought about our "type" as being prone to anxiety, ADHD, or depression though. After all, we are stereotyped as mathy mad scientists that change the world at a young age. But he makes a good point that in an industry where introversion, late nights, crazy schedules, and productivity bursts are the norm, people with these disorders will sort of be able to blend in better and make it by.
 
 In fact, I have only ever met a single software developer who had ADHD, who took medicine for it.
 
@@ -29,7 +29,9 @@ I suppose we see ourselves as successful, intelligent, specialist craftsmen of a
 
 Well, no.
 
-He tells stories of himself and others about how they managed to drift through jobs, how they would start off strong, and then fall back into their rut. The worst part is that most of their suffering was internal to them, closed off from the outside world. All the outside world sees is the "laziness" of one delivering projects late, not showing up to work, or being generally motivated.
+He tells stories of himself and others about how they managed to drift through jobs, how they would start off strong, and then fall back into their rut.
+
+The worst part is that most of their suffering was internal to them, closed off from the outside world. All the outside world sees is the "laziness" of one delivering projects late, not showing up to work, or being generally motivated.
 
 Sure enough, I have known a few developers having these sort of symptoms. Some had gambling issues, others would struggle to deliver their projects on time. Yet others, upon becoming remote, seemed to lose productivity entirely. I had never considered that these people might have a more critical, underlying disorder. It's so easy to just write them off as lazy instead.
 
