@@ -6,17 +6,24 @@ category: blog
 
 It appears I am 4 years late to this, but I watched a fantastic [video of Greg Baugues speaking on depression at the Business of Software Conference](http://baugues.com/depression).
 
-During his talk, he discusses depression, anxiety, and mental illnesses in the software development industry. Namely: Bipolar Disorder, ADHD, anxiety, and depression.
+During his talk, he discusses mental illnesses in the software development industry that often go unnoticed due to our general mentalities. Namely:
+
+- Bipolar Disorder
+- ADHD
+- Anxiety
+- Depression
 
 Now, this isn't something that would usually catch my attention. As a matter of fact, I can't even remember why I started watching it. However, he immediately starts by telling his own story. And stories are engaging.
 
-He goes on to tell about all his struggles in school, and then later in his career. He describes a form of Bipolar Disorder that I was not even aware existed: Type II. He descries it as a more slow burning Type 1, plagued by long periods of depression and productivity with brief stints of explosive productiveness.
-
-It is well known that the software industry attracts a high number of intelligent introverts. I never really thought any of these types being prone to anxiety, ADHD, or depression though.
+He goes on to tell about all his struggles in school, and then later in his career. He describes a form of Bipolar Disorder that I was not even aware existed: Type II. He descries it as a more slow burning Type 1, plagued by long periods of depression and "laziness" with brief stints of explosive productivity.
 
 What is intriguing about his talk is how many software developers are suffering from these disorders, and how they can be written off by coworkers as lazy.
 
-I guess we see ourselves as successful, intelligent, specialists of a sort in this industry, and see ourselves and brethren (and sistren?) as immune to these issues. These disorders are what plagues people that haven't even made it this far, that never had the concentration to get through high school math classes, let alone into a career of software development, right?
+It is well known that the software industry attracts a high number of intelligent introverts. I never really thought any of these types being prone to anxiety, ADHD, or depression though. In fact, I have only ever met a single software developer who had ADHD, who took medicine for it.
+
+But I guess that is the problem though isn't it? We all have family, friends, and acquaintances who battle these mental illnesses, some treated, some not. But we really don't hear about this affecting software developers.
+
+I suppose we see ourselves as successful, intelligent, specialist craftsmen of a sort in this industry, and see ourselves and brethren (and sistren?) as immune to these issues. These disorders are what plagues people that haven't even made it this far, that never had the concentration to get through high school math classes, let alone into a career of software development, right?
 
 Well, no.
 
