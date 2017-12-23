@@ -17,21 +17,21 @@ about:
       left:
         header: Now
         list:
+          - item: Laravel
           - item: SOLID Principles
-          - item: Design Patterns
-          - item: PhpStorm Mastery
+          - item: Sublime Mastery
       center:
         header: Soon
         list:
-          - item: Sublime Mastery
-          - item: ES2015
-          - item: React
+          - item: Design Patterns
+          - item: Vue
+          - item: Behat/phpunit
       right:
         header: Later
         list:
-          - item: JS Best Practices
-          - item: HTML5/CSS3/SASS
-          - item: Laravel
+          - item: React
+          - item: Angular
+          - item: ES2015
   button:
     text: Download My Resume
     href: /resume/bill-martin-resume.pdf
