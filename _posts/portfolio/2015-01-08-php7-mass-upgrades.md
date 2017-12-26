@@ -9,33 +9,43 @@ client: Various Health Insurance Companies
 application: Various quoting, enrollment, broker, payment applications
 project-date: March 2017 - February 2018
 languages:
-- PHP
-- SQL
-- HTML/CSS
-- JavaScript
-- XML
+- PHP 7
 concepts:
 - MVC
-- AJAX
 - Web Services
-- UI/UX
-- Scalability
+- Cron Jobs
+- Performance Testing
+- Regular Expressions
+- Team Leading
 tools:
 - MVC Framework
-- jQuery
-- jQuery UI
-- Dimensions (VCS)
-- Git
-- Postman
+- Rational Team Concert
+- phpcodesniffer
 stack:
 - Linux
 - Apache
 - MySQL
-- PHP
+- PHP7
 - DB2
 ---
 
 ### Project Description
+
+
+15k errors, 17k warnings, across 16k files
+75% fixed with internally-developed automation scripts using regular expressions, phpcodesniffer
+
+year long project, team of 6 developers, gradual releases
+
+some 50 or so URLs for internal and external applications for health insurance companies
+
+Team leading with managers, QA, business users, and a project manager, deadlines, linux/network teams, etc
+
+Coordinating switchovers
+
+New server setups, apach vhosts, firewall, proxypass, testing
+
+
 
 Beazley had a group enrollment platform where the companies could only enroll one employee at a time using a wizard-based flow.
 
