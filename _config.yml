@@ -19,13 +19,13 @@ about:
         list:
           - item: Laravel
           - item: SOLID Principles
-          - item: Sublime Mastery
+          - item: Behat/phpunit
       center:
         header: Soon
         list:
           - item: Design Patterns
           - item: Vue
-          - item: Behat/phpunit
+          - item: Sublime Mastery
       right:
         header: Later
         list:
