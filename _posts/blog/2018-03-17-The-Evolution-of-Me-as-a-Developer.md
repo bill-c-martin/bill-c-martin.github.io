@@ -246,6 +246,6 @@ My opinions also appear to be valued, from what I can tell.. and that is always 
 I have seen tremendous improvement in release quality and application stability over the past year.
 Automated regression testing is now becoming a thing.
 
-I sometimes deliberate over switching into a DevOps role, since I appear to have an great appreciation of it. I also sort of have a passion for process. Not the ugly bloated kind, but the kind the actual streamlines getting code into production, solving problems, and making money. The sort of process that is difficult to achieve.
+I sometimes deliberate over switching into a DevOps role, since I appear to have an great appreciation of it. I also sort of have a passion for process. Not the ugly bloated, bureaucratic kind that slows everything down pretending to improve things, but the kind that actual streamlines getting code into production, solving problems, and making money. The sort of process that is difficult to achieve.
 
-Yet, my heart is in the code, since the very beginning in 1999.
+And yet, my heart is in the code, always and forever I think. Since the very beginning in 1999.
