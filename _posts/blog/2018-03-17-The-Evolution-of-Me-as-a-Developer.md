@@ -143,7 +143,7 @@ The year of the first major project, and the first year I realized coding is art
 
 - **Day 1:** I just got this multi-month project where I finally get to spread my wings on.
 - **Day 30:** Good lord, is it kicking my butt!
-- **Day 60:** I work my longest shift to date:** **32 STRAIGHT HOURS**.
+- **Day 60:** I work my longest shift to date: **32 STRAIGHT HOURS**.
 - **Day 180:** I witness a truly well designed, scalable application for the first time. Mind blown.
 
 ### 2012 Me:
@@ -164,7 +164,7 @@ The year I built my first scalable, enterprise-level application. Through some t
 - **Day 60:** We did it! Sales reps for health insurance client are happy.
 - **Day 180:** "Hey, can you setup these other 4 clients too? Yes, they all have different rating engines and business rules".
 - **Day 270:** Learn my first hard lessons in scalability, abstractions, and adaptability.
-- **Day 365:** We did it! *\*pounds chest\**.
+- **Day 365:** We did it! *\*beats on chest\**.
 
 This was really a Renaissance year for me, finally out of the trials and tribulations of my earlier Medieval career. Good times. Throughout the year:
 
@@ -193,9 +193,9 @@ This year's end would be the start of my Baroque era:
 
 The Romantic phase.
 
-- **Day 60:** I am PCI man *\*pounds chest\**
-- **Day 180:** We are building new PCI applications! *\*pounds chest\**
-- **Day 270:** We are killing it! *\*pounds chest\**
+- **Day 60:** I am PCI man *\*beats on chest\**
+- **Day 180:** We are building new PCI applications! *\*beats on chest\**
+- **Day 270:** We are killing it! *\*beats on chest\**
 
 ## The Inferno
 
