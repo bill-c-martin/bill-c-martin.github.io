@@ -4,7 +4,9 @@ title: The Evolution of Me as a Developer
 category: blog
 ---
 
-This is the story of how I got into software development. The high level synopsis is:
+This is the comical looking back of my adventurous history as a web developer, my goofs, my successes, my failures, my hopes.
+
+The high level synopsis is:
 
 1. **The Spark**: It all started with some HTML, CSS, Java, SQL classes I took in high school.
 2. **The Kindling**: College programming for fun + I wrote a Paypal module for my gaming clan's site in PHP.
