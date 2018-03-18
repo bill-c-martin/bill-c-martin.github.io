@@ -16,9 +16,9 @@ The high level synopsis is:
 
 ## 1. The Spark
 
-It all started with some HTML, CSS, Java, SQL classes I took in high school, with a very inspirational teacher. I suppose this was preceded though by a childhood interest in math and science though, and a desire to become an engineer one day.
+It all started with some HTML, CSS, Java, SQL classes I took in high school, with a very inspirational teacher and a nudge from my mother. I suppose this was preceded by a childhood interest in math and science though, and a desire to become an engineer one day.
 
-The first site I make is a site about Beavis and Butthead. A passion is born. No, not for Beavis and Butthead.. that passion was already there. I'm talking for web development!
+The first site I make is a site about Beavis and Butthead. A passion is born. No, not for Beavis and Butthead.. that passion was already there. I'm mean for web development!
 
 ### 1999 Me:
 
@@ -26,6 +26,8 @@ The year of conception.
 
 - **Day 0**: Mom gets me to take some web design classes, "computers are the next big thing", etc.
 - **Day 30**: Wow this HTML thing is so logical, yet creative.
+- **Day 60**: Makes first web sites, intrigued by the combination of technical sophistication and art.
+- **Day 180**: Starts publishing sites on geocities, including "homemade" blogs for friends to rant their world-bending, introspective philosophies conjured forth from 14 year-old juvenile minds.
 
 ### 2000 Me:
 
@@ -75,16 +77,16 @@ The spark of my high school flirtations with coding ignited during my early coll
 
 The year I came out of the womb.
 
-- **Day 1**: Hell yeah, finally get to take Intro to Programming class. Wait, not Java again!
-- **Day 30** - This Java and C stuff is actually really cool. The whole object oriented thing clicked this time around.
-- **Day 180** - A programming concepts class absolutely kicks my ass.
-- **Day 270** - Most brutal instructor ever, most I have ever learned in 6 months.
-- **Day 360** - Seriously, Dr. Albrect: you were the one that kindled my interest in programming.
+- **Day 1**: Hell yeah, finally get to take Intro to Programming course. Wait, not Java again!
+- **Day 30** - This Java and C stuff is actually really cool. The whole object oriented thing clicked this time around with Java. C blows my mind with it's intricacies.
+- **Day 180** - A "Programming Concepts" course absolutely kicks my ass.
+- **Day 270** - Most brutal instructor ever in that course, most I have ever learned in 6 months.
+- **Day 360** - Seriously, Dr. Albrect: I wouldn't be who I am today without you.
 - **Day 365** - **Concludes programming is what I want to do for a living.**
 
 ## 3. The Flame
 
-The flame was born when I got my first job as a web developer. Technically professional, yes, because I was getting paid. But this was a start up. And looking back, I really did not know what I was doing.
+I got my first job as a web developer. Technically speaking, "professional", yes, because I was getting paid. But this was a start up. And looking back, I really did not know what I was doing. And so the flame was born.
 
 ### 2006 Me:
 
