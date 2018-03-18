@@ -197,7 +197,7 @@ The Romantic phase.
 - **Day 180:** We are building new PCI applications! *\*beats on chest\**
 - **Day 270:** We are killing it! *\*beats on chest\**
 
-## The Inferno
+## 5. The Inferno
 
 The fire of the previous six years fans into an inferno as I begin to step up more of a senior/lead role. Scary, I know.
 
