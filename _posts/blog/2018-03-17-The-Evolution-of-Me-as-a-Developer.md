@@ -24,17 +24,20 @@ The first site I make is a site about Beavis and Butthead. A passion is born. No
 
 The year of conception.
 
-- **Day 0**: Mom gets me to take some web design classes, "computers are the next big thing"
+- **Day 0**: Mom gets me to take some web design classes, "computers are the next big thing", etc.
 - **Day 30**: Wow this HTML thing is so logical, yet creative.
 
 ### 2000 Me:
 
 The first trimester.
 
-- **Day 30**: JavaScript is such a mess
-- **Day 60**: JavaScript clearly has no future
-- **Day 90**: JavaScript clearly has no future
-- **Day 120**: DHTML, Dreamweaver, Flash all appear to have a rich future
+- **Day 30**: JavaScript is such a mess.
+- **Day 60**: JavaScript clearly has no future.
+- **Day 90**: JavaScript clearly has no future.
+- **Day 120**: DHTML, Dreamweaver, Flash.. rich stuff. Yep, the future is definitely these three.
+- **Day 360**: JavaScript clearly has no future.
+
+2000 me, were you ever an idiot or what.
 
 ### 2001 Me:
 
@@ -42,16 +45,18 @@ The second trimester.
 
 - **Day 1**: Java and SQL high school classes.
 - **Day 60**: What in the unholy hell is this stuff?!
-- **Day 90**: Too difficult, SQL/Databases are too complicated, and so is Java. What's the point..
+- **Day 90**: Too difficult, SQL/Databases are too complicated, and so is Java. Too complicated.
 - **Day 120**: JVM idea is interesting though..
+
+2001 me, your idiocy could have never imagined this stuff ruling the world one day.
 
 ### 2002 Me:
 
 The third trimester.
 
 - **Summer**:
-    + Citigroup summer internship
-    + Introduced to classic ASP and corporate life
+    + Citigroup summer internship.
+    + Introduced to classic ASP and corporate life.
     + Creepy robot cart that delivered peoples' mail to their cubicles, automatically.
 
 ## 2. The Kindling
@@ -71,9 +76,9 @@ The spark of my high school flirtations with coding ignited during my early coll
 The year I came out of the womb.
 
 - **Day 1**: Hell yeah, finally get to take Intro to Programming class. Wait, not Java again!
-- **Day 30** - This Java and C stuff is actually really cool. The whole object oriented thing clicked this time around
-- **Day 180** - A programming concepts class absolutely kicks my ass
-- **Day 270** - Most brutal instructor ever, most I have ever learned in 6 months
+- **Day 30** - This Java and C stuff is actually really cool. The whole object oriented thing clicked this time around.
+- **Day 180** - A programming concepts class absolutely kicks my ass.
+- **Day 270** - Most brutal instructor ever, most I have ever learned in 6 months.
 - **Day 360** - Seriously, Dr. Albrect: you were the one that kindled my interest in programming.
 - **Day 365** - **Concludes programming is what I want to do for a living.**
 
@@ -85,7 +90,7 @@ The flame was born when I got my first job as a web developer. Technically profe
 
 Fear of the unknown.
 
-- **Day < 0:** Sweet, this customer came into my PC repair shop needing help on his php site
+- **Day < 0:** Sweet, this customer came into my PC repair shop needing help on his php site.
 - **Day < 0:** I've messed with PHP before building a Paypal module for my gaming clan's site!
 - **Day 1:** Therefore, qualified.
 - **Day 30:** After reading that PHP/MySQL Bible, I'm on top of this Web Developer thing..
@@ -104,7 +109,7 @@ The undisciplined years of youth.
 The first true creation is born.
 
 - **Day 180:** What the heck is this version control system thing?!
-- **Day 270:** I finally get to build a new PHP/MySQL site from the ground up, including designing it
+- **Day 270:** I finally get to build a new PHP/MySQL site from the ground up, including designing it.
 - **Day 300:** Discovery of github.com, don't see the point of it (ha, good one 2008 me.)
 
 ### 2009 Me:
@@ -123,12 +128,12 @@ The flame turns into a steady burning fire during the years when I finally becom
 
 The year of great humbling.
 
-- **Day 1:** Man, I am the man! Done graduated college and got an enterprise-level gig <3
-- **Day 5:** Holy crap am I in over my head
-- **Day 50:** These SQL queries and web applications are amazingly complex
-- **Day 90:** I still feel like a n00b developer
-- **Day 180:** I build my first stand alone application"
-    + It's a quoting tool for the internal rate analysts to test their rating with
+- **Day 1:** Man, I am the man! Done graduated college and got an enterprise-level gig. <3
+- **Day 5:** Holy crap am I in over my head.
+- **Day 50:** These SQL queries and web applications are amazingly complex.
+- **Day 90:** I still feel like a n00b developer.
+- **Day 180:** I build my first stand alone application".
+    + It's a quoting tool for the internal rate analysts to test their rating with.
     + Turns out, this greatly expanded how much they could test, and probably has saved them thousands of hours over the years.
     + This is probably my oldest proud moment. This application *is still used to this day*. And they still love it.
 
@@ -136,9 +141,9 @@ The year of great humbling.
 
 The year of the first major project, and the first year I realized coding is art.
 
-- **Day 1:** I just got this multi-month project where I finally get to spread my wings on
+- **Day 1:** I just got this multi-month project where I finally get to spread my wings on.
 - **Day 30:** Good lord, is it kicking my butt!
-- **Day 60:** I work my longest shift to date:** **32 STRAIGHT HOURS**
+- **Day 60:** I work my longest shift to date:** **32 STRAIGHT HOURS**.
 - **Day 180:** I witness a truly well designed, scalable application for the first time. Mind blown.
 
 ### 2012 Me:
@@ -148,7 +153,7 @@ The year I started treating programming like craftsmanship.
 - **Day 1:** Comfort zone all day every day
 - **Day 30:** Project managers, business analysis, QA, stakeholders, psh.. I can handle these people all day. Come at me bruh!
 - **Day 180:** I am surrounded by intellectually simulating, amazing developers, I love this job!
-- **Day 270:** Discovery of codeschool.com, re-discovery of the awesomeness that is Ruby on Rails
+- **Day 270:** Discovery of codeschool.com, re-discovery of the awesomeness that is Ruby on Rails.
 
 ### 2013 Me:
 
@@ -156,33 +161,33 @@ The year I built my first scalable, enterprise-level application. Through some t
 
 - **Day 1:** Bye comfort zone, have a nice life, go design this complicated, scalable quoting application from the ground up, in 3 months!
 - **Day 30:** This application is impossible, how will me and the other 2 devs pull this off :((((
-- **Day 60:** We did it! Sales reps for health insurance client are happy
-- **Day 180:** "Hey, can you setup these other 4 clients too? Yes, they all have different rating engines and business rules"
-- **Day 270:** Learn my first hard lessons in scalability, abstractions, and adaptability
-- **Day 365:** We did it! *\*pounds chest\**
+- **Day 60:** We did it! Sales reps for health insurance client are happy.
+- **Day 180:** "Hey, can you setup these other 4 clients too? Yes, they all have different rating engines and business rules".
+- **Day 270:** Learn my first hard lessons in scalability, abstractions, and adaptability.
+- **Day 365:** We did it! *\*pounds chest\**.
 
 This was really a Renaissance year for me, finally out of the trials and tribulations of my earlier Medieval career. Good times. Throughout the year:
 
-- Ramp up on building stuff in Ruby on Rails in free time
-- Finally see the true power of JavaScript via jQuery
-- Discovery of design patterns and SOLID principles
+- Ramp up on building stuff in Ruby on Rails in free time.
+- Finally see the true power of JavaScript via jQuery.
+- Discovery of design patterns and SOLID principles.
 - Read "The Pragmatic Programmer", a game changer.
-- Finally start using that ol' Github account of mine
+- Finally start using that ol' Github account of mine.
 
 ### 2014 Me:
 
 The beginning of the PCI era. A year of great growth, to be sure.
 
-- **Day 1:** Mmmmm.. incubating in the warmth of my well-designed application I am so proud of
-- **Day 30:** Adding more clients to it, I feel like a senior now because I am master of this application
+- **Day 1:** Mmmmm.. incubating in the warmth of my well-designed application I am so proud of.
+- **Day 30:** Adding more clients to it, I feel like a senior now because I am master of this application.
 - **Day 270:** "You will now work on payment gateways, applications, and PCI compliance". Ass kicking, imminent.
 - **Day 365:** Ass kicking delivered. Way in over my head.
 
 This year's end would be the start of my Baroque era:
 
 - Learned the ins and out and complexities of PCI compliance.
-- Web security, encryption, tokenization, SAML authentication
-- Working with technical teams from other companies
+- Web security, encryption, tokenization, SAML authentication.
+- Working with technical teams from other companies.
 
 ### 2015 Me:
 
@@ -200,12 +205,12 @@ The fire of the previous six years fans into an inferno as I begin to step up mo
 
 The year of disappointment. I spend most of the year working harder than I ever have, and the application never makes it to production.
 
-- **Day 30:** Uprooted from PCI team, teams all get redistributed. World is shaken
-- **Day 60:** I am suddenly surrounded by junior developers on projects with impossible deadlines
+- **Day 30:** Uprooted from PCI team, teams all get redistributed. World is shaken.
+- **Day 60:** I am suddenly surrounded by junior developers on projects with impossible deadlines.
 - **Day 90:** These guys are actually looking up to me and asking for advice. weird...
 - **Day 120**:
-        * We take on the impossible, building 4 massive applications in 1 year
-        * With all new extremely bold architecture
+        * We take on the impossible, building 4 massive applications in 1 year.
+        * With all new extremely bold architecture.
         * I inherit the complicated SAML/SSO piece and single handedly lead the quoting and agent portal part.
 - **Day 180:** These juniors are really talented! Pulling off pretty amazing feats.
 - **Day 270:** Most of the project was canceled, never made it to production. Including mine. Brilliant developers leave. DEVASTATED.
@@ -214,7 +219,7 @@ The year of disappointment. I spend most of the year working harder than I ever 
 
 The year of exciting changes. Also, the year my hands become tentacles and spread into every. single. application. ever.
 
-- **Day 1:** Depressed still over last year amounting to nothing
+- **Day 1:** Depressed still over last year amounting to nothing.
 - **Day 30:** It's finally happening, we are getting off our much hated legacy VCS, and onto IBM RTC!
 - **Day 60:** Me and another senior handle all the conversions of dozens of sites up to 15 years of age.
 - **Day 180:** Most daunting impossible project of my career begins: PHP7 conversion of the very same dozens of sites/cronjobs dating up to 15 years back.
