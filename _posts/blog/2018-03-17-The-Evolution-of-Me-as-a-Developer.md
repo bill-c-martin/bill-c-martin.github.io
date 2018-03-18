@@ -239,4 +239,4 @@ Automated regression testing is now becoming a thing.
 
 I sometimes deliberate over switching into a DevOps role, since I appear to have an great appreciation of it. I also sort of have a passion for process. Not the ugly bloated kind, but the kind the actual streamlines getting code into production, solving problems, and making money. The sort of process that is difficult to achieve.
 
-Yet, my heart is in the code, since the very beginning, in 1999.
+Yet, my heart is in the code, since the very beginning in 1999.
