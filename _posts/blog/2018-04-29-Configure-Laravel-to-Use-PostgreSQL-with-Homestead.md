@@ -12,10 +12,6 @@ I was working on a new Laravel app locally with Homestead, using MySQL. I later 
 4. [Recreate the Database Tables and Data](#recreate-data)
 5. [Optional: Install a PostgreSQL client](#install-client)
 
-```php
-$var = ['foo', 'bar'];
-```
-
 <a name="review-homestead"></a>
 
 ## Review Homestead Setup
@@ -24,7 +20,7 @@ First things first, I already had this app in the works, and was already running
 
 Homestead was setup to run separately from my app's repository. The folders/site config in `Homestead.yaml` looks like this:
 
-```aconf
+```yaml
 ip: "192.168.10.10"
 memory: 2048
 cpus: 1
@@ -56,7 +52,7 @@ Modify the Laravel project's `/.env` environment file in the project root to use
 
 Change this:
 
-```
+```yaml
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -67,7 +63,7 @@ DB_PASSWORD=secret
 
 to this:
 
-```
+```yaml
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
@@ -100,7 +96,7 @@ That `homestead` username is what was setup in Laravel's `.env` file, but more i
 
 A PostgreSQL command line is then displayed where queries and SQL can be run:
 
-```
+```shell
 psql (9.5.10)
 SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
 Type "help" for help.
