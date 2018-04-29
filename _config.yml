@@ -18,19 +18,19 @@ about:
         header: Now
         list:
           - item: Laravel
-          - item: SOLID Principles
-          - item: Behat/phpunit
+          - item: TDD
+          - item: DevOps
       center:
         header: Soon
         list:
+          - item: SOLID Principles
           - item: Design Patterns
-          - item: Vue
           - item: Sublime Mastery
       right:
         header: Later
         list:
           - item: React
-          - item: Angular
+          - item: Vue
           - item: ES2015
   button:
     text: Download My Resume
