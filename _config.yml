@@ -1,37 +1,37 @@
 # Site settings
-title: Bill Martin
-email: bill@billmartin.io
-url: http://billmartin.io
-description: "Full-Stack Web Developer, Musician, and Book Enthusiast."
-meta_author: Bill Martin
+title: John Doe
+email: joedoe@fakemail.com
+url: https://mysite.com
+description: "Full-Stack Web Developer, Human, and Earth Resident."
+meta_author: John Doe
 
 about:
   header: About
   content:
-      left: By day, I code payment, enrollment, and quoting web applications for some of the industry's top health insurance companies, whilst striving for <a href="http://blog.codinghorror.com/a-pragmatic-quick-reference/" target="_new">Pragmatic Programmer</a> perfection.
-      right: By night, I play guitar in three bands, camp, kayak, hike, play video games, read fantasy, sci-fi, & programming books, and ponder Life, The Universe, and Everything.
-      bottom: I live in Manchester, NH.
+      left: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo enim, lacinia consectetur et ornare non, tincidunt eu sapien. 
+      right: Class aptent  sociosqu ad litora per conubia nostra, per inceptos himenaeos. Per conubia nostra. Donec eu dignissim lacus.
+      bottom: I live in Quisque, Dignissim.
   interests:
-    header: Interests as of Late
+    header: Recent Interests
     content:
       left:
         header: Now
         list:
-          - item: Laravel
-          - item: TDD
-          - item: DevOps
+          - item: Consectetur  
+          - item: Adipiscing
+          - item: Elit
       center:
         header: Soon
         list:
-          - item: SOLID Principles
-          - item: Design Patterns
-          - item: Sublime Mastery
+          - item: Torquent
+          - item: Taciti
+          - item: Aptent
       right:
         header: Later
         list:
-          - item: React
-          - item: Vue
-          - item: ES2015
+          - item: Ipsum
+          - item: Amet
+          - item: Adipiscing
   button:
     text: Download My Resume
     href: /resume/bill-martin-resume.pdf
@@ -49,10 +49,10 @@ bing_verify:
 contact: static
 
 # If you use disqus you need disqus shortname: https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: billmartin
+disqus_shortname: 
 
 # If you have Google Analytics account setup, enter your tracker ID, eg. A-12312312-1
-google_analytics_tracker_id: A-89823208-1
+google_analytics_tracker_id: 
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -92,31 +92,21 @@ portfolio:
 # Footer settings
 footer:
   location-header: Location
-  location: Manchester, NH
-  copyright: Bill Martin. All Rights Reserved.
+  location: New York, NY
+  copyright: John Doe. All Rights Reserved.
   social: My Other Whereabouts
-  new-thoughts: New Thoughts
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc. search them in main.css)
 social:
   - title: github
-    tooltip: "Github: Code I am writing"
-    url: https://github.com/bill-c-martin
+    tooltip: "Github"
+    url: https://github.com/
   - title: linkedin
-    tooltip: "Linkedin: Places I've worked"
-    url: https://www.linkedin.com/in/billmartin9
-  - title: codeschool
-    tooltip: "Codeschool: Skills I am learning"
-    url: https://www.codeschool.com/users/90602
-  - title: laracasts
-    tooltip: "Laracasts: Skills I am learning"
-    url: https://laracasts.com/@wcmarti2
+    tooltip: "Linkedin"
+    url: https://www.linkedin.com/
   - title: stack-overflow
-    tooltip: "Stack Overflow: Solutions I've been exchanging"
-    url: http://stackoverflow.com/users/5743565/bill-martin
-  - title: goodreads
-    tooltip: "Goodreads: Books I've been reading"
-    url: http://www.goodreads.com/billmartin
+    tooltip: "Stack Overflow"
+    url: http://stackoverflow.com/
   - title: rss
     tooltip: Subscribe to RSS feed
     url: /feed.xml
