@@ -36,14 +36,14 @@ Once up and running locally, configure and personalize your portfolio.
 
 ### Contact Form Setup
 
-Formspree will receive POST requests from your contact form, and forward them to your email.
+Formspree will receive POST requests from your contact form, and forward them to your email. Without requiring server-side code.
 
 1. Replace `you@email.com` in `_includes/contact_static.html` with your email address
 2. Setup a [formspree](https://formspree.io/) account for your email address
 
 ### Comments Setup
 
-Disqus will receive POST requests from your blog post's comment forms, and also deal with spam.
+Disqus will receive POST requests from your blog post's comment forms, display comments dynamically, and also deal with spam. Without requiring server-side code.
 
 1. Setup a [Disqus](https://help.disqus.com/customer/portal/articles/466208) account
 2. Add your `disqus_shortname` in `_config.yml`
