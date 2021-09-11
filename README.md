@@ -2,6 +2,8 @@ Source code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmarti
 
 Demo: [billmartin.io](https://billmartin.io)
 
+Requires no servers or hosting, and runs straight from your git repo.
+
 ## Quick Setup
 
 1. Fork this repo to your own Github, with name: ```your-github-username.github.io```
@@ -62,20 +64,20 @@ These are some recommended steps for final polishing.
 1. Create a [Google Analytics](https://analytics.google.com/analytics/web/) site/property
 2. Enter your `google_analytics_tracker_id` in `_config.yml`
 
-### Using Your Own Domain Name Through Github Pages
+### Custom Domains
 
 Instead of using the default https://your-github-username.github.io Github Pages URL, you can instead use your own custom domain name that you already own.
 
-See [Github's documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) on this.
+You can alias a custom domain name to your https://your-github-username.github.io Github Pages URL. See [Github's documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) on this.
 
-One drawback of this is having to manage, and usually pay for, SSL certificates through your domain registrar.
+However, you will usually have to manage and pay for an SSL certificates through your domain registrar.
 
 You can instead use Netlify for all of this, for free.
 
-### Using Your Own Domain Name Through Netlify, for Free
+#### Using Netlify (Free)
 
 Netlify is a free service that provides CDN, SSL certs, deployment pipelines, and even dynamic serverless functions.
 
 1. Create a [Netlify](https://www.netlify.com/) account
-2. [Setup your custom domain](https://docs.netlify.com/domains-https/custom-domains/) to route through Netlify, and point to this git repo
+2. [Setup your custom domain](https://docs.netlify.com/domains-https/custom-domains/) to route through Netlify, and from Netlify to your repo
 2. [Setup a Netlify SSL cert](https://docs.netlify.com/domains-https/https-ssl/)
