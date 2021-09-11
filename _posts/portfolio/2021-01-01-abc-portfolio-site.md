@@ -1,0 +1,70 @@
+---
+layout: default
+title: ABC Portfolio Site
+category: portfolio
+modal-id: 1
+img: portfolio1.png
+alt: ABC Portfolio Site
+client: ABC Company
+application: Portfolio Site
+project-date: 2020 - 2021
+languages:
+- PHP
+- HTML
+- CSS
+- JavaScript
+- XML
+concepts:
+- MVVM
+- Depdency Injection
+- OOP
+- Themes
+tools:
+- Magento
+- RequireJS
+- KnockoutJS
+- Git
+- magento-cloud CLI
+stack:
+- Linux
+- Nginx
+- MariaDB
+- PHP
+- AWS
+---
+
+### Project Description
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo enim, lacinia et ornare non, tincidunt eu sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+Donec eu dignissim lacus. Quisque dignissim lobortis nunc ac rutrum. Donec nec ex cursus, vehicula libero nec, venenatis arcu. Quisque quis ultrices ante, sed ultrices lectus.
+
+### Contributions
+
+Praesent vel aliquet mauris, a vulputate leo. 
+
+- Vestibulum sed mattis turpis
+- Vel auctor lectus
+- Proin justo sem
+
+Lobortis non neque at, vestibulum molestie enim. Fusce quis ligula et nulla elementum imperdiet. Quisque laoreet feugiat diam, eget mollis mi ullamcorper nec.
+
+### Challenges Overcame
+
+Duis laoreet justo id magna hendrerit, eu varius dolor laoreet. 
+
+- Sed laoreet tincidunt justo nec maximus
+- Nam nec leo vitae sem convallis congue nec et urna.
+- Pellentesque metus enim
+
+Iaculis ac nisi ut, facilisis condimentum erat. Curabitur posuere sem eget quam vulputate porttitor. 
+
+### Accomplishments
+
+Nullam dictum lobortis metus et euismod. Ut eget tortor sit amet tortor efficitur lacinia nec quis libero. 
+
+- Curabitur vel finibus enim
+- Phasellus ac quam augue
+- Aliquam et erat dui
+
+Aenean condimentum viverra eros, vel facilisis turpis tincidunt ut. Cras tempor elementum nisi, eu consectetur nibh tristique a.
