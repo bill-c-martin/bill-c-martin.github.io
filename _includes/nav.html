@@ -19,18 +19,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#blog">Thoughts</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#contact">Contact</a>
-                    </li>
+                    {% for item in site.nav.labels %}=
+                        <li class="page-scroll">
+                            <a href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#{{ item.[1] }}">{{ item.[1] }}</a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

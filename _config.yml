@@ -5,8 +5,18 @@ url: https://mysite.com
 description: "Full-Stack Web Developer, Human, and Earth Resident."
 meta_author: John Doe
 
+# Site Nav
+# Only change the label values, not the keys.
+# Label order dictates the nav link order on the site.
+nav:
+  labels:
+    portfolio: Portfolio
+    about: About
+    blog: Thoughts
+    contact: Contact
+
+# About section
 about:
-  header: About
   content:
       left: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo enim, lacinia consectetur et ornare non, tincidunt eu sapien. 
       right: Class aptent  sociosqu ad litora per conubia nostra, per inceptos himenaeos. Per conubia nostra. Donec eu dignissim lacus.
