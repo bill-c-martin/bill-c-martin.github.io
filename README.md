@@ -25,6 +25,26 @@ bundle exec jekyll serve
 ```
 5. Go to [http://localhost:4000](http://localhost:4000) and verify it runs locally.
 
+The localhost site will show changes in real time.
+
+If you modify `_config.yml` though, you'll need to `ctrl+c` and restart the web server.
+
+### Debugging
+
+Pipe any variable into `debug` from any template to see its contents on screen.
+
+Example: Printing entire _config.yml structure:
+
+```ruby
+{{ site | debug }}
+```
+
+Example: Printing blog post attribute from inside a for loop in `blog_grid.html`:
+
+```ruby
+{{ post | debug }}
+```
+
 ## Configuration
 
 Once up and running locally, configure and personalize your portfolio.
