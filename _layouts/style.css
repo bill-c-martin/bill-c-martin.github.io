@@ -1,3 +1,4 @@
+{% include css/fonts.css %}
 {% include css/bootstrap.min.css %}
 {% include css/main.css %}
 {% include css/highlight.css %}
