@@ -1,12 +1,22 @@
 # Site settings
 title: Bill Martin
 email: bill@billmartin.io
-url: http://billmartin.io
+url: https://billmartin.io
 description: "Full-Stack Web Developer, Musician, and Book Enthusiast."
 meta_author: Bill Martin
 
+# Site Nav
+# Only change the label values, not the keys.
+# Label order dictates the nav link order on the site.
+nav:
+  labels:
+    portfolio: Portfolio
+    about: About
+    blog: Thoughts
+    contact: Contact
+
+# About section
 about:
-  header: About
   content:
       left: By day, I code payment, enrollment, and quoting web applications for some of the industry's top health insurance companies, whilst striving for <a href="http://blog.codinghorror.com/a-pragmatic-quick-reference/" target="_new">Pragmatic Programmer</a> perfection.
       right: By night, I play guitar in three bands, camp, kayak, hike, play video games, read fantasy, sci-fi, & programming books, and ponder Life, The Universe, and Everything.
@@ -17,21 +27,21 @@ about:
       left:
         header: Now
         list:
-          - item: Laravel
-          - item: TDD
-          - item: DevOps
+          - item: Magento modules
+          - item: RequireJS
+          - item: AWS Certification
       center:
         header: Soon
         list:
-          - item: SOLID Principles
-          - item: Design Patterns
-          - item: Sublime Mastery
+          - item: Ansible
+          - item: Magento Certification
+          - item: Netlify
       right:
         header: Later
         list:
           - item: React
-          - item: Vue
-          - item: ES2015
+          - item: MVVM
+          - item: Design Pattern Katas
   button:
     text: Download My Resume
     href: /resume/bill-martin-resume.pdf
@@ -95,27 +105,17 @@ footer:
   location: Manchester, NH
   copyright: Bill Martin. All Rights Reserved.
   social: My Other Whereabouts
-  new-thoughts: New Thoughts
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc. search them in main.css)
 social:
   - title: github
-    tooltip: "Github: Code I am writing"
+    tooltip: "Github"
     url: https://github.com/bill-c-martin
   - title: linkedin
-    tooltip: "Linkedin: Places I've worked"
+    tooltip: "Linkedin"
     url: https://www.linkedin.com/in/billmartin9
-  - title: codeschool
-    tooltip: "Codeschool: Skills I am learning"
-    url: https://www.codeschool.com/users/90602
-  - title: laracasts
-    tooltip: "Laracasts: Skills I am learning"
-    url: https://laracasts.com/@wcmarti2
-  - title: stack-overflow
-    tooltip: "Stack Overflow: Solutions I've been exchanging"
-    url: http://stackoverflow.com/users/5743565/bill-martin
   - title: goodreads
-    tooltip: "Goodreads: Books I've been reading"
+    tooltip: "Goodreads"
     url: http://www.goodreads.com/billmartin
   - title: rss
     tooltip: Subscribe to RSS feed
