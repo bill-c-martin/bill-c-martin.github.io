@@ -59,7 +59,7 @@ bing_verify:
 contact: static
 
 # If you use disqus you need disqus shortname: https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: 
+disqus_shortname: myshortname
 
 # If you have Google Analytics account setup, enter your tracker ID, eg. A-12312312-1
 google_analytics_tracker_id: 
@@ -117,9 +117,6 @@ social:
   - title: stack-overflow
     tooltip: "Stack Overflow"
     url: http://stackoverflow.com/
-  - title: rss
-    tooltip: Subscribe to RSS feed
-    url: /feed.xml
 
 # Credits content
 credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Fork my portfolio on github</a>'
