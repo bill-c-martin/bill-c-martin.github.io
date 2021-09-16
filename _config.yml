@@ -114,10 +114,10 @@ social:
     url: https://github.com/bill-c-martin
   - title: linkedin
     tooltip: "Linkedin"
-    url: https://www.linkedin.com/in/billmartin9
+    url: https://linkedin.com/in/billmartin9
   - title: goodreads
     tooltip: "Goodreads"
-    url: https://www.goodreads.com/billmartin
+    url: https://goodreads.com/billmartin
 
 # Credits content
 credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Fork my portfolio on github</a>'
