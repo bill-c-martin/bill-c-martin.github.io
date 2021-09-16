@@ -1,6 +1,6 @@
 Source code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmartin.io](https://billmartin.io), which uses the [Freelancer Jekyll Theme](https://github.com/jeromelachaud/freelancer-theme) with my own additions and modifications.
 
-Demo: [billmartin.io](https://billmartin.io)
+Demo: [bill-c-martin.github.com](https://bill-c-martin.github.io)
 
 Requires no servers or hosting, and runs straight from your git repo.
 
