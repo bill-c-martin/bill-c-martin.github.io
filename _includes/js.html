@@ -23,7 +23,7 @@
     <!-- billmartin.io customizations -->
     <script src="{{ "/js/custom.js" }}"></script>
 
-    {% if site.contact == "disqus" and site.disqus_shortname != "myshortname" %}
+    {% if site.disqus_shortname != "myshortname" and site.contact == "disqus" or page.layout == "blog_post" %}
         <!-- Disqus Stuff -->
         {% include js_disqus.html %}
     {% endif %}
