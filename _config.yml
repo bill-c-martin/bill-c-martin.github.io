@@ -106,7 +106,8 @@ footer:
   copyright: Bill Martin. All Rights Reserved.
   social: My Other Whereabouts
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc. search them in main.css)
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc)
+# Search for more on: https://fontawesome.com/v5.15/icons?d=gallery&p=2&s=brands
 social:
   - title: github
     tooltip: "Github"
@@ -116,10 +117,7 @@ social:
     url: https://www.linkedin.com/in/billmartin9
   - title: goodreads
     tooltip: "Goodreads"
-    url: http://www.goodreads.com/billmartin
-  - title: rss
-    tooltip: Subscribe to RSS feed
-    url: /feed.xml
+    url: https://www.goodreads.com/billmartin
 
 # Credits content
 credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Fork my portfolio on github</a>'
