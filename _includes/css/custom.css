@@ -38,7 +38,7 @@ header > div.container > div > div > img {
 
 section#about hr.star-light:after,
 section#about hr.star-primary:after {
-    content: "\f11a";
+    content: "\f2bd";
 }
 
 section#about div#interests hr.star-light:after,
