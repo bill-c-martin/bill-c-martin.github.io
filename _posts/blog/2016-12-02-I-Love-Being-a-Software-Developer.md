@@ -30,4 +30,6 @@ Then, I play God when I go to run my code, breathing life into its lungs, with i
 
 And I get paid to do this!
 
-I highly recommend software development as a career choice. I always encourage my non-programmer friends to at least [try programming](http://tryruby.org/levels/1/challenges/0) and see how they like it. I cannot imagine doing anything else.
+I highly recommend software development as a career choice. I always encourage my non-programmer friends to at least [try programming](http://tryruby.org/levels/1/challenges/0) and see how they like it.
+
+I cannot really imagine doing anything else.

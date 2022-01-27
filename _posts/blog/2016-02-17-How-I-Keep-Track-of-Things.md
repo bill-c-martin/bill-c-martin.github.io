@@ -4,7 +4,9 @@ title: How I Keep Track of Things
 category: blog
 ---
 
-When it comes to keeping track of things I want to do, and things I want to remember, it seems like I've tried everything under the Sun.
+Ok, look. I'm really awesome at keeping track things. Here is my system.
+
+You name it, I've tried it:
 
 * Sticky notes
 * Text files
@@ -13,15 +15,17 @@ When it comes to keeping track of things I want to do, and things I want to reme
 * PC Software
 * Email tagging/folders
 
-You name it, I've tried it. But I always seem to come back to plain text files though.
+In the end, I always seem to come back to plain text files though.
 
-Excel worked decently for tracking complicated projects for work with numerous deadlines and tasks to check off.
+Excel worked great for tracking things that need calculations: capital gains taxes, hour budgeting, etc.
 
-[Evernote](https://evernote.com/) worked decently enough for tracking all the emails, conversations and meetings I was having for a particularly big, 4-month long project.
+[Evernote](https://evernote.com/) worked decently enough for tracking all the emails, conversations and meetings I had once for a particularly big, 4-month long project.
 
-Various android apps have always worked for me, but limited me to tracking via my phone. To this day, I still catch myself leaving email marked as unread to get to them later on.
+Various android apps have always worked for me, but limited me to tracking via my phone.
 
-All of those options put my tasks & lists in a proprietary format, which I've always hated.
+To this day, I still catch myself leaving emails marked as unread to get to them later on.
+
+All of those options put my tasks & lists in various proprietary formats, which I've always hated.
 
 And then along came dropbox.
 

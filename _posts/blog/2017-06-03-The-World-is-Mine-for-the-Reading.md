@@ -7,6 +7,8 @@ category: blog
 > We need books, time, and silence. Thou shalt not is soon forgotten, but Once upon a time lasts forever.
 > <span>― Philip Pullman</span>
 
+Hell yeah, a post on book worship. Why not?
+
 [My Goodreads account](http://www.goodreads.com/billmartin) tells me that I'm slowly but surely clawing my way through the world's knowledge. Yet, with my ["to-read" list](https://www.goodreads.com/review/list/11304165-bill-martin?shelf=to-read&utm_campaign=mybooksnav&utm_content=mybooks_cta&utm_medium=web&utm_source=homepage) tripling my ["read" list](https://www.goodreads.com/review/list/11304165-bill-martin?shelf=read&utm_campaign=mybooksnav&utm_content=mybooks_cta&utm_medium=web&utm_source=homepage), it seems that by the time that I die, I will still know absolutely nothing about everything.
 
 And I love that.

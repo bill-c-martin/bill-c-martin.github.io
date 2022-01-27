@@ -20,18 +20,18 @@ All the focus goes into the relationships, modeling, and queries.
 
 ### Garbage In, Garbage Out
 
-The first step to having good documentation is having good database design in the first place.
+If there is a convoluted design, expect convoluted documentation. In fact, expect convoluted models and business logic in the downstream application, too.
 
-If there is a convoluted design, expect convoluted documentation. In fact, expect convoluted data models and business logic in the application itself, too.
+Thigns to be ruthless about:
 
-Be ruthless about:
+- modeling of business domain into tables in a non-technical manner
+  - ie. so easy a ~~caveman~~ business person can (mostly) visualize it
+- well-defined tables with a clear, single purpose
+- foreign key relationships enforced on every table
+- consistent table/column naming
+- normalization
 
- - modeling of business domain into tables in a non-technical manner
-   - ie. so easy a ~~caveman~~ business person can (mostly) visualize it
- - well-defined tables with a clear, single purpose
- - foreign key relationships enforced on every table
- - consistent table/column naming
- - normalization
+Or work with awesome DBAs.
 
 ### Where the Pristine Runs Afoul
 
@@ -43,11 +43,11 @@ You then end up with this leftover.. thing, that keeps getting populated by the 
 
 Other times, ultra-specific, awkwardly-named columns get added to an existing table due to convenience, which often turns into an eyebrow raiser for the next developer that has to figure out what the column does, and why it's in that table.
 
-In worst cases, flag or enum-type columns get added to allow rows to have their own state, effectively denormalizing the table.
+In worse cases still, flag or enum-type columns get added to allow rows to have their own state, effectively denormalizing the table.
 
 And somewhere in the spacetime continuum, or perhaps outside of it, the gods weep.
 
-It's these sort of last minute, weird, stupid things that fouls up pristine database design, and makes documentation that more difficult and verbose. To this, I say: always refactor, no matter the risk. 
+It's these sort of rushed, last minute things that fouls up database design over time, which in turn makes documentation that much more difficult and verbose. To this, I say: always refactor, no matter the risk.
 
 ### What to Document
 

@@ -4,13 +4,13 @@ title: The Evolution of Me as a Developer
 category: blog
 ---
 
-This is the comical looking back of my adventurous history as a web developer, my goofs, my successes, my failures, my hopes.
+This is the quasi-comical looking back of my adventurous history as a web developer, my goofs, my successes, my failures, my hopes.
 
 The high level synopsis is:
 
 1. **The Spark**: It all started with some HTML, CSS, Java, SQL classes I took in high school.
 2. **The Kindling**: College programming for fun + I wrote a Paypal module for my gaming clan's site in PHP.
-3. **The Flame**: My first web development job in 2006.
+3. **The Flame**: My first web development job in 2006. What an idiot I was.
 4. **The Fire**: My first professional/enterprise job at a large company in 2010.
 5. **The Inferno**: I step into a senior/lead role in 2016 and start focusing on independence, people, and process efficiency.
 
@@ -24,7 +24,7 @@ The first site I make is a site about Beavis and Butthead. A passion is born. No
 
 The year of conception.
 
-- **Day 0**: Mom gets me to take some web design classes, "computers are the next big thing", etc.
+- **Day 0**: Parent gets me to take some web design classes, "computers are the next big thing", etc.
 - **Day 30**: Wow this HTML thing is so logical, yet creative.
 - **Day 60**: Makes first web sites, intrigued by the combination of technical sophistication and art.
 - **Day 180**: Starts publishing sites on geocities, including "homemade" blogs for friends to rant their world-bending, introspective philosophies conjured forth from 14 year-old juvenile minds.
@@ -35,11 +35,11 @@ The first trimester.
 
 - **Day 30**: JavaScript is such a mess.
 - **Day 60**: JavaScript clearly has no future.
-- **Day 90**: JavaScript clearly has no future.
+- **Day 90**: JavaScript definitely has no future.
 - **Day 120**: DHTML, Dreamweaver, Flash.. rich stuff. Yep, the future is definitely these three.
-- **Day 360**: JavaScript clearly has no future.
+- **Day 360**: JavaScript FFS
 
-2000 me, were you ever an idiot or what.
+2000 me, the visionless imbecile who had no idea JavaScript would rule the world one day.
 
 ### 2001 Me:
 
@@ -50,20 +50,18 @@ The second trimester.
 - **Day 90**: Too difficult, SQL/Databases are too complicated, and so is Java. Too complicated.
 - **Day 120**: JVM idea is interesting though..
 
-2001 me, your idiocy could have never imagined this stuff ruling the world one day.
-
 ### 2002 Me:
 
 The third trimester.
 
 - **Summer**:
-    + Citigroup summer internship.
-    + Introduced to classic ASP and corporate life.
-    + Creepy robot cart that delivered peoples' mail to their cubicles, automatically.
+  - Citigroup summer internship.
+  - Introduced to classic ASP and corporate life.
+  - Creepy robot cart that delivered peoples' mail to their cubicles, automatically.
 
 ## 2. The Kindling
 
-The spark of my high school flirtations with coding ignited during my early college years, when I found out what programming was really all about.
+The spark of my high school brushes up against coding ignited during my early college years, when I found out what programming was really all about.
 
 ### 2003 Me:
 
@@ -78,7 +76,7 @@ The spark of my high school flirtations with coding ignited during my early coll
 The year I came out of the womb.
 
 - **Day 1**: Hell yeah, finally get to take Intro to Programming course. Wait, not Java again!
-- **Day 30** - This Java and C stuff is actually really cool. The whole object oriented thing clicked this time around with Java. C blows my mind with it's intricacies.
+- **Day 30** - This Java and C stuff is actually really cool. The whole object oriented thing clicked this time around with Java. C blows my mind with its intricacies.
 - **Day 180** - A "Programming Concepts" course absolutely kicks my ass.
 - **Day 270** - Most brutal instructor ever in that course, most I have ever learned in 6 months.
 - **Day 360** - Seriously, Dr. Albrect: I wouldn't be who I am today without you.
@@ -211,9 +209,9 @@ The year of disappointment. I spend most of the year working harder than I ever 
 - **Day 60:** I am suddenly surrounded by junior developers on projects with impossible deadlines.
 - **Day 90:** These guys are actually looking up to me and asking for advice. weird...
 - **Day 120**:
-        * We take on the impossible, building 4 massive applications in 1 year.
-        * With all new extremely bold architecture.
-        * I inherit the complicated SAML/SSO piece and single handedly lead the quoting and agent portal part.
+  - We take on the impossible, building 4 massive applications in 1 year.
+  - With all new extremely bold architecture.
+  - I inherit the complicated SAML/SSO piece and single handedly lead the quoting and agent portal part.
 - **Day 180:** These juniors are really talented! Pulling off pretty amazing feats.
 - **Day 270:** Most of the project was canceled, never made it to production. Including mine. Brilliant developers leave. DEVASTATED.
 
