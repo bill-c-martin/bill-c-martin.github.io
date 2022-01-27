@@ -2,7 +2,7 @@
 title: Bill Martin
 email: bill@billmartin.io
 url: https://billmartin.io
-description: "Full-Stack Engineer, Musician, and Book Enthusiast."
+description: "Software Engineer. Musician. Father."
 meta_author: Bill Martin
 
 # Site Nav
@@ -19,7 +19,7 @@ nav:
 about:
   content:
       left: By day, I build eCommerce web applications in the exciting and rapidly growing CBD industry, whilst striving for <a href="http://blog.codinghorror.com/a-pragmatic-quick-reference/" target="_new">Pragmatic Programmer</a> perfection.
-      right: By night, I write and record music, read fantasy, sci-fi, & programming books, flex my newly minted dadhood, and ponder Life, The Universe, and Everything.
+      right: By night, I write & record music, read fantasy, sci-fi, & programming books, flex my newly minted dadhood, and lurk stock & software subreddits.
       bottom: I live in Manchester, NH.
   interests:
     header: Interests as of Late
@@ -28,19 +28,19 @@ about:
         header: Now
         list:
           - item: Magento modules
-          - item: RequireJS
           - item: AWS Certification
+          - item: Core Web Vitals
       center:
         header: Soon
         list:
           - item: Ansible
-          - item: Magento Certification
           - item: Netlify
+          - item: MVVM
       right:
         header: Later
         list:
-          - item: React
-          - item: MVVM
+          - item: Docker Containers
+          - item: Google Cloud Platform
           - item: Design Pattern Katas
   button:
     text: Download My Resume
