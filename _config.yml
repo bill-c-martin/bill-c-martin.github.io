@@ -125,7 +125,7 @@ social:
 credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Fork my portfolio on github</a>'
 
 # Build settings
-# permalink: /:categories/:title
-permalink: pretty 
+permalink: /:categories/:title
 
+# Do not ignore copying these underscore files
 include: ["_redirects"]
