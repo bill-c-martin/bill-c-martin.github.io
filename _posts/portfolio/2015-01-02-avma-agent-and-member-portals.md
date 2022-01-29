@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio_post
 title: AVMA Agent and Member Portals
 category: portfolio
 modal-id: 2

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio_post
 title: Payment Tokenization Platform
 category: portfolio
 modal-id: 4

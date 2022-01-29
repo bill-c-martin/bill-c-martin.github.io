@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio_post
 title: Payment Encryption Web Services
 category: portfolio
 modal-id: 6

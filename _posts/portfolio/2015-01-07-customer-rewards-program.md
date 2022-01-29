@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio_post
 title: Customer Rewards Program
 category: portfolio
 modal-id: 7

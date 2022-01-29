@@ -95,7 +95,7 @@ section#about ul  {
   padding: 10px 0 0 0;
 }
 
-/* Portfolio Posts */
+/* Portfolio Modals */
 
 .portfolio-modal hr.star-primary:after {
   content: "\f0b1";
@@ -158,6 +158,18 @@ section#about ul  {
     content: "\f085";
     color: #{{ site.color.primary }};
     background-color: white
+}
+
+/* Portfolio Posts */
+
+#project-overview {
+  margin: 30px 0;
+}
+
+article.portfolio-post header hr.star-primary:after {
+  content: "\f0b1";
+  color: white;
+  background-color: #{{ site.color.primary }};
 }
 
 /* Blog Grid */
@@ -296,7 +308,7 @@ article.blog-post a {
 }
 
 article.blog-post footer {
-  margin: 60px 0;
+  margin: 60px 0 0 0;
   display: block;
   width: auto;
   overflow: hidden;
@@ -308,12 +320,22 @@ article.blog-post footer div.container {
   padding: 30px 0;
 }
 
+article.blog-post footer h2 {
+  text-align: center;
+  margin: 40px 0; 
+}
+
 article.blog-post footer a {
   display: block;
   width: 50%;
   float: left;
   margin: 1em 0;
   color: white;
+}
+
+article.blog-post footer .prev span, article.blog-post footer .next span{
+  font-size: 30px;
+  line-height: normal;
 }
 
 article.blog-post footer .next {

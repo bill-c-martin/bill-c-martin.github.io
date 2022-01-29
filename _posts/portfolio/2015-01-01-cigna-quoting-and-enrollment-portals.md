@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio_post
 title: Cigna Quoting and Enrollment Portals
 category: portfolio
 modal-id: 1

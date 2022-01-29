@@ -18,13 +18,13 @@
     <div class="container">
       <a class="prev" href="{{page.previous.url}}">
         {% if page.previous.url and page.previous.categories contains "blog" %}
-          &laquo; {{page.previous.title}}
+          <span>&laquo;</span> {{page.previous.title}}
         {% endif %}
       </a>
     
       <a class="next" href="{{page.next.url}}">
         {% if page.next.url and page.next.categories contains "blog" %}
-          {{page.next.title}} &raquo;
+          {{page.next.title}} <span>&raquo;</span>
         {% endif %}
       </a>
     </div>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio_post
 title: Group Enrollment Platform
 category: portfolio
 modal-id: 5
