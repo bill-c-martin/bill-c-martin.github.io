@@ -46,23 +46,26 @@ The goal of this project was to develop a custom Wordpress/WooCommerce plugin fo
 My primary lead contributions were:
 
 - Spearheaded project from inception to completion, handling coordination, estimates, and burndown
-- Worked with marketing team to help
+- Worked with marketing team to help:
   - develop requirements from Swell technical feature set and constraints
-  - leverage dynamic Swell widgets on site pages they published.
+  - leverage dynamic Swell widgets on site pages they published
 - Orchestrated multi-deployment rollout gradually and without issue
 
 My developer contributions were:
 
 - Built out Swell API in our Postman team workspace
-- Developed custom WooCommerce plugin to integrate with Swell:
-  - Built custom coupon type in WooCommerce exclusively for rewards
-  - Synced new account registrations with Swell through their REST API
-  - Injected cart feature for rewards members to redeem points for discounts
-  - Triggered orders to sync points via Swell REST API:
-    - New orders: Awarded points based on order total x VIP tier multiplier
-    - Refunded orders: Revoked points based on amounts refunded
-  - Built Account area to view points balance, rewards history, and VIP tiers
-- Devised custom tool to generate, load, and synchronize reward coupons on the hempbombs.com WooCommerce and Swell systems.
+- Developed custom WooCommerce plugin to integrate with Swell
+- Devised custom tool to generate, load, and synchronize reward coupons between the WooCommerce and Swell systems.
+
+I developed the custom WooCommerce plugin from the ground up with the following contributions:
+
+- Built custom coupon type in WooCommerce exclusively for rewards
+- Synced new account registrations with Swell through their REST API
+- Injected cart feature for rewards members to redeem points for discounts
+- Triggered orders to sync points via Swell REST API:
+  - New orders: Awarded points based on order total x VIP tier multiplier
+  - Refunded orders: Revoked points based on amounts refunded
+- Built Account area to view points balance, rewards history, and VIP tiers
 
 ### Challenges Overcame
 
