@@ -42,6 +42,7 @@ Cigna had four web applications to facilitate sales of health and dental insuran
 - **Member Portal** - Members view benefits, make payments, and track claims
 
 ### Contributions
+
 My work with Cigna's portals spanned three years, driven largely by new feature requests:
 
 - Support for quoting dental products across ten states
@@ -53,7 +54,7 @@ I also created a bulk premium rating tool that allows internal rate analysts to 
 
 ### Challenges Overcame
 
-This period marked a lot of growth for me as a junior web developer coming from a startup company, getting my feet wet with enterprise-level web applications. 
+This period marked a lot of growth for me as a junior web developer coming from a startup company, getting my feet wet with enterprise-level web applications.
 
 The biggest challenges I faced were mostly enterprise firsts:
 

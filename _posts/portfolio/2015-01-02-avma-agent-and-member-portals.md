@@ -35,6 +35,7 @@ stack:
 ---
 
 ### Project Description
+
 AVMA has a multi-user site for agents, students, and members that allows all three to run insurance quotes:
 
 - **Agent Portal** - Agents sell policies, run quotes, and manage sales

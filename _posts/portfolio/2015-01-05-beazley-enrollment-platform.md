@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Beazley Enrollment Platform
+title: Group Enrollment Platform
 category: portfolio
 modal-id: 5
 img: beazley.png

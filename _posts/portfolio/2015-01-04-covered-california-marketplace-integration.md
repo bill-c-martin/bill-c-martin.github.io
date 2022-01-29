@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Covered California Marketplace
+title: Payment Tokenization Platform
 category: portfolio
 modal-id: 4
 img: california-marketplace.png
@@ -35,9 +35,9 @@ stack:
 
 ### Project Description
 
-An in-house-built, pre-existing payment portal tokenizes and processes payments for various healh insurance carriers selling coverage on the Heathcare.gov "Federal Marketplace".
+An in-house-built, pre-existing payment portal tokenizes and processes payments for various health insurance carriers selling coverage on the Heathcare.gov "Federal Marketplace".
 
-A good half of the states under the Affordable Healthcare Act have elected to run their own [state-based marketplaces](http://kff.org/health-reform/state-indicator/state-health-insurance-marketplace-types/) instead. 
+A good half of the states under the Affordable Healthcare Act have elected to run their own [state-based marketplaces](http://kff.org/health-reform/state-indicator/state-health-insurance-marketplace-types/) instead.
 
 The payment portal was initially designed around the strict standards of that Federal Marketplace, which state-based marketplaces do not have to follow.
 
@@ -47,13 +47,13 @@ To scale the payment portal to any number of state-based marketplaces, it had to
 - Configure client-specific features and customizations
 - Send any response type, not just Healthcare.gov-formatted POST response
 - Support any type of request-level security, eg:
-   - Restful POST request tokens
-   - Signed SAML
-   - SOAP encryption
+  - REST POST request tokens
+  - Signed SAML
+  - SOAP encryption
 
 ### Contributions
 
-This project consisted of two senior developers: myself, and another who was in charge of a different state marketplace. 
+This project consisted of two senior developers: myself, and another who was in charge of a different state marketplace.
 
 Together, we crafted the solutions that allowed this payment portal to scale to any number of state marketplaces.
 
@@ -63,7 +63,7 @@ Test harnesses were also created to simulate the state marketplaces where the us
 
 ### Challenges Overcame
 
-This project was a tidal wave of advanced concepts and technologies that I have only been previously exposed to minimally. 
+This project was a tidal wave of advanced concepts and technologies that I have only been previously exposed to minimally.
 
 I have to seriously step my game up in the areas of cryptography, SOAP web services, and SAML processing, and learned a lot of new tools in the process.
 
