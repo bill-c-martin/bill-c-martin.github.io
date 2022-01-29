@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Hemp Bombs Rewards Program
+title: Customer Rewards Program
 category: portfolio
 modal-id: 7
-img: hb-rewards.png
-alt: Screenshot of hempbombs.com
-client: Global Widget
-application: WooCommerce
+img: rewards.png
+alt: Screenshot of eCommerce website featuring the rewards program
+client: CBD Product Manufacturer
+application: eCommerce Site
 project-date: July 2020 - October 2020
 languages:
 - PHP
