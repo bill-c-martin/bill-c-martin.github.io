@@ -172,6 +172,15 @@ article.portfolio-post header hr.star-primary:after {
   background-color: #{{ site.color.primary }};
 }
 
+.portfolio-post .skills ul {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.portfolio-post .skills li {
+  margin-left: 0;
+}
+
 /* Blog Grid */
 
 section#blog hr.star-primary:after {
