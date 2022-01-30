@@ -1,6 +1,6 @@
 <article class="blog-post portfolio-post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-      <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+      <h1 itemprop="name headline">Project: {{ page.title | escape }}</h1>
       <hr class="star-primary">
     </header>
     <div class="content" itemprop="articleBody">
@@ -40,13 +40,15 @@
         <h2>Other Projects</h2>
         <a class="prev" href="{{page.previous.url}}">
           {% if page.previous.url and page.previous.categories contains "portfolio" %}
-            <span>&laquo;</span> {{page.previous.title}}
+            <span>&laquo;</span>
+            {{page.previous.title}}
           {% endif %}
         </a>
       
         <a class="next" href="{{page.next.url}}">
           {% if page.next.url and page.next.categories contains "portfolio" %}
-            {{page.next.title}} <span>&raquo;</span>
+            <span>&raquo;</span>
+            {{page.next.title}} 
           {% endif %}
         </a>
       </div>
