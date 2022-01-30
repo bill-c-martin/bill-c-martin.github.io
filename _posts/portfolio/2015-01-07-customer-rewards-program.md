@@ -5,9 +5,10 @@ category: portfolio
 modal-id: 7
 img: rewards.png
 alt: Screenshot of eCommerce website featuring the rewards program
-client: CBD Product Manufacturer
-application: eCommerce Site
-project-date: July 2020 - October 2020
+overview:
+  application: eCommerce Site
+  client: CBD Product Manufacturer
+  project-date: July 2020 - October 2020
 skills:
   languages:
     - PHP

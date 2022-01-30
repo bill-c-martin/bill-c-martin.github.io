@@ -5,9 +5,10 @@ category: portfolio
 modal-id: 4
 img: california-marketplace.png
 alt: Screenshot of Covered California Marketplace
-client: Blue Shield of California
-application: Payment Portal
-project-date: July 2014 - October 2014
+overview:
+  application: Payment Portal
+  client: Blue Shield of California
+  project-date: July 2014 - October 2014
 skills:
   languages:
     - PHP

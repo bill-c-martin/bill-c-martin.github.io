@@ -5,9 +5,10 @@ category: portfolio
 modal-id: 2
 img: avma.png
 alt: AVMA home page
-client: AVMA
-application: Agent, Quoting & Member Portals
-project-date: 2012
+overview:
+  applications: Agent, Quoting & Member Portals
+  client: AVMA
+  project-date: 2012
 skills:
   languages:
     - PHP

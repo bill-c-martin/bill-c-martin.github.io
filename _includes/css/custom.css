@@ -178,6 +178,10 @@ article.portfolio-post header hr.star-primary:after {
   background-color: #{{ site.color.primary }};
 }
 
+.portfolio-post #project-overview strong {
+  text-transform: capitalize;
+}
+
 .portfolio-post .skills ul {
   margin: 0 0 0 20px;
   padding: 0;

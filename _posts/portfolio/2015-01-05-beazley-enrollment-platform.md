@@ -5,9 +5,10 @@ category: portfolio
 modal-id: 5
 img: beazley.png
 alt: Screenshot of application that allows bulk employee enrollment and managements for groups
-client: Beazley
-application: Beazley Group Portal
-project-date: Nov 2014 - May 2015
+overview:
+  application: Beazley Group Portal
+  client: Beazley
+  project-date: Nov 2014 - May 2015
 skills:
   languages:
     - PHP

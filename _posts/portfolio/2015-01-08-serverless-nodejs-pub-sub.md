@@ -5,9 +5,10 @@ category: portfolio
 modal-id: 8
 img: pubsub-overview-800-577.png
 alt: Architectural Diagram of the Process
-client: CBD Product Manufacturer
-application: Email Subscription List Synchronizer
-project-date: Nov 2020
+overview:
+  application: Email Subscription List Synchronizer
+  client: CBD Product Manufacturer
+  project-date: Nov 2020
 skills:
   languages:
     - TypeScript

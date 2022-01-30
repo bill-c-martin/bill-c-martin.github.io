@@ -5,9 +5,10 @@ category: portfolio
 modal-id: 6
 img: myplanlink-quoting.png
 alt: Screenshot of MyPlanLink Quoting
-client: United Healthcare, Aetna, Blue Cross, and more
-application: MyPlanLink Quoting
-project-date: July 2015 - January 2016
+overview:
+  application: MyPlanLink Quoting
+  clients: United Healthcare, Aetna, Blue Cross, and more
+  project-date: July 2015 - January 2016
 skills:
   languages:
     - PHP

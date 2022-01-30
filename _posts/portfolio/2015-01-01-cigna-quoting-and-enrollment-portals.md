@@ -5,9 +5,10 @@ category: portfolio
 modal-id: 1
 img: cigna.png
 alt: Cigna home page
-client: Cigna
-application: Broker, Enrollment, and Quoting Portals
-project-date: 2010 - 2012
+overview:
+  applications: Broker, Enrollment, and Quoting Portals
+  client: Cigna
+  project-date: 2010 - 2012
 skills:
   languages:
     - PHP

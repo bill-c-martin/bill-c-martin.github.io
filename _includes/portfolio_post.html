@@ -1,26 +1,18 @@
 <article class="blog-post portfolio-post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-      <h1 itemprop="name headline">Project: {{ page.title | escape }}</h1>
+      <h1 itemprop="name headline">{{ page.title | escape }}</h1>
       <hr class="star-primary">
     </header>
     <div class="content" itemprop="articleBody">
       <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered" alt="{{ page.alt }}">
       <ul id="project-overview" class="list-inline item-details">
-        <li><strong>{{ site.portfolio.labels.project-date }}:</strong> {{ page.project-date }}</li><br/>
-        <li>
-            <strong>
-              {% assign is_multiple_apps = page.application | split: "," | size %}
-              {% if is_multiple_apps > 1  %}
-                  {{ site.portfolio.labels.application }}s:
-              {% else %} 
-                  {{ site.portfolio.labels.application }}:
-              {% endif  %}
-            </strong>
-            {{ page.application }}
-        </li><br/>
-        <li><strong>{{ site.portfolio.labels.client }}:</strong> {{ page.client }}</li><br/>
+        {% for row in page.overview %}
+          <li><strong>{{ row[0] | replace: '-', ' ' }}:</strong> {{ row[1] }}</li><br/>
+        {% endfor %}
       </ul>
+
       {{ content }}
+
       <div class="skills">
         <h3>Technologies Used</h3>
         <div class="row">
@@ -44,7 +36,6 @@
             {{page.previous.title}}
           {% endif %}
         </a>
-      
         <a class="next" href="{{page.next.url}}">
           {% if page.next.url and page.next.categories contains "portfolio" %}
             <span>&raquo;</span>
