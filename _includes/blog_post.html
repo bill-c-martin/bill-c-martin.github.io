@@ -39,5 +39,7 @@
       </div>
     </div>
   </footer>
-  <div id="disqus_thread" class="content"></div>
+  {% if site.disqus_shortname %}
+    <div id="disqus_thread" class="content"></div>
+  {% endif %}
 </article>

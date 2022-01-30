@@ -59,7 +59,7 @@ bing_verify:
 contact: static
 
 # If you use disqus you need disqus shortname: https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: billmartin
+# disqus_shortname: billmartin
 
 # If you have Google Analytics account setup, enter your tracker ID, eg. A-12312312-1
 google_analytics_tracker_id: A-89823208-1
