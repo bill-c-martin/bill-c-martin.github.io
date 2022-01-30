@@ -334,15 +334,15 @@ article.blog-post a {
 
 article.blog-post footer {
   margin: 60px 0 0 0;
+  padding: 0 12px;
   display: block;
   width: auto;
   overflow: hidden;
   background: #{{ site.color.primary }};
 }
 
-article.blog-post footer div.container {
-  /* width: 800px; */
-  padding: 30px 0;
+article.blog-post footer div.content {
+  padding: 0 0 30px 0;
 }
 
 article.blog-post footer h2 {
@@ -351,10 +351,8 @@ article.blog-post footer h2 {
 }
 
 article.blog-post footer a {
-  display: block;
-  width: 50%;
-  float: left;
-  margin: 1em 0;
+  /* display: inline-block;
+  width: 49%; */
   color: white;
 }
 
@@ -362,10 +360,6 @@ article.blog-post footer .prev span, article.blog-post footer .next span{
   font-size: 50px;
   line-height: normal;
   display: block;
-}
-
-article.blog-post footer .next {
-  text-align: right;
 }
 
 /* Contact */

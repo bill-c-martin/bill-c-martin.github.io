@@ -15,20 +15,28 @@
     {{ content }}
   </div>
   <footer>
-    <div class="container">
-      <a class="prev" href="{{page.previous.url}}">
-        {% if page.previous.url and page.previous.categories contains "blog" %}
-          <span>&laquo;</span>
-          {{page.previous.title}}
-        {% endif %}
-      </a>
-    
-      <a class="next" href="{{page.next.url}}">
-        {% if page.next.url and page.next.categories contains "blog" %}
-          <span>&raquo;</span>
-          {{page.next.title}}
-        {% endif %}
-      </a>
+    <div class="content">
+      <h2>Other Posts</h2>
+      <div class="container content">
+        <div class="row">
+          <div class="col-md-6 col-xs-6">
+            <a class="prev" href="{{page.previous.url}}">
+              {% if page.previous.url and page.previous.categories contains "blog" %}
+                <span>&laquo;</span>
+                {{page.previous.title}}
+              {% endif %}
+            </a>
+          </div>
+          <div class="col-md-6 col-xs-6 text-right pr-2">
+            <a class="next" href="{{page.next.url}}">
+              {% if page.next.url and page.next.categories contains "blog" %}
+                <span>&raquo;</span>
+                {{page.next.title}} 
+              {% endif %}
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
   <div id="disqus_thread" class="content"></div>
