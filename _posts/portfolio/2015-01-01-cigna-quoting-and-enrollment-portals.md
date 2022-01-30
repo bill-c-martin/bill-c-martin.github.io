@@ -8,28 +8,29 @@ alt: Cigna home page
 client: Cigna
 application: Broker, Enrollment, and Quoting Portals
 project-date: 2010 - 2012
-languages:
-- PHP
-- SQL
-- HTML/CSS
-- JavaScript
-- XML
-concepts:
-- MVC
-- AJAX
-- OOP
-- Web Services
-tools:
-- MVC Framework
-- Prototype
-- Pdflib
-- Dimensions (VCS)
-stack:
-- Linux
-- Apache
-- MySQL
-- PHP
-- DB2
+skills:
+  languages:
+    - PHP
+    - SQL
+    - HTML/CSS
+    - JavaScript
+    - XML
+  concepts:
+    - MVC
+    - AJAX
+    - OOP
+    - Web Services
+  tools:
+    - MVC Framework
+    - Prototype
+    - Pdflib
+    - Dimensions (VCS)
+  stack:
+    - Linux
+    - Apache
+    - MySQL
+    - PHP
+    - DB2
 ---
 
 ### Project Description

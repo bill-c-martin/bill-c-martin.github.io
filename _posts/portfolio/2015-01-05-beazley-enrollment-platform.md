@@ -8,31 +8,32 @@ alt: Screenshot of application that allows bulk employee enrollment and manageme
 client: Beazley
 application: Beazley Group Portal
 project-date: Nov 2014 - May 2015
-languages:
-- PHP
-- SQL
-- HTML/CSS
-- JavaScript
-- XML
-concepts:
-- MVC
-- AJAX
-- Web Services
-- UI/UX
-- Scalability
-tools:
-- MVC Framework
-- jQuery
-- jQuery UI
-- Dimensions (VCS)
-- Git
-- Postman
-stack:
-- Linux
-- Apache
-- MySQL
-- PHP
-- DB2
+skills:
+  languages:
+    - PHP
+    - SQL
+    - HTML/CSS
+    - JavaScript
+    - XML
+  concepts:
+    - MVC
+    - AJAX
+    - Web Services
+    - UI/UX
+    - Scalability
+  tools:
+    - MVC Framework
+    - jQuery
+    - jQuery UI
+    - Dimensions (VCS)
+    - Git
+    - Postman
+  stack:
+    - Linux
+    - Apache
+    - MySQL
+    - PHP
+    - DB2
 ---
 
 ### Project Description

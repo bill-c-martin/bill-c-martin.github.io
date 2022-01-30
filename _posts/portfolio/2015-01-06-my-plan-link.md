@@ -8,33 +8,33 @@ alt: Screenshot of MyPlanLink Quoting
 client: United Healthcare, Aetna, Blue Cross, and more
 application: MyPlanLink Quoting
 project-date: July 2015 - January 2016
-languages:
-- PHP
-- SQL
-- XML
-- SOAP XML
-- JavaScript
-- JSON
-- ASP.NET
-concepts:
-- Asymmetric Cryptography
-- Encryption
-- SOAP Services
-- REST APIs
-- Payment Tokenization
-- Scalability
-tools:
-- Git
-- Postman
-- SoapUI
-- CyberArk
-- PDFLib
-- Visual Studio
-stack:
-- Linux
-- Apache
-- MySQL
-- PHP
+skills:
+  languages:
+    - PHP
+    - SQL
+    - XML
+    - JavaScript
+    - JSON
+    - ASP.NET
+  concepts:
+    - Asymmetric Cryptography
+    - Encryption
+    - SOAP Services
+    - REST APIs
+    - Payment Tokenization
+    - Scalability
+  tools:
+    - Git
+    - Postman
+    - SoapUI
+    - CyberArk
+    - PDFLib
+    - Visual Studio
+  stack:
+    - Linux
+    - Apache
+    - MySQL
+    - PHP
 ---
 
 ### Project Description

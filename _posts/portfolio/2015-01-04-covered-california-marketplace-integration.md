@@ -8,29 +8,30 @@ alt: Screenshot of Covered California Marketplace
 client: Blue Shield of California
 application: Payment Portal
 project-date: July 2014 - October 2014
-languages:
-- PHP
-- SQL
-- SAML XML
-concepts:
-- Single Sign-On
-- Asymmetric Cryptography
-- Encryption
-- SOAP Services
-- REST APIs
-- Design Patterns
-tools:
-- Ping Federate
-- Git
-- Postman
-- SoapUI
-- CyberArk
-- CyberSource
-stack:
-- Linux
-- Apache
-- MySQL
-- PHP
+skills:
+  languages:
+    - PHP
+    - SQL
+    - SAML XML
+  concepts:
+    - Single Sign-On
+    - Asymmetric Cryptography
+    - Encryption
+    - SOAP Services
+    - REST APIs
+    - Strategy pattern
+  tools:
+    - Ping Federate
+    - Git
+    - Postman
+    - SoapUI
+    - CyberArk
+    - CyberSource
+  stack:
+    - Linux
+    - Apache
+    - MySQL
+    - PHP
 ---
 
 ### Project Description

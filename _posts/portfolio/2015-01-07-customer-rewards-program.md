@@ -8,31 +8,32 @@ alt: Screenshot of eCommerce website featuring the rewards program
 client: CBD Product Manufacturer
 application: eCommerce Site
 project-date: July 2020 - October 2020
-languages:
-- PHP
-- SQL
-- HTML
-- JavaScript
-- JSON
-concepts:
-- REST APIs
-- JDKs
-- Action/Filter hooks
-- wc-cli
-- custom plugin development
-tools:
-- Bootstrap
-- jQuery
-- Git
-- Postman
-- Swell widgets
-- VS Code
-stack:
-- WooCommerce/Wordpress
-- Amazon Linux (EC2)
-- NginX
-- MariaDB
-- PHP
+skills:
+  languages:
+    - PHP
+    - SQL
+    - HTML
+    - JavaScript
+    - JSON
+  concepts:
+    - REST APIs
+    - JDKs
+    - Action/Filter hooks
+    - wc-cli
+    - Custom plugins
+  tools:
+    - Bootstrap
+    - jQuery
+    - Git
+    - Postman
+    - Swell widgets
+    - VS Code
+  stack:
+    - WooCommerce/Wordpress
+    - Amazon Linux (EC2)
+    - NginX
+    - MariaDB
+    - PHP
 ---
 
 ### Project Description

@@ -8,30 +8,30 @@ alt: AVMA home page
 client: AVMA
 application: Agent, Quoting & Member Portals
 project-date: 2012
-languages:
-- PHP
-- SQL
-- HTML/CSS
-- JavaScript
-- XML
-concepts:
-- MVC
-- AJAX
-- OOP
-- Web Services
-- Reusability
-- Dimensions (VCS)
-tools:
-- MVC Framework
-- Prototype
-- PdfLib
-- Google Analytics
-stack:
-- Linux
-- Apache
-- MySQL
-- PHP
-- DB2
+skills:
+  languages:
+    - PHP
+    - SQL
+    - HTML/CSS
+    - JavaScript
+    - XML
+  concepts:
+    - MVC
+    - AJAX
+    - OOP
+    - Web Services
+  tools:
+    - MVC Framework
+    - Prototype
+    - PdfLib
+    - Google Analytics
+    - Dimensions (VCS)
+  stack:
+    - Linux
+    - Apache
+    - MySQL
+    - PHP
+    - DB2
 ---
 
 ### Project Description

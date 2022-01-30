@@ -93,11 +93,6 @@ portfolio:
     client: Client
     project-date: Date
     application: Application
-    languages: Languages
-    concepts: Concepts
-    tools: Tools
-    stack: Stack
-    modal-close: Close
 
 # Footer settings
 footer:
