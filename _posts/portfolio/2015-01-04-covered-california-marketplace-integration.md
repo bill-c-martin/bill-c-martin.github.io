@@ -9,6 +9,7 @@ overview:
   application: Payment Portal
   client: Blue Shield of California
   project-date: July 2014 - October 2014
+  summary: Pre/post processor adapters for a high-volume payment application used on healthcare.gov, allowing it to scale out to state marketplaces as well. 
 skills:
   languages:
     - PHP
@@ -16,7 +17,6 @@ skills:
     - SAML XML
   concepts:
     - Single Sign-On
-    - Asymmetric Cryptography
     - Encryption
     - SOAP Services
     - REST APIs
@@ -37,13 +37,13 @@ skills:
 
 ### Project Description
 
-An in-house-built, pre-existing payment portal tokenizes and processes payments for various health insurance carriers selling coverage on the Heathcare.gov "Federal Marketplace".
+We had an existing payment portal that tokenized and processed payments for various health insurance carriers selling coverage on the Heathcare.gov "Federal Marketplace".
 
 A good half of the states under the Affordable Healthcare Act have elected to run their own [state-based marketplaces](http://kff.org/health-reform/state-indicator/state-health-insurance-marketplace-types/) instead.
 
-The payment portal was initially designed around the strict standards of that Federal Marketplace, which state-based marketplaces do not have to follow.
+This payment portal was designed initially around the strict standards of that Federal Marketplace, which state-based marketplaces do not have to follow.
 
-To scale the payment portal to any number of state-based marketplaces, it had to:
+To scale this payment portal to any number of state-based marketplaces, it had to:
 
 - Accept any request type, not just Healthcare.gov-formatted SAML XML
 - Configure client-specific features and customizations
@@ -52,14 +52,13 @@ To scale the payment portal to any number of state-based marketplaces, it had to
   - REST POST request tokens
   - Signed SAML
   - SOAP encryption
-
 ### Contributions
 
-This project consisted of two senior developers: myself, and another who was in charge of a different state marketplace.
+I collaborated with another senior developer who was tasked with a different marketplace.
 
 Together, we crafted the solutions that allowed this payment portal to scale to any number of state marketplaces.
 
-We wrapped the application with configurable pre and post processors, which were in charge of the request/response handling, security, and application-level configurations.
+We wrapped the application with configurable pre and post processors, which were in charge of the request/response handling, security, and application-level configurations. This mitigated risk by minimizing changes to the core, high-volume payment application.
 
 Test harnesses were also created to simulate the state marketplaces where the users would be coming from to submit payments.
 

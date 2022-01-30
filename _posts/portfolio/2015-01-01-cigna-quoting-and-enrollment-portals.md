@@ -9,6 +9,7 @@ overview:
   applications: Broker, Enrollment, and Quoting Portals
   client: Cigna
   project-date: 2010 - 2012
+  summary: Maintenance for Cigna's quoting system (billing calcaulation overhauls and PDFlib-generated PDF proposals), and creation of bulk premium testing application.
 skills:
   languages:
     - PHP
@@ -36,7 +37,7 @@ skills:
 
 ### Project Description
 
-Cigna had four web applications to facilitate sales of health and dental insurance
+Cigna had four web applications to facilitate sales of health and dental insurance:
 
 - **Broker Portal** - Agents sell policies, run quotes, and view commissions data
 - **Quoting Portal** - Individuals get quotes for health & dental coverage
@@ -45,7 +46,7 @@ Cigna had four web applications to facilitate sales of health and dental insuran
 
 ### Contributions
 
-My work with Cigna's portals spanned three years, driven largely by new feature requests:
+My work with Cigna's portals spanned three years, largely driven by new feature requests:
 
 - Support for quoting dental products across ten states
 - Add and terminate health products across ten states for quoting & enrollment
@@ -75,4 +76,4 @@ There were also technical challenges where I was in over my head:
 
 My biggest personal accomplishment was conquering the huge learning curve of domain knowledge and enterprise exposure as a junior developer.
 
-My longest lasting accomplishment is the previously-mentioned bulk premium rating tool, which is still in use today and continues to save countless hours for an entire team of rate analysts.
+My longest-lasting application to date is the bulk premium rating tool. It is still in use today and still saves countless hours for a team of rate analysts.

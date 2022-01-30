@@ -9,6 +9,7 @@ overview:
   application: eCommerce Site
   client: CBD Product Manufacturer
   project-date: July 2020 - October 2020
+  summary: Custom rewards program WooCommerce plugin for customers to earn redeemable points for discounts, and view rewards history, points balance, and VIP tiers.
 skills:
   languages:
     - PHP
@@ -39,16 +40,16 @@ skills:
 
 ### Project Description
 
-[Swell Loyalty & Referrals](https://www.yotpo.com/platform/loyalty/) is a rewards program that maximizes customer engagement and increases lifetime value on ecommerce platforms, by awarding points for actions and purchases which are redeemable as discounts in checkout.
+[Swell Loyalty & Referrals](https://www.yotpo.com/platform/loyalty/) is a rewards program that maximizes customer engagement and increases lifetime value on eCommerce platforms, by awarding points for actions and purchases which are redeemable as discounts in checkout.
 
-The goal of this project was to develop a custom Wordpress/WooCommerce plugin for hempbombs.com to integrate with Swell through their widgets, JavaScript SDK, and REST API.
+The goal of this project was to develop a custom Wordpress/WooCommerce plugin for an eCommerce site to integrate with Swell through their widgets, JavaScript SDK, and REST API.
 
 ### Contributions
 
 My primary lead contributions were:
 
 - Spearheaded project from inception to completion, handling coordination, estimates, and burndown
-- Worked with marketing team to help:
+- Worked with the marketing team to help:
   - develop requirements from Swell technical feature set and constraints
   - leverage dynamic Swell widgets on site pages they published
 - Orchestrated multi-deployment rollout gradually and without issue
@@ -79,7 +80,7 @@ The primary challenges of this project were due to unfamiliar territory:
 
 ### Accomplishments
 
-The project spanned 4 months, and released on time.
+The project spanned 4 months and was released on time.
 
 Business accomplishments:
 
@@ -87,10 +88,10 @@ Business accomplishments:
 - 21% increase in order revenue for redeeming customers vs non-redeeming
 - 6% revenue increase overall
 
-By the end of project, I was well-positioned to advise my team going forward on:
+By the end of the project, I was well-positioned to advise my team going forward on:
 
-- Wordpress/WooCommerce database complexies and intricacies
+- Wordpress/WooCommerce database complexities and intricacies
 - Custom plugin development for Wordpress
-- Ins and outs of finding and leveraging action/filter hooks across entire codebase and 3rd party plugins
+- Ins and outs of finding and leveraging action/filter hooks across the entire codebase and 3rd party plugins
 
 Lastly, this project ultimately established the architectural approach for custom plugins going forward, which later served as a baseline for numerous other custom plugins developed at the company.

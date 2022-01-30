@@ -1,5 +1,5 @@
 <!-- Portfolio -->
-<section id="portfolio">
+<section id="portfolio" class="portfolio-list">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -8,18 +8,31 @@
             </div>
         </div>
         {% for post in site.categories['portfolio'] %}
-            <div class="row" style="padding: 30px 0">
-                <div class="col-md-4">
-                    <img src="/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+            {% if post.layout == 'portfolio_post' %}
+                <div class="row  portfolio-item" style="padding: 30px 0">
+                    <div class="col-md-4">
+                        <a href="{{ post.url }}" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                        <p>{{ post.overview.summary }}</p>
+                        <ul id="skills">
+                            <li><strong>Date</strong>: {{ post.overview.project-date}}</li>
+                            {% for skilltype in post.skills %}
+                                <li><strong>{{ skilltype[0] | capitalize }}</strong>: {{ skilltype[1] | join: ', '}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-                    <p>{{ post.summary }}</p>
-                    {% for skilltype in post.skills %}
-                        <p><strong>{{ skilltype[0] }}</strong>: {{ skilltype[1] | join: ', '}}</p>
-                    {% endfor %}
-                </div>
-            </div>
+            {% endif %}
         {% endfor %}
     </div>
 </section>
+

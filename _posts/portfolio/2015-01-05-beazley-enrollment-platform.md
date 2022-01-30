@@ -9,6 +9,7 @@ overview:
   application: Beazley Group Portal
   client: Beazley
   project-date: Nov 2014 - May 2015
+  summary: Real-time, mass-employee, health insurance enrollment platform that submits to backend, Java/WMB enrollment services.
 skills:
   languages:
     - PHP
@@ -41,7 +42,7 @@ skills:
 
 Beazley had a group enrollment platform where the companies could only enroll one employee at a time using a wizard-based flow.
 
-The task on this project was to overhaul it to facilitate real-time mass-employee enrolling. We were tasked to: 
+The task for this project was to overhaul this group enrollment platform to facilitate real-time mass-employee enrolling. We were tasked to: 
 
 - Allowed bulk, asynchronous adds/changes of employees and coverages
 - Integrate into the existing Beazley Employer Portal that their groups use
@@ -53,20 +54,20 @@ I worked on a team of developers that worked directly with the business unit as 
 
 Some of the tasks we split up amongst ourselves were:
 
-- Design interactive jQuery UI allowing adds/changes to be done on one screen
-- Submit enrollments to a backend Java/WMB XML web service using AJAX
-- Add real-time status tracking of new enrollments and changes
+- Designed interactive jQuery UI allowing adds and changes on one screen
+- Submitted enrollments to a backend Java/WMB XML web service using AJAX
+- Added real-time status tracking of new enrollments and changes
 
 On top of these design & development tasks, I took on the job of predicting, organizing, and estimating every task we all had to do to ship the product.
 
 ### Challenges Overcame
 
-This project was the biggest undertaking I had to date in terms of cross-team coordination due to all the Java technology being leveraged:
+This project was the largest undertaking I had to date in terms of cross-team coordination:
 
-- **WMB** - Manage queues and inter-application communications/mapping
-- **Business Rules Team** - Validate business rule on XML request from us
-- **Java Team** - Transform validated XML request into 834 flat file for Admin
-- **Admin/COBOL** - Issue policies & changes on the mainframe
+- **WMB Team** - Managed queues and inter-application communications/mapping
+- **Business Rules Team** - Validated business rule on XML request from us
+- **Java Team** - Transformed validated XML request into 834 flat file for Admin
+- **COBOL Team** - Issued policies & changes on the mainframe
 
 ### Accomplishments
 

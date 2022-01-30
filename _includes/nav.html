@@ -21,7 +21,7 @@
                     </li>
                     {% for item in site.nav.labels %}=
                         <li class="page-scroll">
-                            <a href="{% if page.layout == 'blog_post' or page.layout == 'portfolio_post' %}{{site.url}}{% endif %}#{{ item.[0] }}">{{ item.[1] }}</a>
+                            <a href="{% if page.layout != 'default' %}{{site.url}}{% endif %}#{{ item.[0] }}">{{ item.[1] }}</a>
                         </li>
                     {% endfor %}
                 </ul>
