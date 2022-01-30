@@ -54,6 +54,12 @@ section#about div#left p {
   text-align: right;
 }
 
+@media screen and (max-width: 991px) {
+  section#about div p, section#about div#left p {
+    text-align: center;
+  }
+}
+
 section#about p a {
   color: #{{ site.color.secondary-light }};
 }
