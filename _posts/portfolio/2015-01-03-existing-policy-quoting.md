@@ -1,39 +1,40 @@
 ---
-layout: default
+layout: portfolio_post
 title: Policy Change Quoting
 category: portfolio
 modal-id: 3
-img: ifq.png
+img: internal-app.png
 alt: Screenshot of application that quotes changes to existing policies
-client: Cigna, Florida Blue, Blue Shield, Coventry, Aetna
-application: Policy Change Quoting
-project-date: 2013 - 2016
-languages:
-- PHP
-- SQL
-- HTML/CSS
-- JavaScript
-- XML
-concepts:
-- MVC
-- AJAX
-- Caching
-- Web Services
-- Design Patterns
-- UI/UX
-- Reusability
-- Scalability
-tools:
-- MVC Framework
-- jQuery
-- Dimensions (VCS)
-- Postman
-stack:
-- Linux
-- Apache
-- MySQL
-- PHP
-- DB2
+overview:
+  application: Policy Change Quoting
+  clients: Cigna, Florida Blue, Blue Shield, Coventry, Aetna
+  project-date: 2013 - 2016
+skills:
+  languages:
+    - PHP
+    - SQL
+    - HTML/CSS
+    - JavaScript
+    - XML
+  concepts:
+    - MVC
+    - AJAX
+    - Caching
+    - Web Services
+    - Strategy Pattern
+    - UI/UX
+    - Scalability
+  tools:
+    - MVC Framework
+    - jQuery
+    - Dimensions (VCS)
+    - Postman
+  stack:
+    - Linux
+    - Apache
+    - MySQL
+    - PHP
+    - DB2
 ---
 
 ### Project Description
@@ -59,10 +60,10 @@ The design phase concluded with a 20-page high level design document outlining:
 - Design of each step in quoting process, including flow diagrams
 - Overview of business features in each step in quoting process
 
-My contributions during the development phase consisted of writing or co-writing:
+My contributions during the development phase consisted of writing or co-writing code for:
 
 - System-level models and controllers
-- Preprocessor that gathers:
+- Preprocessor that gathers data from DB2 or web services:
   - Policy-level & tier information
   - Employee & dependent information
   - Benefits & plans
