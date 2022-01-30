@@ -345,6 +345,10 @@ article.blog-post footer div.content {
   padding: 0 0 30px 0;
 }
 
+article.blog-post footer hr.star-primary:after {
+  content: "\f362";
+}
+
 article.blog-post footer h2 {
   text-align: center;
   margin: 40px 0; 
