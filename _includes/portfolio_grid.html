@@ -8,10 +8,10 @@
             </div>
         </div>
         <div class="row">
-            {% assign posts = site.categories['portfolio'] | where:"layout","portfolio_post" %}
+            {% assign posts = site.categories['portfolio'] | where:"layout","portfolio_post" | slice: 0, site.portfolio.grid.desktop-max - 1 %}
             {% for post in posts %}
                 {% if post.layout == 'portfolio_post' %}
-                    <div class="col-md-4 portfolio-item">
+                    <div class="col-md-4 portfolio-item {% if forloop.index > site.portfolio.grid.mobile-max %}desktop-only{% endif %}">
                         <a href="{{ post.url }}" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -30,6 +30,13 @@
                     {% endif %}
                 {% endif %}
             {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 text-center">
+                <a href="/portfolio" class="btn btn-lg btn-outline">
+                    View More Projects <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>

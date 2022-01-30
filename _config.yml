@@ -89,6 +89,9 @@ kramdown:
 
 # Portfolio settings
 portfolio:
+  grid:
+    mobile-max: 3
+    desktop-max: 6
   labels:
     client: Client
     project-date: Date

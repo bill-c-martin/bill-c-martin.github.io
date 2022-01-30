@@ -75,11 +75,17 @@ section#about ul  {
 /* Portfolio Grid */
 
 #portfolio hr.star-light:after, #portfolio hr.star-primary:after {
-    content: "\f0b1";
+  content: "\f0b1";
 }
 
 #portfolio .portfolio-item {
   text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  #portfolio .portfolio-item.desktop-only {
+    display: none;
+  }
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -99,6 +105,17 @@ section#about ul  {
   display: inline-block;
   width: 100%;
   padding: 10px 0 0 0;
+}
+
+#portfolio .btn {
+  font-family: 'Jost',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #{{ site.color.secondary-light }};
+}
+#portfolio .btn:hover {
+  color: #{{ site.color.secondary-dark }};
 }
 
 /* Portfolio Modals */
