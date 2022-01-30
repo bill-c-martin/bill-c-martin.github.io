@@ -9,6 +9,7 @@ overview:
   application: Email Subscription List Synchronizer
   client: CBD Product Manufacturer
   project-date: Nov 2020
+  summary: Cloud-native, flexible, scalable process that syncs segementation lists from Klaviyo marketing platform API out to the APIs of any number of advertiser platforms. 
 skills:
   languages:
     - TypeScript
@@ -33,7 +34,7 @@ skills:
 
 ### Project Description
 
-[Klaviyo](https://www.klaviyo.com/) is an email & SMS marketing automation platform and they offer [a robust API](https://developers.klaviyo.com/en/reference/get-list-info). One of the many feature it has is segmentation lists for target segments of one's customer base.
+[Klaviyo](https://www.klaviyo.com/) is an email & SMS marketing automation platform that offers [a robust API](https://developers.klaviyo.com/en/reference/get-list-info). One of the many features it has is segmentation lists for targeting segments of one's customer base.
 
 The purpose of this project was to synchronize some of these segmentation lists out to 3rd party advertising platforms.
 
@@ -47,7 +48,7 @@ Therefore, this needed to be a configurable and scalable process.
 
 ### Contributions
 
-After some research, vetting, and collaboration with my team, I ultimately proposed this publisher/subscriber, serverless achitecture in AWS:
+After some research, vetting, and collaboration with my team, I ultimately proposed this publisher/subscriber, serverless architecture in AWS:
 
 - **AWS EventBridge**: to configure daily triggers for each segmentation list to sync
 - **AWS S3**: to store/retrieve segmentation lists from Klaviyo's API
@@ -69,7 +70,7 @@ The challenges of this project were derived from its constraints:
 
 From these constraints, the pub/sub setup was chosen to solve them.
 
-Since I started learning AWS earlier that year, it was challenging determining the best AWS services to leverage and how to coordinate them all.
+Since I started learning AWS earlier that year, it was challenging to determine the best AWS services to leverage and how to coordinate them all.
 
 ### Accomplishments
 

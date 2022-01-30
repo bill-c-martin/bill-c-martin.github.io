@@ -9,6 +9,7 @@ overview:
   application: Policy Change Quoting
   clients: Cigna, Florida Blue, Blue Shield, Coventry, Aetna
   project-date: 2013 - 2016
+  summary: Internal quoting application that calcaulates premiums for address, dependent, and plan changes against existing health insurance policies.
 skills:
   languages:
     - PHP
@@ -42,14 +43,14 @@ skills:
 A quoting web application was needed by sales representatives to calculate new premiums for changes against the existing policies of members calling in, such as:
 
 - Add new dependents
-- Move to new address
+- Move a to new address
 - Add or change plans 
 
 ### Contributions
 
 I worked on a team of three developers that worked directly with the business unit and policy rating teams to gather requirements and brainstorm how to overcome issues in the existing policy quoting applications used by Cigna and Coventry at the time.
 
-The design phase concluded with a 20-page high level design document outlining:
+The design phase concluded with a 20-page high-level design document outlining:
 
 - Problems with existing in-force quoting applications
 - Business solutions to those problems
@@ -75,7 +76,7 @@ My contributions during the development phase consisted of writing or co-writing
 
 This was my first enterprise-level web application built from the ground up.
 
-Scalability was the toughest challenge to overcome. This application effectively consolidated all other policy-change quoting applications before it, and in their place, provided a single, scalable solution. 
+Scalability was the toughest challenge to overcome. This application effectively consolidated all other policy-change quoting applications before it, and in their place, prodiving a single, scalable solution.
 
 It had to allow the following features to be configurable for any number of health insurance carriers:
 

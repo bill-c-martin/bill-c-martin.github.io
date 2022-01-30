@@ -1,0 +1,38 @@
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>{{ site.nav.labels.portfolio }}</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        {% for post in site.categories['portfolio'] %}
+            {% if post.layout == 'portfolio_post' %}
+                <div class="row  portfolio-item" style="padding: 30px 0">
+                    <div class="col-md-4">
+                        <a href="{{ post.url }}" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                        <p>{{ post.overview.summary }}</p>
+                        <ul id="skills">
+                            <li><strong>Date</strong>: {{ post.overview.project-date}}</li>
+                            {% for skilltype in post.skills %}
+                                <li><strong>{{ skilltype[0] | capitalize }}</strong>: {{ skilltype[1] | join: ', '}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+

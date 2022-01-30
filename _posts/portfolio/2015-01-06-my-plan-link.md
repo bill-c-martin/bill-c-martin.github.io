@@ -9,6 +9,7 @@ overview:
   application: MyPlanLink Quoting
   clients: United Healthcare, Aetna, Blue Cross, and more
   project-date: July 2015 - January 2016
+  summary: PHP web services for securely transporting customer enrollment and payment information or tokens to health insurance providers in scalable formats.
 skills:
   languages:
     - PHP
@@ -18,7 +19,6 @@ skills:
     - JSON
     - ASP.NET
   concepts:
-    - Asymmetric Cryptography
     - Encryption
     - SOAP Services
     - REST APIs
@@ -42,9 +42,9 @@ skills:
 
 MyPlanLink is a marketplace platform for health insurance providers offering customers a branded experience to shop, quote, compare, and enroll in a variety of health, dental, and vision products.
 
-The goal of this project was to build a set of web services that this platform could flexibly and safely pass customer enrollment and payment information to which could then submit it to the health insurance providers. This included:
+The goal of this project was to build a set of web services that this platform could flexibly and safely pass customer enrollment and payment information through to them submit to health insurance providers. This included:
 
-- Tokenization of payment information
+- Tokenization or encryption of payment information
 - Reception of enrollment from the platform
 - Transformation from received enrollment into providers' formats
 - Submission of enrollments and payment information to providers'
@@ -53,7 +53,7 @@ The goal of this project was to build a set of web services that this platform c
 
 Out of a team of developers, my primary contributions were:
 
-- Payment tokenization and ecryption
+- Payment tokenization and encryption
 - Test harness for tokenization
 - Submission of enrollments to providers
 

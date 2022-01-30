@@ -9,6 +9,7 @@ overview:
   applications: Agent, Quoting & Member Portals
   client: AVMA
   project-date: 2012
+  summary: New features for an agent, student, and member portal to streamline quoting process, quote new products, render PDF proposals, and track conversion funnels.
 skills:
   languages:
     - PHP
@@ -45,7 +46,7 @@ AVMA has a multi-user site for agents, students, and members that allows all thr
 
 ### Contributions
 
-My work with AVMA's portals in 2012 were driven largely by new feature requests:
+My work with AVMA's portals in 2012 was driven largely by new feature requests:
 
 - Integrate Google Analytics' conversion funnels for the quoting process
 - Streamline the quoting process to increase usability
@@ -55,9 +56,9 @@ My work with AVMA's portals in 2012 were driven largely by new feature requests:
 
 The biggest challenges I faced were with Google Analytics and AVMA's complex product offering:
 
-- Implement Google Analystics and funneling for the first time
+- Implement Google Analytics and funneling for the first time
 - Working with complex rating, plan, and benefit structures previously unexposed to
 
 ### Accomplishments
 
-The AVMA portals were the first modular applications I've ever worked with and really opened by eyes for application development in terms of scalability and reusability.
+The AVMA portals were the first modular applications I've ever worked with, leading to my own personal growth in the areas of scalability and reusability.
