@@ -222,8 +222,14 @@ article.blog-post {
   font-family: "PT Serif", "PT Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@media screen and (max-width: 831px) {
+  article.blog-post {
+    width: 800px;
+  }
+}
+
 article.blog-post header {
-  padding: 140px 0 30px 0
+  padding: 140px 0 30px 0;
 }
 
 article.blog-post div.content {
@@ -354,6 +360,7 @@ article.blog-post footer .next {
 /* Contact */
 
 section#contact {
+    padding-right: 20px;
     color: #fff;
     background: #{{ site.color.primary }};
 }
@@ -407,6 +414,13 @@ section#contact button:hover{
 }
 
 /* Footer tooltips */
+
+@media screen and (max-width: 831px) {
+  article.blog-post + footer {
+    width: 800px;
+  }
+}
+
 footer .tooltip .tooltip-arrow{
   border-bottom-color: #{{ site.color.primary  }} !important;
 }
