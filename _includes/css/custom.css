@@ -200,11 +200,19 @@ section.portfolio-list h3 {
     margin: 10px 0 15px 0;
   }
 }
-section.portfolio-list ul#skills {
+section.portfolio-list ul.skills {
   font-size: 18px;
-  padding-left: 20px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
-section.portfolio-list ul#skills li {
+section.portfolio-list ul.skills i {
+  width: 19px;
+  margin-right: 10px;
+  text-align: center;
+  color: #{{site.color.secondary}};
+}
+section.portfolio-list ul.skills li {
   margin: 4px 0;
 }
 

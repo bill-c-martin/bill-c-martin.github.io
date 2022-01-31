@@ -23,10 +23,28 @@
                     <div class="col-md-8">
                         <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
                         <p>{{ post.overview.summary }}</p>
-                        <ul id="skills">
-                            <li><strong>Date</strong>: {{ post.overview.project-date}}</li>
+                        <ul class="skills">
+                            <li>
+                                <i class="fas fa-calendar-alt"></i>
+                                <strong>Date</strong>: {{ post.overview.project-date}}
+                            </li>
                             {% for skilltype in post.skills %}
-                                <li><strong>{{ skilltype[0] | capitalize }}</strong>: {{ skilltype[1] | join: ', '}}</li>
+                                {% if skilltype[0] contains 'language' %}
+                                    {% assign fa-class='fa-code' %}
+                                {% endif %}
+                                {% if skilltype[0] contains 'concept' %}
+                                    {% assign fa-class='fa-lightbulb' %}
+                                {% endif %}
+                                {% if skilltype[0] contains 'tools' %}
+                                    {% assign fa-class='fa-tools' %}
+                                {% endif %}
+                                {% if skilltype[0] contains 'stack' %}
+                                    {% assign fa-class='fa-layer-group' %}
+                                {% endif %}
+                                <li>
+                                    <i class="fas {{ fa-class }}"></i>
+                                    <strong>{{ skilltype[0] | capitalize }}</strong>: {{ skilltype[1] | join: ', '}}
+                                </li>
                             {% endfor %}
                         </ul>
                     </div>
