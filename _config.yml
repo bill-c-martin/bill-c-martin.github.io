@@ -62,7 +62,10 @@ contact: static
 # disqus_shortname: billmartin
 
 # If you have Google Analytics account setup, enter your tracker ID, eg. A-12312312-1
-google_analytics_tracker_id: A-89823208-1
+# google_analytics_tracker_id: UA-89823208-1
+
+# GTM
+gtm_id: GTM-5GVCKDT
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
