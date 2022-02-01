@@ -97,8 +97,10 @@ portfolio:
     desktop-max: 6
   icons:
     application: fa-mobile-alt
+    applications: fa-mobile-alt
     project-date: fa-calendar-alt
     client: fa-user
+    clients: fa-user
     summary: fa-clipboard-list
     languages: fa-code
     concepts: fa-lightbulb
