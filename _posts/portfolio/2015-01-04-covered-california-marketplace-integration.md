@@ -52,6 +52,7 @@ To scale this payment portal to any number of state-based marketplaces, it had t
   - REST POST request tokens
   - Signed SAML
   - SOAP encryption
+
 ### Contributions
 
 I collaborated with another senior developer who was tasked with a different marketplace.

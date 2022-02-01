@@ -215,6 +215,16 @@ section.portfolio-list ul.skills i {
 section.portfolio-list ul.skills li {
   margin: 4px 0;
 }
+@media screen and (max-width: 460px) {
+  #portfolio.portfolio-list .portfolio-item div {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.portfolio-list ul.skills i {
+    margin-right: 3px;
+  }
+}
 
 /* Portfolio Posts */
 
@@ -228,17 +238,50 @@ article.portfolio-post header hr.star-primary:after {
   background-color: #{{ site.color.primary }};
 }
 
+.portfolio-post #project-overview i {
+  width: 19px;
+  margin-right: 7px;
+  text-align: center;
+  color: #{{site.color.secondary-dark}};
+}
+
 .portfolio-post #project-overview strong {
   text-transform: capitalize;
+  color: #{{site.color.secondary-dark}};
 }
 
 .portfolio-post .skills ul {
-  margin: 0 0 0 20px;
+  font-size: 18px;
   padding: 0;
+  margin: 35px 0 0 0;
+  list-style-type: none;
 }
 
 .portfolio-post .skills li {
-  margin-left: 0;
+  margin: 15px 0;
+}
+
+.portfolio-post .skills i {
+  width: 19px;
+  margin-right: 7px;
+  text-align: center;
+  color: #{{site.color.secondary}};
+}
+
+.portfolio-post .skills strong {
+  color: #{{site.color.secondary}};
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-post .skills i {
+    margin: 0;
+    width: 28px;
+  }
+
+  .portfolio-post .skills span {
+    display: block;
+    margin: 9px 0 0 8px
+  }
 }
 
 /* Blog Grid */
@@ -356,6 +399,20 @@ article.blog-post p {
 
 article.blog-post ul, article.blog-post ol {
   margin: 20px 0 20px 10px;
+}
+
+.blog-post ul li > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 475px) {
+  article.blog-post ul, article.blog-post ol {
+    margin-left: -10px;
+  }
+  article.blog-post ul li > ul, article.blog-post ol li > ol {
+    margin-left: -20px;
+  }
 }
 
 article.blog-post p, article.blog-post li, article.blog-post a {

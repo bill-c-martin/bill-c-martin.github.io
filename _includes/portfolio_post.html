@@ -6,8 +6,11 @@
     <div class="content" itemprop="articleBody">
       <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered" alt="{{ page.alt }}">
       <ul id="project-overview" class="list-inline item-details">
-        {% for row in page.overview %}
-          <li><strong>{{ row[0] | replace: '-', ' ' }}:</strong> {{ row[1] }}</li><br/>
+        {% for item in page.overview %}
+          <li>
+            <i class="fas {{ site.portfolio.icons | map: item[0] | first }}"></i>
+            <strong>{{ item[0] | replace: '-', ' ' }}:</strong> {{ item[1] }}
+          </li><br/>
         {% endfor %}
       </ul>
 
@@ -15,16 +18,14 @@
 
       <div class="skills">
         <h3>Technologies Used</h3>
-        <div class="row">
-            {% for skilltype in page.skills %}
-            <div class="skill col-md-3">
-                <h5>{{ skilltype[0] }}</h5>
-                <ul>
-                    <li>{{ skilltype[1] | join: '</li><li>'}}</li>
-                </ul>
-            </div>
-            {% endfor %}
-        </div>
+        <ul>
+          {% for skilltype in page.skills %}
+            <li>
+                <i class="fas {{ site.portfolio.icons | map: skilltype[0] | first }}"></i>
+                <strong>{{ skilltype[0] | capitalize }}:</strong> <span>{{ skilltype[1] | join: ', '}}</span>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
     <footer>

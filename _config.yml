@@ -95,10 +95,15 @@ portfolio:
   grid:
     mobile-max: 3
     desktop-max: 6
-  labels:
-    client: Client
-    project-date: Date
-    application: Application
+  icons:
+    application: fa-mobile-alt
+    project-date: fa-calendar-alt
+    client: fa-user
+    summary: fa-clipboard-list
+    languages: fa-code
+    concepts: fa-lightbulb
+    tools: fa-tools
+    stack: fa-layer-group
 
 # Footer settings
 footer:
