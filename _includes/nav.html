@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{% if page.layout == 'blog_post' or page.layout == 'portfolio_post' %}{{site.url}}{% endif %}#page-top">{{ site.title }}</a>
+                <a class="navbar-brand" href="{% if page.layout != 'default' %}{{site.url}}{% endif %}#page-top">{{ site.title }}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
