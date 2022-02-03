@@ -12,6 +12,32 @@ code {
   color: #393318;
 }
 
+
+
+.index .btn {
+  font-family: 'Jost',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #{{ site.color.secondary-light }};
+}
+
+.index .btn:hover {
+  color: #fff;
+  background-color: #{{ site.color.secondary }};
+  border: 1px solid #{{ site.color.secondary }};
+}
+
+.index .btn-shadow {
+  box-shadow: 0 5px 5px rgb(0 0 0 / 25%);
+  border: 1px solid #{{ site.color.secondary }};
+  border: 0;
+}
+
+.index .btn-shadow:hover {
+  border: 0;
+}
+
 .top-buffer { margin-top:20px; }
 
 .btn-default {
@@ -105,17 +131,6 @@ section#about ul  {
   display: inline-block;
   width: 100%;
   padding: 10px 0 0 0;
-}
-
-#portfolio .btn {
-  font-family: 'Jost',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  text-transform: uppercase;
-  background-color: #{{ site.color.secondary-light }};
-}
-#portfolio .btn:hover {
-  color: #{{ site.color.secondary-dark }};
 }
 
 /* Portfolio Modals */
