@@ -76,6 +76,7 @@ color:
   secondary-dark: 18231a #A2122F
   blog-text: 222
   link: 1a77bd
+  link-fade: 5692c0
 
 # Blog settings
 blog:

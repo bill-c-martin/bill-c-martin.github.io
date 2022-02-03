@@ -20,6 +20,11 @@ code {
   text-decoration: underline;
 }
 
+a:hover, a:focus {
+  text-underline-offset: 5px;
+}
+
+/* Buttons */
 .index .btn {
   font-family: 'Jost',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -61,6 +66,27 @@ code {
 }
 .btn-default:hover {
   background: #{{ site.color.secondary }};
+}
+
+/* Breadcrumbs */
+nav .breadcrumb {
+  margin: 20px 0 0 0;
+  background-color: transparent;
+}
+nav .breadcrumb a, nav .breadcrumb span {
+  padding: 15px 10px;
+  font-size: 17px;
+}
+nav .breadcrumb a {
+  color: #{{ site.color.link-fade }};
+}
+
+nav .breadcrumb span {
+  color: #{{ site.color.secondary-lightest }};
+}
+nav .breadcrumb>li+li:before {
+  content: ">";
+  color: #{{ site.color.secondary-light }};
 }
 
 /* Home */
@@ -222,7 +248,7 @@ section#about ul  {
   margin: 0;
 }
 section.portfolio-list h2 {
-  margin: 60px 0 0 0;
+  margin: 30px 0 0 0;
 }
 section.portfolio-list h3 {
   font-family: "Jost", "PT Serif", "PT Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
