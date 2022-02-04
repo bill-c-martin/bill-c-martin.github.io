@@ -4,9 +4,17 @@
     <div class="container">
         <div class="row">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"><span>Portfolio</span></li>
+                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+                        <a href="/" itemprop="item">
+                            <span itemprop="name">Home</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+                        <span itemprop="name">Portfolio</span>
+                    </li>
                 </ol>
               </nav>
             <div class="col-md-12 text-center">

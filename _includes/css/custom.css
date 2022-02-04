@@ -81,7 +81,7 @@ nav .breadcrumb a {
   color: #{{ site.color.link-fade }};
 }
 
-nav .breadcrumb span {
+nav .breadcrumb .breadcrumb-item > span {
   color: #{{ site.color.secondary-lightest }};
 }
 nav .breadcrumb>li+li:before {
@@ -246,9 +246,6 @@ section#about ul  {
 #portfolio.portfolio-list .portfolio-item {
   text-align: left;
   margin: 0;
-}
-section.portfolio-list h2 {
-  margin: 30px 0 0 0;
 }
 section.portfolio-list h3 {
   font-family: "Jost", "PT Serif", "PT Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
