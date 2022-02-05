@@ -1,0 +1,22 @@
+<!-- Blog -->
+<section id="portfolio" class="portfolio-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>{{ site.nav.labels.blog }}</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        {% for post in site.categories['blog'] %}
+            {% if post.layout == 'blog_post' %}
+                <div class="row portfolio-item" style="padding: 30px 0">
+                    <div class="col-md-12">
+                        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                        <p>{{ post.excerpt | strip_html}}</p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
