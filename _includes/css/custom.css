@@ -217,8 +217,9 @@ section.portfolio-list h2 {
   margin: 60px 0 0 0;
 }
 section.portfolio-list h3 {
-  color: #{{ site.color.secondary }};
+  font-family: "Jost", "PT Serif", "PT Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0 15px 0;
+  color: #{{ site.color.secondary }};
 }
 @media screen and (max-width:991px) {
   section.portfolio-list h3 {
