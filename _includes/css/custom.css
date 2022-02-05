@@ -12,8 +12,6 @@ code {
   color: #393318;
 }
 
-
-
 .index .btn {
   font-family: 'Jost',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -25,16 +23,25 @@ code {
 .index .btn:hover {
   color: #fff;
   background-color: #{{ site.color.secondary }};
-  border: 1px solid #{{ site.color.secondary }};
+  transition: 0.3s;
 }
 
-.index .btn-shadow {
-  box-shadow: 0 5px 5px rgb(0 0 0 / 25%);
-  border: 1px solid #{{ site.color.secondary }};
+.shadow {
+  border: 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.shadow:hover {
+  border: 0;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: 0.3s;
+}
+
+.index .shadow {
   border: 0;
 }
 
-.index .btn-shadow:hover {
+.index .shadow:hover {
   border: 0;
 }
 
@@ -108,14 +115,17 @@ section#about ul  {
   text-align: center;
 }
 
+#portfolio .portfolio-item p {
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 991px) {
   #portfolio .portfolio-item.desktop-only {
     display: none;
   }
 }
-
-#portfolio .portfolio-item .portfolio-link {
-  border: 1px solid #{{ site.color.secondary }};
+#portfolio .portfolio-item .caption {
+  display: none;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -302,20 +312,20 @@ article.portfolio-post header hr.star-primary:after {
 /* Blog Grid */
 
 section#blog hr.star-primary:after {
-  content: "\f0eb";
+  content: "\f02d";
 }
 
 section#blog div.blog-item {
-  padding: 15px 15px;
+  padding: 12px 9px;
 }
 
-@media(min-width:768px) {
-  section#blog div.blog-item {
-    min-height: 129px;
-  }
+section#blog div.blog-item a {
+  display: block;
+  padding: 20px 15px 10px 15px;
+  min-height: 156px;
 }
 
-section#blog div.blog-item:hover{
+section#blog div.blog-item div:hover{
   background: #{{ site.color.secondary }};
 }
 
@@ -325,10 +335,6 @@ section#blog div.blog-item p{
 
 section#blog div.blog-item h5{
   margin: 0 0 10px 0;
-}
-
-section#blog div.blog-item:hover h5, section#blog div.blog-item:hover p{
-  color: #fff;
 }
 
 section#blog div.blog-item:hover a{

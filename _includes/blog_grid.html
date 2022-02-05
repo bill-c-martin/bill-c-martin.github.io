@@ -10,10 +10,10 @@
         <div class="row">
             {% for post in site.categories['blog'] %}
                 <div class="col-md-4 blog-item">
-                    <a href="{{ post.url }}" class="blog-link">
-                        <h5>{{ post.title }}</h5>
-                        <p>{{ post.excerpt | strip_html}}</p>
-                    </a>
+                        <a href="{{ post.url }}" class="blog-link shadow">
+                            <h5>{{ post.title }}</h5>
+                            <p>{{ post.excerpt | strip_html}}</p>
+                        </a>
                 </div>
 
                 {% assign loopindex = forloop.index | modulo: 3 %}
