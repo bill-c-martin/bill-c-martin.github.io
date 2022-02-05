@@ -312,7 +312,7 @@ article.portfolio-post header hr.star-primary:after {
 /* Blog Grid */
 
 section#blog hr.star-primary:after {
-  content: "\f0eb";
+  content: "\f02d";
 }
 
 section#blog div.blog-item {
