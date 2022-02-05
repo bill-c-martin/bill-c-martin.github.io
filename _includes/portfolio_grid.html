@@ -12,7 +12,7 @@
             {% for post in posts %}
                 {% if post.layout == 'portfolio_post' %}
                     <div class="col-md-4 portfolio-item {% if forloop.index > site.portfolio.grid.mobile-max %}desktop-only{% endif %}">
-                        <a href="{{ post.url }}" class="portfolio-link" data-toggle="modal">
+                        <a href="{{ post.url }}" class="portfolio-link shadow" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
                                     <i class="fa fa-search-plus fa-3x"></i>
@@ -33,7 +33,7 @@
         </div>
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 text-center">
-                <a href="/portfolio" class="btn btn-success btn-lg btn-shadow">
+                <a href="/portfolio" class="btn btn-success btn-lg shadow">
                     View All Projects <i class="fa fa-arrow-right"></i>
                 </a>
             </div>

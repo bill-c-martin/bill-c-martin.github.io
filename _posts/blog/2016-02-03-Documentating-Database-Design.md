@@ -4,9 +4,7 @@ title: Documenting Database Design
 category: blog
 ---
 
-Documenting database design just seems to be one of those things that web developers tend to suck at.
-
-I have some theories as to why:
+Documenting database design is just one of those skills we web developers tend to lack. I have some theories as to why.
 
 - draws on writing & design talents, rather than just technical talents
 - is usually about the business domain, not the application itself

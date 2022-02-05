@@ -4,13 +4,15 @@ title: Configure Laravel to Use PostgreSQL with Homestead
 category: blog
 ---
 
-I was working on a new Laravel app locally with Homestead, using MySQL. I later decided to use PostgreSQL. This took a bit longer than expected. Here is how I did it.
+I was building a Laravel app in Homestead, with MySQL. I later decided to use PostgreSQL. This took a bit longer than expected. 
 
-1. [Review Homestead Setup](#review-homestead)
-2. [Update Laravel's DB Config](#update-config)
-3. [Recreate the Database in PostgreSQL](#recreate-database)
-4. [Recreate the Database Tables and Data](#recreate-data)
-5. [Optional: Install a PostgreSQL client](#install-client)
+Here is how I did it.
+
+- [Review Homestead Setup](#review-homestead-setup)
+- [Update Laravel's DB Config](#update-laravels-db-config)
+- [Recreate the database in PostgreSQL](#recreate-the-database-in-postgresql)
+- [Recreate the Database Tables and Data](#recreate-the-database-tables-and-data)
+- [Optional: Install a PostgreSQL client](#optional-install-a-postgresql-client)
 
 <a name="review-homestead"></a>
 

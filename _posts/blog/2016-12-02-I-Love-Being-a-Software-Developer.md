@@ -1,10 +1,12 @@
 ---
 layout: blog_post
-title: I Love Being a Software Developer
+title: Why Software Development is Rewarding
 category: blog
 ---
 
-Software development is a unique combination of creativity, craftsmanship, and technical problem solving. It's always evolving and there is always something new to learn!
+We play God when we run our code, breathing life into its lungs, with its own little Big Bang at execution time, exploding into existence.
+
+Software development is a unique combination of creativity, craftsmanship, and technical problem solving.
 
 Even as a young lad, I was this mathy science boy that.. also drew a lot. I'd go to school and just absolutely crush the life out of math. Then I would come home and draw these tedious, super-detailed drawings of comic book characters and dinosaurs.
 
@@ -24,11 +26,7 @@ It also happens to pay well, of course.
 
 And the only real tool required.. is a computer. The [evolution of the desk](http://bestreviews.com/electronics#evolution-of-the-desk) has allowed me to construct my technical creations on a mere laptop, using concepts that I learned using a laptop, while listening to music on that laptop, which I previously created.. on that laptop.
 
-I mean, it boggles my mind that I spend my working time thinking up solutions to problems, and then implementing them by hitting keys into a keyboard with my fingers. That's what I do for a living!
-
-Then, I play God when I go to run my code, breathing life into its lungs, with its own little Big Bang at execution time, exploding into existence.
-
-And I get paid to do this!
+> The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination <span>― Frederick P. Brooks Jr</span>
 
 I highly recommend software development as a career choice. I always encourage my non-programmer friends to at least [try programming](http://tryruby.org/levels/1/challenges/0) and see how they like it.
 
