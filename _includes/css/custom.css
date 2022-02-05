@@ -339,6 +339,14 @@ section#blog div.blog-item:hover a{
 article.blog-post {
   font-family: "PT Serif", "PT Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+article.blog-post h1,
+article.blog-post h2,
+article.blog-post h3,
+article.blog-post h4,
+article.blog-post h5 {
+  font-family: "Jost", "PT Serif", "PT Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+}
 
 article.blog-post header {
   padding: 140px 0 30px 0;
