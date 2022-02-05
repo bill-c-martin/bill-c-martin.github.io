@@ -315,20 +315,14 @@ section#blog hr.star-primary:after {
   content: "\f0eb";
 }
 
-
 section#blog div.blog-item {
-  padding: 5px;
-}
-section#blog div.blog-item div {
-  padding: 20px 15px 10px 15px;
-  box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
-  border: 0;
+  padding: 12px 9px;
 }
 
-@media(min-width:768px) {
-  section#blog div.blog-item div{
-    min-height: 158px;
-  }
+section#blog div.blog-item a {
+  display: block;
+  padding: 20px 15px 10px 15px;
+  min-height: 156px;
 }
 
 section#blog div.blog-item div:hover{
@@ -341,10 +335,6 @@ section#blog div.blog-item p{
 
 section#blog div.blog-item h5{
   margin: 0 0 10px 0;
-}
-
-section#blog div.blog-item:hover h5, section#blog div.blog-item:hover p{
-  color: #fff;
 }
 
 section#blog div.blog-item:hover a{
