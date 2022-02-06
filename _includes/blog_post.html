@@ -19,6 +19,26 @@
       </li>
     </ul>
   </header>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+            <a href="/" itemprop="item">
+                <span itemprop="name">Home</span>
+            </a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+          <a href="/blog" itemprop="item">
+            <span itemprop="name">{{ site.nav.labels.blog }}</span>
+          </a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+          <span itemprop="name">Post</span>
+        </li>
+    </ol>
+  </nav>
   <div class="content" itemprop="articleBody">
     {{ content }}
   </div>
