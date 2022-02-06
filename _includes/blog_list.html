@@ -2,6 +2,20 @@
 <section id="blog-list">
     <div class="container">
         <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+                        <a href="/" itemprop="item">
+                            <span itemprop="name">Home</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+                        <span itemprop="name">{{ site.nav.labels.blog }}</span>
+                    </li>
+                </ol>
+              </nav>
             <div class="col-md-12 text-center">
                 <h2>{{ site.nav.labels.blog }}</h2>
                 <hr class="star-primary">

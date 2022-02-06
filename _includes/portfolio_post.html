@@ -3,6 +3,26 @@
       <h1 itemprop="name headline">{{ page.title | escape }}</h1>
       <hr class="star-primary">
     </header>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+              <a href="/" itemprop="item">
+                  <span itemprop="name">Home</span>
+              </a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+            <a href="/portfolio" itemprop="item">
+              <span itemprop="name">{{ site.nav.labels.portfolio }}</span>
+            </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+            <span itemprop="name">Project</span>
+          </li>
+      </ol>
+    </nav>
     <div class="content" itemprop="articleBody">
       <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered" alt="{{ page.alt }}">
       <ul id="project-overview" class="list-inline item-details">
