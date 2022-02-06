@@ -1,5 +1,5 @@
 <!-- Blog -->
-<section id="portfolio" class="portfolio-list">
+<section id="blog-list">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -9,11 +9,19 @@
         </div>
         {% for post in site.categories['blog'] %}
             {% if post.layout == 'blog_post' %}
-                <div class="row portfolio-item" style="padding: 30px 0">
-                    <div class="col-md-12">
-                        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-                        <p>{{ post.excerpt | strip_html}}</p>
-                    </div>
+                <div class="col-md-12 blog-item">
+                    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                    <ul class="list-inline">
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <strong>Date</strong>: {{ post.date | date_to_string  }}
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            {{ post.content | number_of_words | divided_by: 180 | round}} min read
+                        </li>
+                    </ul>
+                    <p>{{ post.content | markdownify | strip_html | truncatewords: 50, ''}} <a href="{{ post.url }}" class="link">[...]</a></p>
                 </div>
             {% endif %}
         {% endfor %}

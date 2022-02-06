@@ -2,14 +2,22 @@
   <header>
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     <hr class="star-primary">
-    <p>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      {% if page.author %}
-      • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ page.author }}</span>
+    <ul class="list-inline">
+      <li>
+        <img src="/img/profile32x32.png">
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ site.meta_author }}</span>
         </span>
-      {% endif %}
-    </p>
+      </li>
+      <li>
+          <i class="fas fa-calendar-alt"></i>
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d %Y" }}</time>
+      </li>
+      <li>
+          <i class="fas fa-clock"></i>
+          {{ page.content | number_of_words | divided_by: 180 | round}} min read
+      </li>
+    </ul>
   </header>
   <div class="content" itemprop="articleBody">
     {{ content }}
