@@ -12,6 +12,14 @@ code {
   color: #393318;
 }
 
+.link {
+  color: #{{ site.color.link }};
+}
+.link:hover {
+  color: #{{ site.color.link }};
+  text-decoration: underline;
+}
+
 .index .btn {
   font-family: 'Jost',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -342,6 +350,62 @@ section#blog div.blog-item:hover a{
   text-decoration: none;
 }
 
+@media screen and (max-width: 991px) {
+  #blog .blog-item.desktop-only {
+    display: none;
+  }
+}
+
+section#blog .btn {
+  margin-top: 40px;
+}
+
+/* Blog List */
+/* #blog.blog-list .blog-item {
+  text-align: left;
+  margin: 0;
+} */
+section#blog-list .blog-item {
+  margin: 15px 0;
+}
+@media screen and (max-width: 991px) {
+  section#blog-list .blog-item {
+    margin: 50px 0;
+  }
+}
+section#blog-list hr.star-primary:after {
+  content: "\f0eb";
+}
+section#blog-list h2 {
+  margin: 60px 0 0 0;
+}
+section#blog-list h3 {
+  font-family: "Jost", "PT Serif", "PT Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 15px 0;
+  text-transform: none;
+  color: #{{ site.color.secondary-light }};
+}
+section#blog-list .list-inline>li {
+  padding-right: 10px;
+}
+section#blog-list i {
+  color: #{{ site.color.secondary-light }};
+}
+section#blog-list p {
+  margin-top: 19px;
+}
+/* @media screen and (max-width:991px) {
+  section.blog-list h3 {
+    margin: 10px 0 15px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  #blog.blog-list .blog-item div {
+    padding: 0;
+  }
+} */
+
+
 /* Blog Posts */
 article.blog-post {
   font-family: "PT Serif", "PT Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -357,6 +421,30 @@ article.blog-post h5 {
 
 article.blog-post header {
   padding: 140px 0 30px 0;
+}
+article.blog-post header .list-inline {
+  margin: 0;
+  padding: 0;
+}
+article.blog-post header .list-inline img {
+  margin: 0;
+  display: inherit;
+  border-radius: 20px;
+}
+article.blog-post header .list-inline img, article.blog-post header .list-inline i {
+  margin: 8px;
+}
+article.blog-post header .list-inline li {
+  color: #fff;
+  margin: 5px;
+}
+@media screen and (max-width: 600px) {
+  article.blog-post header .list-inline li {
+    margin: 0px;
+  }
+  article.blog-post header .list-inline img, article.blog-post header .list-inline i {
+    margin: 0;
+  }
 }
 
 article.blog-post div.content {

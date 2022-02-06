@@ -79,6 +79,9 @@ color:
 
 # Blog settings
 blog:
+  grid:
+    mobile-max: 3
+    desktop-max: 9
   labels:
     modal-close: Close
 
