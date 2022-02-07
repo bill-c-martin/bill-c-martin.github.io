@@ -2,6 +2,7 @@
 layout: blog_post
 title: Configure Laravel to Use PostgreSQL with Homestead
 category: blog
+tags: ["Laravel","PostgreSQL","Databases","PHP"]
 ---
 
 I was building a Laravel app in Homestead, with MySQL. I later decided to use PostgreSQL. This took a bit longer than expected. 

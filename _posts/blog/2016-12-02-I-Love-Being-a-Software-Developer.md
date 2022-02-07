@@ -2,6 +2,7 @@
 layout: blog_post
 title: Why Software Development is Rewarding
 category: blog
+tags: ["Software Development"]
 ---
 
 We play God when we run our code, breathing life into its lungs, with its own little Big Bang at execution time, exploding into existence.
