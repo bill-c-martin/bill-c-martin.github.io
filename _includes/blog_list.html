@@ -21,6 +21,11 @@
                 <hr class="star-primary">
             </div>
         </div>
+        
+        {% for tag in site.tags %}
+            <a href="{{ post.url }}" class="btn shadow">{{ tag[0] }}</a>
+        {% endfor %}
+
         {% for post in site.categories['blog'] %}
             {% if post.layout == 'blog_post' %}
                 <div class="col-md-12 blog-item">

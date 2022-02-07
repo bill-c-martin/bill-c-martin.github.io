@@ -58,6 +58,17 @@ a:hover, a:focus {
   border: 0;
 }
 
+#blog-list .btn {
+  color: #fff;
+  text-transform: none;
+  background: #{{ site.color.secondary-lightest }};
+  margin: 5px 2px 10px 2px;
+}
+#blog-list .btn:hover {
+  color: #fff;
+  background: #{{ site.color.secondary-light }};
+}
+
 .top-buffer { margin-top:20px; }
 
 .btn-default {
