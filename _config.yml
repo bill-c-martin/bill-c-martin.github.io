@@ -12,7 +12,7 @@ nav:
   labels:
     portfolio: Portfolio
     about: About
-    blog: Thoughts
+    blog: Blog 
     contact: Contact
 
 # About section
@@ -69,11 +69,11 @@ gtm_id: GTM-5GVCKDT
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 101010 #80B3FF
-  primary-rgb: "255,0,0" #"128,179,255"
-  secondary-light: 58635a #FD6E8A
-  secondary: 38433a #FD6E8A
-  secondary-dark: 18231a #A2122F
+  primary: 101010
+  primary-rgb: "255,0,0"
+  secondary-light: 58635a
+  secondary: 38433a
+  secondary-dark: 18231a
   blog-text: 222
   link: 1a77bd
   link-fade: 5692c0
@@ -83,8 +83,10 @@ blog:
   grid:
     mobile-max: 3
     desktop-max: 9
-  labels:
-    modal-close: Close
+    labels:
+      title: Latest Posts
+      button: View All Posts
+  modal-close: Close
 
 # Markdown/syntax highlighter settings
 highlighter: rouge
@@ -99,6 +101,9 @@ portfolio:
   grid:
     mobile-max: 3
     desktop-max: 6
+    labels:
+      title: Portfolio
+      button: View All Projects
   icons:
     application: fa-mobile-alt
     applications: fa-mobile-alt
