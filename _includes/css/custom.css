@@ -32,21 +32,40 @@ a:hover, a:focus {
   text-transform: uppercase;
   background-color: #{{ site.color.secondary-light }};
 }
-
 .index .btn:hover {
   color: #fff;
   background-color: #{{ site.color.secondary }};
   transition: 0.3s;
+}
+.index .btn.btn-tag {
+  padding: 5px 7px;
+  font-family: Lato,Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+}
+.index .btn.btn-tag i {
+  margin-right: 7px;
+}
+.index section#blog-list .btn.btn-tag:hover > i {
+  color: #fff;
+  transition: 0.6s;
 }
 
 .shadow {
   border: 0;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-
 .shadow:hover {
   border: 0;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: 0.3s;
+}
+.shadow-small {
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.11);
+}
+.shadow-small:hover {
+  border: 0;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.18), 0 3px 4px rgba(0,0,0,0.17);
   transition: 0.3s;
 }
 

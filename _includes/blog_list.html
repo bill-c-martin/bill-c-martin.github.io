@@ -24,7 +24,7 @@
         
         <h3>Tags</h3>
         {% for tag in site.tags %}
-            <a href="/blog/tag/{{ tag[0] | slugify }}" class="btn shadow">{{ tag[0] }}</a>
+            <a href="/blog/tag/{{ tag[0] | slugify }}" class="btn btn-tag shadow-small"><i class="fas fa-tag"></i>{{ tag[0] }}</a>
         {% endfor %}
 
         <h3>All Posts</h3>
