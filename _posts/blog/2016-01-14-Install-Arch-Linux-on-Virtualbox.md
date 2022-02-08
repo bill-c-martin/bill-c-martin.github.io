@@ -2,6 +2,7 @@
 layout: blog_post
 title: Install Arch Linux on VirtualBox
 category: blog
+tags: ["Linux"]
 ---
 
 Contrary to its reputation, building an Arch installation only takes about 15 minutes. Try it in VirtualBox.

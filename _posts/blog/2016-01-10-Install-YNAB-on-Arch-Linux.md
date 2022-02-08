@@ -2,7 +2,7 @@
 layout: blog_post
 title: Install YNAB on Arch Linux
 category: blog
-tags: ["Arch Linux"]
+tags: ["Linux"]
 ---
 
 Installing You Need A Budget (YNAB) on the average Linux distro is a no-brainer, but Arch Linux requires a few extra strokes to get purring.

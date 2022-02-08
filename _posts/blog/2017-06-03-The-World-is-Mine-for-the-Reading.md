@@ -2,6 +2,7 @@
 layout: blog_post
 title: The World is Mine for the Reading
 category: blog
+tags: ["Books"]
 ---
 
 > We need books, time, and silence. Thou shalt not is soon forgotten, but Once upon a time lasts forever.

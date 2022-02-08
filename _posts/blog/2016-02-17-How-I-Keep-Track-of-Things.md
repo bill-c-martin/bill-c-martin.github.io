@@ -2,6 +2,7 @@
 layout: blog_post
 title: How I Keep Track of Things
 category: blog
+tags: ["Tools"]
 ---
 
 Ok, look. I'm really awesome at keeping track things. Here is my system.

@@ -12,7 +12,7 @@ nav:
   labels:
     portfolio: Portfolio
     about: About
-    blog: Blog 
+    blog: Posts 
     contact: Contact
 
 # About section
@@ -71,6 +71,7 @@ gtm_id: GTM-5GVCKDT
 color:
   primary: 101010
   primary-rgb: "255,0,0"
+  secondary-lightest: 88938a
   secondary-light: 58635a
   secondary: 38433a
   secondary-dark: 18231a

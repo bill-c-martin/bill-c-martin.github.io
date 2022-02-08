@@ -1,0 +1,51 @@
+<!-- Blog -->
+<section id="blog-list">
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+                        <a href="/" itemprop="item">
+                            <span itemprop="name">Home</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+                        <a href="/blog" itemprop="item">
+                            <span itemprop="name">{{ site.nav.labels.blog }}</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+                        <span itemprop="name">{{ page.tag }} Posts</span>
+                    </li>
+                </ol>
+              </nav>
+            <div class="col-md-12 text-center">
+                <h2>{{page.tag}} Posts</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+
+        {% for post in site.categories['blog'] %}
+            {% if post.layout == 'blog_post' and post.tags contains page.tag %}
+                <div class="col-md-12 blog-item">
+                    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                    <ul class="list-inline">
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <strong>Date</strong>: {{ post.date | date_to_string  }}
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            {{ post.content | number_of_words | divided_by: 180 | round}} min read
+                        </li>
+                    </ul>
+                    <p>{{ post.content | markdownify | strip_html | truncatewords: 50, ''}} <a href="{{ post.url }}" class="link">[...]</a></p>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+

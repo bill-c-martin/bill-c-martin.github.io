@@ -2,7 +2,7 @@
 layout: blog_post
 title: The Majesty of Arch Linux
 category: blog
-tags: ["Arch Linux"]
+tags: ["Linux"]
 ---
 
 Upon reading [The Arch Way](https://wiki.archlinux.org/index.php/Arch_Linux), I found myself bewitched.. by a Linux distro.

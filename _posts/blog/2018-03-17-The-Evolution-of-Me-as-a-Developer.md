@@ -2,6 +2,7 @@
 layout: blog_post
 title: The Evolution of Me as a Developer
 category: blog
+tags: ["Software Development"]
 ---
 
 This is the quasi-comical looking back of my adventurous history as a web developer, my goofs, my successes, my failures, my hopes.

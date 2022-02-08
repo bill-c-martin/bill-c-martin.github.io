@@ -21,24 +21,33 @@
                 <hr class="star-primary">
             </div>
         </div>
-        {% for post in site.categories['blog'] %}
-            {% if post.layout == 'blog_post' %}
-                <div class="col-md-12 blog-item">
-                    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-                    <ul class="list-inline">
-                        <li>
-                            <i class="fas fa-calendar-alt"></i>
-                            <strong>Date</strong>: {{ post.date | date_to_string  }}
-                        </li>
-                        <li>
-                            <i class="fas fa-clock"></i>
-                            {{ post.content | number_of_words | divided_by: 180 | round}} min read
-                        </li>
-                    </ul>
-                    <p>{{ post.content | markdownify | strip_html | truncatewords: 50, ''}} <a href="{{ post.url }}" class="link">[...]</a></p>
-                </div>
-            {% endif %}
-        {% endfor %}
+        <div class="row tags">
+            <h3>Tags</h3>
+            {% for tag in site.tags %}
+                <a href="/blog/tag/{{ tag[0] | slugify }}" class="btn btn-tag shadow-small"><i class="fas fa-tag"></i>{{ tag[0] }}</a>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <h3>All Posts</h3>
+            {% for post in site.categories['blog'] %}
+                {% if post.layout == 'blog_post' %}
+                    <div class="col-md-12 blog-item">
+                        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                        <ul class="list-inline">
+                            <li>
+                                <i class="fas fa-calendar-alt"></i>
+                                <strong>Date</strong>: {{ post.date | date_to_string  }}
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                {{ post.content | number_of_words | divided_by: 180 | round}} min read
+                            </li>
+                        </ul>
+                        <p>{{ post.content | markdownify | strip_html | truncatewords: 50, ''}} <a href="{{ post.url }}" class="link">[...]</a></p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </section>
 
