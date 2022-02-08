@@ -2,7 +2,7 @@
 layout: blog_post
 title: The Simplicity of SQLite
 category: blog
-tags: ["SQLite", "Databases"]
+tags: ["Database"]
 ---
 
 SQLite consists of a single file as the database and a set of CLI commands. "Like all magnificent things, it's very simple."

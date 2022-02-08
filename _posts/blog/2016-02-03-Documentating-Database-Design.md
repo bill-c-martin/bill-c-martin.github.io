@@ -2,7 +2,7 @@
 layout: blog_post
 title: Documenting Database Design
 category: blog
-tags: ["Databases"]
+tags: ["Database"]
 ---
 
 Documenting database design is just one of those skills we web developers tend to lack. I have some theories as to why.

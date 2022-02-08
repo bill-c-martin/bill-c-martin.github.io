@@ -2,7 +2,7 @@
 layout: blog_post
 title: Usability in Three Minutes
 category: blog
-tags: ["UI/UX"]
+tags: ["UI/UX", "Books"]
 ---
 
 "Don't Make Me Think" is a classic book on web usability. This is what I learned from the book, reduced down to a three minute read. 
