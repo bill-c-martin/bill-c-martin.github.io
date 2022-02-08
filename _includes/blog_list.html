@@ -22,10 +22,12 @@
             </div>
         </div>
         
+        <h3>Tags</h3>
         {% for tag in site.tags %}
             <a href="/blog/tag/{{ tag[0] | slugify }}" class="btn shadow">{{ tag[0] }}</a>
         {% endfor %}
 
+        <h3>All Posts</h3>
         {% for post in site.categories['blog'] %}
             {% if post.layout == 'blog_post' %}
                 <div class="col-md-12 blog-item">
