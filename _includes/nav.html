@@ -19,9 +19,9 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    {% for item in site.nav.labels %}=
+                    {% for item in site.nav.labels %}
                         <li class="page-scroll" itemprop="name" role="menuitem">
-                            <a href="{% if page.layout != 'default' %}{{site.url}}{% endif %}#{{ item.[0] }}" title="{{ item.[1] }}">{{ item.[1] }}</a>
+                            <a href="{% if page.layout != 'default' %}{{site.url}}{% endif %}#{{ item.[0] }}" title="{{ item.[1] }}" itemprop="url">{{ item.[1] }}</a>
                         </li>
                     {% endfor %}
                 </ul>
