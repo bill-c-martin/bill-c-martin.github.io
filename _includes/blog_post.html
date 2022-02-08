@@ -25,17 +25,20 @@
       itemtype="https://schema.org/ListItem">
             <a href="/" itemprop="item">
                 <span itemprop="name">Home</span>
+                <meta itemprop="position" content="1" />
             </a>
         </li>
         <li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem">
           <a href="/blog" itemprop="item">
             <span itemprop="name">{{ site.nav.labels.blog }}</span>
+            <meta itemprop="position" content="2" />
           </a>
         </li>
         <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem">
           <span itemprop="name">Post</span>
+          <meta itemprop="position" content="3" />
         </li>
     </ol>
   </nav>
