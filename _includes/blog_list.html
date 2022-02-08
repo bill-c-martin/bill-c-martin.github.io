@@ -23,7 +23,7 @@
         </div>
         
         {% for tag in site.tags %}
-            <a href="{{ post.url }}" class="btn shadow">{{ tag[0] }}</a>
+            <a href="/blog/tag/{{ tag[0] | slugify }}" class="btn shadow">{{ tag[0] }}</a>
         {% endfor %}
 
         {% for post in site.categories['blog'] %}
