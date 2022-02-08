@@ -10,7 +10,7 @@ I initially took the plunge and installed Arch right on my hard drive next to Wi
 
 Most of the installation time is spent learning its glorious innards.
 
-However, I recently had to install Arch Linux on VirtualBox to help reproduce and debug an [issue I reported](https://github.com/gnumdk/lollypop/issues/409) for the [Lollypop](https://github.com/gnumdk/lollypop) music player. I have compiled the meat of its actual installation process just to prove it's not the monster people think it is:
+However, I recently had to install Arch Linux on VirtualBox to help reproduce and debug an [issue I reported](https://gitlab.gnome.org/World/lollypop/-/issues/409) for the [Lollypop](https://gitlab.gnome.org/World/lollypop) music player. I have compiled the meat of its actual installation process just to prove it's not the monster people think it is.
 
 ### Pregaming
 
@@ -60,36 +60,31 @@ Within five seconds, a root shell is born.
 
 #### GUI (10 min, of mostly waiting)
 
-<ol>
-    <li>Install OpenGL Drivers
-        <ol>
-            <li>Enable Multilib
-                <ol>
-                    <li>Edit the pacman config: <code>vi /etc/pacman.conf</code></li>
-                    <li>Uncomment the two multilib lines:
-                        <div class="highlight">
-                            <pre><code class="language-sh" data-lang="sh"><span class="c">#[multilib]</span><br/><span class="c">#Include = /etc/pacman.d/mirrorlist</span></code></pre>
-                        </div>
-                        <p>To:</p>
-                        <div class="highlight">
-                            <pre><code class="language-sh" data-lang="sh"><span class="c">[multilib]</span><br/><span class="c">Include = /etc/pacman.d/mirrorlist</span></code></pre>
-                        </div>
-                    </li>
-                </ol>
-            <li>Update Pacman: <code>pacman -Syu</code></li>
-            <li>Install OpenGL: <code>pacman -S mesa-libgl</code></li>
-            <li>Install 32 bit OpenGL: <code>pacman -S lib32-mesa-libgl</code></li>
-        </ol>
-    </li>
-    <li>Install VirtualBox Guest Utilities: <code>pacman -S virtualbox-guest-utils</code></li>
-    <li>Install Gnome: <code>pacman -S gnome gnome-extra</code>
-        <ol>
-            <li>Hit <code>enter</code> <code>enter</code> <code>enter</code> <code>enter</code> <code>Y</code></li>
-        </ol>
-    </li>
-    <li>Enable GDM: <code>systemctl enable gdm.service</code></li>
-    <li>Install Gnome Tweak Tool: <code>pacman -S gnome-tweak-tool</code></li>
-    <li>The Final Reboot Before Things Become Civilized: <code>reboot</code></li>
-</ol>
+1. Install OpenGL Drivers
+   1. Enable Multilib
+      1. Edit the pacman config: `vi /etc/pacman.conf`
+      2. Uncomment the two multilib lines:
+
+       ```sh
+       #[multilib]
+       #Include = /etc/pacman.d/mirrorlist
+       ```
+
+      3. To:
+
+       ```sh
+       [multilib]
+       Include = /etc/pacman.d/mirrorlist
+       ```
+
+   2. Update Pacman: `pacman -Syu`
+   3. Install OpenGL: `pacman -S mesa-libgl`
+   4. Install 32 bit OpenGL: `pacman -S lib32-mesa-libgl`
+2. Install VirtualBox Guest Utilities: `pacman -S virtualbox-guest-utils`
+3. Install Gnome: `pacman -S gnome gnome-extra`
+   1. Hit `enter`, `enter`, `enter`, `enter`, `Y`
+4. Enable GDM: `systemctl enable gdm.service`
+5. Install Gnome Tweak Tool: `pacman -S gnome-tweak-tool`
+6. The Final Reboot Before Things Become Civilized: `reboot`
 
 And that's all there is to it.
