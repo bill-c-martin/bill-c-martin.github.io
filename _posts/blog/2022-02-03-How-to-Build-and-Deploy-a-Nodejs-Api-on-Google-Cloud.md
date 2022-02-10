@@ -1,23 +1,38 @@
 ---
 layout: blog_post
-title: How to Build and Deploy a Node.js API on Google Cloud
+title: How to Build and Deploy a Node.js, Express, and MySQL API to GCP
 category: blog
 ---
 
-Build a serverless Node.js + Express.js API from scratch
+Let's build a Node.js + Express API from scratch, connect it Cloud SQL for MySQL, and deploy it all to Google Cloud using gcloud CLI.
 
-deploy it to Google Cloud Platform using gcloud CLI.
+This guide is intended for developers unfamiliar with Google Cloud Platform (GCP), so you'll start simple and small, and connect things one at a time as you need them.
 
-DB = Firestore, or Datastore.
+Here's what we'll do:
+
+1. Install Node.js and gcloud CLI locally
+2. Create a MySQL DB in Cloud SQL on GCP
+3. Connect to it using a DB client, and seed it with some data
+4. Create a basic API in Node.js and Express, run it locally
+5. Deploy the API to a container on GCP
+6. Add MySQL connectivity to the container
+7. Store MySQL credentials in GCP Secrets Manager
+8. Redeploy, and run the API across the internet
+9. Review all the moving parts in GCP
+10. Make code changes, and redeploy
+11. Kill everything in GCP so you don't get charged
 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Setup gcloud CLI](#setup-gcloud-cli)
+- [Prerequisites](#prerequisites)
+  - [Use Linux For This](#use-linux-for-this)
+  - [Create Google Cloud Platform Account](#create-google-cloud-platform-account)
+  - [Setup gcloud CLI](#setup-gcloud-cli)
+  - [Setup Node.js and Express.js Locally](#setup-nodejs-and-expressjs-locally)
 - [Create a DB in Google Cloud](#create-a-db-in-google-cloud)
   - [Connect to the DB with a Client](#connect-to-the-db-with-a-client)
   - [Create a table and data](#create-a-table-and-data)
-- [Setup Node.js and Express.js Locally](#setup-nodejs-and-expressjs-locally)
 - [Create an API](#create-an-api)
   - [Initialize](#initialize)
   - [Add MySQL Connectivity](#add-mysql-connectivity)
@@ -40,16 +55,56 @@ DB = Firestore, or Datastore.
 - [How Do I Make Changes and Redepoy?](#how-do-i-make-changes-and-redepoy)
 - [Clean Up](#clean-up)
 
-## Setup gcloud CLI
+## Prerequisites
+
+### Use Linux For This
+
+**Windows Users**: You'll need an actual Linux terminal for this. So, run [Ubuntu in Windows through WSL](https://ubuntu.com/wsl).
+
+**Mac Users**: I'm sure you'll be fine ;)
+
+### Create Google Cloud Platform Account
+
+//TODO
+
+### Setup gcloud CLI
 
 1. [Install gcloud](https://cloud.google.com/sdk/docs/install)
 2. Run `gcloud init`
 
+### Setup Node.js and Express.js Locally
+
+From a terminal, install node via nvm on Ubuntu:
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
+Restart terminal:
+
+```bash
+source ~/.bashrc
+```
+
+Install node:
+
+```bash
+nvm install v16.13.1
+```
+
+Check if node works:
+
+```bash
+node -v
+```
 ## Create a DB in Google Cloud
 
 On cloud.google.com:
 
-> :warning: **Set a good root password**: the DB will be setup exposed to the whole internet since this is just an exercise. For a real DB, you would setup a VPC and not expose the DB to the internet.
+<div class="alert alert-warning" role="alert">
+  <strong>Set a good root password</strong>
+  <p>The DB will be setup exposed to the whole internet since this is just an exercise. For a real DB, you would setup a VPC and not expose the DB to the internet.</p>
+</div>
 
 1. Menu > SQL > Create Instance
    1. select all the lowest resources/least expensive stuff in advanced options
@@ -97,32 +152,6 @@ INSERT INTO warehouses VALUES
 SELECT * FROM warehouses;
 ```
 
-## Setup Node.js and Express.js Locally
-
-From a terminal, install node via nvm on Ubuntu:
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-```
-
-Restart terminal:
-
-```bash
-source ~/.bashrc
-```
-
-Install node:
-
-```bash
-nvm install v16.13.1
-```
-
-Check if node works:
-
-```bash
-node -v
-```
-
 ## Create an API
 
 ### Initialize
@@ -130,7 +159,7 @@ node -v
 Create some project dir:
 
 ```bash
-mkdir wc-poc-api && cd wc-poc-api
+mkdir my-node-api && cd my-node-api
 ```
 
 Create a project, hit enter through all the questions:
@@ -194,7 +223,9 @@ Initialize these files:
 touch database.js .env .gitignore
 ```
 
-> :warning: Make sure git won't let you accidentally commit your mysql user/pass, stupid:
+<div class="alert alert-warning" role="alert">
+  Make sure git won't let you accidentally commit your mysql user/pass:
+</div>
 
 ```bash
 echo ".env" > .gitignore
@@ -245,7 +276,9 @@ connection.connect(function(err) {
 module.exports = connection;
 ```
 
-> :memo: Later on when this code is deployed to the cloud, GCP will send a `NODE_ENV` environment variable set to `production` so your code will know it is running from the cloud, and not a localhost.
+<div class="alert alert-info" role="alert">
+  Later on when this code is deployed to the cloud, GCP will send a <code>NODE_ENV</code> environment variable set to <code>production</code> so your code will know it is running from the cloud, and not a localhost.
+</div>
 
 ### Add API Routes that Connect to the DB
 
@@ -342,26 +375,32 @@ gcloud run deploy
 Keep these in mind:
 
 - **Source code location**: hit `<enter>`
-- **Service name**: `wc-poc-api`
+- **Service name**: `my-node-api`
 - **Enable run.googleapis.com?**: `y`
 - **Specify a region**: Set to the Location that your DB instance says on [Google Cloud > SQL](https://console.cloud.google.com/sql/instances)
 - **Enable artifactregistry.googleapis.com?**: `y`
 - **Continue?**: `y`
 - **Allow unauthenticated?** `y` for now, since this is a demo that will be torn down shortly.
 
-> :memo: If you get an error about "PERMISSION DENIED: Cloud Build API has not been used in project", then go to the link in the error to enable it with a button click. Then rerun the above command.
+<div class="alert alert-info" role="alert">
+  If you get an error about "PERMISSION DENIED: Cloud Build API has not been used in project", then go to the link in the error to enable it with a button click. Then rerun the above command.
+</div>
 
 If it's successful, you will see something like:
 
-> Service [wc-poc-api] revision [wc-poc-api-00001-qiz] has been deployed and is serving 100 percent of traffic.
->
-> Service URL: https://wc-poc-api-gyop4mtb5a-ue.a.run.app
+```bash
+Service [my-node-api] revision [my-node-api-00001-qiz] has been deployed and is serving 100 percent of traffic.
+
+Service URL: https://my-node-api-gyop4mtb5a-ue.a.run.app
+```
 
 So open the URL, from that success output, in a browser.
 
-> :memo: **DB connectivity does not work yet**: `/` and `/status` will work, but `/warehouses/` and `/warehouses/1` won't work.
->
-> Those require SQL connectivity to be setup still for the container, in a later step.
+<div class="alert alert-info" role="alert">
+  <strong>DB connectivity does not work yet</strong>
+  <p><code>/</code> and <code>/status</code> will work, but <code>/warehouses/</code> and <code>/warehouses/1</code> won't work.</p>
+  <p>Those require SQL connectivity to be setup still for the container, in a later step.</p>
+</div>
 
 ### What Just Happened?
 
@@ -445,7 +484,10 @@ It does not have access to Secrets Manager by default.
 4. Select "Secret Manager Secret Accessor" role
 5. Save
 
->:warning: In the long run, you will want to create a "Developer" or "Deployment Manager" role, attach that role to the user accounts of anyone who can do deployments, and set developers up so their `gcloud run deploy` command is using *their* user account and not the default service account.
+
+<div class="alert alert-warning" role="alert">
+  In the long run, you will want to create a "Developer" or "Deployment Manager" role, attach that role to the user accounts of anyone who can do deployments, and set developers up so their `gcloud run deploy` command is using *their* user account and not the default service account.
+</div>
 
 #### Redeploy
 
@@ -489,11 +531,13 @@ Replace the following:
 
 You should see something like:
 
-> Done.
->
-> Service [wc-poc-api] revision [wc-poc-api-00006-buw] has been deployed and is serving 100 percent of traffic.
->
-> Service URL: https://wc-poc-api-gyop4mtb5a-ue.a.run.app
+```shell
+Done.
+
+Service [my-node-api] revision [my-node-api-00006-buw] has been deployed and is serving 100 percent of traffic.
+
+Service URL: https://my-node-api-gyop4mtb5a-ue.a.run.app
+```
 
 From there, open that service URL in a browser.
 
@@ -563,9 +607,11 @@ Run:
 gcloud run deploy
 ```
 
-And redundantly fill out the prompts, making sure to type the same service name as before (wc-poc-api), and same region.
+And redundantly fill out the prompts, making sure to type the same service name as before (my-node-api), and same region.
 
-> :memo: In the long run, it would be ideal to setup a [build pipeline for continuous deployment](https://cloud.google.com/build/docs/deploying-builds/deploy-cloud-run).
+<div class="alert alert-info" role="alert">
+  In the long run, it would be ideal to setup a <a href="https://cloud.google.com/build/docs/deploying-builds/deploy-cloud-run">build pipeline for continuous deployment</a>.
+</div>
 
 ## Clean Up
 
