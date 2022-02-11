@@ -6,6 +6,8 @@ category: blog
 
 Let's build a Node.js + Express API from scratch, connect it Cloud SQL for MySQL, and deploy it all to Google Cloud using gcloud CLI.
 
+The API will consist of some GET endpoints for retrieving warehouse names and zip codes from an imaginary "Acme" company.
+
 This guide is intended for developers unfamiliar with Google Cloud Platform (GCP), so you'll start simple and small, and connect things one at a time as you need them.
 
 Here's what we'll do:
@@ -30,14 +32,15 @@ Here's what we'll do:
   - [Create Google Cloud Platform Account](#create-google-cloud-platform-account)
   - [Setup gcloud CLI](#setup-gcloud-cli)
   - [Setup Node.js and Express.js Locally](#setup-nodejs-and-expressjs-locally)
-- [Create a DB in Google Cloud](#create-a-db-in-google-cloud)
+- [Create and Seed a Database in Google Cloud](#create-and-seed-a-database-in-google-cloud)
+  - [Create MySQL Instance](#create-mysql-instance)
   - [Connect to the DB with a Client](#connect-to-the-db-with-a-client)
-  - [Create a table and data](#create-a-table-and-data)
-- [Create an API](#create-an-api)
-  - [Initialize](#initialize)
+  - [Create a Table and Seed it With Data](#create-a-table-and-seed-it-with-data)
+- [Create an Express API in Node.js](#create-an-express-api-in-nodejs)
+  - [Initialize the API](#initialize-the-api)
   - [Add MySQL Connectivity](#add-mysql-connectivity)
   - [Add API Routes that Connect to the DB](#add-api-routes-that-connect-to-the-db)
-  - [Add a Few More Records](#add-a-few-more-records)
+  - [Add More Data](#add-more-data)
 - [Deploy to Google Cloud Using gcloud](#deploy-to-google-cloud-using-gcloud)
   - [What Just Happened?](#what-just-happened)
   - [Setup SQL Connectivity in the Container](#setup-sql-connectivity-in-the-container)
@@ -59,80 +62,130 @@ Here's what we'll do:
 
 ### Use Linux For This
 
-**Windows Users**: You'll need an actual Linux terminal for this. So, run [Ubuntu in Windows through WSL](https://ubuntu.com/wsl).
-
-**Mac Users**: I'm sure you'll be fine ;)
+- **Windows Users**: You'll need an actual Linux terminal for this. So, run [Ubuntu in Windows through WSL](https://ubuntu.com/wsl).
+- **Linux Users**: This guide is written for Ubuntu.
+- **Mac Users**: I'm sure you'll be fine ;)
 
 ### Create Google Cloud Platform Account
 
-//TODO
+Head over to [cloud.google.com](https://cloud.google.com/) and create an account, if you don't already have one.
+
+New accounts come with a free $300 in spending credits.
+
+All of the services used in this article are free tier, except Cloud SQL (MySQL). I used up only 82 cents of that $300 for this article.
 
 ### Setup gcloud CLI
 
+Fire up the terminal:
+
 1. [Install gcloud](https://cloud.google.com/sdk/docs/install)
-2. Run `gcloud init`
+2. Run `gcloud init` and follow the prompts to get authorized and configured.
+3. See [Google's guide](https://cloud.google.com/sdk/docs/initializing) for additional help.
+
+By the end of this process, you should see something like:
+
+```sh
+[compute]
+region = us-east1
+zone = us-east1-b
+[core]
+account = user@google.com
+disable_usage_reporting = False
+project = example-project
+```
 
 ### Setup Node.js and Express.js Locally
 
-From a terminal, install node via nvm on Ubuntu:
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-```
-
-Restart terminal:
-
-```bash
-source ~/.bashrc
-```
-
-Install node:
-
-```bash
-nvm install v16.13.1
-```
-
-Check if node works:
-
-```bash
-node -v
-```
-## Create a DB in Google Cloud
-
-On cloud.google.com:
-
-<div class="alert alert-warning" role="alert">
-  <strong>Set a good root password</strong>
-  <p>The DB will be setup exposed to the whole internet since this is just an exercise. For a real DB, you would setup a VPC and not expose the DB to the internet.</p>
+<div class="alert alert-info" role="alert">
+  <strong>Mac users</strong>: <a href="https://dev.to/httpjunkie/setup-node-version-manager-nvm-on-mac-m1-7kl">You're on your own</a> for this step.
 </div>
 
-1. Menu > SQL > Create Instance
-   1. select all the lowest resources/least expensive stuff in advanced options
-   2. Set a good root password, this DB will be exposed to the whole internet..
-2. Launch the instance, wait until it's ready
-3. Click the instance
-   1. **Write down the host public IP for later**
-4. Click instance > databases > create database
-   1. Name: `locations`
-   2. Set it to allow all hosts
-   3. **Write down the DB name for later**
-5. Click users > create a user
-   1. **Write down the user/pass for later**
-6. Click Connections > and authorize your own IP
-7. Go back to the DB instance itself to get the public IP of the host
+Fire up your Ubuntu terminal and run the following:
+
+```bash
+# Install NVM (Node Version Manager). Note: v0.38 is the latest version at this time
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+# Restart terminal:
+source ~/.bashrc
+
+# Install node. This is the latest version at the time of this writing
+nvm install v16.13.1
+
+# Verify that node works:
+node -v
+```
+
+## Create and Seed a Database in Google Cloud
+
+In the following steps, we'll create a MySQL instance, connect to it, and seed it with test data.
+
+Why MySQL? Because it's the [most used](https://insights.stackoverflow.com/survey/2021#databases).
+
+### Create MySQL Instance
+
+Create the MySQL instance:
+
+1. Click GCP > SQL > Create Instance
+   1. Choose MySQL
+   2. Enable the Compute API if it asks you
+   3. Enter the following:
+      1. Instance ID: `acme-db`
+      2. Password: Click "GENERATE"
+      3. Database version: `5.7`
+      4. Region: `us-east1`
+      5. Zone Availability: `Single zone`
+   4. Click "Show Configuration Options":
+      1. Storage > Machine Type: `Shared core`
+      2. Storage > Storage Type: `SSD`
+      3. Storage > Storage Capacity: `10GB`
+      4. Backups > Automate backups: uncheck
+      5. Backups > Enable point-in-time recovert: uncheck
+   5. Click "Create Instance"
+
+<div class="alert alert-warning" role="alert">
+  Spinning this up and running it for a short time will cost you a few cents of your free credits. We'll be shutting this (and everything else) down by the end of this article.
+</div>
+
+Wait until the instance is ready. ~10 minutes.
+
+Create a user for your API to use:
+
+1. Go to GCP > SQL > `acme` > Users
+2. Click "Add User Account":
+   1. User: `test`
+   2. Password: [Generate a secure password](https://passwordsgenerator.net/). Copy it down for later.
+   3. Set it to allow all hosts
+3. Click "Add"
+
+Create a database in the MySQL instance:
+
+1. Go to GCP > SQL > `acme` > Databases
+2. Click "Create Database"
+   1. Name: `acme`
+   2. Click "Create"
+
+Authorize your localhost to connect to this Cloud DB:
+
+1. Go to GCP > SQL > `acme` > Connections
+2. Click "Add Network"
+   1. Name: `me`
+   2. Network: [Get your IPv4](https://www.whatismyip.com/), and append `/32` to it. Eg for `12.34.56.78`, enter `12.34.56.78/32`
+   3. Click "Done"
+3. Click "Save"
 
 ### Connect to the DB with a Client
 
-Connect to the new DB with a MySQL client:
+Connect to the new DB with a MySQL GUI client of your choice:
 
-- db host (public IP) from earlier
-- user from earlier
-- pass from earlier
-- port: `3306`
+- **Host**: Get from GCP > SQL > `acme` > Overview > Public IP Address
+- **User**: `test`
+- **Password**: the password you generated a few steps up
+- **Port**: `3306`
 
-### Create a table and data
+### Create a Table and Seed it With Data
 
-Create a table and populate it with data:
+Run this in the `acme` database from your MySQL GUI client:
 
 ```sql
 CREATE TABLE `warehouses` (
@@ -141,7 +194,7 @@ CREATE TABLE `warehouses` (
    `zip` VARCHAR(10) NULL DEFAULT NULL,
    INDEX `index` (`id`)
 )
-COLLATE='utf8_general_ci'
+COLLATE='utf8_general_ci';
 
 INSERT INTO warehouses VALUES
    (1, 'Warehouse #1', '33614'), 
@@ -152,26 +205,42 @@ INSERT INTO warehouses VALUES
 SELECT * FROM warehouses;
 ```
 
-## Create an API
+You should see data:
 
-### Initialize
+| id| name           | zip   |
+|---|----------------|-------|
+| 1 | Warehouse #1   | 33614 |
+| 2 | Warehouse #23  | 90210 |
+| 3 | Warehouse #103 | 03103 |
 
-Create some project dir:
+## Create an Express API in Node.js
+
+### Initialize the API
+
+Create some project directory:
 
 ```bash
 mkdir my-node-api && cd my-node-api
 ```
 
-Create a project, hit enter through all the questions:
+Initialize a project, hit enter through all the questions:
 
 ```bash
 npm init
 ```
 
-Add these to the `package.json` that got generated, which will be needed by `gcloud` later on when deploying to Google Cloud:
+Add the start script and node engine to the `package.json` that was generated.
 
-```js
- "main": "index.js",
+These will be needed by `gcloud` later on when deploying to Google Cloud.
+
+The full file should look like:
+
+```json
+{
+  "name": "my-node-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -179,16 +248,19 @@ Add these to the `package.json` that got generated, which will be needed by `gcl
   "engines": {
     "node": ">= 12.0.0"
   },
+  "author": "",
+  "license": "ISC"
+}
 ```
 
-Pull in Express.js to build APIs with, create an entry point:
+Pull in the Express framework, and create an entry point:
 
 ```bash
 npm install express --save
 touch index.js
 ```
 
-Edit index.js and create a basic Express API that responds to `/` GET:
+Edit `index.js` and create a basic Express API that responds to `/` GET:
 
 ```bash
 const express = require('express');
@@ -205,9 +277,11 @@ Boot the app:
 node index.js
 ```
 
-Verify http://localhost:8080 works.
+Verify [http://localhost:8080](http://localhost:8080) works.
 
 ### Add MySQL Connectivity
+
+For this step, we'll connect this API to the MySQL DB running on GCP.
 
 Install these packages:
 
@@ -231,12 +305,12 @@ touch database.js .env .gitignore
 echo ".env" > .gitignore
 ```
 
-Edit `.env` and add the DB connection parameters from earlier up:
+Edit `.env` and add the DB connection parameters from earlier:
 
 ```bash
 DB_HOST=your.database.ip.address
-DB_NAME=your-database-name
-DB_USER=your-db-user
+DB_NAME=acme
+DB_USER=test
 DB_PASS=your-db-user-password
 ```
 
@@ -251,13 +325,13 @@ var config = {
     password: process.env.DB_PASS,
 };
 
-// Running from Google Cloud?
+// Later on when running from Google Cloud, env variables will be passed in container cloud connection config
 if(process.env.NODE_ENV === 'production') {
   console.log('Running from cloud. Connecting to DB through GCP socket.');
   config.socketPath = `/cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`;
 }
 
-// Or running from localhost?
+// When running from localhost, get the config from .env
 else {
   console.log('Running from localhost. Connecting to DB directly.');
   config.host = process.env.DB_HOST;
@@ -276,11 +350,9 @@ connection.connect(function(err) {
 module.exports = connection;
 ```
 
-<div class="alert alert-info" role="alert">
-  Later on when this code is deployed to the cloud, GCP will send a <code>NODE_ENV</code> environment variable set to <code>production</code> so your code will know it is running from the cloud, and not a localhost.
-</div>
-
 ### Add API Routes that Connect to the DB
+
+With MySQL now connected, let's rewrite the GET endpoints to retrieve data from the DB.
 
 Edit `index.js`, nuke everything in there, replace with:
 
@@ -298,7 +370,7 @@ app.get('/status', (req, res) => res.send('Success.') );
 
 app.get('/warehouses', (req, res) => {
   connection.query(
-    "SELECT * FROM `locations`.`warehouses`",
+    "SELECT * FROM `acme`.`warehouses`",
     (error, results, fields) => {
       if(error) throw error;
       res.json(results);
@@ -309,7 +381,7 @@ app.get('/warehouses', (req, res) => {
 app.route('/warehouses/:id')
   .get( (req, res, next) => {
     connection.query(
-      "SELECT * FROM `locations`.`warehouses` WHERE id = ?", req.params.id,
+      "SELECT * FROM `acme`.`warehouses` WHERE id = ?", req.params.id,
       (error, results, fields) => {
         if(error) throw error;
         res.json(results);
@@ -330,24 +402,24 @@ Restart the local server:
 node index.js
 ```
 
-Go to these in a browser:
+Verify these are returning data in a browser:
 
-- http://localhost:8080
-- http://localhost:8080/status
-- http://localhost:8080/warehouses
-- http://localhost:8080/warehouses/1
-- http://localhost:8080/warehouses/2
-- http://localhost:8080/warehouses/3
+- [http://localhost:8080](http://localhost:8080)
+- [http://localhost:8080/status](http://localhost:8080/status)
+- [http://localhost:8080/warehouses](http://localhost:8080/warehouses)
+- [http://localhost:8080/warehouses/1](http://localhost:8080/warehouses/1)
+- [http://localhost:8080/warehouses/2](http://localhost:8080/warehouses/2)
+- [http://localhost:8080/warehouses/3](http://localhost:8080/warehouses/3)
 
-### Add a Few More Records
+### Add More Data
 
-Go this in a browser:
+Go to this URL in a browser:
 
-http://localhost:8080/warehouses/4
+- http://localhost:8080/warehouses/4
 
-This does not work because there is no warehouse with an ID of 4 in the DB.
+This endpoint gets an empty `[]` response because there is no warehouse with an ID of 4 in the DB, yet.
 
-So add it in the DB:
+So add it in the DB through your MySQL GUI client:
 
 ```sql
 INSERT INTO warehouses VALUES (4, 'Warehouse #4', '12345');
@@ -357,14 +429,18 @@ Now the endpoint should automatically work:
 
 http://localhost:8080/warehouses/4
 
-Because of this dynamic GET routing in the Node.js code that takes whatever ID is passed in the URL and routes it to the query:
+..because of this dynamic GET routing in `index.js`:
 
 ```js
 app.route('/warehouses/:id')
   .get( (req, res, next) => {
 ```
 
+Alright, so now the DB is fully working.
+
 ## Deploy to Google Cloud Using gcloud
+
+Now for the fun part: running all of this from Google Cloud Platform.
 
 From the directory where `index.js` etc is, run:
 
@@ -372,12 +448,14 @@ From the directory where `index.js` etc is, run:
 gcloud run deploy
 ```
 
+!!!!!!!!!!!!!!!!!!!!!!!!! LEFT OFF HERE !!!!!!!!!!!!!!!!!!!!!!!
+
 Keep these in mind:
 
 - **Source code location**: hit `<enter>`
 - **Service name**: `my-node-api`
 - **Enable run.googleapis.com?**: `y`
-- **Specify a region**: Set to the Location that your DB instance says on [Google Cloud > SQL](https://console.cloud.google.com/sql/instances)
+- **Specify a region**: Set to the Location that your DB instance says in GCP > SQL > 'acme'
 - **Enable artifactregistry.googleapis.com?**: `y`
 - **Continue?**: `y`
 - **Allow unauthenticated?** `y` for now, since this is a demo that will be torn down shortly.
