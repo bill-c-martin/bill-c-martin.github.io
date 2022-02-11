@@ -504,6 +504,23 @@ article.blog-post h5 {
   text-transform: none;
 }
 
+article.blog-post table {
+  width: 100%;
+}
+article.blog-post table th {
+  background-color: #{{site.color.secondary-light}};
+  border: 1px solid #{{site.color.secondary-lightest}};
+  color: #fff;
+  font-weight: bold;
+}
+article.blog-post table td {
+  border: 1px solid #{{site.color.secondary-light}};
+}
+article.blog-post table th,
+article.blog-post table td {
+  padding: 13px;
+}
+
 article.blog-post header {
   padding: 140px 0 30px 0;
 }
@@ -610,7 +627,7 @@ article.blog-post ul, article.blog-post ol {
   margin: 20px 0 20px 10px;
 }
 
-.blog-post ul li > ul {
+.blog-post ul li > ul, .blog-post ol li > ol {
   margin-top: 0;
   margin-bottom: 0;
 }
