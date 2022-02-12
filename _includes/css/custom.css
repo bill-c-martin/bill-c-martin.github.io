@@ -12,6 +12,13 @@ code {
   color: #393318;
 }
 
+div.highlight {
+  background: none;
+}
+pre.highlight {
+  border-color: #000;
+}
+
 .link {
   color: #{{ site.color.link }};
 }

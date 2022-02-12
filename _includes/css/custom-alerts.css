@@ -1,7 +1,8 @@
 
 /* Alerts */
 .alert {
-    padding: 20px;
+    margin: 30px 0;
+    padding: 30px;
     font-size: 20px;
 }
 .alert:before {
