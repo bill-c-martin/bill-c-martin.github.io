@@ -643,20 +643,46 @@ Let's explore these more.
 
 Cloud Run is where your API endpoint lives and is versioned at.
 
-!!!!!!!!!!!!!!!!!!!!!!! LEFT OFF HERE !!!!!!!!!!!!!!!!!!!!!
+Cloud Run > Overview shows:
 
-- Shows the API you just deployed, and who deployed it
-- Shows its current health status and how many requests per second it is getting
-- Clicking the service name shows:
-  - Recent performance metrics, and recent errors
-  - Revisions: Shows the initial version deployed by `gcloud run deploy`, and shows subsequent revisions created from earlier steps, like the several steps involved in adding DB connectivity to the container through environment variables
-  - Logs: The logs will show build/deploy errors, and also runtime errors. Since it's a node API, if you `console.error()` or `console.log()` from your code, those will show up here too
-  - the image the container was created from
-  - And other things like: its URL, authentication, private vs public access, connection dependencies (eg a SQL db)
+- APIs that have been deployed (1 in your case)
+- Who deployed them
+- Current health status
+- How many requests per second they are getting
+
+Cloud Run > <i>service name</i> shows things specific to your API:
+
+- Recent performance metrics
+- Recent errors
+- Revisions:
+  - Initial version deployed by `gcloud run deploy`
+  - Subsequent revisions like when DB connectivity and environment variables were added
+- Logs:
+  - Build or deploy errors
+  - Runtime errors
+  - Any `console.error()` or `console.log()` calls from your code would show up here
+- Image that the container was created from
+- And other things like:
+  - its URL
+  - authentication
+  - private vs public access
+  - connection dependencies (eg your MySQL db)
 
 ### Cloud Build
 
-- `gcloud run deploy` triggered these, which setup and provision a node environment, with built in environment variables + your custom environment variables, and also uploads source code to Cloud Storage
+You have 1 API in Cloud Run.
+
+It has 2 revisions from your prior `gcloud run deploy` runs:
+
+- The initial deployment you did
+- The revision that added DB connectivity to the container
+
+Each of those revisions has their own separate build in Cloud Build.
+
+Cloud Build > 
+
+!!!!!!!!!!!!!!!! LEFT OFF HRE !!!!!!!!!!!!!!!!
+
 - History: shows logs from it doing your builds, you can see the commands it runs to install npm/node, and publishing the image to Artifact Registry.
   - If you click a build ID > Execution Details > Source, it provides a direct link to your source code hosted on Cloud Build.
   - Clicking the build ID > source shows 1 build version per `gcloud run deploy` attempt done earlier
