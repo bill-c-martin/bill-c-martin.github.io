@@ -4,11 +4,11 @@ title: How to Build and Deploy a Node.js, Express, and MySQL API to a GCP
 category: blog
 ---
 
-Let's build a Node.js + Express API from scratch, connect it Cloud SQL for MySQL, and deploy it all to Google Cloud using gcloud CLI.
+Let's build a Node.js + Express API from scratch, connect Cloud SQL for MySQL, and deploy it all to Google Cloud using gcloud CLI.
 
 The API will consist of some GET endpoints for retrieving warehouse names and zip codes from an imaginary "Acme" company.
 
-This guide is intended for developers unfamiliar with Google Cloud Platform (GCP), so you'll start simple and small, and connect things one at a time as you need them.
+This guide is for developers unfamiliar with Google Cloud Platform (GCP), so you'll start simple and small, and connect things one at a time as you need them.
 
 Here's what we'll do:
 
@@ -24,9 +24,8 @@ Here's what we'll do:
 10. Make code changes, and redeploy
 11. Kill everything in GCP so you don't get charged
 
-## Table of Contents
+<h2>Table of Contents</h2>
 
-- [Table of Contents](#table-of-contents)
 - [Prerequisites](#prerequisites)
   - [Use Linux For This](#use-linux-for-this)
   - [Create Google Cloud Platform Account](#create-google-cloud-platform-account)
@@ -47,6 +46,7 @@ Here's what we'll do:
     - [Store DB Credentials in Secrets Manager](#store-db-credentials-in-secrets-manager)
     - [Add Secret Manager Accessor Role to the Service Account](#add-secret-manager-accessor-role-to-the-service-account)
     - [Redeploy](#redeploy)
+- [How Do I Make Changes and Redeploy?](#how-do-i-make-changes-and-redeploy)
 - [Where Did Everything Deploy to in Google Cloud?](#where-did-everything-deploy-to-in-google-cloud)
   - [Cloud Run](#cloud-run)
   - [Cloud Build](#cloud-build)
@@ -54,7 +54,6 @@ Here's what we'll do:
   - [Secrets Manager](#secrets-manager)
   - [IAM & Admin](#iam--admin)
   - [IAM & Admin > Asset Inventory](#iam--admin--asset-inventory)
-- [How Do I Make Changes and Redepoy?](#how-do-i-make-changes-and-redepoy)
 - [Clean Up](#clean-up)
 
 ## Prerequisites
@@ -67,7 +66,7 @@ Here's what we'll do:
 
 ### Create Google Cloud Platform Account
 
-Head over to [cloud.google.com](https://cloud.google.com/) and create an account, if you don't already have one.
+Head over to [cloud.google.com](https://cloud.google.com/) and create an account if you don't already have one.
 
 New accounts come with a free $300 in spending credits.
 
@@ -232,7 +231,7 @@ Add the start script and node engine to the `package.json` that was generated.
 
 These will be needed by `gcloud` later on when deploying to Google Cloud.
 
-The full file should look like:
+The full file should look like this:
 
 ```json
 {
@@ -297,7 +296,7 @@ touch database.js .env .gitignore
 ```
 
 <div class="alert alert-warning" role="alert">
-  Make sure git won't let you accidentally commit your mysql user/pass:
+  Make sure git won't let you accidentally commit your MySQL username and password:
 </div>
 
 ```bash
@@ -416,7 +415,7 @@ Go to this URL in a browser:
 
 - http://localhost:8080/warehouses/4
 
-This endpoint gets an empty `[]` response because there is no warehouse with an ID of 4 in the DB, yet.
+This endpoint gets an empty `[]` response because there is no warehouse with an ID of 4 in the DB yet.
 
 So add it in the DB through your MySQL GUI client:
 
@@ -458,15 +457,21 @@ Fill the `gcloud` prompts in as follows:
 - **Allow unauthenticated?** `y` for now, since this is a demo that will be torn down shortly.
 
 <div class="alert alert-info" role="alert">
-  If you get an error about "PERMISSION DENIED: Cloud Build API has not been used in project", then go to the link in the error to enable it with a button click. Then rerun the above command.
+  If you get an error about "PERMISSION DENIED: Cloud Build API has not been used in project", go to the link in that error to enable it with a button click. Then rerun the above command.
 </div>
 
 If it's successful, you will see something like this:
 
 ```bash
-Service [my-node-api] revision [my-node-api-00001-qiz] has been deployed and is serving 100 percent of traffic.
-
-Service URL: https://my-node-api-gyop4mtb5a-ue.a.run.app
+Building using Buildpacks and deploying container to Cloud Run service [my-node-api] in project [test-341003] region [us-east1]
+✓ Building and deploying... Done.
+  ✓ Uploading sources...
+  ✓ Building Container... Logs are available at [https://console.cloud.google.com/cloud-build/builds/973b72f5-c556-4600-aae1-f67b79505276?project=584535122189].
+  ✓ Creating Revision...
+  ✓ Routing traffic...
+Done.
+Service [my-node-api] revision [my-node-api-00006-luw] has been deployed and is serving 100 percent of traffic.
+Service URL: https://my-node-api-h36zeyjqxa-ue.a.run.app
 ```
 
 Open that "Service URL" in a browser.
@@ -483,7 +488,7 @@ So what exactly did `gcloud run deploy` just do?
 
 It did a lot:
 
-1. **Cloud Build** detected your source code language and depedencies
+1. **Cloud Build** detected your source code language and dependencies
 2. **Cloud Build** built a container image based on your source code language and dependencies
 3. **Artifact Registry** stored that container image
 4. **Cloud Storage** stored your source code
@@ -493,10 +498,9 @@ We'll dive more into these services and more in a bit.
 
 ### Setup SQL Connectivity in the Container
 
-Remember earlier how the API connected to Cloud MySQL just fine, from your localhost?
+Remember earlier how the API connected to Cloud MySQL just fine from your localhost?
 
-To get the deployed container connected too, there are a few extra steps.
-
+There are a few extra steps to get the deployed container connected too.
 #### Add Cloud SQL Connection in Container
 
 Earlier, in `database.js`, there's a line in the code that detects if it's running from the cloud:
@@ -530,8 +534,8 @@ The container also does not currently have DB credentials.
 
 Since you're not storing DB credentials in the codebase (remember earlier `.env` was added to `.gitignore` earlier to prevent it from ever getting committed), and since you should not be passing raw credentials via command line, go ahead and store them in Secrets Manager:
 
-1. Go to https://console.cloud.google.com/ > Secrets Manager
-2. Set up 3 secrets with these names, whose values come from the `.env` file:
+1. Go to [console.cloud.google.com](https://console.cloud.google.com/) > Secrets Manager
+2. Create 3 secrets with these names, whose values come from the `.env` file:
    1. `DB_USER`
    2. `DB_PASS`
    3. `DB_NAME`
@@ -544,7 +548,7 @@ That service account has all the permissions needed to create and deploy contain
 
 However, it does not have access to Secrets Manager by default.
 
-1. Go to https://console.cloud.google.com/ > IAM & Admin
+1. Go to [console.cloud.google.com](https://console.cloud.google.com/) > IAM & Admin
 2. Edit the "Compute Engine default service account"
 3. Click "Add Another Role"
 4. Select "Secret Manager Secret Accessor" role
@@ -556,7 +560,7 @@ However, it does not have access to Secrets Manager by default.
 
 #### Redeploy
 
-This step will configure some environment variables on the container, which will reference the DB connection parameters stored in Secrets Manager, and create a new container revision.
+This step will configure some environment variables in the container which reference the DB connection parameters stored in Secrets Manager, and create a new container revision.
 
 Remember this code from `database.js`?
 ```js
@@ -584,29 +588,30 @@ Let's get those setup.
 Copy/paste this command to notepad for now:
 
 ```bash
-gcloud run services update <SERVICE_NAME> \
---add-cloudsql-instances=<INSTANCE_CONNECTION_NAME> \
---update-env-vars=INSTANCE_CONNECTION_NAME=<INSTANCE_CONNECTION_NAME> \
+gcloud run services update YOUR_SERVICE_NAME \
+--add-cloudsql-instances=YOUR_INSTANCE_CONNECTION_NAME \
+--update-env-vars=INSTANCE_CONNECTION_NAME=YOUR_INSTANCE_CONNECTION_NAME \
 --update-secrets=DB_USER=DB_USER:latest \
 --update-secrets=DB_PASS=DB_PASS:latest \
 --update-secrets=DB_NAME=DB_NAME:latest
 ```
 
-Replace the following (without the `<` and `>` of course):
+Replace the following fields above (without the `<` and `>` of course):
 
-- **&lt;SERVICE_NAME&gt;**: with your service name from [console.cloud.google.com](https://console.cloud.google.com/) > Cloud Run
-- **&lt;INSTANCE_CONNECTION_NAME&gt;**: with the instance connection name from [console.cloud.google.com](https://console.cloud.google.com/) > SQL
+- `YOUR_SERVICE_NAME`: with your service name from [console.cloud.google.com](https://console.cloud.google.com/) > Cloud Run
+- `YOUR_INSTANCE_CONNECTION_NAME`: with the instance connection name from [console.cloud.google.com](https://console.cloud.google.com/) > SQL > "Instance Connection Name" field
 
 Now run the command, with your replacements, in your terminal.
 
 You should see something like this:
 
 ```shell
+✓ Deploying... Done.
+  ✓ Creating Revision...
+  ✓ Routing traffic...
 Done.
-
-Service [my-node-api] revision [my-node-api-00006-buw] has been deployed and is serving 100 percent of traffic.
-
-Service URL: https://my-node-api-gyop4mtb5a-ue.a.run.app
+Service [my-node-api] revision [my-node-api-00005-yad] has been deployed and is serving 100 percent of traffic.
+Service URL: https://my-node-api-h36zeyjqxa-ue.a.run.app
 ```
 
 From there, open that "Service URL" in a browser.
@@ -615,17 +620,70 @@ Try adding `/status`, `/warehouses`, and `/warehouses/1` to the URL too.
 
 DB connectivity should work now.
 
-If you modify warehouse rows in the DB, and refresh the API URL above, the changes should reflect immediately when calling the API.
+If you modify warehouse rows in the DB, and refresh the API URL above, the changes should immediately reflect when calling the API.
 
 Good to go!
+
+## How Do I Make Changes and Redeploy?
+
+When you originally deployed your API to GCP, `gcloud run deploy` stored your code in a compressed archive in Cloud Storage.
+
+This means that your source code needs to be under source control, preferably with tags corresponding to which commits correspond to which API revisions.
+
+Therefore, making code changes to an already-deployed container is a matter of locally modifying your source code and then redeploying again.
+
+So let's add a new `/dummy` endpoint to the existing API and redeploy.
+
+Add this to `index.js`:
+
+```js
+app.get('/dummy', (req,res) => res.send('Dummy GET endpoint update'));
+```
+
+Run this again:
+
+```bash
+gcloud run deploy
+```
+
+Fill all the prompts out again, making sure the service name, region etc are the same as before.
+
+<div class="alert alert-info" role="alert">
+  In the long run, it would be ideal to setup a <a href="https://cloud.google.com/build/docs/deploying-builds/deploy-cloud-run">build pipeline for continuous deployment</a>, to avoid all those <code>gcloud run deploy</code> prompts
+</div>
+
+If successful, you'll see something resembling this again:
+
+```bash
+Building using Buildpacks and deploying container to Cloud Run service [my-node-api] in project [test-341003] region [us-east1]
+✓ Building and deploying... Done.
+  ✓ Uploading sources...
+  ✓ Building Container... Logs are available at [https://console.cloud.google.com/cloud-build/builds/973b72f5-c556-4600-aae1-f67b79505276?project=584535122189].
+  ✓ Creating Revision...
+  ✓ Routing traffic...
+Done.
+Service [my-node-api] revision [my-node-api-00006-luw] has been deployed and is serving 100 percent of traffic.
+Service URL: https://my-node-api-h36zeyjqxa-ue.a.run.app
+```
+
+Go to that Service URL in a browser, but append `/dummy`, where you should see the response `Dummy GET endpoint update`.
+
+This new build was similar to the original build, with differences called out here in <i>italics</i>:
+
+1. **Cloud Build** detected your source code language and depedencies, <i>again</i>
+2. **Cloud Build** built a <i>new</i> container image based on your source code language and dependencies
+3. **Artifact Registry** stored a <i>new copy of this latest</i> container image
+4. **Cloud Storage** stored your <i>latest</i> source code <i>in a new archive file</i>
+5. **Cloud Run** <i>added a new revision to your existing</i> serverless container
+
 
 ## Where Did Everything Deploy to in Google Cloud?
 
 Let's recap.
 
-When you ran `gcloud run deploy`:
+When you first ran `gcloud run deploy`:
 
-1. **Cloud Build** detected your source code language and depedencies
+1. **Cloud Build** detected your source code language and dependencies
 2. **Cloud Build** built a container image based on your source code language and dependencies
 3. **Artifact Registry** stored that container image
 4. **Cloud Storage** stored your source code
@@ -635,105 +693,149 @@ When you setup SQL connectivity in the container:
 
 1. **Secrets Manager** stored your DB hostname, username, and password securely
 2. **IAM & Admin** upgraded your deployment service account with Secrets Manager permissions
-3. **Cloud Run** added those Secrets Managers "secrets" as environment variables to your existing API service
+3. **Cloud Run** created a new revision to your existing API, and added those Secrets Managers "secrets" as environment variables
 
-Let's explore these more.
+Then, when you made that `/dummy` endpoint addition in the code:
+
+1. **Cloud Build** detected your source code language and dependencies again
+2. **Cloud Build** built another container image based on your source code language and dependencies
+3. **Artifact Registry** stored a brand new copy of this latest container image
+4. **Cloud Storage** stored your latest source code in a new archive file
+5. **Cloud Run** added a new revision to your existing serverless container
+
+Let's explore these Google Cloud services in more detail.
 
 ### Cloud Run
 
-Cloud Run is where your API endpoint lives and is versioned at.
+Cloud Run is where your API endpoint lives and is versioned.
 
-Cloud Run > Overview shows:
+When you modify source code and deploy it, a new revision gets created here.
+
+If you also modify non-source code things like connections and environment variables, a new revision still gets created here.
+
+Go to [console.cloud.google.com](https://console.cloud.google.com/) > Cloud Run, where you will see:
 
 - APIs that have been deployed (1 in your case)
-- Who deployed them
+- Who deployed them (you)
 - Current health status
-- How many requests per second they are getting
+- Requests per second, over the last hour
 
-Cloud Run > <i>service name</i> shows things specific to your API:
+Now, click your API service name to drill down further. You will see this information specific to your API:
 
-- Recent performance metrics
-- Recent errors
-- Revisions:
-  - Initial version deployed by `gcloud run deploy`
-  - Subsequent revisions like when DB connectivity and environment variables were added
+- Recent performance metrics and errors
 - Logs:
   - Build or deploy errors
   - Runtime errors
   - Any `console.error()` or `console.log()` calls from your code would show up here
-- Image that the container was created from
-- And other things like:
-  - its URL
-  - authentication
-  - private vs public access
-  - connection dependencies (eg your MySQL db)
+- Revisions, where you'll see:
+  - Initial version deployed by `gcloud run deploy`
+  - Subsequent revisions like when DB connectivity and environment variables were added
+  - And then yet another revision, when you added the `/dummy` GET endpoint
+
+Now, click through the revisions, and observe the following in the right-side pane:
+
+- Container > Image URL:
+  - is the container image that was generated.
+  - You'll see that it changes on the revision where you modified your source code with the `/dummy` GET endpoint
+- Variables & Secrets:
+  - Has nothing defined in your 1st revision
+  - But has the DB parameters and SQL instance name defined in later revisions when you added those
+- Connections:
+  - Has nothing defined in your 1st revision
+  - But has the Cloud SQL connection defined in later revisions when you added that
 
 ### Cloud Build
 
-You have 1 API in Cloud Run.
+Cloud Build is basically the heart of the deployment pipeline.
 
-It has 2 revisions from your prior `gcloud run deploy` runs:
+Every time you made a code change, and ran `gcloud run deploy`, Cloud Build is what detected your language and dependencies, generates a container image for you, stored it in Artifact Registry, and stored your source code in Cloud Storage.
 
-- The initial deployment you did
-- The revision that added DB connectivity to the container
+Go to [console.cloud.google.com](https://console.cloud.google.com/) > Cloud Build, where you will see a build history consisting of 2 builds:
 
-Each of those revisions has their own separate build in Cloud Build.
+- The initial deployment of the API
+- The addition of the  `/dummy` GET endpoint
 
-Cloud Build > 
+For each build in the history, this screen gives you:
 
-!!!!!!!!!!!!!!!! LEFT OFF HRE !!!!!!!!!!!!!!!!
+- Direct link to the source code in Cloud Storage
+- Commit ID of the source code (we did not use this feature)
+- When the build was executed, and for how long.
 
-- History: shows logs from it doing your builds, you can see the commands it runs to install npm/node, and publishing the image to Artifact Registry.
-  - If you click a build ID > Execution Details > Source, it provides a direct link to your source code hosted on Cloud Build.
-  - Clicking the build ID > source shows 1 build version per `gcloud run deploy` attempt done earlier
-- Clicking the build ID > source > artifact > Download lets you download and view the code.
+If you click one of the build IDs, you will see the following build-specific information:
+
+- Build log from end to end
+- Link to source code stored in Cloud Storage
+- Link to the container image stored in Artifact Registry
 
 ### Artifact Registry
 
-- When you ran `gcloud run deploy`, it magically created a docker image for you containing an OS, the node runtime environment, that one `/cloudsql/*` mount point, etc.
-- So `Cloud Run` shows your service, that service is running in a docker container, and that docker container is built using this image in the artifact registry
-- You could theoretically spin up a docker container on your localhost running this exact image..
-- You could also spin up other environments using this docker image.
+Artifact Registry stores the generated Docker container images from running `glcoud run deploy`.
+
+`gcloud run deploy`:
+
+1. Detects the language you are using and its dependencies (from `packages.json` in the case of Node.js)
+2. Provisions a Node.js environment for you (on top of a Google-hosted Node.js base container image)
+3. Then stores that container image in Artifact Registry
+
+That container image is what powers the serverless environment running your API.
+
+Not only that, but using this container image in Artifacts Registry, you could theoretically spin up:
+
+- Identical localhost running this exact image in a docker container
+- Other environments using this docker image (eg dev and stage)
 
 ### Secrets Manager
 
-- Is where the DB connection secrets are permanently stored
+Secrets Manager is a secure storage system for sensitive things.
+
+Remember when we added `.env` to the `.gitignore`?
+
+If you instead stored the credentials directly in your source control (in `.env`), anyone who ever cloned that code would always have your credentials.
+
+Imagine if you also had 20 other APIs using this same DB.
+
+With Secrets Manager, you have a secure, centralized location to store credentials, and only 1 place to update when those credentials change.
 
 ### IAM & Admin
 
-- Shows user accounts and service accounts for the project.
-- This is where the one service account had a Secrets Manager Accessor role added to it
+This area shows user accounts and service accounts.
+
+If you go to IAM & Admin, you'll see this list.
+
+`Compute Engine default service account` was created for you when you ran `gcloud run deploy`. This is also the one you added the `Secrets Manager Secret Accessor` role to.
+
+You will also see build service account roles here.
   
 ### IAM & Admin > Asset Inventory
 
-- Shows a snapshot of all resources used, and where, with direct links to them
-- eg. the service containers, the Artifacts Registry image, and also some other stuff `gcloud run deploy` setup up for you, such as routing, subnetworks, and firewalls.
+This area is quite unique.
 
-## How Do I Make Changes and Redepoy?
+It shows a snapshot of <i>all</i> resources you ended up using as part of this API build and deployment, with direct links to them.
 
-First, Stop Typing All the Things in gcloud run deploy
+In addition to everything mentioned previously (Cloud Build, Run, Artifact Registry, etc), you will also see resources for:
 
-Add this to `index.js`:
+- Routes
+- Subnetworks
+- Firewalls
+- Pubsubs
+- Logging
 
-```js
-app.get('/dummy', (req,res) => res.send('Dummy GET endpoint update'));
-```
+These were transparently setup for you in that `gcloud run deploy` command.
 
-Run:
-
-```bash
-gcloud run deploy
-```
-
-And redundantly fill out the prompts, making sure to type the same service name as before (my-node-api), and same region.
-
-<div class="alert alert-info" role="alert">
-  In the long run, it would be ideal to setup a <a href="https://cloud.google.com/build/docs/deploying-builds/deploy-cloud-run">build pipeline for continuous deployment</a>.
-</div>
+Behold the PaaS power of Google Cloud Platform!
 
 ## Clean Up
 
-1. Go to GCP > IAM & Admin > Manage Resources.
-2. Clicking a project shows all resources used.
-3. Deleting your project will delete all resources.
+Let's delete everything to avoid billing.
 
+GCP makes this surprisingly simple.
+
+1. Go to [console.cloud.google.com](https://console.cloud.google.com/) > IAM & Admin > Manage Resources
+2. Click the project you created at the start of this whole process
+3. Delete it
+
+Deleting the project for this API will permanently delete all resources used, including the MySQL DB, and prevent any further billing.
+
+Confirm this by going to Artifacts Registry, Cloud Run, Cloud Build, Cloud SQL etc.
+
+You will see a message confirming the resources no longer permit access.
