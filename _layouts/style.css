@@ -3,3 +3,4 @@
 {% include css/main.css %}
 {% include css/highlight.css %}
 {% include css/custom.css %}
+{% include css/custom-alerts.css %}
