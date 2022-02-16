@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: How to Build and Deploy a Node.js, Express, and MySQL API to a GCP
+title: How to Build and Deploy a Node.js, Express, and MySQL API to GCP
 category: blog
 ---
 
