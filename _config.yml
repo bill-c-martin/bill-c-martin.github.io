@@ -12,13 +12,13 @@ nav:
   labels:
     portfolio: Portfolio
     about: About
-    blog: Posts 
+    blog: Blog 
     contact: Contact
 
 # About section
 about:
   content:
-      left: By day, I build eCommerce web applications in the exciting and rapidly growing CBD industry, whilst striving for <a href="http://blog.codinghorror.com/a-pragmatic-quick-reference/" target="_new">Pragmatic Programmer</a> perfection.
+      left: By day, I build eCommerce web applications in the exciting and rapidly growing CBD/D8 industry, whilst striving for <a href="http://blog.codinghorror.com/a-pragmatic-quick-reference/" target="_new">Pragmatic Programmer</a> perfection.
       right: By night, I write & record music, read fantasy, sci-fi, & programming books, flex my newly minted dadhood, and lurk stock & software subreddits.
       bottom: I live in Manchester, NH.
   interests:
@@ -27,21 +27,21 @@ about:
       left:
         header: Now
         list:
-          - item: Magento modules
-          - item: AWS Certification
-          - item: Core Web Vitals
+          - item: Data Warehouses
+          - item: Business Intelligence
+          - item: Architecture
       center:
         header: Soon
         list:
-          - item: Ansible
-          - item: Netlify
-          - item: MVVM
+          - item: Python
+          - item: Machine Learning
+          - item: Svelte
       right:
         header: Later
         list:
           - item: Docker Containers
-          - item: Google Cloud Platform
-          - item: Design Pattern Katas
+          - item: AWS Fargate
+          - item: React
   button:
     text: Download My Resume
     href: /resume/bill-martin-resume.pdf
