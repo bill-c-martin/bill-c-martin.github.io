@@ -18,6 +18,7 @@ Requires no servers or hosting, and runs straight from your git repo.
 ```bash
 cd /path/to/your-github-username.github.io/
 gem install jekyll bundler
+bundle install
 ```
 4. Start the web server:
 ```bash
