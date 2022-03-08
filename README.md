@@ -1,8 +1,8 @@
-Source code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmartin.io](https://billmartin.io), which uses the [Freelancer Jekyll Theme](https://github.com/jeromelachaud/freelancer-theme) with my own additions and modifications.
+**Source** code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmartin.io](https://billmartin.io), which uses the [Freelancer Jekyll Theme](https://github.com/jeromelachaud/freelancer-theme) with my own additions and modifications.
 
-Demo: [billmartin.io](https://billmartin.io)
+Demo: [bill-c-martin.github.com](https://bill-c-martin.github.io)
 
-Requires no servers or hosting, and runs straight from your git repo.
+Requires no servers or hosting, and runs straight from your GitHub repo.
 
 ## Quick Setup
 
@@ -13,16 +13,22 @@ Requires no servers or hosting, and runs straight from your git repo.
 ## Localhost Setup
 
 1. Clone the above repo, which you forked, to your localhost
-2. [Install ruby and rubygems](https://jekyllrb.com/docs/installation/)
-3. Install jekyll packages inside the repo:
+2. Install `ruby-2.7` and `rubygems-2.7`. Despite what [Jekyll's docs say](https://jekyllrb.com/docs/installation/), you have to install Ruby `2.7.*`, otherwise you will get a [pathutil error](https://stackoverflow.com/questions/65539326/is-the-pathutil-ruby-gem-compatible-with-jekyll-v3-9-0-and-ruby-v3-0-0) in the next step.
+
+3. Install jekyll packages inside this repo:
+
 ```bash
 cd /path/to/your-github-username.github.io/
 gem install jekyll bundler
+bundle-2.7 install
 ```
+
 4. Start the web server:
+
 ```bash
-bundle exec jekyll serve
+bundle-2.7 exec jekyll serve
 ```
+
 5. Go to [http://localhost:4000](http://localhost:4000) and verify it runs locally.
 
 The localhost site will show changes in real time.
