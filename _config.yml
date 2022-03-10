@@ -28,19 +28,19 @@ about:
         header: Now
         list:
           - item: Data Warehouses
-          - item: Business Intelligence
-          - item: Architecture
+          - item: Python
+          - item: Machine Learning 
       center:
         header: Soon
         list:
-          - item: Python
-          - item: Machine Learning
-          - item: Svelte
+          - item: Architecture 
+          - item: AWS Fargate
+          - item: AWS ECS
       right:
         header: Later
         list:
           - item: Docker Containers
-          - item: AWS Fargate
+          - item: Svelte
           - item: React
   button:
     text: Download My Resume
