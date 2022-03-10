@@ -34,12 +34,12 @@ about:
         header: Soon
         list:
           - item: Architecture 
+          - item: AWS ECS/ECR
           - item: AWS Fargate
-          - item: AWS ECS
       right:
         header: Later
         list:
-          - item: Docker Containers
+          - item: AWS EKS
           - item: Svelte
           - item: React
   button:
