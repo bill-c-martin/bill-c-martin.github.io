@@ -8,8 +8,6 @@ What is it like moving from PHP to Python? What are the similarities and differe
 
 This is a broad overview of Python, but from a PHP developer's perspective.
 
-
-
 See [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-martin/python-for-php-devs) to get a Python environment setup to follow along with the code examples, below.
 
 Inspired by [learningpython.org](https://www.learnpython.org/), we'll go over Python's features, but showcase the equivalent Python vs PHP code side-by-side.
@@ -17,16 +15,27 @@ Inspired by [learningpython.org](https://www.learnpython.org/), we'll go over Py
 <!-- omit in toc -->
 ## Table of Contents
 
-- [Hello World](#hello-world)
-- [Indentation](#indentation)
+- [The Basics](#the-basics)
+  - [Hello World](#hello-world)
+  - [Indentation](#indentation)
 - [Numbers](#numbers)
+  - [Floats](#floats)
 - [Strings](#strings)
+  - [Concatenation](#concatenation)
+  - [Repetition](#repetition)
 - [Lists](#lists)
-- [String Formatting - LEFT OFF HERE](#string-formatting---left-off-here)
+  - [Appending and Looping](#appending-and-looping)
+  - [Initialization](#initialization)
+  - [Out of Bounds Array Elements](#out-of-bounds-array-elements)
+  - [Repetition](#repetition-1)
+  - [Concatenation](#concatenation-1)
+- [String Formatting](#string-formatting)
+  - [Substitution - LEFT OFF HERE](#substitution---left-off-here)
+    - [Python](#python)
 - [String Operations](#string-operations)
 - [Assignments](#assignments)
 - [Arithmetic](#arithmetic)
-- [Concatenation](#concatenation)
+- [Concatenation](#concatenation-2)
 - [Type Checking](#type-checking)
 - [Conditions](#conditions)
 - [Loops](#loops)
@@ -49,6 +58,8 @@ Inspired by [learningpython.org](https://www.learnpython.org/), we'll go over Py
 - [Closures](#closures)
 - [Decorators](#decorators)
 - [Map, Filter, Reduce](#map-filter-reduce)
+
+## The Basics
 
 ### Hello World
 
@@ -98,9 +109,11 @@ if x == 1:
     print('x is 1');
 ```
 
-### Numbers
+## Numbers
 
 Like PHP, Python is dynamically-typed.
+
+### Floats
 
 Displaying floats in Python works better, since it doesn't require a special function to regain lost `.0`'s like PHP.
 
@@ -136,7 +149,9 @@ z=float(4)
 print(z) # prints 4.0
 ```
 
-### Strings
+## Strings
+
+### Concatenation
 
 String concatenation resembles JavaScript, which is similar enough to PHP.
 
@@ -153,6 +168,8 @@ echo 'hello' . ' ' . 'world';
 ```py
 print('hello' + ' ' + 'world')
 ```
+
+### Repetition
 
 String repetition in Python is an interesting Ruby-esque quirk.
 
@@ -174,9 +191,11 @@ str_repeat('Repeat', 3); // prints: RepeatRepeatRepeat
 print('Repeat' * 3) # prints: RepeatRepeatRepeat
 ```
 
-### Lists
+## Lists
 
 PHP numeric arrays are called Lists in Python.
+
+### Appending and Looping
 
 However, pushing elements and looping feels more like Javascript:
 
@@ -211,6 +230,8 @@ for x in mylist:
     print(x)
 ```
 
+### Initialization
+
 Like PHP, you can declare an entire array succintly in one line. Same syntax:
 
 <!-- omit in toc -->
@@ -232,7 +253,9 @@ for x in that_list:
     print(x)
 ```
 
-**Pitfall**: Accessing non-existent elements earns you an exception in Python, instead of PHP's warnings:
+### Out of Bounds Array Elements
+
+Accessing non-existent elements earns you an exception in Python, instead of PHP's warnings:
 
 <!-- omit in toc -->
 #### PHP
@@ -252,6 +275,8 @@ try:
 except:
     print('good thing I caught this exception')
 ```
+
+### Repetition
 
 That repeating `*` "operator" is back already, it works for Lists too. Good thing too, because there is no elegant way to do this in PHP:
 
@@ -278,7 +303,9 @@ Simplicity.
 print([1,2,3] * 10)
 ```
 
-Moving along with the List arithmetic theme, this intuitive way of working with Lists in Python applies with the `+` operator as well.
+### Concatenation
+
+Moving along with the List arithmetic theme, that `*` intuitive way of working with Lists in Python applies with the `+` operator as well:
 
 <!-- omit in toc -->
 #### PHP
@@ -300,7 +327,37 @@ odd = [1,3,5,7]
 print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```
 
-### String Formatting - LEFT OFF HERE
+## String Formatting
+
+### Substitution - LEFT OFF HERE
+
+ c-like, but prepend the tuple set of vars with %..
+#### Python
+
+```python
+# single substitution
+name = 'john'
+print('Hello, %s' % name)
+
+# 2 or more substitutions
+first = 'john'
+last = 'smith'
+print('Hello, %s %s' % (first, last))
+```
+
+ int vs float vs string
+one = 1
+two = 2.0
+three = 'three'
+print("Counting: %d, %f, %s" % (one, two, three))
+
+ floats with fixed digits. Rounds
+y = 1.15656565656
+print("More: %.8f, Less: %.4f, Even less: %.1f" % (y,y,y))
+
+x = 14
+print('Int: %d, lowercase x: %x, uppercase x: %X' % (x,x,x))
+
 
 <!-- omit in toc -->
 #### PHP
@@ -314,7 +371,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### String Operations
+## String Operations
 
 <!-- omit in toc -->
 #### PHP
@@ -328,7 +385,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### Assignments
+## Assignments
 
 <!-- omit in toc -->
 #### PHP
@@ -342,7 +399,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### Arithmetic
+## Arithmetic
 
 <!-- omit in toc -->
 #### PHP
@@ -356,7 +413,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### Concatenation
+## Concatenation
 
 <!-- omit in toc -->
 #### PHP
@@ -370,7 +427,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### Type Checking
+## Type Checking
 
 <!-- omit in toc -->
 #### PHP
@@ -384,7 +441,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### Conditions
+## Conditions
 
 <!-- omit in toc -->
 #### PHP
@@ -398,7 +455,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### Loops
+## Loops
 
 <!-- omit in toc -->
 #### PHP
@@ -412,7 +469,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### Functions
+## Functions
 
 <!-- omit in toc -->
 #### PHP
@@ -426,7 +483,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### Classes
+## Classes
 
 <!-- omit in toc -->
 #### PHP
@@ -440,7 +497,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```py
 ```
 
-### Dictionaries
+## Dictionaries
 
 <!-- omit in toc -->
 #### PHP
@@ -455,7 +512,7 @@ print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```
 
 
-### Modules and Packages
+## Modules and Packages
 
 Go over things like:
 
@@ -473,7 +530,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Numpy Arrays
+## Numpy Arrays
 
 <!-- omit in toc -->
 #### PHP
@@ -486,7 +543,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Pandas Basics
+## Pandas Basics
 
 <!-- omit in toc -->
 #### PHP
@@ -499,7 +556,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Generators
+## Generators
 
 <!-- omit in toc -->
 #### PHP
@@ -512,7 +569,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### List Comprehensions
+## List Comprehensions
 
 <!-- omit in toc -->
 #### PHP
@@ -525,7 +582,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Lambda functions
+## Lambda functions
 
 <!-- omit in toc -->
 #### PHP
@@ -538,7 +595,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Multiple Function Arguments
+## Multiple Function Arguments
 
 <!-- omit in toc -->
 #### PHP
@@ -551,7 +608,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Regular Expressions
+## Regular Expressions
 
 <!-- omit in toc -->
 #### PHP
@@ -564,7 +621,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Exception Handling
+## Exception Handling
 
 <!-- omit in toc -->
 #### PHP
@@ -577,7 +634,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Sets
+## Sets
 
 <!-- omit in toc -->
 #### PHP
@@ -590,7 +647,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Serialization
+## Serialization
 
 <!-- omit in toc -->
 #### PHP
@@ -603,7 +660,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Partial functions
+## Partial functions
 
 <!-- omit in toc -->
 #### PHP
@@ -616,7 +673,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Code Introspection
+## Code Introspection
 
 <!-- omit in toc -->
 #### PHP
@@ -629,7 +686,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Closures
+## Closures
 
 <!-- omit in toc -->
 #### PHP
@@ -642,7 +699,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Decorators
+## Decorators
 
 <!-- omit in toc -->
 #### PHP
@@ -655,7 +712,7 @@ from sklearn.model_selection import train_test_split
 
 ```py
 ```
-### Map, Filter, Reduce
+## Map, Filter, Reduce
 
 <!-- omit in toc -->
 #### PHP
