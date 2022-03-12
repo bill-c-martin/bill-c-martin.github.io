@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: 'Python, for PHP Developers: Deep Dive Part 1'
+title: 'Python for PHP Developers: Deep Dive Part 1'
 category: blog
 ---
 
@@ -8,7 +8,7 @@ What is it like moving from PHP to Python? What are the similarities and differe
 
 Using the broad overview from [learningpython.org](https://www.learnpython.org/), we'll examine the ins and outs of Python from a PHP developer's perspective and showing the equivalent PHP and Python code, side-by-side.
 
-See [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-martin/python-for-php-devs) to get a Python environment setup and to follow along with the code examples below.
+Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-martin/python-for-php-devs) to get a Python environment setup and to follow along with the code examples below.
 
 <!-- omit in toc -->
 ## Table of Contents
@@ -29,7 +29,7 @@ See [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-mar
 - [Lists](#lists)
   - [Appending and Looping](#appending-and-looping)
   - [Initialization](#initialization)
-  - [Out of Bounds Array Elements](#out-of-bounds-array-elements)
+  - [Out of Bounds Elements](#out-of-bounds-elements)
   - [Repetition](#repetition-1)
   - [Concatenation](#concatenation-1)
 - [Assignments - LEFT OFF HERE](#assignments---left-off-here)
@@ -463,7 +463,7 @@ for x in that_list:
     print(x)
 ```
 
-### Out of Bounds Array Elements
+### Out of Bounds Elements
 
 Accessing non-existent elements earns you an exception in Python, instead of PHP's warnings:
 
