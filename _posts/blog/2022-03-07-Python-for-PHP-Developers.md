@@ -1,16 +1,14 @@
 ---
 layout: blog_post
-title: 'Python: for PHP Developers'
+title: 'Python, for PHP Developers: Deep Dive Part 1'
 category: blog
 ---
 
-What is it like moving from PHP to Python? What are the similarities and differences between PHP vs Python? 
+What is it like moving from PHP to Python? What are the similarities and differences between them?
 
-This is a broad overview of Python, but from a PHP developer's perspective.
+Using the broad overview from [learningpython.org](https://www.learnpython.org/), we'll examine the ins and outs of Python from a PHP developer's perspective and showing the equivalent PHP and Python code, side-by-side.
 
-See [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-martin/python-for-php-devs) to get a Python environment setup to follow along with the code examples, below.
-
-Inspired by [learningpython.org](https://www.learnpython.org/), we'll go over Python's features, but showcase the equivalent Python vs PHP code side-by-side.
+See [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-martin/python-for-php-devs) to get a Python environment setup and to follow along with the code examples below.
 
 <!-- omit in toc -->
 ## Table of Contents
@@ -18,22 +16,23 @@ Inspired by [learningpython.org](https://www.learnpython.org/), we'll go over Py
 - [The Basics](#the-basics)
   - [Hello World](#hello-world)
   - [Indentation](#indentation)
+  - [Types - FINISH THIS](#types---finish-this)
+  - [Everything is an Object - FINISH THIS](#everything-is-an-object---finish-this)
+  - [Debugging - FINISH THIS](#debugging---finish-this)
 - [Numbers](#numbers)
   - [Floats](#floats)
 - [Strings](#strings)
   - [Concatenation](#concatenation)
   - [Repetition](#repetition)
+  - [Substitution](#substitution)
+  - [Operations](#operations)
 - [Lists](#lists)
   - [Appending and Looping](#appending-and-looping)
   - [Initialization](#initialization)
   - [Out of Bounds Array Elements](#out-of-bounds-array-elements)
   - [Repetition](#repetition-1)
   - [Concatenation](#concatenation-1)
-- [String Formatting](#string-formatting)
-  - [Substitution - LEFT OFF HERE](#substitution---left-off-here)
-    - [Python](#python)
-- [String Operations](#string-operations)
-- [Assignments](#assignments)
+- [Assignments - LEFT OFF HERE](#assignments---left-off-here)
 - [Arithmetic](#arithmetic)
 - [Concatenation](#concatenation-2)
 - [Type Checking](#type-checking)
@@ -61,9 +60,17 @@ Inspired by [learningpython.org](https://www.learnpython.org/), we'll go over Py
 
 ## The Basics
 
+First things first: indentation and no-semicolons. Just kidding, everyone know the Pythonic lore of those two.
+
+But yeah, joke's on you, because we're totally covering Python's indentation and lack of semicolons.
+
+But before we do that, we must first recognize how cool-sounding the word "Pythonic" is. It evokes Lovecraftian imagery, does it not?
+
+Alright, onward!
+
 ### Hello World
 
-Python does not require opening tags.
+Python does not require opening tags like PHP.
 
 Most importantly, Python does not require semicolons at the end of lines.
 
@@ -84,9 +91,9 @@ print('hello world')
 
 ### Indentation
 
-Since Python does not require semicolons, indentation becomes critically important.
+Indentation is important in Python.
 
-You must indent with 4 spaces, which should feel familiar to PHP developers following [PSR standards](https://www.php-fig.org/psr/psr-12/#24-indenting).
+You must indent with 4 spaces per nesting level, which should feel familiar to PHP developers following [PSR standards](https://www.php-fig.org/psr/psr-12/#24-indenting).
 
 The difference is this: not indenting properly in Python causes fatal errors because Python's 4-space indentation replaces the need for `{` and `}` in code blocks.
 
@@ -108,6 +115,37 @@ x = 1
 if x == 1:
     print('x is 1');
 ```
+
+### Types - FINISH THIS
+
+### Everything is an Object - FINISH THIS
+
+### Debugging - FINISH THIS
+
+The glorious `var_dump()` has no native equal in Python. The Pythonic lessers will have to do.
+
+<!-- omit in toc -->
+#### PHP
+
+`var_dump()` of course shows us values, types, and structure:
+
+```php
+var_dump('1');       # prints: string(1) "1"
+var_dump(1);         # prints: int(1)
+var_dump([1]);       # prints: array(1) { [0]=>int(1)}
+var_dump(new Foo()); # prints: object(Foo)#1 (1) { ["bar"]=>string(3) "bar" }
+```
+
+<!-- omit in toc -->
+#### Python
+
+```py
+x = 1
+if x == 1:
+    print('x is 1');
+```
+
+
 
 ## Numbers
 
@@ -175,8 +213,6 @@ String repetition in Python is an interesting Ruby-esque quirk.
 
 To repeat a string, you multiply it by an integer. For example: `'Ho ' * 3`.
 
-This might feel weird, considering it earns you a fatal error in PHP. But duly note it, as this comes up again in other parts of Python.
-
 <!-- omit in toc -->
 #### PHP
 
@@ -189,6 +225,180 @@ str_repeat('Repeat', 3); // prints: RepeatRepeatRepeat
 
 ```py
 print('Repeat' * 3) # prints: RepeatRepeatRepeat
+```
+
+This might seem weird, since doing this in PHP earns you a fatal error.
+
+But if you look under the hood of a string, you'll see special `__methods__`, like these:
+
+```bash
+$ python3 -c "print(dir('test-string'))"
+['__add__', '__mul__', '__mod__']
+```
+
+So `'Repeat' * 3` is really just syntactic sugar for `'Repeat'.__mul__(3)`, like so:
+
+```bash
+$ python3 -c "print('ho '.__mul__(3))"
+ho ho ho
+```
+
+Where `__mul__` is just a method that knows how to self-concatenate a string `n` times.
+
+So `*` isn't really the "multiplication operator" per se, like in php. It in fact maps to the `__mul__` of the object preceding it.
+
+Which means if you had a `myClass` class with `obj1` and `obj2` instantiated from it, and you defined a `__mul__` function in that class, you could "multiply" the objects together with `obj1 * obj2` in whatever way you decide to define what multiplying objects means.
+
+### Substitution
+
+String substition will feel familiar, with some key differences.
+
+With PHP:
+
+- `echo` and `print()` both output data
+- `printf()` and `sprintf()` both substitute variables in strings
+
+With Python, everything can just go through `print()`.
+
+Except when it doesn't. There's actual 3 different ways.
+
+Let's start with the `%` way:
+
+<!-- omit in toc -->
+#### Python
+
+```python
+# single substitution
+name = 'john'
+print('Hello, %s' % name)
+
+# 2 or more substitutions
+first = 'john'
+last = 'smith'
+print('Hello, %s %s' % (first, last))
+```
+
+It must surely seem strange to see that `%` operator preceding the tuple of variables like that, which is inherently confusing since `%` is supposed to do.. modulo things.
+
+But like `+` and `*`, `%` is just syntactic sugar for `__mod__`. So what is really happening here is `'Hello, %s %s'.__mod__(first, last)`. 
+
+You can also do some elegantly useful formatting things inside strings with `%s`, `%d`, `%f`:
+
+<!-- omit in toc -->
+#### Python
+```python
+one = 1
+two = 2.0
+three = 'three'
+
+# prints: Counting: 1, 2.000000, three
+print("Counting: %d, %f, %s" % (one, two, three))
+
+# Rounding. Prints: More: 1.15656566, Less: 1.1566, Even less: 1.2
+y = 1.15656565656
+print("More: %.8f, Less: %.4f, Even less: %.1f" % (y,y,y))
+
+# Lower/uppercase. Prints: Int: 14, lowercase x: e, uppercase x: E
+x = 14
+print('Int: %d, lowercase x: %x, uppercase x: %X' % (x,x,x))
+```
+
+There's also `str.format()`, which is overly verbose, and rather unintuitive how one can't just pass the variables into the function as `format(first, last, age)`:
+
+<!-- omit in toc -->
+#### Python
+
+```python
+first = "John"
+last = "Smith"
+age = 22
+
+print("Hello, {first} {last}, who is {age} years old.".format(first=first, last=last, age=age) )
+```
+
+And finally, there are f-strings: the newest way to accomplish string interpolation.
+
+<!-- omit in toc -->
+#### Python
+
+```python
+first = "John"
+last = "Smith"
+age = 22
+
+print(f'Hello, {first} {last}, who is {age} years old.')
+```
+
+Note that `f` hugging the front of the string.
+
+Also, there's supposed to be a joke that goes:
+
+Do you love strings in Python?
+
+> f'Yes!'
+
+### Operations
+
+In Python, strings are objects.
+
+And as objects, they contain a [whole pile of methods](https://www.w3schools.com/python/python_strings_methods.asp) useful for doing operations, not to mention all those `__special_methods__` discussed perviously.
+
+As a PHP developer, this would feel familiar if you've written TypeScript before.
+
+Python strings have two types of string operation syntax:
+
+- `'foo'.method_name()`: for string positions, splitting, upper/lower, etc
+- `'foo'[x:x:x]`: for slicing, using a List syntax
+
+This is a departure from PHP, where string processing is always done through standalone functions available in the language itself, like `strpos()`, `explode()`, `strtoupper()`, and `substr()`. But the concepts are nearly identical.
+
+<!-- omit in toc -->
+#### Python
+
+```py
+x = 'Hello World'
+
+# string length
+print(len(x)) # prints: 11
+
+# character position
+print(x.index('o')) # prints: 4
+
+# counting occurrences
+print(x.count('l')) # prints: 3
+
+# string slicing
+print(x[3:7]) # prints: lo w
+
+# single character capturing
+print(x[3]) # prints: l
+
+# slicing to end-of-string
+print(x[3:]) # prints: lo world
+
+# slicing from beginning-of-string
+print(x[:7]) # prints: Hello w
+
+# slicing last n characters
+print(x[-3:]) # prints: rld
+
+# slicing while stepping n characters
+print(x[1:7:2]) # prints: el
+
+# string reversing, using stepping
+print(x[::-1]) # prints; dlrow olleH
+
+# upper/lower
+print(x.upper()) # prints: hello world
+print(x.lower()) # prints: HELLO WORLD
+
+# starts/end with tests
+print(x.startswith('Hello')) # prints: True
+print(x.endswith('rld')) # prints: False
+
+# splitting
+print(x.split(" ")) # Prints: ['Hello', 'world']
+print(len(x.split(" "))) # Prints: 2
 ```
 
 ## Lists
@@ -232,7 +442,7 @@ for x in mylist:
 
 ### Initialization
 
-Like PHP, you can declare an entire array succintly in one line. Same syntax:
+Like PHP, you can declare and initialize a List all in one go. The syntax is the same:
 
 <!-- omit in toc -->
 #### PHP
@@ -278,10 +488,14 @@ except:
 
 ### Repetition
 
-That repeating `*` "operator" is back already, it works for Lists too. Good thing too, because there is no elegant way to do this in PHP:
+That repeating `*` "operator" from earlier is back already. It works for Lists too.
+
+Which means List objects have its own defined `__mul__` method like strings do.
 
 <!-- omit in toc -->
 #### PHP
+
+Note how there is no elegant way to do this in PHP with arrays, not even an [ArrayObject](https://www.php.net/manual/en/class.arrayobject.php):
 
 ```php
 $source_list = [1,2,3];
@@ -297,7 +511,7 @@ print_r($new_list);
 <!-- omit in toc -->
 #### Python
 
-Simplicity.
+But in Python: Simplicity.
 
 ```python
 print([1,2,3] * 10)
@@ -305,7 +519,7 @@ print([1,2,3] * 10)
 
 ### Concatenation
 
-Moving along with the List arithmetic theme, that `*` intuitive way of working with Lists in Python applies with the `+` operator as well:
+Moving along with the List arithmetic theme, that intuitive `*` way of working with Lists in Python applies with the `+` operator as well:
 
 <!-- omit in toc -->
 #### PHP
@@ -327,65 +541,9 @@ odd = [1,3,5,7]
 print(even + odd) # prints [2,4,6,8,1,3,5,7]
 ```
 
-## String Formatting
+`+` is syntactic sugar for `List.__add__` in this case.
 
-### Substitution - LEFT OFF HERE
-
- c-like, but prepend the tuple set of vars with %..
-#### Python
-
-```python
-# single substitution
-name = 'john'
-print('Hello, %s' % name)
-
-# 2 or more substitutions
-first = 'john'
-last = 'smith'
-print('Hello, %s %s' % (first, last))
-```
-
- int vs float vs string
-one = 1
-two = 2.0
-three = 'three'
-print("Counting: %d, %f, %s" % (one, two, three))
-
- floats with fixed digits. Rounds
-y = 1.15656565656
-print("More: %.8f, Less: %.4f, Even less: %.1f" % (y,y,y))
-
-x = 14
-print('Int: %d, lowercase x: %x, uppercase x: %X' % (x,x,x))
-
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-## String Operations
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-## Assignments
+## Assignments - LEFT OFF HERE
 
 <!-- omit in toc -->
 #### PHP
