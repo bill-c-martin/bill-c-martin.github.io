@@ -2,6 +2,7 @@
 layout: blog_post
 title: 'Python for PHP Developers: Deep Dive Part 1'
 category: blog
+tags: ["Python", "PHP"]
 ---
 
 What is it like moving from PHP to Python? What are the similarities and differences between them?
