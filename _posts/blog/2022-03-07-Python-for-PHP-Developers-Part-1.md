@@ -7,7 +7,7 @@ tags: ["Python", "PHP"]
 
 What is it like moving from PHP to Python? What are the similarities and differences between them?
 
-Using the broad overview from [learningpython.org](https://www.learnpython.org/), we'll examine the ins and outs of Python from a PHP developer's perspective and showing the equivalent PHP and Python code, side-by-side.
+Using the broad overview from [learningpython.org](https://www.learnpython.org/), we'll examine the ins and outs of Python from a PHP developer's perspective, while showing the equivalent PHP and Python code, side-by-side.
 
 Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-martin/python-for-php-devs) to get a Python environment setup and to follow along with the code examples below.
 
@@ -17,9 +17,11 @@ Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-m
 - [The Basics](#the-basics)
   - [Hello World](#hello-world)
   - [Indentation](#indentation)
-  - [Data Types](#data-types)
-    - [Data Collections - LEFT OFF HERE](#data-collections---left-off-here)
   - [Everything is an Object - FINISH THIS](#everything-is-an-object---finish-this)
+  - [Data Types](#data-types)
+  - [Primitives - FINISH THIS](#primitives---finish-this)
+    - [Data Collections](#data-collections)
+  - [Binary Types - FINISH THIS](#binary-types---finish-this)
   - [Debugging](#debugging)
     - [vars()](#vars)
     - [dir()](#dir)
@@ -122,29 +124,59 @@ if x == 1:
     print('x is 1');
 ```
 
+
+### Everything is an Object - FINISH THIS
+
 ### Data Types
 
-#### Data Collections - LEFT OFF HERE
+Python has quite a few native data types compared to PHP. Some will feel familiar. Others, not so much.
 
-| Type | Example | Description | When to Use | 
-| list | `['foo', 1, 2.34, True]` | Like PHP numeric arrays | ? |
-| dict | `{'foo': 'bar', 'biz': 'baz'}` | Like PHP associative arrays meets JSON syntax | ? |
-| tuple | | Like a PHP numeric array, but immutable. PHP has no native equivalent to this.  | ? |
-| set | `{'apple', 'banana', 'cherry'}` | ? | ? |
+There's 14 data types in total vs PHP's 6 or so, so half of them will feel foreign.
 
-A better way to decide when to use which data collection is based on need:
+Those 14 can be divided into 3 groups:
 
-| Type | Key -> Values? | Mutable? | Ordered? | Sliceable? | Can Have Duplicates? |
-| -- | -- | -- | -- | -- | -- |
-| dict | yes | yes | ? | yes | no |
-| list | no | yes | yes | yes | yes |
-| tuple | no  | no | yes | yes | yes |
-| set | no | yes | no | no | no |
+- primitives
+- data collections
+- binary types
+
+### Primitives - FINISH THIS
+#### Data Collections
+
+Python's `list` and `dict` collections are basically PHP's numeric and associative arrays.
+
+`tuple` and `set` collections will be trickier.
+
+Here's some examples:
+
+| Type  | Example                         | Description                                                                    | When to Use                                                                |
+|-------|---------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| list  | `['foo', 1, 2.34, True]`        | Like PHP numeric arrays                                                        | Same as PHP. Use when dynamically building collections of things. Eg. list of order IDs purchased today. |
+| dict  | `{'foo': 'bar', 'biz': 'baz'}`  | Like PHP associative arrays meets JSON syntax                                  | Same as PHP. Use when you need key/value pairs. Eg. list of order IDs pointing to Order objects. |
+| tuple | `('apple', 'banada', 'cherry')` | Like a PHP numeric array, but immutable. PHP has no native equivalent to this. | Static lists of constants. Eg. list of billing states to populate a dropdown with. |
+| set   | `{'apple', 'banana', 'cherry'}` | Like PHP numeric arrays, but no duplicates                                     | Think set theory, or `SELECT DISTINCT` type data. Eg. list of distinct states that orders were shipped to today. |
+
+Confusing? Determine your needs first, then decide:
+
+| Type  | Key -> Values? | Mutable? | Ordered? | Sliceable? | Can Have Duplicates? |
+|-------|----------------|----------|----------|------------|----------------------|
+| dict  | yes            | yes      | ?        | yes        | no                   |
+| list  | no             | yes      | yes      | yes        | yes                  |
+| tuple | no             | no       | yes      | yes        | yes                  |
+| set   | no             | yes      | no       | no         | no                   |
+
+Another way of deciding is by their built-in methods.
+
+Each collection type's built-in methods will determine how you will be able to interact with its data:
+
+- **list**: Array oriented methods: `pop()`, `append()`, `sort()`
+- **dict**: Key-value-esque methods: `items()`, `fromkeys()`, `values()`
+- **tuple**: Very basic, only has: `index()`, and `count()`
+- **set**: Set theory things: `intersection()`, `union()`, `intersection()`, `issubset()`, `issuperset()`
 
 
-| Type | Example | Description |
-| ----- | -- | -- |
-| str | `'hello world'` | text/strings |
+| Type | Example         | Description  |
+|------|-----------------|--------------|
+| str  | `'hello world'` | text/strings |
 | int | `42` | integers
 | float | `1.23` | floating point numbers |
 | bool | `True` `False` | booleans |
@@ -155,7 +187,7 @@ A better way to decide when to use which data collection is based on need:
 | bytearray | | |
 | memoryview | | |
 
-### Everything is an Object - FINISH THIS
+### Binary Types - FINISH THIS
 
 ### Debugging
 
