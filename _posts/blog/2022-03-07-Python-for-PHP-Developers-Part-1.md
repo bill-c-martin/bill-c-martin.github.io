@@ -17,7 +17,8 @@ Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-m
 - [The Basics](#the-basics)
   - [Hello World](#hello-world)
   - [Indentation](#indentation)
-  - [Types - FINISH THIS](#types---finish-this)
+  - [Data Types](#data-types)
+    - [Data Collections - LEFT OFF HERE](#data-collections---left-off-here)
   - [Everything is an Object - FINISH THIS](#everything-is-an-object---finish-this)
   - [Debugging](#debugging)
     - [vars()](#vars)
@@ -121,7 +122,38 @@ if x == 1:
     print('x is 1');
 ```
 
-### Types - FINISH THIS
+### Data Types
+
+#### Data Collections - LEFT OFF HERE
+
+| Type | Example | Description | When to Use | 
+| list | `['foo', 1, 2.34, True]` | Like PHP numeric arrays | ? |
+| dict | `{'foo': 'bar', 'biz': 'baz'}` | Like PHP associative arrays meets JSON syntax | ? |
+| tuple | | Like a PHP numeric array, but immutable. PHP has no native equivalent to this.  | ? |
+| set | `{'apple', 'banana', 'cherry'}` | ? | ? |
+
+A better way to decide when to use which data collection is based on need:
+
+| Type | Key -> Values? | Mutable? | Ordered? | Sliceable? | Can Have Duplicates? |
+| -- | -- | -- | -- | -- | -- |
+| dict | yes | yes | ? | yes | no |
+| list | no | yes | yes | yes | yes |
+| tuple | no  | no | yes | yes | yes |
+| set | no | yes | no | no | no |
+
+
+| Type | Example | Description |
+| ----- | -- | -- |
+| str | `'hello world'` | text/strings |
+| int | `42` | integers
+| float | `1.23` | floating point numbers |
+| bool | `True` `False` | booleans |
+| complex | ? | ? |
+| range | | |
+| frozenset | | |
+| bytes | | |
+| bytearray | | |
+| memoryview | | |
 
 ### Everything is an Object - FINISH THIS
 
