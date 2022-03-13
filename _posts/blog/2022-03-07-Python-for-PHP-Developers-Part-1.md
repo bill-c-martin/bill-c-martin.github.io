@@ -19,7 +19,11 @@ Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-m
   - [Indentation](#indentation)
   - [Types - FINISH THIS](#types---finish-this)
   - [Everything is an Object - FINISH THIS](#everything-is-an-object---finish-this)
-  - [Debugging - FINISH THIS](#debugging---finish-this)
+  - [Debugging](#debugging)
+    - [vars()](#vars)
+    - [dir()](#dir)
+    - [pprint()](#pprint)
+    - [var_dump() through pip](#var_dump-through-pip)
 - [Numbers](#numbers)
   - [Floats](#floats)
 - [Strings](#strings)
@@ -121,32 +125,193 @@ if x == 1:
 
 ### Everything is an Object - FINISH THIS
 
-### Debugging - FINISH THIS
+### Debugging
 
-The glorious `var_dump()` has no native equal in Python. The Pythonic lessers will have to do.
+The glorious `var_dump()` has no native equivalent in Python.
+
+`var_dump()` of course shows us structure, methods, properties, types, keys, values, lengths, *everything*:
 
 <!-- omit in toc -->
 #### PHP
 
-`var_dump()` of course shows us values, types, and structure:
-
 ```php
 var_dump('1');       # prints: string(1) "1"
 var_dump(1);         # prints: int(1)
-var_dump([1]);       # prints: array(1) { [0]=>int(1)}
+var_dump([1]);       # prints: array(1) { [0]=>int(1)} 
 var_dump(new Foo()); # prints: object(Foo)#1 (1) { ["bar"]=>string(3) "bar" }
 ```
 
 <!-- omit in toc -->
 #### Python
 
-```py
-x = 1
-if x == 1:
-    print('x is 1');
+Python has numerous options, all are lackluster:
+
+- `vars()`: only shows properties and values, but not structure, methods, types
+- `dir()`: shows properties and methods, but not structure, values, types
+- `pprint()`: shows structure, state, types, but not methods
+
+Luckily, there is a `var_dump` pip package we can install to get PHP's superior var_dump() in Python.
+
+But let's go through those above 3 Pythonic inferiors, first.
+
+#### vars()
+
+`vars()` shows state as key values pairs, but not structure, methods, types, or lengths.
+
+For example, for this simple class with a constructor, method, and 2 properties:
+
+```python
+class Foo:
+    def __init__(self, x=5):
+        self.x = x
+    def bar(self, y = 10):
+        self.y = y
+        print('baz sets 10')
+
+foo = Foo()
+foo.bar(10)
 ```
 
+`vars()` shows only;
 
+```python
+{'x': 5, 'y': 10}
+```
+
+Worse, `vars()` only works for some types of variables, not all.
+
+#### dir()
+
+`dir()` will show properties and method names, but not structure, state, values, or types.
+
+For example, for strings, Lists, and Dictionaries:
+
+```python
+print(dir('test'))
+print(dir([1,2,3]))
+print(dir({'foo': 'bar', 'biz': 'baz'}))
+```
+
+`dir()` only shows method names those native types/objects have:
+
+```python
+# string
+['capitalize', 'upper', 'lower', 'join', 'split'] # etc
+# List
+['count', 'pop', 'append', 'reverse'] # etc
+# Dictionary
+['copy', 'keys', 'items', 'values'] # etc
+```
+
+as well as special methods (more on this later):
+
+```python
+['__eq__','__gt__','__lt__','__add__', '__mul__']
+```
+
+However, for objects instantiated from classes:
+
+```python
+# Create and instatiate a quick class (more on this later too)
+class Foo:
+    x = 5
+    def bar(self):
+        print('baz')
+foo = Foo()
+
+print(dir(foo))
+```
+
+`dir()` does show the methods (unlike `vars()`), as well as the properties. But again, not the values (unlike `vars()`):
+
+```python
+['bar', 'x', '__class__', '__getattribute'] # etc
+```
+
+#### pprint()
+
+`pprint()` is a module that can be pulled in, and it shows structure, state, and types, but not methods.
+
+For example, for strings, Lists, and Dictionaries:
+
+```python
+pprint('test'))
+pprint([1,2,3]))
+pprint({'foo': 'bar', 'biz': 'baz'}))
+```
+
+`pprint()` only shows:
+
+```python
+'test'
+[1,2,3]
+{'foo': 'bar', 'biz': 'baz'}
+```
+
+For that `Foo` class earlier:
+
+```python
+pprint(foo)
+```
+
+`pprint()` unhelpfully shows just:
+
+```python
+__main__.Foo object at 0x7f3887cbbc70>
+```
+
+For objects, you can pull in the `getmembers()` module and combine it with `pprint()`.
+
+```python
+from inspect import getmembers
+from pprint import pprint
+pprint(getmembers(foo))
+```
+
+which will finally print a List of all properties with values and types, as well as all methods.
+
+```python
+[('bar', <bound method Foo.bar of <__main__.Foo object at 0x7fba1718bc70>>),
+('x', 5),
+('y', 10)]
+```
+
+Unfortunately, a verbose list of some ~25 special methods clutters that output, which is not shown above.
+
+#### var_dump() through pip
+
+Clearly, the above Pythonic smorgasbord of methods are inadequate for somebody used to PHP.
+
+Enter: [var_dump for Python](https://github.com/sha256/python-var-dump).
+
+Install it from the command through pip;
+
+```bash
+pip install var_dump
+```
+
+Import:
+
+```python
+from var_dump import var_dump
+var_dump('test', [1,2,3], {'foo': 'bar', 'biz': 'baz'}, foo)
+```
+
+And profit:
+
+```python
+#0 str(4) "test"
+#1 list(3) 
+    [0] => int(1) 
+    [1] => int(2) 
+    [2] => int(3) 
+#2 dict(2) 
+    ['foo'] => str(3) "bar"
+    ['biz'] => str(3) "baz"
+#3 object(Foo) (2)
+    x => int(5) 
+    y => int(10)
+```
 
 ## Numbers
 
@@ -246,7 +411,7 @@ ho ho ho
 
 Where `__mul__` is just a method that knows how to self-concatenate a string `n` times.
 
-So `*` isn't really the "multiplication operator" per se, like in php. It in fact maps to the `__mul__` of the object preceding it.
+So `*` isn't really the "multiplication operator" per se, like in PHP. It in fact maps to the `__mul__` of the object preceding it.
 
 Which means if you had a `myClass` class with `obj1` and `obj2` instantiated from it, and you defined a `__mul__` function in that class, you could "multiply" the objects together with `obj1 * obj2` in whatever way you decide to define what multiplying objects means.
 
