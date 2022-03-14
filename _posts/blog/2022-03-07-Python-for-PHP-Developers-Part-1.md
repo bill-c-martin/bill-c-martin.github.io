@@ -17,11 +17,11 @@ Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-m
 - [The Basics](#the-basics)
   - [Hello World](#hello-world)
   - [Indentation](#indentation)
-  - [Everything is an Object - FINISH THIS](#everything-is-an-object---finish-this)
+  - [Everything is an Object](#everything-is-an-object)
   - [Data Types](#data-types)
-  - [Primitives - FINISH THIS](#primitives---finish-this)
+  - [Primitives](#primitives)
     - [Data Collections](#data-collections)
-  - [Binary Types - FINISH THIS](#binary-types---finish-this)
+  - [Binary Types](#binary-types)
   - [Debugging](#debugging)
     - [vars()](#vars)
     - [dir()](#dir)
@@ -125,11 +125,13 @@ if x == 1:
 ```
 
 
-### Everything is an Object - FINISH THIS
+### Everything is an Object
+
+
 
 ### Data Types
 
-Python has quite a few native data types compared to PHP. Some will feel familiar. Others, not so much.
+Python has quite a few built-in data types compared to PHP. Some will feel familiar. Others, not so much.
 
 There's 14 data types in total vs PHP's 6 or so, so half of them will feel foreign.
 
@@ -139,7 +141,24 @@ Those 14 can be divided into 3 groups:
 - data collections
 - binary types
 
-### Primitives - FINISH THIS
+<div class="alert alert-info" role="alert">
+<strong>Note</strong>: Many more data structures are available through pip/modules. 
+</div>
+
+### Primitives
+
+Integers, floats, booleans, and strings all work similarly as PHP.
+
+The `complex` data type will be new to you, which is more applicable in the domain of mathematics. 
+
+| Type    | Example         | Description                                                                                                           |
+|---------|-----------------|-----------------------------------------------------------------------------------------------------------------------|
+| str     | `'hello world'` | text/strings, same as PHP                                                                                             |
+| int     | `42`            | integers, same as PHP                                                                                                 |
+| float   | `1.23`          | floating point numbers, similar to PHP, but definitely more feature-rich and easier to work with. More on why, later. |
+| bool    | `True` `False`  | booleans, same as PHP. Must be capitalized though.                                                                    |
+| complex | `23j`           | Real/imaginary numbers, useful in mathematics applications. Has set of functions specific to this domain.             |
+
 #### Data Collections
 
 Python's `list` and `dict` collections are basically PHP's numeric and associative arrays.
@@ -148,19 +167,21 @@ Python's `list` and `dict` collections are basically PHP's numeric and associati
 
 Here's some examples:
 
-| Type  | Example                         | Description                                                                    | When to Use                                                                |
-|-------|---------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| list  | `['foo', 1, 2.34, True]`        | Like PHP numeric arrays                                                        | Same as PHP. Use when dynamically building collections of things. Eg. list of order IDs purchased today. |
-| dict  | `{'foo': 'bar', 'biz': 'baz'}`  | Like PHP associative arrays meets JSON syntax                                  | Same as PHP. Use when you need key/value pairs. Eg. list of order IDs pointing to Order objects. |
-| tuple | `('apple', 'banada', 'cherry')` | Like a PHP numeric array, but immutable. PHP has no native equivalent to this. | Static lists of constants. Eg. list of billing states to populate a dropdown with. |
+| Type  | Example                         | Description                                                                    | When to Use                                                                                                      |
+|-------|---------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| list  | `['foo', 1, 2.34, True]`        | Like PHP numeric arrays                                                        | Same as PHP. Use when dynamically building collections of things. Eg. list of order IDs purchased today.         |
+| range | `range(1,100,2)`                | Immutable list over a range of numbers. Eg all odd numbers until 100.          | Often uses in for loops                                                                                          |
+| dict  | `{'foo': 'bar', 'biz': 'baz'}`  | Like PHP associative arrays meets JSON syntax                                  | Same as PHP. Use when you need key/value pairs. Eg. list of order IDs pointing to Order objects.                 |
+| tuple | `('apple', 'banada', 'cherry')` | Like a PHP numeric array, but immutable. PHP has no native equivalent to this. | Static lists of constants. Eg. list of billing states to populate a dropdown with.                               |
 | set   | `{'apple', 'banana', 'cherry'}` | Like PHP numeric arrays, but no duplicates                                     | Think set theory, or `SELECT DISTINCT` type data. Eg. list of distinct states that orders were shipped to today. |
 
 Confusing? Determine your needs first, then decide:
 
 | Type  | Key -> Values? | Mutable? | Ordered? | Sliceable? | Can Have Duplicates? |
 |-------|----------------|----------|----------|------------|----------------------|
-| dict  | yes            | yes      | ?        | yes        | no                   |
 | list  | no             | yes      | yes      | yes        | yes                  |
+| range | no             | no       | yes      | yes        | no                   |
+| dict  | yes            | yes      | ?        | yes        | no                   |
 | tuple | no             | no       | yes      | yes        | yes                  |
 | set   | no             | yes      | no       | no         | no                   |
 
@@ -168,26 +189,28 @@ Another way of deciding is by their built-in methods.
 
 Each collection type's built-in methods will determine how you will be able to interact with its data:
 
-- **list**: Array oriented methods: `pop()`, `append()`, `sort()`
+- **list**: Array-oriented methods: `pop()`, `append()`, `sort()`
 - **dict**: Key-value-esque methods: `items()`, `fromkeys()`, `values()`
 - **tuple**: Very basic, only has: `index()`, and `count()`
 - **set**: Set theory things: `intersection()`, `union()`, `intersection()`, `issubset()`, `issuperset()`
 
+### Binary Types
 
-| Type | Example         | Description  |
-|------|-----------------|--------------|
-| str  | `'hello world'` | text/strings |
-| int | `42` | integers
-| float | `1.23` | floating point numbers |
-| bool | `True` `False` | booleans |
-| complex | ? | ? |
-| range | | |
-| frozenset | | |
-| bytes | | |
-| bytearray | | |
-| memoryview | | |
+Python has some binary types that will probably be very foreign to PHP developers, except maybe from those old C classes you took in college.
 
-### Binary Types - FINISH THIS
+From what I gather, these are useful in certain situations:
+
+- I/O and embedded systems
+- Situations demanding performance, like database engines
+- Reading/writing encoded bytes to disk: media players, image libraries, etc
+- Networking: fragmenting data over sockets
+
+| Type         | Example                            | Description                                                                                         | When to Use                                                       |
+|--------------|------------------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| `bytes`      | `bytes('Hello World', 'utf-8')`    | Store a string as raw, immutable bytes.                                                             | When performance or encoding matters.                             |
+| `bytearray`  | `bytearray[1,2,3,4]`               | Same as `bytes`, except it's iterable and mutable.                                                  | Same as `bytes`, or when `bytes` needs to be iterated or mutated. |
+| `memoryview` | `memoryview(bytes('Hello World'))` | Allows direct read/write access to an object’s byte-oriented data without needing to copy it first. | Performance gains on really large objects                         |
+
 
 ### Debugging
 
