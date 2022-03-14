@@ -17,16 +17,18 @@ Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-m
 - [The Basics](#the-basics)
   - [Hello World](#hello-world)
   - [Indentation](#indentation)
-  - [Everything is an Object](#everything-is-an-object)
   - [Data Types](#data-types)
-  - [Primitives](#primitives)
+    - [Primitives](#primitives)
     - [Data Collections](#data-collections)
-  - [Binary Types](#binary-types)
+    - [Binary Types](#binary-types)
   - [Debugging](#debugging)
     - [vars()](#vars)
     - [dir()](#dir)
     - [pprint()](#pprint)
     - [var_dump() through pip](#var_dump-through-pip)
+  - [Everything is an Object](#everything-is-an-object)
+    - [Operators are Just Syntatic Sugar for Methods](#operators-are-just-syntatic-sugar-for-methods)
+    - [Most Data Types Have Special Methods](#most-data-types-have-special-methods)
 - [Numbers](#numbers)
   - [Floats](#floats)
 - [Strings](#strings)
@@ -124,11 +126,6 @@ if x == 1:
     print('x is 1');
 ```
 
-
-### Everything is an Object
-
-
-
 ### Data Types
 
 Python has quite a few built-in data types compared to PHP. Some will feel familiar. Others, not so much.
@@ -145,7 +142,7 @@ Those 14 can be divided into 3 groups:
 <strong>Note</strong>: Many more data structures are available through pip/modules. 
 </div>
 
-### Primitives
+#### Primitives
 
 Integers, floats, booleans, and strings all work similarly as PHP.
 
@@ -194,7 +191,7 @@ Each collection type's built-in methods will determine how you will be able to i
 - **tuple**: Very basic, only has: `index()`, and `count()`
 - **set**: Set theory things: `intersection()`, `union()`, `intersection()`, `issubset()`, `issuperset()`
 
-### Binary Types
+#### Binary Types
 
 Python has some binary types that will probably be very foreign to PHP developers, except maybe from those old C classes you took in college.
 
@@ -399,6 +396,70 @@ And profit:
     x => int(5) 
     y => int(10)
 ```
+
+### Everything is an Object
+
+This will be a foreign concept for PHP developers, but:
+
+In Python, everything is an object.
+
+This includes even strings, integers, floats, arrays, etc.
+
+So you'll see stuff like this:
+
+```python
+print('hello'.upper()) # Prints: HELLO
+```
+
+#### Operators are Just Syntatic Sugar for Methods
+
+`+`, `*`, `%`, `==`, `<`, and `>` are not just operators, they are syntactic sugar for functions that exist on the object to its left.
+
+So when you do this:
+
+```python
+1 + 2
+```
+
+You are really just doing this behind the scenes:
+
+```python
+(1).__add__(2)
+```
+
+Where `2` is being passed to `1`'s `__add__()` method which all `int`s have.
+
+This is also true for other operators:
+
+- `+` is just `__add__()`
+- `*` is just `__mul__()`
+- `%` is just `__mod__()`
+- `==` is just `__eq__()`
+- `<` is just `__lt__()`
+- `>` is just `__gt__()`
+
+For example, this means you can add two `list`s together because a `list` have their own `__add__()`.
+
+```python
+print([1,2,3] + [4,5,6]) # prints: [1,2,3,4,5,6]
+```
+
+Likewise, a `str` knows how to multiply itself because `str` objects have their own `__mul__()`. 
+
+Those methods surrounded in double underscores are called *special methods*.
+
+#### Most Data Types Have Special Methods
+
+`int`, `str`, `float`, `list`, `dict` etc all have these kind of special methods.
+
+You can see them all when you dump a variable/object with `dir()` (more on that in the next section).
+
+This means that the special methods behind `+`, `*`, `%`, `==`, `<` have implementations specific to each data type.
+
+We'll get more into that in a bit, but some examples are:
+
+- `%` calculates remainders for an `int`, but performs string interpolation on a `str`
+- `==` does the usual equals comparison, but if you define your own `__eq__` in your `Foo` class, you can define how to compare your objects. eg. `foo == bar`
 
 ## Numbers
 
