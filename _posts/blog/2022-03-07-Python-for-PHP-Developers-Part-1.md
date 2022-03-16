@@ -14,71 +14,26 @@ Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-m
 <!-- omit in toc -->
 ## Table of Contents
 
-- [The Basics](#the-basics)
-  - [Hello World](#hello-world)
-  - [Indentation](#indentation)
-  - [Data Types](#data-types)
-    - [Primitives](#primitives)
-    - [Data Collections](#data-collections)
-    - [Binary Types](#binary-types)
-  - [Debugging](#debugging)
-    - [vars()](#vars)
-    - [dir()](#dir)
-    - [pprint()](#pprint)
-    - [var_dump() through pip](#var_dump-through-pip)
+- [Hello World](#hello-world)
+- [Indentation](#indentation)
+- [Data Types](#data-types)
+  - [Primitives](#primitives)
+  - [Data Collections](#data-collections)
+  - [Binary Types](#binary-types)
+- [Debugging](#debugging)
+  - [vars()](#vars)
+  - [dir()](#dir)
+  - [pprint()](#pprint)
+  - [var_dump() through pip](#var_dump-through-pip)
+- [Concepts](#concepts)
   - [Everything is an Object](#everything-is-an-object)
-    - [Operators are Just Syntatic Sugar for Methods](#operators-are-just-syntatic-sugar-for-methods)
-    - [Most Data Types Have Special Methods](#most-data-types-have-special-methods)
-- [Numbers](#numbers)
-  - [Floats](#floats)
-- [Strings](#strings)
-  - [Concatenation](#concatenation)
-  - [Repetition](#repetition)
-  - [Substitution](#substitution)
-  - [Operations](#operations)
-- [Lists](#lists)
-  - [Appending and Looping](#appending-and-looping)
-  - [Initialization](#initialization)
-  - [Out of Bounds Elements](#out-of-bounds-elements)
-  - [Repetition](#repetition-1)
-  - [Concatenation](#concatenation-1)
-- [Assignments - LEFT OFF HERE](#assignments---left-off-here)
-- [Arithmetic](#arithmetic)
-- [Concatenation](#concatenation-2)
-- [Type Checking](#type-checking)
-- [Conditions](#conditions)
-- [Loops](#loops)
-- [Functions](#functions)
-- [Classes](#classes)
-- [Dictionaries](#dictionaries)
-- [Modules and Packages](#modules-and-packages)
-- [Numpy Arrays](#numpy-arrays)
-- [Pandas Basics](#pandas-basics)
-- [Generators](#generators)
-- [List Comprehensions](#list-comprehensions)
-- [Lambda functions](#lambda-functions)
-- [Multiple Function Arguments](#multiple-function-arguments)
-- [Regular Expressions](#regular-expressions)
-- [Exception Handling](#exception-handling)
-- [Sets](#sets)
-- [Serialization](#serialization)
-- [Partial functions](#partial-functions)
-- [Code Introspection](#code-introspection)
-- [Closures](#closures)
-- [Decorators](#decorators)
-- [Map, Filter, Reduce](#map-filter-reduce)
+  - [Operators are Methods](#operators-are-methods)
+  - [Most Data Types Have Magic Methods](#most-data-types-have-magic-methods)
+  - [Operator Overloading](#operator-overloading)
+  - [Pythonic](#pythonic)
+  - [Versatility - LEFT OFF HERE](#versatility---left-off-here)
 
-## The Basics
-
-First things first: indentation and no-semicolons. Just kidding, everyone know the Pythonic lore of those two.
-
-But yeah, joke's on you, because we're totally covering Python's indentation and lack of semicolons.
-
-But before we do that, we must first recognize how cool-sounding the word "Pythonic" is. It evokes Lovecraftian imagery, does it not?
-
-Alright, onward!
-
-### Hello World
+## Hello World
 
 Python does not require opening tags like PHP.
 
@@ -99,7 +54,7 @@ echo 'hello world';
 print('hello world')
 ```
 
-### Indentation
+## Indentation
 
 Indentation is important in Python.
 
@@ -126,7 +81,7 @@ if x == 1:
     print('x is 1');
 ```
 
-### Data Types
+## Data Types
 
 Python has quite a few built-in data types compared to PHP. Some will feel familiar. Others, not so much.
 
@@ -142,7 +97,7 @@ Those 14 can be divided into 3 groups:
 <strong>Note</strong>: Many more data structures are available through pip/modules. 
 </div>
 
-#### Primitives
+### Primitives
 
 Integers, floats, booleans, and strings all work similarly as PHP.
 
@@ -156,7 +111,7 @@ The `complex` data type will be new to you, which is more applicable in the doma
 | bool    | `True` `False`  | booleans, same as PHP. Must be capitalized though.                                                                    |
 | complex | `23j`           | Real/imaginary numbers, useful in mathematics applications. Has set of functions specific to this domain.             |
 
-#### Data Collections
+### Data Collections
 
 Python's `list` and `dict` collections are basically PHP's numeric and associative arrays.
 
@@ -191,7 +146,7 @@ Each collection type's built-in methods will determine how you will be able to i
 - **tuple**: Very basic, only has: `index()`, and `count()`
 - **set**: Set theory things: `intersection()`, `union()`, `intersection()`, `issubset()`, `issuperset()`
 
-#### Binary Types
+### Binary Types
 
 Python has some binary types that will probably be very foreign to PHP developers, except maybe from those old C classes you took in college.
 
@@ -209,7 +164,7 @@ From what I gather, these are useful in certain situations:
 | `memoryview` | `memoryview(bytes('Hello World'))` | Allows direct read/write access to an object’s byte-oriented data without needing to copy it first. | Performance gains on really large objects                         |
 
 
-### Debugging
+## Debugging
 
 The glorious `var_dump()` has no native equivalent in Python.
 
@@ -238,7 +193,7 @@ Luckily, there is a `var_dump` pip package we can install to get PHP's superior 
 
 But let's go through those above 3 Pythonic inferiors, first.
 
-#### vars()
+### vars()
 
 `vars()` shows state as key values pairs, but not structure, methods, types, or lengths.
 
@@ -264,7 +219,7 @@ foo.bar(10)
 
 Worse, `vars()` only works for some types of variables, not all.
 
-#### dir()
+### dir()
 
 `dir()` will show properties and method names, but not structure, state, values, or types.
 
@@ -312,7 +267,7 @@ print(dir(foo))
 ['bar', 'x', '__class__', '__getattribute'] # etc
 ```
 
-#### pprint()
+### pprint()
 
 `pprint()` is a module that can be pulled in, and it shows structure, state, and types, but not methods.
 
@@ -362,7 +317,7 @@ which will finally print a List of all properties with values and types, as well
 
 Unfortunately, a verbose list of some ~25 special methods clutters that output, which is not shown above.
 
-#### var_dump() through pip
+### var_dump() through pip
 
 Clearly, the above Pythonic smorgasbord of methods are inadequate for somebody used to PHP.
 
@@ -397,23 +352,37 @@ And profit:
     y => int(10)
 ```
 
+## Concepts
+
 ### Everything is an Object
 
-This will be a foreign concept for PHP developers, but:
+This might be a bit of a foreign concept for PHP developers, but:
 
-In Python, everything is an object.
+In Python, (mostly) everything is an object.
 
-This includes even strings, integers, floats, arrays, etc.
-
-So you'll see stuff like this:
+Strings, integers, floats, and booleans are objects:
 
 ```python
-print('hello'.upper()) # Prints: HELLO
+print('hello'.upper())    # Prints: HELLO
+print((9).bit_count())    # Prints: 2
+print((2.0).is_integer()) # Prints: True
+print(False.conjugate())  # Prints: 0
 ```
 
-#### Operators are Just Syntatic Sugar for Methods
+Lists and dictionaries are objects:
 
-`+`, `*`, `%`, `==`, `<`, and `>` are not just operators, they are syntactic sugar for functions that exist on the object to its left.
+```python
+print([1,0,0,1,0].count(0))                   # prints: 3
+print({'foo': 'bar', 'biz': 'baz'}.pop('foo')) # Prints: bar
+```
+
+And so on.
+
+Well, operators are not objects..
+
+### Operators are Methods
+
+`+`, `*`, `%`, `==`, `<`, and `>` are not just operators, they are syntactic sugar for methods that exist on the object to its left.
 
 So when you do this:
 
@@ -429,7 +398,9 @@ You are really just doing this behind the scenes:
 
 Where `2` is being passed to `1`'s `__add__()` method which all `int`s have.
 
-This is also true for other operators:
+This is also true for all of the other operators.
+
+For example:
 
 - `+` is just `__add__()`
 - `*` is just `__mul__()`
@@ -438,762 +409,149 @@ This is also true for other operators:
 - `<` is just `__lt__()`
 - `>` is just `__gt__()`
 
-For example, this means you can add two `list`s together because a `list` have their own `__add__()`.
+Those magic methods are also known as "special methods", or "dunder methods": **d**ouble **under**score methods.
+
+### Most Data Types Have Magic Methods
+
+`int`, `str`, `float`, `list`, `dict` (and the rest) all have these kind of magic methods.
+
+You can see them all when you dump a variable/object with `dir()`.
+
+Take a look at the `int`, `str`, and `list` types:
 
 ```python
-print([1,2,3] + [4,5,6]) # prints: [1,2,3,4,5,6]
+print(dir(42))
+print(dir('42'))
+print(dir([42]))
 ```
 
-Likewise, a `str` knows how to multiply itself because `str` objects have their own `__mul__()`. 
+Note how they all share, for example, `__add__` and `__mul__`.
 
-Those methods surrounded in double underscores are called *special methods*.
+This means the magic methods behind `+` and `*` have implementation specific to each type.
 
-#### Most Data Types Have Special Methods
-
-`int`, `str`, `float`, `list`, `dict` etc all have these kind of special methods.
-
-You can see them all when you dump a variable/object with `dir()` (more on that in the next section).
-
-This means that the special methods behind `+`, `*`, `%`, `==`, `<` have implementations specific to each data type.
-
-We'll get more into that in a bit, but some examples are:
-
-- `%` calculates remainders for an `int`, but performs string interpolation on a `str`
-- `==` does the usual equals comparison, but if you define your own `__eq__` in your `Foo` class, you can define how to compare your objects. eg. `foo == bar`
-
-## Numbers
-
-Like PHP, Python is dynamically-typed.
-
-### Floats
-
-Displaying floats in Python works better, since it doesn't require a special function to regain lost `.0`'s like PHP.
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-$x = 2;
-echo $x;
-
-// php is terrible for this
-$y = 3.0;
-var_dump( number_format((float)$x, 1, '.', '') );
-
-// even when typecasting to float, you still need number_format()
-$x = (float) 4;
-var_dump( number_format($x, 1, '.', '') );
-```
-
-<!-- omit in toc -->
-#### Python
-
-Simplicity.
-
-```py
-x = 2
-print(x)
-
-y=3.0
-print(x) # prints 3.0
-
-z=float(4)
-print(z) # prints 4.0
-```
-
-## Strings
-
-### Concatenation
-
-String concatenation resembles JavaScript, which is similar enough to PHP.
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-echo 'hello' . ' ' . 'world';
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-print('hello' + ' ' + 'world')
-```
-
-### Repetition
-
-String repetition in Python is an interesting Ruby-esque quirk.
-
-To repeat a string, you multiply it by an integer. For example: `'Ho ' * 3`.
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-str_repeat('Repeat', 3); // prints: RepeatRepeatRepeat
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-print('Repeat' * 3) # prints: RepeatRepeatRepeat
-```
-
-This might seem weird, since doing this in PHP earns you a fatal error.
-
-But if you look under the hood of a string, you'll see special `__methods__`, like these:
-
-```bash
-$ python3 -c "print(dir('test-string'))"
-['__add__', '__mul__', '__mod__']
-```
-
-So `'Repeat' * 3` is really just syntactic sugar for `'Repeat'.__mul__(3)`, like so:
-
-```bash
-$ python3 -c "print('ho '.__mul__(3))"
-ho ho ho
-```
-
-Where `__mul__` is just a method that knows how to self-concatenate a string `n` times.
-
-So `*` isn't really the "multiplication operator" per se, like in PHP. It in fact maps to the `__mul__` of the object preceding it.
-
-Which means if you had a `myClass` class with `obj1` and `obj2` instantiated from it, and you defined a `__mul__` function in that class, you could "multiply" the objects together with `obj1 * obj2` in whatever way you decide to define what multiplying objects means.
-
-### Substitution
-
-String substition will feel familiar, with some key differences.
-
-With PHP:
-
-- `echo` and `print()` both output data
-- `printf()` and `sprintf()` both substitute variables in strings
-
-With Python, everything can just go through `print()`.
-
-Except when it doesn't. There's actual 3 different ways.
-
-Let's start with the `%` way:
-
-<!-- omit in toc -->
-#### Python
+Observe how `+` plays out on these 3 data types:
 
 ```python
-# single substitution
-name = 'john'
-print('Hello, %s' % name)
-
-# 2 or more substitutions
-first = 'john'
-last = 'smith'
-print('Hello, %s %s' % (first, last))
+print(42 + 1)     # Prints: 43
+print('42' + '1') # Prints: 421
+print([42] + [1]) # Prints: [42, 1]
 ```
 
-It must surely seem strange to see that `%` operator preceding the tuple of variables like that, which is inherently confusing since `%` is supposed to do.. modulo things.
+Since each type has its own `__add__`, then `+` does:
 
-But like `+` and `*`, `%` is just syntactic sugar for `__mod__`. So what is really happening here is `'Hello, %s %s'.__mod__(first, last)`. 
+- Addition on numbers
+- Concatenation on strings
+- Merging on lists
 
-You can also do some elegantly useful formatting things inside strings with `%s`, `%d`, `%f`:
-
-<!-- omit in toc -->
-#### Python
-```python
-one = 1
-two = 2.0
-three = 'three'
-
-# prints: Counting: 1, 2.000000, three
-print("Counting: %d, %f, %s" % (one, two, three))
-
-# Rounding. Prints: More: 1.15656566, Less: 1.1566, Even less: 1.2
-y = 1.15656565656
-print("More: %.8f, Less: %.4f, Even less: %.1f" % (y,y,y))
-
-# Lower/uppercase. Prints: Int: 14, lowercase x: e, uppercase x: E
-x = 14
-print('Int: %d, lowercase x: %x, uppercase x: %X' % (x,x,x))
-```
-
-There's also `str.format()`, which is overly verbose, and rather unintuitive how one can't just pass the variables into the function as `format(first, last, age)`:
-
-<!-- omit in toc -->
-#### Python
+Observe the same with `*`:
 
 ```python
-first = "John"
-last = "Smith"
-age = 22
-
-print("Hello, {first} {last}, who is {age} years old.".format(first=first, last=last, age=age) )
+print(2 * 3)       # Prints: 6
+print('2' * 3)     # Prints: 222
+print([1,2,3] * 3) # Prints: [1,2,3,1,2,3,1,2,3]
 ```
 
-And finally, there are f-strings: the newest way to accomplish string interpolation.
+Since each type has its own `__mul__`, then `*` does:
 
-<!-- omit in toc -->
-#### Python
+- Multiplication for numbers
+- Repetition for strings
+- Products for lists
+
+Python's ability for operators to have different meaning in different objects is called **operator overloading**
+
+So, say goodbye to all those type-specific, inconsistently-named, globally-namespaced, one-trick pony functions PHP has, like: `array_merge()`, `array_product()`, `str_repeat()` and that ugly `.` concatenation operator.
+
+### Operator Overloading
+
+Operator overloading is not just limited to just `+` and `*`, or the `int`, `str`, and `list` types in the prior example.
+
+It works for all operators.
+
+Consider some trivial Python code that looks at today's orders by email, and gathers a list of users created more than 1 day ago:
 
 ```python
-first = "John"
-last = "Smith"
-age = 22
-
-print(f'Hello, {first} {last}, who is {age} years old.')
+for email in today_orders:
+    user = User(email)
+    if user.created < date.today():
+        users[] = user
 ```
 
-Note that `f` hugging the front of the string.
+In this code alone, there are quite a few overriden operators:
 
-Also, there's supposed to be a joke that goes:
+- `in` is `user.__contains__`
+- `=` in `user = User(email)` is `User.__new__`
+- `.` in `user.created` is `user.__getattr__`
+- `<`, assuming `user.created` is a string, is `str.__lt__`
 
-Do you love strings in Python?
+..and so on.
 
-> f'Yes!'
+This is wildly different than how you picture code as a PHP developer.
 
-### Operations
+But once it sinks in, try this revalation: **You can override operators in your custom classes too**.
 
-In Python, strings are objects.
-
-And as objects, they contain a [whole pile of methods](https://www.w3schools.com/python/python_strings_methods.asp) useful for doing operations, not to mention all those `__special_methods__` discussed perviously.
-
-As a PHP developer, this would feel familiar if you've written TypeScript before.
-
-Python strings have two types of string operation syntax:
-
-- `'foo'.method_name()`: for string positions, splitting, upper/lower, etc
-- `'foo'[x:x:x]`: for slicing, using a List syntax
-
-This is a departure from PHP, where string processing is always done through standalone functions available in the language itself, like `strpos()`, `explode()`, `strtoupper()`, and `substr()`. But the concepts are nearly identical.
-
-<!-- omit in toc -->
-#### Python
-
-```py
-x = 'Hello World'
-
-# string length
-print(len(x)) # prints: 11
-
-# character position
-print(x.index('o')) # prints: 4
-
-# counting occurrences
-print(x.count('l')) # prints: 3
-
-# string slicing
-print(x[3:7]) # prints: lo w
-
-# single character capturing
-print(x[3]) # prints: l
-
-# slicing to end-of-string
-print(x[3:]) # prints: lo world
-
-# slicing from beginning-of-string
-print(x[:7]) # prints: Hello w
-
-# slicing last n characters
-print(x[-3:]) # prints: rld
-
-# slicing while stepping n characters
-print(x[1:7:2]) # prints: el
-
-# string reversing, using stepping
-print(x[::-1]) # prints; dlrow olleH
-
-# upper/lower
-print(x.upper()) # prints: hello world
-print(x.lower()) # prints: HELLO WORLD
-
-# starts/end with tests
-print(x.startswith('Hello')) # prints: True
-print(x.endswith('rld')) # prints: False
-
-# splitting
-print(x.split(" ")) # Prints: ['Hello', 'world']
-print(len(x.split(" "))) # Prints: 2
-```
-
-## Lists
-
-PHP numeric arrays are called Lists in Python.
-
-### Appending and Looping
-
-However, pushing elements and looping feels more like Javascript:
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-// Farewell to our beloved push syntax
-$mylist = [];
-$mylist[] = 1;
-$mylist[] = 'two';
-$mylist[] = 3.0;
-
-// Array looping
-foreach($mylist as $x) {
-    echo $x;
-}
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-# append() adds new elements
-mylist = []
-mylist.append(1)
-mylist.append('two')
-mylist.append(3.0)
-
-# Array looping
-for x in mylist:
-    print(x)
-```
-
-### Initialization
-
-Like PHP, you can declare and initialize a List all in one go. The syntax is the same:
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-$that_list = [1,2,3,4];
-foreach($that_list as $x) {
-    echo $x;
-}
-```
-
-<!-- omit in toc -->
-#### Python
+The classic example for this is a `Point` class consisting of coordinates `x` and `y`.
 
 ```python
-that_list = [1,2,3,4]
-for x in that_list:
-    print(x)
+p1 = Point(1,2)
+p2 = Point(5,6)
 ```
 
-### Out of Bounds Elements
+Let's say you wanted to be able to add these together, or even just print a `Point` on screen in some custom way.
 
-Accessing non-existent elements earns you an exception in Python, instead of PHP's warnings:
+In PHP, you're looking at having to add `add()` and `print()` functions to the `Point` class, which isn't the worst thing in the world.
 
-<!-- omit in toc -->
-#### PHP
+But in Python, instead of having `add()` and `print()`, let's say you named them `__add__` and `__str__`.
 
-```php
-$mylist = [1,2,3,4];
-echo $mylist[6]; // causes a warning, but the show goes on.
-```
-
-<!-- omit in toc -->
-#### Python
+Your calling code would then look like:
 
 ```python
-mylist = [1,2,3,4]
-try:
-    print(mylist[6])
-except:
-    print('good thing I caught this exception')
+print(p1 + p2)
 ```
 
-### Repetition
-
-That repeating `*` "operator" from earlier is back already. It works for Lists too.
-
-Which means List objects have its own defined `__mul__` method like strings do.
-
-<!-- omit in toc -->
-#### PHP
-
-Note how there is no elegant way to do this in PHP with arrays, not even an [ArrayObject](https://www.php.net/manual/en/class.arrayobject.php):
+instead of:
 
 ```php
-$source_list = [1,2,3];
-$new_list = [];
-
-for($i=1; $i<=10; $i++) {
-    $new_list = array_merge($source_list, $new_list);
-}
-
-print_r($new_list);
+echo $p1->add($p2);
 ```
 
-<!-- omit in toc -->
-#### Python
+PHP is not very "pythonic" it would seem.
 
-But in Python: Simplicity.
+### Pythonic
 
-```python
-print([1,2,3] * 10)
-```
+"Pythonic" is doing things "The Python Way", which is a challenge for PHP developers used to doing things their native way.
 
-### Concatenation
+To be fair though, the same can be said for Python developers entering PHP world, with its null coalescing and spaceship operators, interfaces, autoloading, and PSR standards in general.
 
-Moving along with the List arithmetic theme, that intuitive `*` way of working with Lists in Python applies with the `+` operator as well:
+We just don't have a catcy name for it, is all.
 
-<!-- omit in toc -->
-#### PHP
+But to be fair to Python as well, "Pythonic" ultimately just means writing simple code in the way that humans think. A philosophy, really.
 
-```php
-$even = [2,4,6,8];
-$odd = [1,3,5,7];
-print_r( array_merge($even, $odd) ); // prints [2,4,6,8,1,3,5,7]
-```
+Some examples of Pythonic are:
 
-<!-- omit in toc -->
-#### Python
+- No EOL semicolons
+- No one-line expressions (eg if this then that else other)
+- do `if var` and `if not var` instead of `if var == True` and `if var == False`
+- Use lambdas (read: anonymous functions) where it simplifies code
+- Avoid traditional multi-line for-looping, instead use one-liner method chains using stuff like `.join()`, `.filter()`, `map()`, etc.
+- Understand and use the different built-in types where possible. This isn't PHP, you aren't stuck with just arrays.
 
-Simplicity.
+..and many more.
 
-```python
-even = [2,4,6,8]
-odd = [1,3,5,7]
-print(even + odd) # prints [2,4,6,8,1,3,5,7]
-```
+The takeaway here for PHP developers, is think how you do in JavaScript/TypeScript.
 
-`+` is syntactic sugar for `List.__add__` in this case.
+### Versatility - LEFT OFF HERE
 
-## Assignments - LEFT OFF HERE
+In the beginning, PHP was created to make websites, and it shows to this day.
 
-<!-- omit in toc -->
-#### PHP
+Python isn't just for the web. It is also used in desktop applications, embedded systems, data science, gaming, anything really.
 
-```php
-```
+Imagine:
+roboadvisor, complex calculations in numpy pandas, plot generation (plotly).
+Connect to flask/django web app
+Link to my repo
 
-<!-- omit in toc -->
-#### Python
+sprawling data analysis community.
 
-```py
-```
+AI like tensor flow.
 
-## Arithmetic
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-## Concatenation
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-## Type Checking
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-## Conditions
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-## Loops
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-## Functions
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-## Classes
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-## Dictionaries
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-
-
-## Modules and Packages
-
-Go over things like:
-
-from pandas import read_csv
-from sklearn.model_selection import train_test_split
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Numpy Arrays
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Pandas Basics
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Generators
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## List Comprehensions
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Lambda functions
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Multiple Function Arguments
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Regular Expressions
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Exception Handling
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Sets
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Serialization
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Partial functions
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Code Introspection
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Closures
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Decorators
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
-## Map, Filter, Reduce
-
-<!-- omit in toc -->
-#### PHP
-
-```php
-```
-
-<!-- omit in toc -->
-#### Python
-
-```py
-```
+gaming (PySoy)
