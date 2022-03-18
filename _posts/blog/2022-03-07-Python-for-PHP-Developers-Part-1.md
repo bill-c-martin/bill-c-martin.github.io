@@ -9,7 +9,18 @@ What is it like moving from PHP to Python? What are the similarities and differe
 
 Using the broad overview from [learningpython.org](https://www.learnpython.org/), we'll examine the ins and outs of Python from a PHP developer's perspective, while showing the equivalent PHP and Python code, side-by-side.
 
-Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-martin/python-for-php-devs) to get a Python environment setup and to follow along with the code examples below.
+Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-martin/python-for-php-devs) to get a Python environment setup and follow along with the code examples below.
+
+In **Part 1** of this series, we will:
+
+- Examine some Python basics, data types, and see how they compare to PHP
+- Dive into Python debugging, while examining the internals of data types more
+
+And with those two out of the way, we'll then zoom way out to the conceptual level and examine how fundamentally different Python can be than PHP:
+
+- "Everything is an Object", magic methods, and operator overloading
+- Pythonic conventions
+- Python's versatility, major frameworks, and libraries
 
 <!-- omit in toc -->
 ## Table of Contents
@@ -31,7 +42,8 @@ Clone [github.com/bill-c-martin/python-for-php-devs](https://github.com/bill-c-m
   - [Most Data Types Have Magic Methods](#most-data-types-have-magic-methods)
   - [Operator Overloading](#operator-overloading)
   - [Pythonic](#pythonic)
-  - [Versatility - LEFT OFF HERE](#versatility---left-off-here)
+  - [Versatility](#versatility)
+- [Conclusion](#conclusion)
 
 ## Hello World
 
@@ -382,7 +394,7 @@ Well, operators are not objects..
 
 ### Operators are Methods
 
-`+`, `*`, `%`, `==`, `<`, and `>` are not just operators, they are syntactic sugar for methods that exist on the object to its left.
+`+`, `*`, `%`, `==`, `<`, and `>` are not just operators, they are syntactic sugar for methods that exist on the object to its left (and sometimes, its right).
 
 So when you do this:
 
@@ -537,21 +549,45 @@ Some examples of Pythonic are:
 
 ..and many more.
 
-The takeaway here for PHP developers, is think how you do in JavaScript/TypeScript.
+### Versatility
 
-### Versatility - LEFT OFF HERE
+In the beginning, PHP was created to make websites, and it still shows to this day. Its singular focus on web has produced the likes of Laravel, Wordpress, Magento, etc, and it is really good at it.
 
-In the beginning, PHP was created to make websites, and it shows to this day.
+However, the versatility of Python is staggering:
 
-Python isn't just for the web. It is also used in desktop applications, embedded systems, data science, gaming, anything really.
+- Web (with fully featured MVC framworks, CMSs, static site generators etc)
+- Desktop applications
+- Embedded systems
+- Data science and analytics
+- AI and ML
+- Gaming
 
-Imagine:
-roboadvisor, complex calculations in numpy pandas, plot generation (plotly).
-Connect to flask/django web app
-Link to my repo
+As a PHP developer, you are used to thinking in terms of the web.
 
-sprawling data analysis community.
+So when you look at the code from a [portfolio built in Python's Django web framework](https://github.com/abdlalisalmi/DJANGO-Portfolio/blob/master/portfolio/views.py), it won't seem *that* foreign to you.
 
-AI like tensor flow.
+Switch over to some Python code from the [lollypop mp3 player desktop application](https://github.com/Rahix/lollypop-transparent/blob/master/lollypop/window.py#L294-L305) though, and it's going to feel more foreign.
 
-gaming (PySoy)
+Jump over to even just the rudimentary ["hello world" of ML](https://github.com/bill-c-martin/iris-flower-machine-learning/blob/main/index.py#L78-L81), and it'll definitely feel quite foreign.
+
+Accidentally wander into [Deep Speech](https://github.com/tensorflow/models/blob/master/research/deep_speech/deep_speech.py), and your PHP brain buckles.
+
+The versatility of Python is largely due to its rich ecosystem, sprawling data science community, and really.. its low barrier of entry.
+
+And by rich echosystem, we're talking:
+
+- **Web**: Django and Flask, the two frameworks that are [more popular than Laravel](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-web-frameworks)
+- **AI/ML**: Google's TensorFlow, the most popular AI/ML platform.
+- **Data Science**: NumPy, SciPy, Pandas, Matplotlib, Plotly, ad nauseam
+
+I am not sure how often the average web Python developer is going to be building roboadvisors, performing complex calculations in NumPy/Pandas, generating plots in Plotly and so on.
+
+But the versatility of Python is worth being aware of.
+
+## Conclusion
+
+Alright, so we've examined some Python basics, data types, and debugging to get a taste for Python vs beloved PHP.
+
+Then we covered the biggest high-level Python concepts that will throw off PHP developers.
+
+In Part 2, we will get into the nitty gritty details of Python, while comparing it to PHP-equivalent code every step of the way.
