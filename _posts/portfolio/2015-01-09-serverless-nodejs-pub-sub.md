@@ -7,7 +7,7 @@ img: pubsub-overview-800-577.png
 alt: Architectural Diagram of the Process
 overview:
   application: Email Subscription List Synchronizer
-  client: CBD Product Manufacturer
+  client: Product Manufacturer
   project-date: Nov 2020
   summary: Cloud-native, flexible, scalable process that syncs segementation lists from Klaviyo marketing platform API out to the APIs of any number of advertiser platforms. 
 skills:
@@ -78,4 +78,4 @@ This was the first cloud-native serverless process I built since learning AWS in
 
 The flexible architecture probably guarantees a long lifespan.
 
-The implementation of this process paved the way for the marketing team to integrate with these advertising networks.
+The implementation of this process paved the way for the marketing team to integrate with these advertising networks more effectively.

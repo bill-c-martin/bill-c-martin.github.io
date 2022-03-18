@@ -7,9 +7,9 @@ img: datalake.png
 alt: Architectural Diagram of the ETL Pipeline
 overview:
   application: Data Lake
-  client: CBD Product Manufacturer
+  client: Product Manufacturer
   project-date: March 2020 - April 2020
-  summary: Data Lake ETL pipelines that were written in Python, leveraged AWS Glue, replaced a costly legacy process, and reduced AWS bill by 50%
+  summary: Data Lake ETL pipelines written in Python, leveraged AWS Glue, replaced a costly legacy process, and reduced AWS bill by 50%
 skills:
   languages:
     - Python
@@ -61,11 +61,11 @@ The PostgreSQL AWS RDS instance and associated jobs needed to be decommissioned 
 
 ### Contributions
 
-After collaborating with a senior developer and data scientist on my team, we established and refined the design and architecture of the new data ingress pipelines.
+In collaboration with my team, we established and refined the design and architecture of the new data ingress pipelines.
 
-I handled the ShipStation shipping data. They handled the eCommerce and payment gateway data.
+I handled the shipping data while they handled the order and payment gateway data.
 
-The shipping data pipeline did the following:
+My shipping data pipeline did the following:
 
 1. **AWS Glue Workflow**: triggers a Glue crawler once a day
 2. **Glue Crawler**: crawls the S3 shipping data and groups it into tables and partitions
@@ -81,22 +81,17 @@ The Glue ETL job was written in Python and ran in Apache Spark.
 
 ### Challenges Overcame
 
-Just about everything was a challenge due to my lack of experience with the myriad of AWS and data technologies.
-
 The biggest challenges were:
 
 - Finalizing the finer details of the new architecture and process with the team
 - Divinating what exactly the Glue Crawlers were doing
-- Tracking down and fixing subtle data integrity issues using Jupyter notebooks
+- Tracking down and fixing subtle data integrity issues using Jupyter Notebook
 - Coordinating libraries and AWS services from Python code
 - Figuring out how choice resolution works and how Parquet files work
 
 ### Accomplishments
 
-Helped established new architecture and processes for the data lake's pipelines.
-
-Built my first production-ready Python code.
-
-Learned a lot about data lakes and ETL from a data science perspective.
-
-Reduced AWS bill by 50% when the legacy RDS instance and pipelines were retired.
+- Helped establish new architecture and processes for data lake's pipelines.
+- Built my first production-ready Python code.
+- Learned a lot about AWS Glue, ETL, data lakes, and Jupyter Notebook.
+- Got to be a part of a 50% AWS bill reduction when the legacy RDS instance and pipelines were finally retired.

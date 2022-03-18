@@ -7,7 +7,7 @@ img: rewards.png
 alt: Screenshot of eCommerce website featuring the rewards program
 overview:
   application: eCommerce Site
-  client: CBD Product Manufacturer
+  client: Product Manufacturer
   project-date: July 2020 - October 2020
   summary: Custom rewards program WooCommerce plugin for customers to earn redeemable points for discounts, and view rewards history, points balance, and VIP tiers.
 skills:
@@ -80,7 +80,7 @@ The primary challenges of this project were due to unfamiliar territory:
 
 ### Accomplishments
 
-The project spanned 4 months and was released on time.
+The project spanned 4 months and released on time.
 
 Business accomplishments:
 
@@ -94,4 +94,4 @@ By the end of the project, I was well-positioned to advise my team going forward
 - Custom plugin development for Wordpress
 - Ins and outs of finding and leveraging action/filter hooks across the entire codebase and 3rd party plugins
 
-Lastly, this project ultimately established the architectural approach for custom plugins going forward, which later served as a baseline for numerous other custom plugins developed at the company.
+Lastly, this project ultimately established the architectural approach for custom plugins going forward, which later served as a baseline for several other custom plugins developed at the company.
