@@ -2,6 +2,7 @@
 layout: blog_post
 title: How to Build and Deploy a Node.js, Express, and MySQL API to GCP
 category: blog
+tags: ["GCP","Architecture","Cloud", "Node.js"]
 ---
 
 Let's build a Node.js + Express API from scratch, connect Cloud SQL for MySQL, and deploy it all to Google Cloud using gcloud CLI.
