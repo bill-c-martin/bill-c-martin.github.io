@@ -9,7 +9,7 @@ overview:
   applications: Broker, Enrollment, and Quoting Portals
   client: Cigna
   project-date: 2010 - 2012
-  summary: Maintenance for Cigna's quoting system (billing calcaulation overhauls and PDFlib-generated PDF proposals), and creation of bulk premium testing application.
+  summary: Maintenance for Cigna's quoting system (billing calculation overhauls and PDFlib-generated PDF proposals), and creation of bulk premium testing application.
 skills:
   languages:
     - PHP
