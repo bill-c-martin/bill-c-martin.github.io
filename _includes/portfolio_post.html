@@ -1,3 +1,4 @@
+
 <article class="blog-post portfolio-post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 itemprop="name headline">{{ page.title | escape }}</h1>
@@ -53,25 +54,37 @@
     </div>
     <footer>
       <div class="content">
+        {% assign projects = (site.posts | where: 'layout', 'portfolio_post') | sort: 'date' %}
+        {% for project in projects %}
+          {% if project.url == page.url %}
+            {% unless forloop.first %}
+              {% assign prev = previous_project %}
+            {% endunless %}
+            {% unless forloop.last %}
+              {% assign next = projects[forloop.index] %}
+            {% endunless %}
+          {% endif %}
+          {% assign previous_project = project %}
+        {% endfor %}
         <h2>Other Projects</h2>
         <hr class="star-primary">
         <div class="container content">
           <div class="row">
             <div class="col-md-6 col-xs-6">
-              <a class="prev" href="{{page.previous.url}}">
-                {% if page.previous.url and page.previous.categories contains "portfolio" %}
-                  <span>&laquo;</span>
-                  {{page.previous.title}}
-                {% endif %}
-              </a>
+              {% if prev %}
+                <a class="prev " href="{{prev.url}}">
+                    <span>&laquo;</span>
+                    {{prev.title}}
+                </a>
+              {% endif %}
             </div>
             <div class="col-md-6 col-xs-6 text-right pr-2">
-              <a class="next" href="{{page.next.url}}">
-                {% if page.next.url and page.next.categories contains "portfolio" %}
-                  <span>&raquo;</span>
-                  {{page.next.title}} 
-                {% endif %}
-              </a>
+              {% if next %}
+                <a class="next" href="{{next.url}}">
+                    <span>&raquo;</span>
+                    {{next.title}}
+                </a>
+              {% endif %}
             </div>
           </div>
         </div>
