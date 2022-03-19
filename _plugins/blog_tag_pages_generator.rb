@@ -9,7 +9,7 @@ module Jekyll
         end
       end
     end
-  
+
     class TagPage < Page
       def initialize(site, base, tag)
         @site = site
@@ -21,6 +21,10 @@ module Jekyll
         self.read_yaml(File.join(base, '_layouts'), 'blog_tag_list.html')
         self.data['tag'] = tag
         self.data['title'] = "Tag: #{tag}"
+
+        # Add meta robot tags with noindex,follow on tag list pages
+        # Prevents issues like Google not indexing actual content pages due to duplicate content on tag list pages
+        self.data['noindex'] = true
       end
     end
   end
