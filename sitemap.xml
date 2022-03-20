@@ -1,0 +1,21 @@
+---
+layout: null
+---
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  {% for post in site.posts %}
+    {% unless post.published == false or post.url contains '/blog/index' or post.url contains '/portfolio/index'%}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    {% endunless %}
+  {% endfor %}
+</urlset>

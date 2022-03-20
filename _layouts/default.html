@@ -2,6 +2,7 @@
 <html>
     {% include head.html %}
     <body id="page-top" class="index">
+    {% include gtag.html %}
     {% include nav.html %}
     {% include header.html %}
     {% include portfolio_grid.html %}
@@ -17,7 +18,6 @@
     {% endif %}
 
     {% include footer.html %}
-    {% include portfolio_modals.html %}
     {% include js.html %}
 
     {% if site.google_analytics_tracker_id %}

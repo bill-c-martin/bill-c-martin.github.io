@@ -3,30 +3,40 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>{{ site.nav.labels.portfolio }}</h2>
+                <h2>{{ site.portfolio.grid.labels.title }}</h2>
                 <hr class="star-primary">
             </div>
         </div>
         <div class="row">
-            {% for post in site.categories['portfolio'] %}
-                <div class="col-md-4 portfolio-item">
-                    <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+            {% assign posts = site.categories['portfolio'] | where:"layout","portfolio_post" | slice: 0, site.portfolio.grid.desktop-max - 1 %}
+            {% for post in posts %}
+                {% if post.layout == 'portfolio_post' %}
+                    <div class="col-md-4 portfolio-item {% if forloop.index > site.portfolio.grid.mobile-max %}desktop-only{% endif %}">
+                        <a href="{{ post.url }}" class="portfolio-link shadow" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                    </a>
-                    <p><a href="#portfolioModal-{{ post.modal-id }}" data-toggle="modal">{{ post.title }}</a></p>
-                </div>
+                            <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        </a>
+                        <p><a href="{{ post.url }}" data-toggle="modal">{{ post.title }}</a></p>
+                    </div>
 
-                {% assign loopindex = forloop.index | modulo: 3 %}
-                {% if loopindex == 0 %}
+                    {% assign loopindex = forloop.index | modulo: 3 %}
+                    {% if loopindex == 0 %}
+            </div>
+            <div class="row">
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
         </div>
         <div class="row">
-                {% endif%}
-            {% endfor %}
+            <div class="col-xs-8 col-xs-offset-2 text-center">
+                <a href="/portfolio/" class="btn btn-success btn-lg shadow">
+                    {{ site.portfolio.grid.labels.button }} <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>

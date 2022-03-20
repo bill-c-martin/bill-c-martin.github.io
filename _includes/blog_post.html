@@ -2,32 +2,88 @@
   <header>
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     <hr class="star-primary">
-    <p>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      {% if page.author %}
-      • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ page.author }}</span>
+    <ul class="list-inline">
+      <li>
+        <img src="/img/profile32x32.png">
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ site.meta_author }}</span>
         </span>
-      {% endif %}
-    </p>
+      </li>
+      <li>
+          <i class="fas fa-calendar-alt"></i>
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d %Y" }}</time>
+      </li>
+      <li>
+          <i class="fas fa-clock"></i>
+          {{ page.content | number_of_words | divided_by: 180 | round}} min read
+      </li>
+    </ul>
   </header>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+            <a href="/" itemprop="item">
+                <span itemprop="name">Home</span>
+                <meta itemprop="position" content="1" />
+            </a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+          <a href="/blog/" itemprop="item">
+            <span itemprop="name">{{ site.nav.labels.blog }}</span>
+            <meta itemprop="position" content="2" />
+          </a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+          <span itemprop="name">Post</span>
+          <meta itemprop="position" content="3" />
+        </li>
+    </ol>
+  </nav>
   <div class="content" itemprop="articleBody">
     {{ content }}
   </div>
   <footer>
-    <div class="container">
-      <a class="prev" href="{{page.previous.url}}">
-        {% if page.previous.url and page.previous.categories contains "blog" %}
-          &laquo; {{page.previous.title}}
+    <div class="content">
+      {% assign blog_posts = (site.posts | where: 'layout', 'blog_post') | sort: 'date' %}
+      {% for blog_post in blog_posts %}
+        {% if blog_post.url == page.url %}
+          {% unless forloop.first %}
+            {% assign prev = previous_post %}
+          {% endunless %}
+          {% unless forloop.last %}
+            {% assign next = blog_posts[forloop.index] %}
+          {% endunless %}
         {% endif %}
-      </a>
-    
-      <a class="next" href="{{page.next.url}}">
-        {% if page.next.url and page.next.categories contains "blog" %}
-          {{page.next.title}} &raquo;
-        {% endif %}
-      </a>
+        {% assign previous_post = blog_post %}
+      {% endfor %}
+      <h2>Other Posts</h2>
+      <hr class="star-primary">
+      <div class="container content">
+        <div class="row">
+          <div class="col-md-6 col-xs-6">
+            {% if prev %}
+              <a class="prev" href="{{prev.url}}">
+                <span>&#129080;</span>
+                {{prev.title}} 
+              </a>
+            {% endif %}
+          </div>
+          <div class="col-md-6 col-xs-6 text-right pr-2">
+            {% if next %}
+              <a class="next" href="{{next.url}}">
+                <span>&#129082;</span>
+                {{next.title}}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
-  <div id="disqus_thread" class="content"></div>
+  {% if site.disqus_shortname %}
+    <div id="disqus_thread" class="content"></div>
+  {% endif %}
 </article>

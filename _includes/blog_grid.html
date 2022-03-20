@@ -3,25 +3,35 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>{{ site.nav.labels.blog }}</h2>
+                <h2>{{ site.blog.grid.labels.title }}</h2>
                 <hr class="star-primary">
             </div>
         </div>
         <div class="row">
-            {% for post in site.categories['blog'] %}
-                <div class="col-md-4 blog-item">
-                    <a href="{{ post.url }}" class="blog-link">
-                        <h5>{{ post.title }}</h5>
-                        <p>{{ post.excerpt | strip_html}}</p>
-                    </a>
-                </div>
+            {% assign posts = site.categories['blog'] | where:"layout","blog_post" | slice: 0, site.blog.grid.desktop-max - 1 %}
+            {% for post in posts %}
+                {% if post.layout == 'blog_post' %}
+                    <div class="col-md-4 blog-item {% if forloop.index > site.portfolio.grid.mobile-max %}desktop-only{% endif %}">
+                            <a href="{{ post.url }}" class="blog-link shadow">
+                                <h5>{{ post.title }}</h5>
+                                <p>{{ post.excerpt | strip_html}}</p>
+                            </a>
+                    </div>
 
-                {% assign loopindex = forloop.index | modulo: 3 %}
-                {% if loopindex == 0 %}
+                    {% assign loopindex = forloop.index | modulo: 3 %}
+                    {% if loopindex == 0 %}
         </div>
         <div class="row">
-                {% endif%}
+                    {% endif %}
+                {% endif %}
             {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 text-center">
+                <a href="/blog/" class="btn btn-success btn-lg shadow">
+                    {{ site.blog.grid.labels.button }} <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>

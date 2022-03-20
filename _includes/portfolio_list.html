@@ -1,0 +1,56 @@
+<!-- Portfolio -->
+       
+<section id="portfolio" class="portfolio-list">
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+                        <a href="/" itemprop="item">
+                            <span itemprop="name">Home</span>
+                            <meta itemprop="position" content="1" />
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+                        <span itemprop="name">{{ site.nav.labels.portfolio }}</span>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                </ol>
+              </nav>
+            <div class="col-md-12 text-center">
+                <h2>{{ site.nav.labels.portfolio }}</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        {% for post in site.categories['portfolio'] %}
+            {% if post.layout == 'portfolio_post' %}
+                <div class="row portfolio-item" style="padding: 30px 0">
+                    <div class="col-md-4">
+                        <a href="{{ post.url }}" class="portfolio-link">
+                            <img src="/img/portfolio/{{ post.img }}" class="img-responsive shadow" alt="{{ post.alt }}">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                        <p>{{ post.overview.summary }}</p>
+                        <ul class="skills">
+                            <li>
+                                <i class="fas fa-calendar-alt"></i>
+                                <strong>Date</strong>: {{ post.overview.project-date}}
+                            </li>
+                            {% for skilltype in post.skills %}
+                                <li>
+                                    <i class="fas {{ site.portfolio.icons | map: skilltype[0] | first }}"></i>
+                                    <strong>{{ skilltype[0] | capitalize }}</strong>: {{ skilltype[1] | join: ', '}}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
