@@ -13,9 +13,24 @@ Volutpat elit massa vitae turpis. Maecenas vel euismod dolor. Sed tempus suscipi
 
 [Curabitur imperdiet](https://en.wikipedia.org/wiki/Brainfuck), odio id eleifend faucibus, justo ipsum sollicitudin augue, dictum finibus mi velit bibendum dui. 
 
-*Aenean sagittis* malesuada odio vitae tristique. Vestibulum rutrum sit amet massa id convallis. Nam commodo massa fringilla, egestas nulla ut, venenatis libero. Donec lobortis neque varius, facilisis dolor eu, rutrum sem. Nam eleifend interdum est pulvinar tempor. Etiam feugiat sit amet turpis in pulvinar. 
+| Augue | Bibendum     | Eleifend     |
+|-------|--------------|--------------|
+| 1     | sollicitudin | `$odio`      |
+| 2     | malesuada    | `$tristique` |
+| 3     | egestas      | `$interdum`  |
+
+*Aenean sagittis* malesuada odio vitae tristique. Vestibulum rutrum sit amet massa id convallis. Nam commodo massa fringilla, egestas nulla ut, venenatis libero. Donec lobortis neque varius, facilisis dolor eu, rutrum sem. Nam eleifend interdum est pulvinar tempor. 
+
+<div class="alert alert-warning" role="alert">
+  Etiam feugiat sit amet turpis in pulvinar. 
+</div>
 
 > Nam interdum nisl et erat dapibus bibendum. Mauris quis laoreet nibh.
+
+
+<div class="alert alert-info" role="alert">
+  Vestibulum rutrum sit amet massa id convallis.
+</div>
 
 ```
 [ This program prints "Hello World!" and a newline to the screen, its

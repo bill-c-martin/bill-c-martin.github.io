@@ -9,7 +9,10 @@ In eget dui vel sem iaculis dapibus id ac tortor. Integer condimentum metus sed 
 
 ## Aliquam feugiat
 
-Tempor eleifend. Vivamus ac magna lacus. Ut mollis quis erat nec fringilla. 
+<div class="alert alert-info" role="alert">
+  Tempor eleifend. Vivamus ac magna lacus. Ut mollis quis erat nec fringilla. 
+</div>
+
 
 Suspendisse [sollicitudin nulla](https://google.com) id volutpat ullamcorper. Duis placerat nulla sit amet ipsum feugiat, eu fringilla dolor aliquet. Nam nec lectus vitae tellus blandit accumsan id eu lectus. 
 
@@ -27,9 +30,17 @@ $foo = new Foo();
 $foo->bar();
 ```
 
-Fusce euismod rutrum turpis vel tincidunt.
+<div class="alert alert-warning" role="alert">
+  Fusce euismod rutrum turpis vel tincidunt.
+</div>
 
 Ut pellentesque tristique eros non elementum.
+
+| Augue | Bibendum     | Eleifend     |
+|-------|--------------|--------------|
+| 1     | sollicitudin | `$odio`      |
+| 2     | malesuada    | `$tristique` |
+| 3     | egestas      | `$interdum`  |
 
 ## Curabitur Iaculis Orci Nisi
 
