@@ -42,9 +42,6 @@ about:
           - item: Ipsum
           - item: Amet
           - item: Adipiscing
-  button:
-    text: Download My Resume
-    href: /resume/resume.pdf
 
 # Google webmaster tools
 google_verify:
