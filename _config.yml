@@ -65,7 +65,8 @@ contact: static
 # google_analytics_tracker_id: 
 
 # You can also load Google Analytics through a Google Tag Manager container
-# gtm_id:
+# If you do this, do not also put your GA tracker ID above
+gtm_id:
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
