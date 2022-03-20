@@ -57,10 +57,9 @@ Once up and running locally, configure and personalize your portfolio.
 
 ### Personalization
 
-1. Overwrite profile picture in `/img/profile.jpg`
+1. Overwrite profile picture in `img/profile.jpg` (used on home page) and `img/profile32x32.png` (used on blog posts)
 2. Fill out everything in `_config.yml`
 3. Create new posts to display your projects & blog posts. See existing examples in ```_posts/blog/``` and ```_posts/portfolio/```
-4. Update resume in ```/resume/your-name-resume.pdf```, and update ```_includes/about.html``` to reflect your resume file's name.
 
 ### Contact Form Setup
 
@@ -89,6 +88,13 @@ These are some recommended steps for final polishing.
 
 1. Create a [Google Analytics](https://analytics.google.com/analytics/web/) site/property
 2. Enter your `google_analytics_tracker_id` in `_config.yml`
+
+### Google Tag Manager
+
+1. Create a Google Tag Manager](https://tagmanager.google.com/) container
+2. Enter your `gtm_id` in `_config.yml`
+
+If you go this route, you can setup a GA4 tag through GTM, and forego the above "Google Analytics Setup" route.
 
 ### Custom Domains
 
