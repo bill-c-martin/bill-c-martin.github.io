@@ -1,36 +1,39 @@
 ---
-layout: default
+layout: portfolio_post
 title: ABC Portfolio Site
 category: portfolio
 modal-id: 1
 img: portfolio1.png
 alt: ABC Portfolio Site
-client: ABC Company
-application: Portfolio Site
-project-date: 2020 - 2021
-languages:
-- PHP
-- HTML
-- CSS
-- JavaScript
-- XML
-concepts:
-- MVVM
-- Depdency Injection
-- OOP
-- Themes
-tools:
-- Magento
-- RequireJS
-- KnockoutJS
-- Git
-- magento-cloud CLI
-stack:
-- Linux
-- Nginx
-- MariaDB
-- PHP
-- AWS
+overview:
+  client: ABC Company
+  applications: Portfolio Site
+  project-date: 2020 - 2021
+  summary: Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+skills:
+  languages:
+    - PHP
+    - HTML
+    - CSS
+    - JavaScript
+    - XML
+  concepts:
+    - MVVM
+    - Depdency Injection
+    - OOP
+    - Themes
+  tools:
+    - Magento
+    - RequireJS
+    - KnockoutJS
+    - Git
+    - magento-cloud CLI
+  stack:
+    - Linux
+    - Nginx
+    - MariaDB
+    - PHP
+    - AWS
 ---
 
 ### Project Description
