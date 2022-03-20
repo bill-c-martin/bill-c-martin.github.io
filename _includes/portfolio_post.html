@@ -1,0 +1,93 @@
+
+<article class="blog-post portfolio-post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+      <hr class="star-primary">
+    </header>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+              <a href="/" itemprop="item">
+                  <span itemprop="name">Home</span>
+                  <meta itemprop="position" content="1" />
+              </a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+            <a href="/portfolio/" itemprop="item">
+              <span itemprop="name">{{ site.nav.labels.portfolio }}</span>
+              <meta itemprop="position" content="2" />
+            </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+            <span itemprop="name">Project</span>
+            <meta itemprop="position" content="3" />
+          </li>
+      </ol>
+    </nav>
+    <div class="content" itemprop="articleBody">
+      <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered" alt="{{ page.alt }}">
+      <ul id="project-overview" class="list-inline item-details">
+        {% for item in page.overview %}
+          <li>
+            <i class="fas {{ site.portfolio.icons | map: item[0] | first }}"></i>
+            <strong>{{ item[0] | replace: '-', ' ' }}:</strong> {{ item[1] }}
+          </li><br/>
+        {% endfor %}
+      </ul>
+
+      {{ content }}
+
+      <div class="skills">
+        <h3>Technologies Used</h3>
+        <ul>
+          {% for skilltype in page.skills %}
+            <li>
+                <i class="fas {{ site.portfolio.icons | map: skilltype[0] | first }}"></i>
+                <strong>{{ skilltype[0] | capitalize }}:</strong> <span>{{ skilltype[1] | join: ', '}}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div class="content">
+        {% assign projects = (site.posts | where: 'layout', 'portfolio_post') | sort: 'date' %}
+        {% for project in projects %}
+          {% if project.url == page.url %}
+            {% unless forloop.first %}
+              {% assign prev = previous_project %}
+            {% endunless %}
+            {% unless forloop.last %}
+              {% assign next = projects[forloop.index] %}
+            {% endunless %}
+          {% endif %}
+          {% assign previous_project = project %}
+        {% endfor %}
+        <h2>Other Projects</h2>
+        <hr class="star-primary">
+        <div class="container content">
+          <div class="row">
+            <div class="col-md-6 col-xs-6">
+              {% if prev %}
+                <a class="prev " href="{{prev.url}}">
+                    <span>&laquo;</span>
+                    {{prev.title}}
+                </a>
+              {% endif %}
+            </div>
+            <div class="col-md-6 col-xs-6 text-right pr-2">
+              {% if next %}
+                <a class="next" href="{{next.url}}">
+                    <span>&raquo;</span>
+                    {{next.title}}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </article>

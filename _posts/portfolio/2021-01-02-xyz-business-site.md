@@ -1,30 +1,33 @@
 ---
-layout: default
+layout: portfolio_post
 title: XYZ Business Site
 category: portfolio
 modal-id: 2
 img: portfolio2.png
 alt: XYZ Business Site
-client: XYZ Company
-application: Business Site
-project-date: 2020 - 2021
-languages:
-- HTML
-- CSS
-- JavaScript
-- XML
-concepts:
-- AJAX
-- Data Binding
-- UI/UX
-tools:
-- Angular
-- Gulp
-- Git
-stack:
-- Linux
-- MEAN
-- AWS
+overview:
+  client: XYZ Company
+  applications: Business Site
+  project-date: 2020 - 2021
+  summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo enim, lacinia et ornare non, tincidunt eu sapien. Class aptent taciti sociosqu ad.
+skills:
+  languages:
+    - HTML
+    - CSS
+    - JavaScript
+    - XML
+  concepts:
+    - AJAX
+    - Data Binding
+    - UI/UX
+  tools:
+    - Angular
+    - Gulp
+    - Git
+  stack:
+    - Linux
+    - MEAN
+    - AWS
 ---
 
 ### Project Description

@@ -2,17 +2,28 @@
 layout: blog_post
 title: Quisque-Porttitor-Nisi-Nec-Vehicula
 category: blog
+tags: ["Ruby", "Lorem Ipsum"]
 ---
 
 Maecenas efficitur, nisi a sagittis dictum, dui nisi condimentum eros, a vulputate risus nunc ut tellus. 
 
 > Praesent in ornare neque. Sed feugiat, dolor sagittis molestie imperdiet, tortor nibh aliquam lorem, efficitur ultrices nibh nisi ut lorem.
 
+<div class="alert alert-warning" role="alert">
+  Fusce euismod rutrum turpis vel tincidunt.
+</div>
+
 ## Sed Purus Quam
 
 Commodo ac dui in, sodales mattis odio.
 
 Aliquam sed cursus sapien, et [efficitur justo](https://google.com). Aliquam in erat eu diam congue venenatis vitae nec elit.
+
+| Augue | Bibendum     | Eleifend     |
+|-------|--------------|--------------|
+| 1     | sollicitudin | `$odio`      |
+| 2     | malesuada    | `$tristique` |
+| 3     | egestas      | `$interdum`  |
 
 In porta tellus eget leo eleifend ullamcorper:
 
@@ -28,7 +39,10 @@ clean_string("aaa#b")
 
 Etiam leo mauris, vulputate in suscipit in, dictum nec neque. Fusce semper nisi magna, non molestie sapien lobortis sit amet.
 
-Nam tincidunt, velit sit amet egestas suscipit, lacus leo aliquam massa, sed ultrices nisi odio at dolor.
+
+<div class="alert alert-info" role="alert">
+  Nam tincidunt, velit sit amet egestas suscipit, lacus leo aliquam massa, sed ultrices nisi odio at dolor.
+</div>
 
 Donec imperdiet sapien vitae lectus ullamcorper finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
