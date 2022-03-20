@@ -2,6 +2,7 @@
 layout: blog_post
 title: Quisque-Porttitor-Nisi-Nec-Vehicula
 category: blog
+tags: ["Ruby", "Lorem Ipsum"]
 ---
 
 Maecenas efficitur, nisi a sagittis dictum, dui nisi condimentum eros, a vulputate risus nunc ut tellus. 

@@ -2,6 +2,7 @@
 layout: blog_post
 title: Vestibulum-Tincidunt-Massa-Ipsum
 category: blog
+tags: ["PHP", "Lorem Ipsum"]
 ---
 
 In eget dui vel sem iaculis dapibus id ac tortor. Integer condimentum metus sed justo placerat vestibulum magna las. 

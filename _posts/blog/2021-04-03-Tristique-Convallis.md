@@ -2,6 +2,7 @@
 layout: blog_post
 title: Tristique-Convallis
 category: blog
+tags: ["Obscure Languages", "Lorem Ipsum"]
 ---
 
 Proin euismod nunc ac ex blandit rutrum non id metus. Nam bibendum, turpis ac dapibus commodo. Metus felis maximus leo, nec.
