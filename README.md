@@ -31,8 +31,10 @@ Localhost setup uses VS Code Dev Containers.
 
 1. Clone the above repo, which you forked, to your localhost
 2. Open the repo in VS Code and click the "Reopen in Container" button that pops up
+
 > **Note:**
-> Or run `Dev Containers: Open Folder in Container...` in the command palette (`Ctrl+Shift+P`) 
+> Or run `Dev Containers: Open Folder in Container...` in the command palette (`Ctrl+Shift+P`)
+
 3. When the container is done provisioning, hit any key to continue
 4. Start the web server:
 
