@@ -2,7 +2,7 @@
 
 Demo: [bill-c-martin.github.com](https://bill-c-martin.github.io)
 
-Requires no servers or hosting, and runs straight from your GitHub repo.
+Requires no servers or hosting, and runs straight from your GitHub repo on GitHub Pages.
 
 ## Quick Setup
 
@@ -12,26 +12,37 @@ Requires no servers or hosting, and runs straight from your GitHub repo.
 
 ## Localhost Setup
 
+Localhost setup uses VS Code Dev Containers.
+
+> **Note**
+> If you don't want to use Docker or VS Code, [an older version of this README](https://github.com/bill-c-martin/bill-c-martin.github.io/blob/c8ff940d5b8776e1cc6fa9b906c066f06da580a5/README.md) has manual ruby & gem installation instructions.
+
+### Prerequisites
+
+- Docker (For Windows, also install: wsl, Ubuntu, and Docker Desktop)
+- VS Code
+- VS Code extensions:
+  - Dev Containers
+  - Markdown All in One (recommended)
+  - GitHub Markdown Preview (recommended)
+  - markdownlint (recommended)
+
+### Instructions
+
 1. Clone the above repo, which you forked, to your localhost
-2. Install `ruby-2.7` and `rubygems-2.7`. Despite what [Jekyll's docs say](https://jekyllrb.com/docs/installation/), you have to install Ruby `2.7.*`, otherwise you will get a [pathutil error](https://stackoverflow.com/questions/65539326/is-the-pathutil-ruby-gem-compatible-with-jekyll-v3-9-0-and-ruby-v3-0-0) in the next step.
-
-3. Install jekyll packages inside this repo:
-
-```bash
-cd /path/to/your-github-username.github.io/
-gem install jekyll bundler
-bundle-2.7 install
-```
-
+2. Open the repo in VS Code and click the "Reopen in Container" button that pops up
+> **Note:**
+> Or run `Dev Containers: Open Folder in Container...` in the command palette (`Ctrl+Shift+P`) 
+3. When the container is done provisioning, hit any key to continue
 4. Start the web server:
 
 ```bash
-bundle-2.7 exec jekyll serve
+bundle exec jekyll serve
 ```
 
 5. Go to [http://localhost:4000](http://localhost:4000) and verify it runs locally.
 
-The localhost site will show changes in real time.
+The localhost site will show changes in real-time.
 
 If you modify `_config.yml` though, you'll need to `ctrl+c` and restart the web server.
 
