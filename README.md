@@ -19,7 +19,7 @@ Localhost setup uses VS Code Dev Containers.
 
 ### Prerequisites
 
-- Docker (For Windows, also install: wsl, Ubuntu, and Docker Desktop)
+- Docker (For Windows, also install: WSL, Ubuntu, and Docker Desktop)
 - VS Code
 - VS Code extensions:
   - Dev Containers
@@ -50,7 +50,7 @@ If you modify `_config.yml` though, you'll need to `ctrl+c` and restart the web 
 
 ### Debugging
 
-Pipe any variable into `debug` from any template to see its contents on screen.
+Pipe any variable into `debug` from any template to see its contents on-screen.
 
 Example: Printing entire _config.yml structure:
 
@@ -76,7 +76,7 @@ Once up and running locally, configure and personalize your portfolio.
 
 ### Contact Form Setup
 
-Formspree will receive POST requests from your contact form, and forward them to your email. Without requiring server-side code.
+Formspree will receive POST requests from your contact form and forward them to your email. Without requiring server-side code.
 
 1. Replace `you@email.com` in `_includes/contact_static.html` with your email address
 2. Setup a [formspree](https://formspree.io/) account for your email address
@@ -90,7 +90,7 @@ Disqus will receive POST requests from your blog post's comment forms, display c
 
 ### Deployment
 
-1. Push above code changes on `master` branch to remote
+1. Push the above code changes on `master` branch to remote
 2. Go to https://your-github-username.github.io
 
 ## Extras
@@ -111,11 +111,11 @@ If you go this route, you can setup a GA4 tag through GTM, and forego the above 
 
 ### Custom Domains
 
-Instead of using the default https://your-github-username.github.io Github Pages URL, you can instead use your own custom domain name that you already own.
+Instead of using the default `https://your-github-username.github.io` Github Pages URL, you can instead use a custom domain name that you already own.
 
 You can alias a custom domain name to your https://your-github-username.github.io Github Pages URL. See [Github's documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) on this.
 
-However, you will usually have to manage and pay for an SSL certificates through your domain registrar.
+However, you will usually have to manage and pay for SSL certificates through your domain registrar.
 
 You can instead use Netlify for all of this, for free.
 
@@ -125,4 +125,4 @@ Netlify is a free service that provides CDN, SSL certs, deployment pipelines, an
 
 1. Create a [Netlify](https://www.netlify.com/) account
 2. [Setup your custom domain](https://docs.netlify.com/domains-https/custom-domains/) to route through Netlify, and from Netlify to your repo
-2. [Setup a Netlify SSL cert](https://docs.netlify.com/domains-https/https-ssl/)
+3. [Setup a Netlify SSL cert](https://docs.netlify.com/domains-https/https-ssl/)
